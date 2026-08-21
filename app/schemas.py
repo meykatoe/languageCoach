@@ -1,3 +1,4 @@
+import datetime
 from typing import Any, Optional
 
 from pydantic import BaseModel
@@ -64,3 +65,32 @@ class GradingFeedback(BaseModel):
     weaknesses: list[str]
     suggestions: list[str]
     revisedExample: Optional[str] = None
+
+
+class AttemptOut(BaseModel):
+    id: int
+    created_at: datetime.datetime
+    exam: str
+    section: str
+    part: Optional[str]
+    source_id: str
+    item_type: str
+    is_correct: Optional[bool]
+    score: Optional[str]
+
+    model_config = {"from_attributes": True}
+
+
+class ExamStat(BaseModel):
+    exam: str
+    section: str
+    item_type: str
+    total: int
+    correct: int
+    accuracy: Optional[float]
+
+
+class HistorySummary(BaseModel):
+    total_attempts: int
+    stats: list[ExamStat]
+    recent: list[AttemptOut]

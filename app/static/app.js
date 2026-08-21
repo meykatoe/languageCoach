@@ -80,6 +80,25 @@ function renderOptionsBlock(idPrefix, options, container) {
   container.appendChild(wrap);
 }
 
+function addSpeakButton(text, container) {
+  if (!('speechSynthesis' in window)) return;
+  const btn = el('button', { class: 'secondary speak-btn' }, '🔊 播放語音');
+  btn.addEventListener('click', () => {
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.95;
+    btn.disabled = true;
+    btn.textContent = '播放中...';
+    utterance.onend = utterance.onerror = () => {
+      btn.disabled = false;
+      btn.textContent = '🔊 播放語音';
+    };
+    window.speechSynthesis.speak(utterance);
+  });
+  container.appendChild(btn);
+}
+
 function renderSingleMC(item, container) {
   const questionText = item.sentence || item.prompt || item.question || item.photoDescription || '(聽力題,請根據音檔/情境作答)';
   container.appendChild(el('p', {}, questionText));
@@ -212,6 +231,7 @@ function renderItem(q, wrapper) {
     radioIdMap.push({ name: `q-${item.id}`, sourceId: item.id });
     objectiveIds.push(item.id);
   } else if (item.transcript && Array.isArray(item.questions)) {
+    addSpeakButton(item.transcript, card);
     card.appendChild(el('div', { class: 'transcript' }, item.transcript));
     renderSubQuestions(item.questions, card);
     item.questions.forEach(sq => { radioIdMap.push({ name: `q-${sq.id}`, sourceId: sq.id }); objectiveIds.push(sq.id); });
@@ -266,6 +286,7 @@ function renderItem(q, wrapper) {
       objectiveIds.push(p.id);
     });
   } else if (item.form && Array.isArray(item.form.fields)) {
+    if (item.transcript) addSpeakButton(item.transcript, card);
     card.appendChild(el('div', { class: 'transcript' }, item.transcript || ''));
     card.appendChild(el('p', {}, item.form.title || ''));
     item.form.fields.forEach(f => {
@@ -276,6 +297,7 @@ function renderItem(q, wrapper) {
       objectiveIds.push(f.id);
     });
   } else if (Array.isArray(item.sentences)) {
+    if (item.transcript) addSpeakButton(item.transcript, card);
     card.appendChild(el('div', { class: 'transcript' }, item.transcript || ''));
     item.sentences.forEach(s => {
       const row = el('div', { class: 'question-block' });
@@ -299,7 +321,10 @@ function renderItem(q, wrapper) {
     renderAiGradeWidget(item, q.exam, 'writing', item.prompt, card);
   } else if (item.readingPassage || item.listeningTranscript || item.professorPrompt) {
     if (item.readingPassage) card.appendChild(el('div', { class: 'passage-text' }, '[閱讀] ' + item.readingPassage));
-    if (item.listeningTranscript) card.appendChild(el('div', { class: 'transcript' }, '[聽力文字稿] ' + item.listeningTranscript));
+    if (item.listeningTranscript) {
+      addSpeakButton(item.listeningTranscript, card);
+      card.appendChild(el('div', { class: 'transcript' }, '[聽力文字稿] ' + item.listeningTranscript));
+    }
     if (item.professorPrompt) card.appendChild(el('div', { class: 'passage-text' }, item.professorPrompt));
     if (Array.isArray(item.studentResponses)) {
       item.studentResponses.forEach(sr => card.appendChild(el('p', {}, `${sr.name}: ${sr.response}`)));

@@ -22,6 +22,7 @@ ITEM_LIST_KEYS = [
     "questions",
     "conversations",
     "talks",
+    "lectures",
     "passages",
     "singlePassages",
     "doublePassages",

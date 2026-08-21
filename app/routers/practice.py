@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import Question
+from app.models import Attempt, Question
 from app.schemas import GradedAnswer, PracticeSubmitRequest, PracticeSubmitResponse
 
 router = APIRouter(prefix="/api/practice", tags=["practice"])
@@ -50,9 +50,11 @@ def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db
 
     for ans in payload.answers:
         node = None
+        parent: Optional[Question] = None
         for q in all_questions:
             node = _find_node_by_id(q.content, ans.source_id)
             if node is not None:
+                parent = q
                 break
 
         expected = node.get("answer") if node else None
@@ -63,6 +65,19 @@ def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db
             if is_correct:
                 correct_count += 1
 
+            if parent is not None:
+                db.add(
+                    Attempt(
+                        exam=parent.exam,
+                        section=parent.section,
+                        part=parent.part,
+                        source_id=ans.source_id,
+                        item_type="objective",
+                        is_correct=is_correct,
+                        detail={"correctAnswer": expected, "submittedAnswer": ans.answer},
+                    )
+                )
+
         results.append(
             GradedAnswer(
                 source_id=ans.source_id,
@@ -71,6 +86,8 @@ def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db
                 submittedAnswer=ans.answer,
             )
         )
+
+    db.commit()
 
     return PracticeSubmitResponse(
         total=len(payload.answers),

@@ -9,7 +9,7 @@ from fastapi.templating import Jinja2Templates
 load_dotenv()
 
 from app.database import Base, engine  # noqa: E402
-from app.routers import exams, grading, practice  # noqa: E402
+from app.routers import exams, grading, history, practice  # noqa: E402
 from app.seed import seed  # noqa: E402
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -25,6 +25,7 @@ templates = Jinja2Templates(directory=BASE_DIR / "templates")
 app.include_router(exams.router)
 app.include_router(practice.router)
 app.include_router(grading.router)
+app.include_router(history.router)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -35,6 +36,11 @@ def index(request: Request):
 @app.get("/practice", response_class=HTMLResponse)
 def practice_page(request: Request):
     return templates.TemplateResponse(request, "practice.html")
+
+
+@app.get("/history", response_class=HTMLResponse)
+def history_page(request: Request):
+    return templates.TemplateResponse(request, "history.html")
 
 
 @app.get("/health")

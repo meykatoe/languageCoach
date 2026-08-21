@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import Question
+from app.models import Attempt, Question
 from app.schemas import GradingFeedback, SpeakingGradingRequest, WritingGradingRequest
 from app.services.openai_service import grade_response
 
@@ -23,6 +23,21 @@ def _get_question_or_404(db: Session, source_id: str) -> Question:
     return q
 
 
+def _record_attempt(db: Session, question: Question, item_type: str, feedback: dict) -> None:
+    db.add(
+        Attempt(
+            exam=question.exam,
+            section=question.section,
+            part=question.part,
+            source_id=question.source_id,
+            item_type=item_type,
+            score=str(feedback.get("score")),
+            detail=feedback,
+        )
+    )
+    db.commit()
+
+
 @router.post("/writing", response_model=GradingFeedback)
 def grade_writing(payload: WritingGradingRequest, db: Session = Depends(get_db)):
     question = _get_question_or_404(db, payload.source_id)
@@ -31,6 +46,7 @@ def grade_writing(payload: WritingGradingRequest, db: Session = Depends(get_db))
         result = grade_response(payload.exam, prompt_text, payload.essay, skill="writing")
     except RuntimeError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
+    _record_attempt(db, question, "writing", result)
     return GradingFeedback(**result)
 
 
@@ -44,4 +60,5 @@ def grade_speaking(payload: SpeakingGradingRequest, db: Session = Depends(get_db
         )
     except RuntimeError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
+    _record_attempt(db, question, "speaking", result)
     return GradingFeedback(**result)

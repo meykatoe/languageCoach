@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>學習紀錄 - Language Coach</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="site">
+    <a href="/">Language Coach</a>
+    <nav>
+      <a href="/practice">練習</a>
+      <a href="/history">學習紀錄</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h1>學習紀錄與進度</h1>
+      <p id="total-attempts">載入中...</p>
+    </div>
+    <div class="card">
+      <h2>各考試/類別表現</h2>
+      <table id="stats-table">
+        <thead>
+          <tr><th>考試</th><th>類別</th><th>題型</th><th>作答數</th><th>答對數</th><th>正確率</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="card">
+      <h2>最近作答紀錄</h2>
+      <table id="recent-table">
+        <thead>
+          <tr><th>時間</th><th>考試</th><th>類別</th><th>題型</th><th>結果</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+  <script src="/static/history.js"></script>
+</body>
+</html>
