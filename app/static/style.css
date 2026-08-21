@@ -246,6 +246,9 @@ th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: 
 
 .translated-pending { opacity: 0.55; }
 
+.review-mode-toggle { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; cursor: pointer; }
+.review-mode-toggle input { accent-color: var(--text); width: 16px; height: 16px; }
+
 .site-footer {
   max-width: 860px;
   margin: 1.5rem auto 0;

@@ -208,7 +208,7 @@ async function submitObjective(container, radioIdMap) {
     if (marker) {
       if (r.correct === null) return;
       let html = r.correct ? '✓ 正確' : `✗ 錯誤 (正確答案: ${JSON.stringify(r.correctAnswer)})`;
-      if (!r.correct && r.note) html += `<div class="review-note">AI 解析: ${r.note}</div>`;
+      if (r.note) html += `<div class="review-note">AI 解析: ${r.note}</div>`;
       marker.innerHTML = html;
       marker.className = r.correct ? 'result-correct' : 'result-wrong';
     }

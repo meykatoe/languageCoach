@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import Attempt, Question
+from app.models import AppSetting, Attempt, Question
 from app.routers.practice import _find_node_by_id
 from app.schemas import QuestionOut
 
@@ -15,7 +15,13 @@ def get_review_questions(
 ):
     """Return the parent question items for objective sub-questions whose
     most recent attempt was incorrect, most recently missed first.
+
+    In review mode, previously recorded AI notes are withheld so the user
+    can attempt the question again without seeing the earlier hint spoiled.
     """
+    setting = db.query(AppSetting).first()
+    review_mode = bool(setting and setting.review_mode)
+
     attempts = (
         db.query(Attempt)
         .filter(Attempt.item_type == "objective")
@@ -50,11 +56,12 @@ def get_review_questions(
             node = _find_node_by_id(q.content, sub_id)
             if node is not None:
                 out = QuestionOut.model_validate(q)
-                out.reviewNotes = {
-                    other_id: wrong_notes[other_id]
-                    for other_id in wrong_source_ids
-                    if other_id in wrong_notes and _find_node_by_id(q.content, other_id) is not None
-                } or None
+                if not review_mode:
+                    out.reviewNotes = {
+                        other_id: wrong_notes[other_id]
+                        for other_id in wrong_source_ids
+                        if other_id in wrong_notes and _find_node_by_id(q.content, other_id) is not None
+                    } or None
                 result.append(out)
                 included_parent_ids.add(q.id)
                 break

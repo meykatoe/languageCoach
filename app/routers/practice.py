@@ -5,11 +5,29 @@ from openai import APIError
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import Attempt, Question
+from app.models import AppSetting, Attempt, Question
 from app.schemas import GradedAnswer, PracticeSubmitRequest, PracticeSubmitResponse
-from app.services.openai_service import explain_mistake
+from app.services.openai_service import explain_mistake, review_progress_comment
 
 router = APIRouter(prefix="/api/practice", tags=["practice"])
+
+
+def _is_review_mode(db: Session) -> bool:
+    setting = db.query(AppSetting).first()
+    return bool(setting and setting.review_mode)
+
+
+def _latest_note(db: Session, source_id: str) -> Optional[str]:
+    """The note attached to this source_id's most recent objective attempt,
+    if any, used as the "previous record" in review mode.
+    """
+    prev = (
+        db.query(Attempt)
+        .filter(Attempt.source_id == source_id, Attempt.item_type == "objective")
+        .order_by(Attempt.created_at.desc())
+        .first()
+    )
+    return (prev.detail or {}).get("note") if prev and prev.detail else None
 
 
 def _generate_mistake_note(exam: str, node: dict, expected: Any, submitted: Any) -> Optional[str]:
@@ -19,6 +37,18 @@ def _generate_mistake_note(exam: str, node: dict, expected: Any, submitted: Any)
     """
     try:
         return explain_mistake(exam, node, expected, submitted)
+    except (RuntimeError, APIError, ValueError):
+        return None
+
+
+def _generate_review_comment(
+    exam: str, node: dict, expected: Any, submitted: Any, is_correct: bool, previous_note: str
+) -> Optional[str]:
+    """Best-effort AI comment for a review-mode repeat attempt, taking the
+    previous record into account. Never raises, same reasoning as above.
+    """
+    try:
+        return review_progress_comment(exam, node, expected, submitted, is_correct, previous_note)
     except (RuntimeError, APIError, ValueError):
         return None
 
@@ -58,6 +88,7 @@ def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db
     results: list[GradedAnswer] = []
     correct_count = 0
     graded_count = 0
+    review_mode = _is_review_mode(db)
 
     all_questions = db.query(Question).all()
 
@@ -78,8 +109,15 @@ def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db
             graded_count += 1
             if is_correct:
                 correct_count += 1
-            elif parent is not None:
-                note = _generate_mistake_note(parent.exam, node, expected, ans.answer)
+
+            if parent is not None:
+                previous_note = _latest_note(db, ans.source_id) if review_mode else None
+                if review_mode and previous_note:
+                    note = _generate_review_comment(
+                        parent.exam, node, expected, ans.answer, is_correct, previous_note
+                    )
+                elif not is_correct:
+                    note = _generate_mistake_note(parent.exam, node, expected, ans.answer)
 
             if parent is not None:
                 db.add(

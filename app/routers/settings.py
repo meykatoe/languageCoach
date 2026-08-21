@@ -41,6 +41,7 @@ def _build_settings_out(db: Session) -> SettingsOut:
         api_key_hint=hint,
         api_key_source=source,
         openai_model=model,
+        review_mode=bool(setting and setting.review_mode),
     )
 
 
@@ -63,6 +64,9 @@ def update_settings(payload: SettingsUpdateRequest, db: Session = Depends(get_db
 
     if payload.openai_model is not None:
         setting.openai_model = payload.openai_model.strip() or None
+
+    if payload.review_mode is not None:
+        setting.review_mode = payload.review_mode
 
     db.commit()
     return _build_settings_out(db)

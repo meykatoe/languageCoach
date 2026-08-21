@@ -59,3 +59,4 @@ class AppSetting(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     openai_api_key = Column(String, nullable=True)
     openai_model = Column(String, nullable=True)
+    review_mode = Column(Boolean, nullable=True, default=False)

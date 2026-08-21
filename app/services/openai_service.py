@@ -136,6 +136,52 @@ def translate_text(text: str) -> str:
     return completion.choices[0].message.content.strip()
 
 
+REVIEW_PROGRESS_SYSTEM_PROMPT = (
+    "You are a friendly, encouraging {exam} tutor helping a student review a "
+    "question in their error notebook that they previously got wrong. Here "
+    "is your earlier note about their mistake:\n\"{previous_note}\"\n\n"
+    "The student has just attempted this same question again. In "
+    "Traditional Chinese (繁體中文), write a brief (2-4 short sentences) "
+    "updated comment: if they answered correctly this time, congratulate "
+    "them and briefly confirm they've corrected the earlier "
+    "misunderstanding; if they are still wrong, note whether it looks like "
+    "the same mistake as before or a new one, and give refined guidance. "
+    "Respond with plain text only, no JSON, no markdown."
+)
+
+
+def review_progress_comment(
+    exam: str,
+    question_node: dict,
+    correct_answer: object,
+    submitted_answer: object,
+    is_correct: bool,
+    previous_note: str,
+) -> str:
+    """Generate an updated review-notebook comment for a repeat attempt,
+    taking the previously recorded mistake note into account.
+    """
+    system_prompt = REVIEW_PROGRESS_SYSTEM_PROMPT.format(exam=exam, previous_note=previous_note)
+
+    client, model = _get_client()
+    completion = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {
+                "role": "user",
+                "content": (
+                    f"Question:\n{json.dumps(question_node, ensure_ascii=False)}\n\n"
+                    f"Correct answer: {correct_answer}\n"
+                    f"Student's answer this time: {submitted_answer}\n"
+                    f"Correct this time: {is_correct}"
+                ),
+            },
+        ],
+    )
+    return completion.choices[0].message.content.strip()
+
+
 MISTAKE_EXPLANATION_SYSTEM_PROMPT = (
     "You are a friendly, encouraging {exam} tutor. A student answered a "
     "practice question incorrectly. In Traditional Chinese (繁體中文), write a "

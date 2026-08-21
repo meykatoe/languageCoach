@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, inspect, text
 from sqlalchemy.orm import DeclarativeBase, sessionmaker
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
@@ -22,3 +22,16 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+def migrate_schema() -> None:
+    """Lightweight in-place migration for columns added after the table was
+    first created (this project has no data/rows worth an Alembic setup).
+    """
+    inspector = inspect(engine)
+    if "app_settings" not in inspector.get_table_names():
+        return
+    columns = {col["name"] for col in inspector.get_columns("app_settings")}
+    if "review_mode" not in columns:
+        with engine.begin() as conn:
+            conn.execute(text("ALTER TABLE app_settings ADD COLUMN review_mode BOOLEAN DEFAULT 0"))

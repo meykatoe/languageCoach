@@ -110,6 +110,7 @@ class SettingsUpdateRequest(BaseModel):
     openai_api_key: Optional[str] = None
     openai_model: Optional[str] = None
     clear_api_key: bool = False
+    review_mode: Optional[bool] = None
 
 
 class SettingsOut(BaseModel):
@@ -117,6 +118,7 @@ class SettingsOut(BaseModel):
     api_key_hint: Optional[str] = None
     api_key_source: str  # "database" | "environment" | "none"
     openai_model: str
+    review_mode: bool = False
 
 
 class TranslateRequest(BaseModel):
