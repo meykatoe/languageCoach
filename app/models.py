@@ -33,7 +33,11 @@ class Attempt(Base):
     __tablename__ = "attempts"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    created_at = Column(DateTime, default=datetime.datetime.utcnow, index=True)
+    created_at = Column(
+        DateTime,
+        default=lambda: datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None),
+        index=True,
+    )
     exam = Column(String, nullable=False, index=True)
     section = Column(String, nullable=False, index=True)
     part = Column(String, nullable=True)

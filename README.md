@@ -26,24 +26,49 @@ uvicorn app.main:app --reload
 app/
 ├── main.py            FastAPI 進入點,掛載路由與樣板
 ├── database.py         SQLAlchemy engine/session
-├── models.py            Question 資料表定義
+├── models.py            Question / Attempt 資料表定義
 ├── schemas.py            Pydantic 請求/回應模型
 ├── seed.py               題庫 JSON 匯入腳本
 ├── routers/
 │   ├── exams.py           GET /api/exams, /api/questions
-│   ├── practice.py         POST /api/practice/submit (客觀題批改)
-│   └── grading.py           POST /api/grading/writing, /speaking (AI 評分)
+│   ├── practice.py         POST /api/practice/submit (客觀題批改+寫入紀錄)
+│   ├── grading.py           POST /api/grading/writing, /speaking (AI 評分+寫入紀錄)
+│   └── history.py            GET /api/history (學習進度統計)
 ├── services/openai_service.py   OpenAI API 呼叫與評分規準
-├── templates/            首頁 / 練習頁面 (Jinja2)
-└── static/                app.js (題目渲染邏輯) / style.css
+├── templates/            首頁 / 練習頁面 / 學習紀錄頁面 (Jinja2)
+└── static/                app.js (題目渲染+語音播放/口說語音輸入) / history.js / style.css
 
 examQuestions/
 ├── create/               模擬題庫(依 TOEIC/IELTS/TOEFL 分資料夾,詳見其 README)
 └── upload/                (預留給使用者上傳作答/題目用)
+
+tests/                  pytest 測試套件 (API 端點、題庫匯入完整性)
 ```
+
+## 功能一覽
+
+- 客觀題(選擇題/填空/配對/T-F-NG)自動批改,並記錄到學習紀錄。
+- 寫作與口說由 OpenAI API 依考試評分規準(IELTS 級分 / TOEFL 0-5 分 / TOEIC)評分。
+- 聽力題目提供「🔊 播放語音」按鈕(瀏覽器 Web Speech API TTS)。
+- 口說題目提供「🎙️ 開始錄音口說」按鈕(瀏覽器 Web Speech API STT,自動轉文字稿),
+  僅 Chrome/Edge 等支援 `SpeechRecognition` 的瀏覽器可用,不支援時按鈕不會出現,
+  仍可手動輸入文字稿。
+- `/history` 頁面顯示累計作答數、各考試/類別正確率與最近作答紀錄。
 
 ## 手動重新匯入題庫
 
 ```bash
 python -m app.seed
 ```
+
+## 執行測試
+
+```bash
+pip install -r requirements.txt   # 已包含 pytest
+pytest
+```
+
+測試會使用暫存資料庫(不會動到 `data/app.db`),涵蓋 API 端點行為，以及一項
+回歸測試：確保 `examQuestions/create/` 中每個 JSON 檔案裡任何一個「題目清單」
+欄位都有被 `app/seed.py` 的 `ITEM_LIST_KEYS` 涵蓋到(避免像先前 TOEFL
+`lectures` 欄位被漏匯入的問題再次發生)。

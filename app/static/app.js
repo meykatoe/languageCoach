@@ -177,8 +177,55 @@ function attachResultMarkers(container, ids) {
   });
 }
 
+function addMicButton(textarea, container) {
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SpeechRecognition) return;
+
+  const micBtn = el('button', { class: 'secondary mic-btn' }, '🎙️ 開始錄音口說');
+  let recognition = null;
+  let listening = false;
+
+  micBtn.addEventListener('click', () => {
+    if (listening) {
+      recognition.stop();
+      return;
+    }
+    recognition = new SpeechRecognition();
+    recognition.lang = 'en-US';
+    recognition.continuous = true;
+    recognition.interimResults = true;
+
+    const baseText = textarea.value ? textarea.value.trim() + ' ' : '';
+    let finalText = '';
+
+    recognition.onresult = (event) => {
+      let interim = '';
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const transcriptPart = event.results[i][0].transcript;
+        if (event.results[i].isFinal) finalText += transcriptPart + ' ';
+        else interim += transcriptPart;
+      }
+      textarea.value = baseText + finalText + interim;
+    };
+    recognition.onerror = () => {
+      listening = false;
+      micBtn.textContent = '🎙️ 開始錄音口說';
+    };
+    recognition.onend = () => {
+      listening = false;
+      micBtn.textContent = '🎙️ 開始錄音口說';
+    };
+
+    recognition.start();
+    listening = true;
+    micBtn.textContent = '⏹ 停止錄音';
+  });
+
+  container.appendChild(micBtn);
+}
+
 function renderAiGradeWidget(item, exam, skill, promptText, container) {
-  const textarea = el('textarea', { placeholder: skill === 'writing' ? '在此輸入你的寫作內容...' : '在此輸入你的口說內容文字稿(可用瀏覽器語音輸入法)...' });
+  const textarea = el('textarea', { placeholder: skill === 'writing' ? '在此輸入你的寫作內容...' : '在此輸入你的口說內容文字稿(可點擊下方麥克風直接開口說,或手動輸入)...' });
   const btn = el('button', { class: 'secondary' }, skill === 'writing' ? 'AI 批改我的寫作' : 'AI 批改我的口說');
   const feedbackEl = el('div', { class: 'feedback' });
 
@@ -214,6 +261,7 @@ function renderAiGradeWidget(item, exam, skill, promptText, container) {
 
   container.appendChild(el('p', {}, promptText));
   container.appendChild(textarea);
+  if (skill === 'speaking') addMicButton(textarea, container);
   container.appendChild(btn);
   container.appendChild(feedbackEl);
 }

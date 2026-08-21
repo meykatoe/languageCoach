@@ -88,4 +88,4 @@ table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
 th, td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); font-size: 0.92rem; }
 th { color: var(--muted); font-weight: 600; }
 
-.speak-btn { margin-bottom: 0.6rem; }
+.speak-btn, .mic-btn { margin-bottom: 0.6rem; margin-right: 0.5rem; }
