@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import Question
-from app.schemas import TranslateRequest, TranslateResponse
+from app.schemas import TranslateRequest, TranslateResponse, TranslateTextRequest
 from app.services.openai_service import translate_text
 
 router = APIRouter(prefix="/api/translate", tags=["translate"])
@@ -31,6 +31,23 @@ def _flatten_text(node: Any) -> list[str]:
         if node.strip():
             lines.append(node.strip())
     return lines
+
+
+@router.post("/text", response_model=TranslateResponse)
+def translate_selection(payload: TranslateTextRequest):
+    """Translate an arbitrary snippet of selected text, for the site-wide
+    text-selection popup (not tied to any stored question).
+    """
+    try:
+        translation = translate_text(payload.text.strip())
+    except RuntimeError as exc:
+        raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except APIError as exc:
+        raise HTTPException(
+            status_code=502, detail=f"OpenAI API 呼叫失敗,請確認 ⚙️ 設定頁的 API Key 是否正確: {exc}"
+        ) from exc
+
+    return TranslateResponse(translation=translation)
 
 
 @router.post("", response_model=TranslateResponse)

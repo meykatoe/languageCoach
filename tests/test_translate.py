@@ -1,6 +1,26 @@
 import app.routers.translate as translate_module
 
 
+def test_translate_text_returns_translation(client, monkeypatch):
+    monkeypatch.setattr(translate_module, "translate_text", lambda text: f"[譯] {text}")
+
+    res = client.post("/api/translate/text", json={"text": "The report is due tomorrow."})
+    assert res.status_code == 200
+    assert res.json() == {"translation": "[譯] The report is due tomorrow."}
+
+
+def test_translate_text_rejects_empty_text(client):
+    res = client.post("/api/translate/text", json={"text": ""})
+    assert res.status_code == 422
+
+
+def test_translate_text_without_api_key_returns_503(client, monkeypatch):
+    client.post("/api/settings", json={"clear_api_key": True})
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    res = client.post("/api/translate/text", json={"text": "hello"})
+    assert res.status_code == 503
+
+
 def test_translate_unknown_question_404(client):
     res = client.post("/api/translate", json={"source_id": "does-not-exist"})
     assert res.status_code == 404

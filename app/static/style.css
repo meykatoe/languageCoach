@@ -231,6 +231,21 @@ th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: 
 .settings-field input, .settings-field select { width: 100%; max-width: 420px; }
 .settings-actions { display: flex; gap: 0.6rem; margin-top: 0.5rem; flex-wrap: wrap; }
 
+.translated-text {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  padding: 0 2px;
+  cursor: help;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .translated-text {
+    background: rgba(255, 255, 255, 0.14);
+  }
+}
+
+.translated-pending { opacity: 0.55; }
+
 .site-footer {
   max-width: 860px;
   margin: 1.5rem auto 0;

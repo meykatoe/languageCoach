@@ -31,6 +31,7 @@
   <footer class="site-footer">
     <p>本平台為獨立開發之練習工具，與 ETS(TOEIC&reg;/TOEFL&reg;)、IDP、British Council、Cambridge Assessment English(IELTS&reg;)無任何關聯，亦未獲其授權或認可。TOEIC&reg;、TOEFL&reg; 為 ETS 之註冊商標；IELTS&reg; 為其權利人之註冊商標。所有題目內容均為原創編寫，僅供個人練習使用。</p>
   </footer>
+  <script src="/static/selection-translate.js"></script>
   <script>
     fetch('/api/exams').then(r => r.json()).then(rows => {
       const el = document.getElementById('exam-summary');

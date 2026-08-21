@@ -123,6 +123,10 @@ class TranslateRequest(BaseModel):
     source_id: str
 
 
+class TranslateTextRequest(BaseModel):
+    text: str = Field(min_length=1, max_length=1000)
+
+
 class TranslateResponse(BaseModel):
     translation: str
 
