@@ -3,7 +3,10 @@ import os
 
 from openai import OpenAI
 
-_client: OpenAI | None = None
+from app.database import SessionLocal
+from app.models import AppSetting
+
+DEFAULT_MODEL = "gpt-4o-mini"
 
 RUBRICS = {
     "IELTS": (
@@ -36,16 +39,33 @@ SYSTEM_PROMPT_TEMPLATE = (
 )
 
 
-def _get_client() -> OpenAI:
-    global _client
-    if _client is None:
-        api_key = os.environ.get("OPENAI_API_KEY")
-        if not api_key:
-            raise RuntimeError(
-                "OPENAI_API_KEY is not set. Copy .env.example to .env and add your key."
-            )
-        _client = OpenAI(api_key=api_key)
-    return _client
+def resolve_config() -> tuple[str | None, str]:
+    """Resolve the OpenAI API key and model to use, preferring the value
+    saved via the frontend Settings page (stored in AppSetting) and falling
+    back to the .env-provided environment variables.
+    """
+    db = SessionLocal()
+    try:
+        setting = db.query(AppSetting).first()
+    finally:
+        db.close()
+
+    api_key = (setting.openai_api_key if setting else None) or os.environ.get("OPENAI_API_KEY")
+    model = (
+        (setting.openai_model if setting else None)
+        or os.environ.get("OPENAI_MODEL")
+        or DEFAULT_MODEL
+    )
+    return api_key, model
+
+
+def _get_client() -> tuple[OpenAI, str]:
+    api_key, model = resolve_config()
+    if not api_key:
+        raise RuntimeError(
+            "OpenAI API Key 尚未設定。請點右上角的 ⚙️ 設定，或編輯後端 .env 檔案。"
+        )
+    return OpenAI(api_key=api_key), model
 
 
 def grade_response(exam: str, task_prompt: str, user_response: str, skill: str) -> dict:
@@ -55,9 +75,8 @@ def grade_response(exam: str, task_prompt: str, user_response: str, skill: str) 
     """
     rubric = RUBRICS.get(exam.upper(), RUBRICS["TOEFL"])
     system_prompt = SYSTEM_PROMPT_TEMPLATE.format(rubric=rubric)
-    model = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
-    client = _get_client()
+    client, model = _get_client()
     completion = client.chat.completions.create(
         model=model,
         response_format={"type": "json_object"},
@@ -98,12 +117,11 @@ def generate_questions(
     """Generate new practice items in the same JSON shape as `example_item`,
     using it purely as a structural few-shot template (not as content to copy).
     """
-    model = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
     system_prompt = GENERATION_SYSTEM_PROMPT.format(
         exam=exam, section=section, part=part or section, count=count
     )
 
-    client = _get_client()
+    client, model = _get_client()
     completion = client.chat.completions.create(
         model=model,
         response_format={"type": "json_object"},

@@ -46,3 +46,16 @@ class Attempt(Base):
     is_correct = Column(Boolean, nullable=True)  # objective only
     score = Column(String, nullable=True)  # AI-graded score/band, as text
     detail = Column(JSON, nullable=True)  # correctAnswer/submittedAnswer or full AI feedback
+
+
+class AppSetting(Base):
+    """Single-row table holding user-configurable app settings (currently
+    just the OpenAI credentials), so they can be set from the frontend
+    Settings page instead of editing the backend's .env file.
+    """
+
+    __tablename__ = "app_settings"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    openai_api_key = Column(String, nullable=True)
+    openai_model = Column(String, nullable=True)

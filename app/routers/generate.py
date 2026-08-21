@@ -2,6 +2,7 @@ import re
 import uuid
 
 from fastapi import APIRouter, Depends, HTTPException
+from openai import APIError
 from sqlalchemy.orm import Session
 
 from app.database import get_db
@@ -35,6 +36,10 @@ def generate(payload: GenerateRequest, db: Session = Depends(get_db)):
         )
     except RuntimeError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except APIError as exc:
+        raise HTTPException(
+            status_code=502, detail=f"OpenAI API 呼叫失敗,請確認 ⚙️ 設定頁的 API Key 是否正確: {exc}"
+        ) from exc
     except (ValueError, TypeError) as exc:
         raise HTTPException(status_code=502, detail=f"AI generation returned malformed data: {exc}") from exc
 

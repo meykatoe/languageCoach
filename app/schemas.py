@@ -102,3 +102,16 @@ class HistorySummary(BaseModel):
     total_attempts: int
     stats: list[ExamStat]
     recent: list[AttemptOut]
+
+
+class SettingsUpdateRequest(BaseModel):
+    openai_api_key: Optional[str] = None
+    openai_model: Optional[str] = None
+    clear_api_key: bool = False
+
+
+class SettingsOut(BaseModel):
+    has_api_key: bool
+    api_key_hint: Optional[str] = None
+    api_key_source: str  # "database" | "environment" | "none"
+    openai_model: str

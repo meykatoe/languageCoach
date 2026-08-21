@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>設定 - Language Coach</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="site">
+    <a href="/">Language Coach</a>
+    <nav>
+      <a href="/practice">練習</a>
+      <a href="/history">學習紀錄</a>
+      <a href="/">← 回首頁</a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h1>⚙️ 設定</h1>
+      <p id="status-line" class="question-meta">載入中...</p>
+    </div>
+
+    <div class="card">
+      <h2>OpenAI API 設定</h2>
+      <p>寫作/口說 AI 評分與 AI 動態出題功能都需要一組 OpenAI API Key。設定後會儲存在後端本機資料庫,不會離開這台伺服器。</p>
+
+      <div class="settings-field">
+        <label for="api-key-input">OpenAI API Key</label>
+        <input type="password" id="api-key-input" placeholder="sk-..." autocomplete="off" />
+      </div>
+
+      <div class="settings-field">
+        <label for="model-select">模型</label>
+        <select id="model-select">
+          <option value="gpt-4o-mini">gpt-4o-mini(預設,速度快、成本低)</option>
+          <option value="gpt-4o">gpt-4o</option>
+          <option value="gpt-4.1-mini">gpt-4.1-mini</option>
+          <option value="gpt-4.1">gpt-4.1</option>
+          <option value="__custom__">自訂...</option>
+        </select>
+        <input type="text" id="model-custom-input" placeholder="輸入自訂模型名稱" style="display:none; margin-top:0.4rem;" />
+      </div>
+
+      <div class="settings-actions">
+        <button id="save-btn">儲存設定</button>
+        <button id="clear-btn" class="secondary">清除已儲存的 API Key</button>
+      </div>
+      <p id="save-status" class="question-meta"></p>
+    </div>
+  </main>
+  <script src="/static/settings.js"></script>
+</body>
+</html>

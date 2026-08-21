@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException
+from openai import APIError
 from sqlalchemy.orm import Session
 
 from app.database import get_db
@@ -46,6 +47,10 @@ def grade_writing(payload: WritingGradingRequest, db: Session = Depends(get_db))
         result = grade_response(payload.exam, prompt_text, payload.essay, skill="writing")
     except RuntimeError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except APIError as exc:
+        raise HTTPException(
+            status_code=502, detail=f"OpenAI API 呼叫失敗,請確認 ⚙️ 設定頁的 API Key 是否正確: {exc}"
+        ) from exc
     _record_attempt(db, question, "writing", result)
     return GradingFeedback(**result)
 
@@ -60,5 +65,9 @@ def grade_speaking(payload: SpeakingGradingRequest, db: Session = Depends(get_db
         )
     except RuntimeError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
+    except APIError as exc:
+        raise HTTPException(
+            status_code=502, detail=f"OpenAI API 呼叫失敗,請確認 ⚙️ 設定頁的 API Key 是否正確: {exc}"
+        ) from exc
     _record_attempt(db, question, "speaking", result)
     return GradingFeedback(**result)

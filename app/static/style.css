@@ -46,7 +46,7 @@ main {
   margin-bottom: 1.25rem;
 }
 
-select, button, textarea, input[type=text] {
+select, button, textarea, input[type=text], input[type=password] {
   font: inherit;
   border-radius: 6px;
   border: 1px solid var(--border);
@@ -89,3 +89,9 @@ th, td { text-align: left; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(
 th { color: var(--muted); font-weight: 600; }
 
 .speak-btn, .mic-btn { margin-bottom: 0.6rem; margin-right: 0.5rem; }
+
+.settings-field { margin-bottom: 1.1rem; }
+.settings-field label { display: block; font-weight: 600; margin-bottom: 0.35rem; }
+.settings-field input, .settings-field select { width: 100%; max-width: 420px; }
+.settings-actions { display: flex; gap: 0.75rem; margin-top: 0.5rem; }
+.gear-link { font-size: 1.2rem; text-decoration: none; }
