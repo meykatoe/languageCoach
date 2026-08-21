@@ -68,6 +68,23 @@ def _get_client() -> tuple[OpenAI, str]:
     return OpenAI(api_key=api_key), model
 
 
+def test_connection(api_key: str | None = None) -> str:
+    """Verify an API key works with a minimal, cheap call. If `api_key` is
+    omitted, tests whichever key `resolve_config()` currently resolves to
+    (saved settings, falling back to .env). Returns the model id used for
+    the check on success; raises RuntimeError/openai.APIError on failure.
+    """
+    if api_key is None:
+        api_key, _ = resolve_config()
+    if not api_key:
+        raise RuntimeError("尚未提供任何 API Key 可供測試。")
+
+    client = OpenAI(api_key=api_key)
+    models = client.models.list()
+    first = next(iter(models), None)
+    return first.id if first else "(no models returned, but the key is valid)"
+
+
 def grade_response(exam: str, task_prompt: str, user_response: str, skill: str) -> dict:
     """Grade a writing or speaking response using the OpenAI API.
 

@@ -11,14 +11,17 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-cp .env.example .env
-# 編輯 .env，填入 OPENAI_API_KEY(寫作/口說 AI 評分功能需要；客觀題練習不需要)
-
 uvicorn app.main:app --reload
 ```
 
 啟動後開啟 http://127.0.0.1:8000 即可使用。伺服器啟動時會自動將
 `examQuestions/create/` 底下的題庫 JSON 匯入 SQLite (`data/app.db`)。
+
+客觀題練習(選擇題/填空等)不需要 API Key 就能用。若要使用寫作/口說 AI 評分
+或 AI 動態出題功能，點網頁右上角的 ⚙️ 進入 `/settings` 頁面直接貼上 OpenAI
+API Key 並按「🔌 測試連線」確認即可,不需要編輯後端檔案。(也可以改用
+`cp .env.example .env` 編輯 `OPENAI_API_KEY`／`OPENAI_MODEL` 的方式設定；
+`/settings` 頁面存的值優先生效。)
 
 ## 專案結構
 
@@ -35,7 +38,8 @@ app/
 │   ├── grading.py           POST /api/grading/writing, /speaking (AI 評分+寫入紀錄)
 │   ├── history.py            GET /api/history (學習進度統計)
 │   ├── generate.py            POST /api/generate (AI 動態出題)
-│   └── review.py               GET /api/review (錯題複習清單)
+│   ├── review.py               GET /api/review (錯題複習清單)
+│   └── settings.py              GET/POST /api/settings, /api/settings/test
 ├── services/openai_service.py   OpenAI API 呼叫與評分規準
 ├── templates/            首頁 / 練習頁面 / 學習紀錄頁面 (Jinja2)
 └── static/                app.js (題目渲染+語音播放/口說語音輸入) / history.js / style.css
@@ -62,6 +66,8 @@ tests/                  pytest 測試套件 (API 端點、題庫匯入完整性)
   題庫中一題作為「格式範本」(僅取其 JSON 結構,不取其內容)，呼叫 OpenAI API
   產生全新原創題目並加入當次練習列表，同時存入資料庫(`source_file` 標記為
   `ai-generated`)供之後練習抽題使用。
+- `/settings` 設定頁：可直接在網頁設定 OpenAI API Key 與模型(儲存在後端本機
+  SQLite,不會外流),並提供「測試連線」按鈕即時驗證金鑰是否有效。
 
 ## 手動重新匯入題庫
 

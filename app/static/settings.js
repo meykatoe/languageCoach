@@ -3,8 +3,10 @@ const apiKeyInput = document.getElementById('api-key-input');
 const modelSelect = document.getElementById('model-select');
 const modelCustomInput = document.getElementById('model-custom-input');
 const saveBtn = document.getElementById('save-btn');
+const testBtn = document.getElementById('test-btn');
 const clearBtn = document.getElementById('clear-btn');
 const saveStatus = document.getElementById('save-status');
+const testStatus = document.getElementById('test-status');
 
 const KNOWN_MODELS = ['gpt-4o-mini', 'gpt-4o', 'gpt-4.1-mini', 'gpt-4.1'];
 
@@ -56,6 +58,29 @@ saveBtn.addEventListener('click', async () => {
     applySettings(data);
   } finally {
     saveBtn.disabled = false;
+  }
+});
+
+testBtn.addEventListener('click', async () => {
+  testBtn.disabled = true;
+  const typedKey = apiKeyInput.value.trim();
+  testStatus.textContent = typedKey
+    ? '測試輸入框中的 Key...'
+    : '測試目前已儲存的 Key...';
+  try {
+    const res = await fetch('/api/settings/test', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ openai_api_key: typedKey || null }),
+    });
+    const data = await res.json();
+    testStatus.textContent = (data.ok ? '✅ ' : '❌ ') + data.message;
+    testStatus.className = data.ok ? 'result-correct' : 'result-wrong';
+  } catch (e) {
+    testStatus.textContent = '❌ 測試請求失敗,請確認伺服器是否正常運作。';
+    testStatus.className = 'result-wrong';
+  } finally {
+    testBtn.disabled = false;
   }
 });
 

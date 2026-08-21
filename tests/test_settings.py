@@ -1,6 +1,7 @@
 import os
 
 import app.routers.generate as generate_module
+import app.routers.settings as settings_module
 from app.services import openai_service
 
 
@@ -86,3 +87,43 @@ def test_grading_openai_apierror_returns_502(client, monkeypatch):
         json={"source_id": "ielts-w2-01", "exam": "IELTS", "essay": "test essay"},
     )
     assert res.status_code == 502
+
+
+def test_test_connection_success(client, monkeypatch):
+    monkeypatch.setattr(settings_module, "test_connection", lambda api_key=None: "gpt-4o-mini")
+
+    res = client.post("/api/settings/test", json={"openai_api_key": "sk-whatever"})
+    assert res.status_code == 200
+    data = res.json()
+    assert data["ok"] is True
+    assert "gpt-4o-mini" in data["message"]
+
+
+def test_test_connection_no_key_configured(client, monkeypatch):
+    def raise_no_key(api_key=None):
+        raise RuntimeError("尚未提供任何 API Key 可供測試。")
+
+    monkeypatch.setattr(settings_module, "test_connection", raise_no_key)
+
+    res = client.post("/api/settings/test", json={})
+    assert res.status_code == 200  # controlled failure, not an HTTP error
+    data = res.json()
+    assert data["ok"] is False
+    assert "尚未提供" in data["message"]
+
+
+def test_test_connection_invalid_key(client, monkeypatch):
+    import httpx
+    from openai import APIError
+
+    def raise_auth_error(api_key=None):
+        req = httpx.Request("GET", "https://api.openai.com/v1/models")
+        raise APIError("Incorrect API key provided", req, body=None)
+
+    monkeypatch.setattr(settings_module, "test_connection", raise_auth_error)
+
+    res = client.post("/api/settings/test", json={"openai_api_key": "sk-bad"})
+    assert res.status_code == 200
+    data = res.json()
+    assert data["ok"] is False
+    assert "連線失敗" in data["message"]

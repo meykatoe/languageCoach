@@ -1,12 +1,18 @@
 import os
 
 from fastapi import APIRouter, Depends
+from openai import APIError
 from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import AppSetting
-from app.schemas import SettingsOut, SettingsUpdateRequest
-from app.services.openai_service import DEFAULT_MODEL
+from app.schemas import (
+    SettingsOut,
+    SettingsUpdateRequest,
+    TestConnectionRequest,
+    TestConnectionResponse,
+)
+from app.services.openai_service import DEFAULT_MODEL, test_connection
 
 router = APIRouter(prefix="/api/settings", tags=["settings"])
 
@@ -60,3 +66,15 @@ def update_settings(payload: SettingsUpdateRequest, db: Session = Depends(get_db
 
     db.commit()
     return _build_settings_out(db)
+
+
+@router.post("/test", response_model=TestConnectionResponse)
+def test_settings_connection(payload: TestConnectionRequest):
+    key = payload.openai_api_key.strip() if payload.openai_api_key else None
+    try:
+        model_id = test_connection(api_key=key)
+        return TestConnectionResponse(ok=True, message=f"連線成功,可正常呼叫模型(範例: {model_id})。")
+    except RuntimeError as exc:
+        return TestConnectionResponse(ok=False, message=str(exc))
+    except APIError as exc:
+        return TestConnectionResponse(ok=False, message=f"連線失敗: {exc}")

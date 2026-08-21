@@ -115,3 +115,12 @@ class SettingsOut(BaseModel):
     api_key_hint: Optional[str] = None
     api_key_source: str  # "database" | "environment" | "none"
     openai_model: str
+
+
+class TestConnectionRequest(BaseModel):
+    openai_api_key: Optional[str] = None
+
+
+class TestConnectionResponse(BaseModel):
+    ok: bool
+    message: str
