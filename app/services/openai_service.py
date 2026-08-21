@@ -7,6 +7,8 @@ from app.database import SessionLocal
 from app.models import AppSetting
 
 DEFAULT_MODEL = "gpt-4o-mini"
+DEFAULT_TTS_MODEL = "gpt-4o-mini-tts"
+DEFAULT_TTS_VOICE = "alloy"
 
 RUBRICS = {
     "IELTS": (
@@ -110,6 +112,18 @@ def grade_response(exam: str, task_prompt: str, user_response: str, skill: str) 
     )
     raw = completion.choices[0].message.content
     return json.loads(raw)
+
+
+def synthesize_speech(text: str, voice: str = DEFAULT_TTS_VOICE) -> bytes:
+    """Generate spoken audio (MP3 bytes) for a listening transcript via the
+    OpenAI TTS API, for the "播放語音" button (replacing the browser's
+    built-in speechSynthesis with a real, natural-sounding voice).
+    """
+    client, _ = _get_client()
+    response = client.audio.speech.create(
+        model=DEFAULT_TTS_MODEL, voice=voice, input=text, response_format="mp3"
+    )
+    return response.content
 
 
 TRANSLATION_SYSTEM_PROMPT = (

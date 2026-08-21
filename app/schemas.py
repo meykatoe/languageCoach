@@ -129,6 +129,10 @@ class TranslateTextRequest(BaseModel):
     text: str = Field(min_length=1, max_length=1000)
 
 
+class TtsRequest(BaseModel):
+    text: str = Field(min_length=1, max_length=4000)
+
+
 class TranslateResponse(BaseModel):
     translation: str
 

@@ -18,6 +18,7 @@ from app.routers import (  # noqa: E402
     review,
     settings,
     translate,
+    tts,
     upload,
 )
 from app.seed import seed  # noqa: E402
@@ -41,6 +42,7 @@ app.include_router(generate.router)
 app.include_router(review.router)
 app.include_router(settings.router)
 app.include_router(translate.router)
+app.include_router(tts.router)
 app.include_router(upload.router)
 
 

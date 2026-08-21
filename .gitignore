@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 .env
 data/*.db
+data/tts_cache/
 .pytest_cache/
 
 # project ignore
