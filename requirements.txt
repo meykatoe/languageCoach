@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+openai
+python-dotenv
+jinja2
+python-multipart
+httpx

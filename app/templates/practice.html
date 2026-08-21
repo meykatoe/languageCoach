@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>練習 - Language Coach</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="site">
+    <a href="/">Language Coach</a>
+    <a href="/">← 回首頁</a>
+  </header>
+  <main>
+    <div class="card">
+      <h1>選擇練習範圍</h1>
+      <div class="filters">
+        <select id="f-exam"><option value="">考試</option></select>
+        <select id="f-section"><option value="">類別</option></select>
+        <select id="f-part"><option value="">部分</option></select>
+        <select id="f-limit">
+          <option value="3">3 題</option>
+          <option value="5" selected>5 題</option>
+          <option value="10">10 題</option>
+        </select>
+        <button id="start-btn">開始練習</button>
+      </div>
+    </div>
+
+    <div id="quiz-area"></div>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

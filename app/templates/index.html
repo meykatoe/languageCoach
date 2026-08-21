@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Language Coach</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="site">
+    <a href="/">Language Coach</a>
+    <a href="/practice">開始練習 →</a>
+  </header>
+  <main>
+    <div class="card">
+      <h1>AI 語言教練</h1>
+      <p>提供 TOEIC、IELTS、TOEFL 模擬題練習，客觀題自動批改，寫作與口說由 OpenAI API 提供評分與回饋。</p>
+      <button onclick="location.href='/practice'">開始練習</button>
+    </div>
+    <div class="card">
+      <h2>題庫總覽</h2>
+      <div id="exam-summary">載入中...</div>
+    </div>
+  </main>
+  <script>
+    fetch('/api/exams').then(r => r.json()).then(rows => {
+      const el = document.getElementById('exam-summary');
+      if (!rows.length) { el.textContent = '尚無題目資料。'; return; }
+      const byExam = {};
+      rows.forEach(r => {
+        byExam[r.exam] = byExam[r.exam] || { total: 0, sections: {} };
+        byExam[r.exam].total += r.count;
+        byExam[r.exam].sections[r.section] = (byExam[r.exam].sections[r.section] || 0) + r.count;
+      });
+      el.innerHTML = Object.entries(byExam).map(([exam, info]) => `
+        <p><strong>${exam}</strong> - 共 ${info.total} 題
+        ${Object.entries(info.sections).map(([s, c]) => `${s}: ${c}`).join('　')}</p>
+      `).join('');
+    });
+  </script>
+</body>
+</html>
