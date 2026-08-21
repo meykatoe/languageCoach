@@ -34,7 +34,8 @@ app/
 │   ├── practice.py         POST /api/practice/submit (客觀題批改+寫入紀錄)
 │   ├── grading.py           POST /api/grading/writing, /speaking (AI 評分+寫入紀錄)
 │   ├── history.py            GET /api/history (學習進度統計)
-│   └── generate.py            POST /api/generate (AI 動態出題)
+│   ├── generate.py            POST /api/generate (AI 動態出題)
+│   └── review.py               GET /api/review (錯題複習清單)
 ├── services/openai_service.py   OpenAI API 呼叫與評分規準
 ├── templates/            首頁 / 練習頁面 / 學習紀錄頁面 (Jinja2)
 └── static/                app.js (題目渲染+語音播放/口說語音輸入) / history.js / style.css
@@ -55,6 +56,8 @@ tests/                  pytest 測試套件 (API 端點、題庫匯入完整性)
   僅 Chrome/Edge 等支援 `SpeechRecognition` 的瀏覽器可用,不支援時按鈕不會出現,
   仍可手動輸入文字稿。
 - `/history` 頁面顯示累計作答數、各考試/類別正確率與最近作答紀錄。
+- `/review` 錯題複習頁面：根據作答紀錄找出「最近一次作答仍然答錯」的客觀題,
+  彙整成一份複習清單重新練習；一旦該題後來被答對,就會自動從複習清單移除。
 - 練習頁面提供「🤖 AI 產生新題目」按鈕：選定考試+類別(部分可選)後，以現有
   題庫中一題作為「格式範本」(僅取其 JSON 結構,不取其內容)，呼叫 OpenAI API
   產生全新原創題目並加入當次練習列表，同時存入資料庫(`source_file` 標記為
