@@ -1,13 +1,26 @@
 from typing import Any, Optional
 
 from fastapi import APIRouter, Depends
+from openai import APIError
 from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import Attempt, Question
 from app.schemas import GradedAnswer, PracticeSubmitRequest, PracticeSubmitResponse
+from app.services.openai_service import explain_mistake
 
 router = APIRouter(prefix="/api/practice", tags=["practice"])
+
+
+def _generate_mistake_note(exam: str, node: dict, expected: Any, submitted: Any) -> Optional[str]:
+    """Best-effort AI explanation of a wrong answer, for the error notebook.
+    Never raises: if the AI call fails (no API key, network error, ...), the
+    submission should still succeed without a note.
+    """
+    try:
+        return explain_mistake(exam, node, expected, submitted)
+    except (RuntimeError, APIError, ValueError):
+        return None
 
 
 def _find_node_by_id(node: Any, target_id: str) -> Optional[dict]:
@@ -59,11 +72,14 @@ def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db
 
         expected = node.get("answer") if node else None
         is_correct: Optional[bool] = None
+        note: Optional[str] = None
         if expected is not None:
             is_correct = _answers_match(expected, ans.answer)
             graded_count += 1
             if is_correct:
                 correct_count += 1
+            elif parent is not None:
+                note = _generate_mistake_note(parent.exam, node, expected, ans.answer)
 
             if parent is not None:
                 db.add(
@@ -74,7 +90,11 @@ def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db
                         source_id=ans.source_id,
                         item_type="objective",
                         is_correct=is_correct,
-                        detail={"correctAnswer": expected, "submittedAnswer": ans.answer},
+                        detail={
+                            "correctAnswer": expected,
+                            "submittedAnswer": ans.answer,
+                            "note": note,
+                        },
                     )
                 )
 
@@ -84,6 +104,7 @@ def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db
                 correct=is_correct,
                 correctAnswer=expected,
                 submittedAnswer=ans.answer,
+                note=note,
             )
         )
 

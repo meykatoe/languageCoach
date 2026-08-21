@@ -13,6 +13,7 @@ class QuestionOut(BaseModel):
     qtype: str
     source_file: str
     content: Any
+    reviewNotes: Optional[dict[str, str]] = None
 
     model_config = {"from_attributes": True}
 
@@ -39,6 +40,7 @@ class GradedAnswer(BaseModel):
     correct: Optional[bool]
     correctAnswer: Any
     submittedAnswer: Any
+    note: Optional[str] = None
 
 
 class PracticeSubmitResponse(BaseModel):

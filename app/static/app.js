@@ -207,7 +207,9 @@ async function submitObjective(container, radioIdMap) {
     const marker = container.querySelector(`[data-result-for="${r.source_id}"]`);
     if (marker) {
       if (r.correct === null) return;
-      marker.textContent = r.correct ? '✓ 正確' : `✗ 錯誤 (正確答案: ${JSON.stringify(r.correctAnswer)})`;
+      let html = r.correct ? '✓ 正確' : `✗ 錯誤 (正確答案: ${JSON.stringify(r.correctAnswer)})`;
+      if (!r.correct && r.note) html += `<div class="review-note">AI 解析: ${r.note}</div>`;
+      marker.innerHTML = html;
       marker.className = r.correct ? 'result-correct' : 'result-wrong';
     }
   });
@@ -215,9 +217,12 @@ async function submitObjective(container, radioIdMap) {
   container.appendChild(summary);
 }
 
-function attachResultMarkers(container, ids) {
+function attachResultMarkers(container, ids, notes = {}) {
   ids.forEach(id => {
     container.appendChild(el('div', { 'data-result-for': id }));
+    if (notes[id]) {
+      container.appendChild(el('div', { class: 'review-note' }, `AI 解析: ${notes[id]}`));
+    }
   });
 }
 
@@ -435,7 +440,7 @@ function renderItem(q, wrapper) {
     card.appendChild(el('pre', {}, JSON.stringify(item, null, 2)));
   }
 
-  if (objectiveIds.length) attachResultMarkers(card, objectiveIds);
+  if (objectiveIds.length) attachResultMarkers(card, objectiveIds, q.reviewNotes || {});
 
   wrapper.appendChild(card);
   return { radioIdMap, objectiveIds };

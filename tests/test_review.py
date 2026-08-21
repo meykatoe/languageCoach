@@ -19,6 +19,28 @@ def test_review_includes_item_after_wrong_answer(client):
     assert source_id in ids
 
 
+def test_review_note_generated_and_attached(client, monkeypatch):
+    import app.routers.practice as practice_module
+
+    monkeypatch.setattr(
+        practice_module,
+        "explain_mistake",
+        lambda exam, node, expected, submitted: "你選錯了,因為主詞是複數,動詞要用原形。",
+    )
+
+    source_id = "toeic-r5-006"  # correct answer is "A" (before)
+    client.post(
+        "/api/practice/submit",
+        json={"answers": [{"source_id": source_id, "answer": "B"}]},
+    )
+
+    res = client.get("/api/review", params={"limit": 100})
+    assert res.status_code == 200
+    matches = [q for q in res.json() if source_id in (q.get("reviewNotes") or {})]
+    assert matches, "expected the wrongly-answered question to carry a reviewNotes entry"
+    assert matches[0]["reviewNotes"][source_id] == "你選錯了,因為主詞是複數,動詞要用原形。"
+
+
 def test_review_excludes_item_after_it_is_answered_correctly(client):
     source_id = "toeic-r5-005"  # correct answer is "A" (unless)
     client.post(

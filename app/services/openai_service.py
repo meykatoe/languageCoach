@@ -112,6 +112,43 @@ def grade_response(exam: str, task_prompt: str, user_response: str, skill: str) 
     return json.loads(raw)
 
 
+MISTAKE_EXPLANATION_SYSTEM_PROMPT = (
+    "You are a friendly, encouraging {exam} tutor. A student answered a "
+    "practice question incorrectly. In Traditional Chinese (繁體中文), write a "
+    "brief, easy-to-understand explanation (2-4 short sentences) of why their "
+    "answer is wrong and where their misunderstanding lies, based on the "
+    "question, the correct answer, and what they submitted. Focus on the "
+    "reasoning, not just restating the correct answer. Respond with plain "
+    "text only, no JSON, no markdown."
+)
+
+
+def explain_mistake(
+    exam: str, question_node: dict, correct_answer: object, submitted_answer: object
+) -> str:
+    """Generate a brief explanation of why a submitted answer was wrong, to
+    be stored as a note in the user's error notebook (review page).
+    """
+    system_prompt = MISTAKE_EXPLANATION_SYSTEM_PROMPT.format(exam=exam)
+
+    client, model = _get_client()
+    completion = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {
+                "role": "user",
+                "content": (
+                    f"Question:\n{json.dumps(question_node, ensure_ascii=False)}\n\n"
+                    f"Correct answer: {correct_answer}\n"
+                    f"Student's answer: {submitted_answer}"
+                ),
+            },
+        ],
+    )
+    return completion.choices[0].message.content.strip()
+
+
 GENERATION_SYSTEM_PROMPT = (
     "You are an expert item writer who creates official-style {exam} {section} "
     "practice questions for the part: {part}.\n\n"
