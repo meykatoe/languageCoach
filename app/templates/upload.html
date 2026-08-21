@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>學習紀錄 - Language Coach</title>
+  <title>上傳出題 - Language Coach</title>
   <link rel="stylesheet" href="/static/style.css" />
 </head>
 <body>
@@ -13,37 +13,42 @@
       <a href="/practice">練習</a>
       <a href="/review">錯題複習</a>
       <a href="/history">學習紀錄</a>
-      <a href="/upload">上傳出題</a>
       <a href="/settings" class="gear-link" title="設定" aria-label="設定"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 13a7.4 7.4 0 0 0 .06-1l1.86-1.46a.9.9 0 0 0 .2-1.15l-1.76-3.05a.9.9 0 0 0-1.09-.39l-2.2.88a7.3 7.3 0 0 0-1.73-1l-.33-2.34a.9.9 0 0 0-.89-.77h-3.52a.9.9 0 0 0-.89.77l-.33 2.34c-.63.25-1.21.58-1.73 1l-2.2-.88a.9.9 0 0 0-1.09.39L1.94 9.4a.9.9 0 0 0 .2 1.15L4 12a7.4 7.4 0 0 0 0 2l-1.86 1.46a.9.9 0 0 0-.2 1.15l1.76 3.05c.24.4.72.57 1.15.39l2.2-.88c.52.42 1.1.75 1.73 1l.33 2.34c.07.44.46.77.89.77h3.52c.43 0 .82-.33.89-.77l.33-2.34c.63-.25 1.21-.58 1.73-1l2.2.88c.43.18.91.01 1.15-.39l1.76-3.05a.9.9 0 0 0-.2-1.15L19.4 13Z"/></svg></a>
     </nav>
   </header>
   <main>
     <div class="card">
-      <h1>學習紀錄與進度</h1>
-      <p id="total-attempts">載入中...</p>
+      <h1>上傳題目，AI 幫你出相似題</h1>
+      <p>上傳 PDF、Word(.docx)或 TXT 檔案，AI 會分析內容的題型與難度，產生指定數量的全新原創相似題目。檔案內容只用於這次分析，不會被儲存在伺服器上。</p>
+
+      <div class="settings-field">
+        <label for="upload-file">選擇檔案(PDF / Word .docx / TXT，10MB 以內)</label>
+        <input type="file" id="upload-file" accept=".pdf,.docx,.txt" />
+      </div>
+
+      <div class="settings-field">
+        <label for="upload-exam">分類名稱(選填，用於整理與篩選)</label>
+        <input type="text" id="upload-exam" placeholder="例如: 我的單字考卷" />
+      </div>
+
+      <div class="settings-field">
+        <label for="upload-count">要產生的題目數量(1-10)</label>
+        <input type="number" id="upload-count" min="1" max="10" value="3" />
+      </div>
+
+      <div class="settings-actions">
+        <button id="upload-btn"><span id="upload-btn-icon"></span>上傳並產生題目</button>
+      </div>
+      <p id="upload-status" class="question-meta"></p>
     </div>
-    <div class="card">
-      <h2>各考試/類別表現</h2>
-      <table id="stats-table">
-        <thead>
-          <tr><th>考試</th><th>類別</th><th>題型</th><th>作答數</th><th>答對數</th><th>正確率</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-    <div class="card">
-      <h2>最近作答紀錄</h2>
-      <table id="recent-table">
-        <thead>
-          <tr><th>時間</th><th>考試</th><th>類別</th><th>題型</th><th>結果</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+
+    <div id="quiz-area"></div>
   </main>
   <footer class="site-footer">
     <p>本平台為獨立開發之練習工具，與 ETS(TOEIC&reg;/TOEFL&reg;)、IDP、British Council、Cambridge Assessment English(IELTS&reg;)無任何關聯，亦未獲其授權或認可。TOEIC&reg;、TOEFL&reg; 為 ETS 之註冊商標；IELTS&reg; 為其權利人之註冊商標。所有題目內容均為原創編寫，僅供個人練習使用。</p>
   </footer>
-  <script src="/static/history.js"></script>
+  <script src="/static/icons.js"></script>
+  <script src="/static/app.js"></script>
+  <script src="/static/upload.js"></script>
 </body>
 </html>

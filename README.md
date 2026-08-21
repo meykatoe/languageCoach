@@ -39,14 +39,18 @@ app/
 │   ├── history.py            GET /api/history (學習進度統計)
 │   ├── generate.py            POST /api/generate (AI 動態出題)
 │   ├── review.py               GET /api/review (錯題複習清單)
-│   └── settings.py              GET/POST /api/settings, /api/settings/test
-├── services/openai_service.py   OpenAI API 呼叫與評分規準
+│   ├── settings.py              GET/POST /api/settings, /api/settings/test
+│   └── upload.py                 POST /api/upload (上傳檔案 + AI 出相似題)
+├── services/
+│   ├── openai_service.py         OpenAI API 呼叫、評分規準、出題 prompt
+│   └── file_extract.py            PDF/DOCX/TXT 文字擷取
 ├── templates/            首頁 / 練習頁面 / 學習紀錄頁面 (Jinja2)
 └── static/                app.js (題目渲染+語音播放/口說語音輸入) / history.js / style.css
 
 examQuestions/
 ├── create/               模擬題庫(依 TOEIC/IELTS/TOEFL 分資料夾,詳見其 README)
-└── upload/                (預留給使用者上傳作答/題目用)
+└── upload/                (預留目錄,目前未使用——使用者上傳的檔案只在記憶體中
+                            解析，不會寫入磁碟，詳見下方「上傳出題」說明)
 
 tests/                  pytest 測試套件 (API 端點、題庫匯入完整性)
 ```
@@ -68,6 +72,12 @@ tests/                  pytest 測試套件 (API 端點、題庫匯入完整性)
   `ai-generated`)供之後練習抽題使用。
 - `/settings` 設定頁：可直接在網頁設定 OpenAI API Key 與模型(儲存在後端本機
   SQLite,不會外流),並提供「測試連線」按鈕即時驗證金鑰是否有效。
+- `/upload` 上傳出題頁：上傳自己的 PDF、Word(.docx)或 TXT 檔案(10MB 以內),
+  AI 會分析檔案內容判斷合適的題型(選擇題/文章閱讀/填空/寫作或口說提示),
+  並依指定數量(1-10 題)產生全新原創的相似題目。檔案內容僅在該次請求中於
+  記憶體解析、傳給 OpenAI API,伺服器不會保存原始檔案；產生的題目會存入
+  資料庫(`source_file` 標記為 `user-upload`),之後在練習頁選擇對應「分類
+  名稱」即可繼續練習。舊版 .doc(非 .docx)Word 格式不支援。
 
 ## 手動重新匯入題庫
 

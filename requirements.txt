@@ -7,3 +7,5 @@ jinja2
 python-multipart
 httpx
 pytest
+pypdf
+python-docx

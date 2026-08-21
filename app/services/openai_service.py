@@ -156,3 +156,57 @@ def generate_questions(
     if not isinstance(items, list):
         raise ValueError("OpenAI response did not contain an 'items' list")
     return items
+
+
+UPLOAD_GENERATION_SYSTEM_PROMPT = (
+    "You are an expert item writer. A user has uploaded reference material "
+    "(it could be a past exam, a textbook excerpt, an article, or any study "
+    "material). Based on its topic, question type (if any), and difficulty, "
+    "generate {count} new, original practice items of a similar style and "
+    "difficulty. Do NOT copy sentences or questions from the reference "
+    "material verbatim — write entirely new content only inspired by its "
+    "topic, tone, and format.\n\n"
+    "Choose exactly ONE of the following JSON shapes — whichever best fits "
+    "what the reference material looks like — and produce all {count} items "
+    "in that same shape:\n\n"
+    "Shape A - single multiple-choice question:\n"
+    '{{"id": "...", "question": "...", "options": ["A. ...", "B. ...", "C. ...", "D. ..."], "answer": "B"}}\n\n'
+    "Shape B - short passage with multiple-choice sub-questions:\n"
+    '{{"id": "...", "title": "...", "passage": "...", "questions": '
+    '[{{"id": "...", "question": "...", "options": ["A. ...", "B. ...", "C. ...", "D. ..."], "answer": "..."}}]}}\n\n'
+    "Shape C - fill-in-the-blank text completion (mark blanks in the text "
+    'like ___(1)___, ___(2)___):\n'
+    '{{"id": "...", "text": "... ___(1)___ ...", "blanks": '
+    '[{{"id": "...", "options": ["A. ...", "B. ...", "C. ...", "D. ..."], "answer": "..."}}]}}\n\n'
+    "Shape D - open-ended writing or speaking prompt (use this if the "
+    "material is an essay, article, or discussion topic rather than a "
+    "quiz):\n"
+    '{{"id": "...", "prompt": "..."}}\n\n'
+    "Respond with a strict JSON object: {{\"items\": [...]}} containing "
+    "exactly {count} items, each with a unique \"id\" formatted as "
+    "\"upload-<short-kebab-slug>\". Preserve any \"answer\" fields with a "
+    "correct, verified answer consistent with the item's own options."
+)
+
+
+def generate_from_reference(reference_text: str, count: int = 3) -> list[dict]:
+    """Generate new practice items inspired by arbitrary uploaded reference
+    text (not tied to any existing question bank shape).
+    """
+    system_prompt = UPLOAD_GENERATION_SYSTEM_PROMPT.format(count=count)
+
+    client, model = _get_client()
+    completion = client.chat.completions.create(
+        model=model,
+        response_format={"type": "json_object"},
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": f"Reference material:\n{reference_text}"},
+        ],
+    )
+    raw = completion.choices[0].message.content
+    parsed = json.loads(raw)
+    items = parsed.get("items", [])
+    if not isinstance(items, list):
+        raise ValueError("OpenAI response did not contain an 'items' list")
+    return items
