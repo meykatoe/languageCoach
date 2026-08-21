@@ -61,6 +61,31 @@ def test_review_mode_regenerates_comment_using_previous_note(client, monkeypatch
     _set_review_mode(client, False)
 
 
+def test_review_mode_correct_reattempt_removed_from_notebook(client, monkeypatch):
+    monkeypatch.setattr(
+        practice_module, "explain_mistake", lambda exam, node, expected, submitted: "第一次的錯誤說明。"
+    )
+    monkeypatch.setattr(
+        practice_module,
+        "review_progress_comment",
+        lambda exam, node, expected, submitted, is_correct, previous_note: "答對了,恭喜修正先前的錯誤。",
+    )
+    source_id = "toeic-r5-014"  # correct answer is "B" (dissatisfied)
+    _set_review_mode(client, False)
+    client.post("/api/practice/submit", json={"answers": [{"source_id": source_id, "answer": "A"}]})
+
+    res = client.get("/api/review", params={"limit": 100})
+    assert source_id in {q["source_id"] for q in res.json()}
+
+    _set_review_mode(client, True)
+    client.post("/api/practice/submit", json={"answers": [{"source_id": source_id, "answer": "B"}]})
+
+    res2 = client.get("/api/review", params={"limit": 100})
+    assert source_id not in {q["source_id"] for q in res2.json()}
+
+    _set_review_mode(client, False)
+
+
 def test_non_review_mode_does_not_call_review_progress_comment(client, monkeypatch):
     calls = []
     monkeypatch.setattr(
