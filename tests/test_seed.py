@@ -32,7 +32,9 @@ def test_seeded_question_count_matches_bank_files():
 
     db = SessionLocal()
     try:
-        actual = db.query(Question).count()
+        # Exclude rows created by /api/generate in other tests (this test only
+        # checks that the static JSON bank was fully imported).
+        actual = db.query(Question).filter(Question.source_file != "ai-generated").count()
     finally:
         db.close()
 

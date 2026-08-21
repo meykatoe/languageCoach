@@ -8,9 +8,12 @@ const sectionSel = document.getElementById('f-section');
 const partSel = document.getElementById('f-part');
 const limitSel = document.getElementById('f-limit');
 const startBtn = document.getElementById('start-btn');
+const generateBtn = document.getElementById('generate-btn');
+const generateStatus = document.getElementById('generate-status');
 const quizArea = document.getElementById('quiz-area');
 
 let examData = [];
+let currentQuestions = [];
 
 function uniq(arr) { return [...new Set(arr)]; }
 
@@ -52,6 +55,38 @@ startBtn.addEventListener('click', async () => {
   if (partSel.value) params.set('part', partSel.value);
   const questions = await fetch('/api/questions?' + params.toString()).then(r => r.json());
   renderQuiz(questions);
+});
+
+generateBtn.addEventListener('click', async () => {
+  if (!examSel.value || !sectionSel.value) {
+    generateStatus.textContent = '請先選擇「考試」與「類別」再產生新題目。';
+    return;
+  }
+  generateBtn.disabled = true;
+  generateStatus.textContent = 'AI 出題中,請稍候...';
+  try {
+    const res = await fetch('/api/generate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        exam: examSel.value,
+        section: sectionSel.value,
+        part: partSel.value || null,
+        count: 3,
+      }),
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      generateStatus.textContent = `出題失敗: ${err.detail || res.status}`;
+      return;
+    }
+    const newQuestions = await res.json();
+    generateStatus.textContent = `已產生 ${newQuestions.length} 題新題目,已加入下方練習列表。`;
+    currentQuestions = currentQuestions.concat(newQuestions);
+    renderQuiz(currentQuestions);
+  } finally {
+    generateBtn.disabled = false;
+  }
 });
 
 function el(tag, attrs = {}, children = []) {
@@ -269,7 +304,8 @@ function renderAiGradeWidget(item, exam, skill, promptText, container) {
 function renderItem(q, wrapper) {
   const item = q.content;
   const card = el('div', { class: 'card' });
-  card.appendChild(el('div', { class: 'question-meta' }, `${q.exam} / ${q.section}${q.part ? ' / ' + q.part : ''}`));
+  const aiTag = q.source_file === 'ai-generated' ? ' · 🤖 AI 產生' : '';
+  card.appendChild(el('div', { class: 'question-meta' }, `${q.exam} / ${q.section}${q.part ? ' / ' + q.part : ''}${aiTag}`));
 
   const radioIdMap = [];
   const objectiveIds = [];
@@ -392,6 +428,7 @@ function renderItem(q, wrapper) {
 }
 
 function renderQuiz(questions) {
+  currentQuestions = questions;
   quizArea.innerHTML = '';
   if (!questions.length) {
     quizArea.appendChild(el('div', { class: 'card' }, '沒有符合條件的題目,請調整篩選條件。'));

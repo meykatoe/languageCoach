@@ -1,7 +1,7 @@
 import datetime
 from typing import Any, Optional
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 
 class QuestionOut(BaseModel):
@@ -11,6 +11,7 @@ class QuestionOut(BaseModel):
     section: str
     part: Optional[str]
     qtype: str
+    source_file: str
     content: Any
 
     model_config = {"from_attributes": True}
@@ -65,6 +66,13 @@ class GradingFeedback(BaseModel):
     weaknesses: list[str]
     suggestions: list[str]
     revisedExample: Optional[str] = None
+
+
+class GenerateRequest(BaseModel):
+    exam: str
+    section: str
+    part: Optional[str] = None
+    count: int = Field(default=3, ge=1, le=5)
 
 
 class AttemptOut(BaseModel):
