@@ -10,6 +10,9 @@ const testStatus = document.getElementById('test-status');
 
 const KNOWN_MODELS = ['gpt-4o-mini', 'gpt-4o', 'gpt-4.1-mini', 'gpt-4.1'];
 
+const testBtnIcon = document.getElementById('test-btn-icon');
+if (testBtnIcon && typeof iconHtml === 'function') testBtnIcon.innerHTML = iconHtml('bolt');
+
 function applySettings(data) {
   if (data.has_api_key) {
     const sourceLabel = data.api_key_source === 'database' ? '此設定頁' : '後端 .env 環境變數';
@@ -74,10 +77,10 @@ testBtn.addEventListener('click', async () => {
       body: JSON.stringify({ openai_api_key: typedKey || null }),
     });
     const data = await res.json();
-    testStatus.textContent = (data.ok ? '✅ ' : '❌ ') + data.message;
+    testStatus.textContent = data.message;
     testStatus.className = data.ok ? 'result-correct' : 'result-wrong';
   } catch (e) {
-    testStatus.textContent = '❌ 測試請求失敗,請確認伺服器是否正常運作。';
+    testStatus.textContent = '測試請求失敗,請確認伺服器是否正常運作。';
     testStatus.className = 'result-wrong';
   } finally {
     testBtn.disabled = false;

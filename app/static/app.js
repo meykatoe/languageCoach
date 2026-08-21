@@ -15,6 +15,9 @@ const quizArea = document.getElementById('quiz-area');
 let examData = [];
 let currentQuestions = [];
 
+const generateBtnIcon = document.getElementById('generate-btn-icon');
+if (generateBtnIcon && typeof iconHtml === 'function') generateBtnIcon.innerHTML = iconHtml('sparkle');
+
 function uniq(arr) { return [...new Set(arr)]; }
 
 function fillSelect(sel, values, placeholder) {
@@ -119,9 +122,11 @@ function renderOptionsBlock(idPrefix, options, container) {
   container.appendChild(wrap);
 }
 
+const SPEAK_LABEL = '播放語音';
+
 function addSpeakButton(text, container) {
   if (!('speechSynthesis' in window)) return;
-  const btn = el('button', { class: 'secondary speak-btn' }, '🔊 播放語音');
+  const btn = el('button', { class: 'secondary speak-btn', html: iconHtml('speaker') + SPEAK_LABEL });
   btn.addEventListener('click', () => {
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
@@ -131,7 +136,7 @@ function addSpeakButton(text, container) {
     btn.textContent = '播放中...';
     utterance.onend = utterance.onerror = () => {
       btn.disabled = false;
-      btn.textContent = '🔊 播放語音';
+      btn.innerHTML = iconHtml('speaker') + SPEAK_LABEL;
     };
     window.speechSynthesis.speak(utterance);
   });
@@ -220,7 +225,9 @@ function addMicButton(textarea, container) {
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   if (!SpeechRecognition) return;
 
-  const micBtn = el('button', { class: 'secondary mic-btn' }, '🎙️ 開始錄音口說');
+  const MIC_LABEL_IDLE = '開始錄音口說';
+  const MIC_LABEL_ACTIVE = '停止錄音';
+  const micBtn = el('button', { class: 'secondary mic-btn', html: iconHtml('mic') + MIC_LABEL_IDLE });
   let recognition = null;
   let listening = false;
 
@@ -248,16 +255,16 @@ function addMicButton(textarea, container) {
     };
     recognition.onerror = () => {
       listening = false;
-      micBtn.textContent = '🎙️ 開始錄音口說';
+      micBtn.innerHTML = iconHtml('mic') + MIC_LABEL_IDLE;
     };
     recognition.onend = () => {
       listening = false;
-      micBtn.textContent = '🎙️ 開始錄音口說';
+      micBtn.innerHTML = iconHtml('mic') + MIC_LABEL_IDLE;
     };
 
     recognition.start();
     listening = true;
-    micBtn.textContent = '⏹ 停止錄音';
+    micBtn.innerHTML = iconHtml('stop') + MIC_LABEL_ACTIVE;
   });
 
   container.appendChild(micBtn);
@@ -308,8 +315,11 @@ function renderAiGradeWidget(item, exam, skill, promptText, container) {
 function renderItem(q, wrapper) {
   const item = q.content;
   const card = el('div', { class: 'card' });
-  const aiTag = q.source_file === 'ai-generated' ? ' · 🤖 AI 產生' : '';
-  card.appendChild(el('div', { class: 'question-meta' }, `${q.exam} / ${q.section}${q.part ? ' / ' + q.part : ''}${aiTag}`));
+  const aiTag = q.source_file === 'ai-generated' ? ' <span class="ai-tag">· AI 產生</span>' : '';
+  card.appendChild(el('div', {
+    class: 'question-meta',
+    html: `${q.exam} / ${q.section}${q.part ? ' / ' + q.part : ''}${aiTag}`,
+  }));
 
   const radioIdMap = [];
   const objectiveIds = [];
