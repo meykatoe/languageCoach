@@ -188,22 +188,24 @@ function addSpeakButton(text, container) {
   container.appendChild(btn);
 }
 
-function renderSingleMC(item, container) {
+function renderSingleMC(item, container, notes) {
   const questionText = item.sentence || item.prompt || item.question || item.photoDescription || '(聽力題,請根據音檔/情境作答)';
   container.appendChild(el('p', {}, questionText));
   renderOptionsBlock(item.id, item.options, container);
+  appendResultMarker(container, item.id, notes);
 }
 
-function renderSubQuestions(subQuestions, container) {
+function renderSubQuestions(subQuestions, container, notes) {
   subQuestions.forEach(sq => {
     const block = el('div', { class: 'question-block' });
     block.appendChild(el('p', {}, sq.question || sq.text));
     if (sq.options) renderOptionsBlock(sq.id, sq.options, block);
+    appendResultMarker(block, sq.id, notes);
     container.appendChild(block);
   });
 }
 
-function renderBlanks(blanks, container) {
+function renderBlanks(blanks, container, notes) {
   blanks.forEach((b, i) => {
     const row = el('div', { class: 'question-block' });
     row.appendChild(el('p', {}, `空格 ${i + 1}${b.text ? ': ' + b.text : ''}`));
@@ -212,6 +214,7 @@ function renderBlanks(blanks, container) {
     } else {
       row.appendChild(el('input', { type: 'text', 'data-blank-id': b.id, placeholder: '輸入答案' }));
     }
+    appendResultMarker(row, b.id, notes);
     container.appendChild(row);
   });
 }
@@ -262,13 +265,15 @@ async function submitObjective(container, radioIdMap) {
   container.appendChild(summary);
 }
 
-function attachResultMarkers(container, ids, notes = {}) {
-  ids.forEach(id => {
-    container.appendChild(el('div', { 'data-result-for': id }));
-    if (notes[id]) {
-      container.appendChild(el('div', { class: 'review-note' }, `AI 解析: ${notes[id]}`));
-    }
-  });
+// Appends a sub-question's result marker (and, if present, its AI review
+// note) directly into that sub-question's own container, so the answer
+// feedback shows up right below the question it belongs to instead of
+// clustered together at the bottom of the whole card.
+function appendResultMarker(container, id, notes = {}) {
+  container.appendChild(el('div', { 'data-result-for': id }));
+  if (notes[id]) {
+    container.appendChild(el('div', { class: 'review-note' }, `AI 解析: ${notes[id]}`));
+  }
 }
 
 function addMicButton(textarea, container) {
@@ -417,37 +422,39 @@ function renderItem(q, wrapper) {
   const radioIdMap = [];
   const objectiveIds = [];
 
+  const notes = q.reviewNotes || {};
+
   if (item.options && item.answer !== undefined) {
-    renderSingleMC(item, card);
+    renderSingleMC(item, card, notes);
     radioIdMap.push({ name: `q-${item.id}`, sourceId: item.id });
     objectiveIds.push(item.id);
   } else if (item.transcript && Array.isArray(item.questions)) {
     addSpeakButton(item.transcript, card);
     card.appendChild(el('div', { class: 'transcript' }, item.transcript));
-    renderSubQuestions(item.questions, card);
+    renderSubQuestions(item.questions, card, notes);
     item.questions.forEach(sq => { radioIdMap.push({ name: `q-${sq.id}`, sourceId: sq.id }); objectiveIds.push(sq.id); });
   } else if (item.passage && Array.isArray(item.questions) && typeof item.passage === 'string') {
     card.appendChild(el('div', { class: 'passage-text' }, (item.title ? item.title + '\n\n' : '') + item.passage));
-    renderSubQuestions(item.questions, card);
+    renderSubQuestions(item.questions, card, notes);
     item.questions.forEach(sq => { radioIdMap.push({ name: `q-${sq.id}`, sourceId: sq.id }); objectiveIds.push(sq.id); });
   } else if (Array.isArray(item.passage) && Array.isArray(item.questions)) {
     // TOEFL reading: passage is an array of paragraph strings
     card.appendChild(el('div', { class: 'passage-text' }, (item.title ? item.title + '\n\n' : '') + item.passage.join('\n\n')));
-    renderSubQuestions(item.questions, card);
+    renderSubQuestions(item.questions, card, notes);
     item.questions.forEach(sq => { radioIdMap.push({ name: `q-${sq.id}`, sourceId: sq.id }); objectiveIds.push(sq.id); });
   } else if (Array.isArray(item.passages) && Array.isArray(item.questions)) {
     item.passages.forEach(p => {
       card.appendChild(el('div', { class: 'passage-text' }, `[${p.label}]\n${p.text}`));
     });
-    renderSubQuestions(item.questions, card);
+    renderSubQuestions(item.questions, card, notes);
     item.questions.forEach(sq => { radioIdMap.push({ name: `q-${sq.id}`, sourceId: sq.id }); objectiveIds.push(sq.id); });
   } else if (item.text && Array.isArray(item.blanks)) {
     card.appendChild(el('div', { class: 'passage-text' }, item.text));
-    renderBlanks(item.blanks, card);
+    renderBlanks(item.blanks, card, notes);
     item.blanks.forEach(b => { if (b.options) { radioIdMap.push({ name: `q-${b.id}`, sourceId: b.id }); } objectiveIds.push(b.id); });
   } else if (item.summary && Array.isArray(item.blanks)) {
     card.appendChild(el('div', { class: 'passage-text' }, (item.passage || '') + '\n\n---\n' + item.summary));
-    renderBlanks(item.blanks, card);
+    renderBlanks(item.blanks, card, notes);
     item.blanks.forEach(b => objectiveIds.push(b.id));
   } else if (Array.isArray(item.statements)) {
     card.appendChild(el('div', { class: 'passage-text' }, item.passage || ''));
@@ -457,6 +464,7 @@ function renderItem(q, wrapper) {
       ['TRUE', 'FALSE', 'NOT GIVEN'].forEach(opt => {
         row.appendChild(el('label', {}, [el('input', { type: 'radio', name: `q-${s.id}`, value: opt }), ' ' + opt]));
       });
+      appendResultMarker(row, s.id, notes);
       card.appendChild(row);
       radioIdMap.push({ name: `q-${s.id}`, sourceId: s.id });
       objectiveIds.push(s.id);
@@ -473,6 +481,7 @@ function renderItem(q, wrapper) {
         sel.appendChild(el('option', { value }, h));
       });
       row.appendChild(sel);
+      appendResultMarker(row, p.id, notes);
       card.appendChild(row);
       objectiveIds.push(p.id);
     });
@@ -484,6 +493,7 @@ function renderItem(q, wrapper) {
       const row = el('div', { class: 'question-block' });
       row.appendChild(el('p', {}, f.label));
       row.appendChild(el('input', { type: 'text', 'data-blank-id': f.id, placeholder: '輸入答案' }));
+      appendResultMarker(row, f.id, notes);
       card.appendChild(row);
       objectiveIds.push(f.id);
     });
@@ -494,6 +504,7 @@ function renderItem(q, wrapper) {
       const row = el('div', { class: 'question-block' });
       row.appendChild(el('p', {}, s.text));
       row.appendChild(el('input', { type: 'text', 'data-blank-id': s.id, placeholder: '輸入答案' }));
+      appendResultMarker(row, s.id, notes);
       card.appendChild(row);
       objectiveIds.push(s.id);
     });
@@ -527,8 +538,6 @@ function renderItem(q, wrapper) {
   } else {
     card.appendChild(el('pre', {}, JSON.stringify(item, null, 2)));
   }
-
-  if (objectiveIds.length) attachResultMarkers(card, objectiveIds, q.reviewNotes || {});
 
   wrapper.appendChild(card);
   return { radioIdMap, objectiveIds };
