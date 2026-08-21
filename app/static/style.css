@@ -154,8 +154,24 @@ button.secondary {
 .filters { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
 
 .question-block { margin-bottom: 1.4rem; }
-.question-meta { color: var(--muted); font-size: 0.82rem; margin-bottom: 0.4rem; letter-spacing: 0.01em; }
+.question-meta { color: var(--muted); font-size: 0.82rem; letter-spacing: 0.01em; }
 .ai-tag { color: var(--muted-2); font-weight: 500; }
+
+.question-meta-row { display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.4rem; }
+.translate-btn { font-size: 0.82rem; padding: 0.35rem 0.75rem; }
+.translate-btn .icon { width: 15px; height: 15px; vertical-align: -2px; }
+
+.translation-box {
+  flex-basis: 100%;
+  white-space: pre-wrap;
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.05rem;
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+  color: var(--text);
+}
 
 .transcript, .passage-text {
   white-space: pre-wrap;

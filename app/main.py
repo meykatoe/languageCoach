@@ -9,7 +9,17 @@ from fastapi.templating import Jinja2Templates
 load_dotenv()
 
 from app.database import Base, engine  # noqa: E402
-from app.routers import exams, generate, grading, history, practice, review, settings, upload  # noqa: E402
+from app.routers import (  # noqa: E402
+    exams,
+    generate,
+    grading,
+    history,
+    practice,
+    review,
+    settings,
+    translate,
+    upload,
+)
 from app.seed import seed  # noqa: E402
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -29,6 +39,7 @@ app.include_router(history.router)
 app.include_router(generate.router)
 app.include_router(review.router)
 app.include_router(settings.router)
+app.include_router(translate.router)
 app.include_router(upload.router)
 
 

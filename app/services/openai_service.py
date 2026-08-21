@@ -112,6 +112,30 @@ def grade_response(exam: str, task_prompt: str, user_response: str, skill: str) 
     return json.loads(raw)
 
 
+TRANSLATION_SYSTEM_PROMPT = (
+    "You are a professional translator. Translate the given exam question "
+    "text into natural, easy-to-understand Traditional Chinese (繁體中文). "
+    "Preserve the original line breaks and any option labels (A./B./C./D.) "
+    "line by line. Output only the translation, with no extra commentary, "
+    "preamble, or markdown formatting."
+)
+
+
+def translate_text(text: str) -> str:
+    """Translate a block of English exam-question text into Traditional
+    Chinese, for the per-question "translate" button on the frontend.
+    """
+    client, model = _get_client()
+    completion = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": TRANSLATION_SYSTEM_PROMPT},
+            {"role": "user", "content": text},
+        ],
+    )
+    return completion.choices[0].message.content.strip()
+
+
 MISTAKE_EXPLANATION_SYSTEM_PROMPT = (
     "You are a friendly, encouraging {exam} tutor. A student answered a "
     "practice question incorrectly. In Traditional Chinese (繁體中文), write a "

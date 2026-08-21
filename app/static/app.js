@@ -317,14 +317,55 @@ function renderAiGradeWidget(item, exam, skill, promptText, container) {
   container.appendChild(feedbackEl);
 }
 
+const TRANSLATE_LABEL = '翻譯此題';
+
+function addTranslateButton(q, container) {
+  const btn = el('button', { class: 'secondary translate-btn', html: iconHtml('translate') + TRANSLATE_LABEL });
+  const box = el('div', { class: 'translation-box', style: 'display:none' });
+  let translation = null;
+
+  btn.addEventListener('click', async () => {
+    if (translation !== null) {
+      box.style.display = box.style.display === 'none' ? 'block' : 'none';
+      return;
+    }
+    btn.disabled = true;
+    btn.textContent = '翻譯中...';
+    try {
+      const res = await fetch('/api/translate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ source_id: q.source_id }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        box.textContent = `翻譯失敗: ${data.detail || res.status}`;
+      } else {
+        translation = data.translation;
+        box.textContent = translation;
+      }
+      box.style.display = 'block';
+    } finally {
+      btn.disabled = false;
+      btn.innerHTML = iconHtml('translate') + TRANSLATE_LABEL;
+    }
+  });
+
+  container.appendChild(btn);
+  container.appendChild(box);
+}
+
 function renderItem(q, wrapper) {
   const item = q.content;
   const card = el('div', { class: 'card' });
   const aiTag = q.source_file === 'ai-generated' ? ' <span class="ai-tag">· AI 產生</span>' : '';
-  card.appendChild(el('div', {
+  const metaRow = el('div', { class: 'question-meta-row' });
+  metaRow.appendChild(el('div', {
     class: 'question-meta',
     html: `${q.exam} / ${q.section}${q.part ? ' / ' + q.part : ''}${aiTag}`,
   }));
+  card.appendChild(metaRow);
+  addTranslateButton(q, metaRow);
 
   const radioIdMap = [];
   const objectiveIds = [];

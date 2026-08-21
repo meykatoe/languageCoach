@@ -119,6 +119,14 @@ class SettingsOut(BaseModel):
     openai_model: str
 
 
+class TranslateRequest(BaseModel):
+    source_id: str
+
+
+class TranslateResponse(BaseModel):
+    translation: str
+
+
 class TestConnectionRequest(BaseModel):
     openai_api_key: Optional[str] = None
 
