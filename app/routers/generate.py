@@ -8,6 +8,7 @@ from sqlalchemy.orm import Session
 from app.database import get_db
 from app.models import Question
 from app.schemas import GenerateRequest, QuestionOut
+from app.services.id_dedup import collect_all_ids, dedupe_all_ids
 from app.services.openai_service import generate_questions
 
 router = APIRouter(prefix="/api/generate", tags=["generate"])
@@ -43,19 +44,19 @@ def generate(payload: GenerateRequest, db: Session = Depends(get_db)):
     except (ValueError, TypeError) as exc:
         raise HTTPException(status_code=502, detail=f"AI generation returned malformed data: {exc}") from exc
 
-    existing_ids = {row[0] for row in db.query(Question.source_id).all()}
+    # The full set of ids already used ANYWHERE in the bank, top-level and
+    # nested (not just Question.source_id), so a newly generated item's sub-
+    # question ids can never silently shadow an unrelated existing question.
+    existing_ids = collect_all_ids(db)
     created: list[Question] = []
 
     for item in items:
         if not isinstance(item, dict):
             continue
-        source_id = item.get("id")
-        if not source_id or not isinstance(source_id, str):
-            source_id = f"ai-{_slugify(payload.part or payload.section)}-{uuid.uuid4().hex[:8]}"
-        while source_id in existing_ids:
-            source_id = f"{source_id}-{uuid.uuid4().hex[:4]}"
-        item["id"] = source_id
-        existing_ids.add(source_id)
+        if not isinstance(item.get("id"), str) or not item["id"]:
+            item["id"] = f"ai-{_slugify(payload.part or payload.section)}-{uuid.uuid4().hex[:8]}"
+        dedupe_all_ids(item, existing_ids)
+        source_id = item["id"]
 
         row = Question(
             source_id=source_id,

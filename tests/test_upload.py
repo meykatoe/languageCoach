@@ -110,6 +110,40 @@ def test_upload_writing_prompt_shape_gets_writing_section(client, monkeypatch):
     assert items[0]["exam"] == "Custom"
 
 
+def test_upload_dedupes_nested_sub_question_ids(client, monkeypatch):
+    def fake_generate_from_reference(reference_text, count):
+        return [
+            {
+                "id": "upload-passage-99",
+                "passage": "A new memo about updated parking policies.",
+                "questions": [
+                    {
+                        "id": "toeic-r7-single-01-q1",  # collides with an existing nested id
+                        "question": "What is the memo about?",
+                        "options": ["A. Parking", "B. Payroll", "C. Holidays", "D. Training"],
+                        "answer": "A",
+                    }
+                ],
+            }
+        ]
+
+    monkeypatch.setattr(upload_module, "generate_from_reference", fake_generate_from_reference)
+
+    res = client.post(
+        "/api/upload",
+        files={"file": ("memo.txt", b"a memo about parking", "text/plain")},
+        data={"count": "1"},
+    )
+    assert res.status_code == 200
+    nested_id = res.json()[0]["content"]["questions"][0]["id"]
+    assert nested_id != "toeic-r7-single-01-q1"
+
+    original = client.post(
+        "/api/practice/submit", json={"answers": [{"source_id": "toeic-r7-single-01-q1", "answer": "B"}]}
+    )
+    assert original.json()["results"][0]["correctAnswer"] == "B"
+
+
 def test_upload_service_unavailable_returns_503(client, monkeypatch):
     def raise_runtime(*args, **kwargs):
         raise RuntimeError("OpenAI API Key 尚未設定。")

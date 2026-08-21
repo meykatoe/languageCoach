@@ -43,6 +43,53 @@ def test_generate_creates_questions(client, monkeypatch):
     assert ids <= fetched_ids
 
 
+def test_generate_dedupes_nested_sub_question_ids(client, monkeypatch):
+    """Regression test: the AI is prompted to imitate an existing item's JSON
+    shape, and can reuse that item's *nested* sub-question ids verbatim even
+    though its own top-level id is unique. Before the fix, only the
+    top-level id was deduped, so answering the new item's sub-question could
+    silently get graded against the unrelated original question that
+    already owned that nested id.
+    """
+
+    def fake_generate_questions(exam, section, part, example_item, count):
+        return [
+            {
+                "id": "toeic-r7-single-99",
+                "passage": "Bake Sale Fundraiser at Lincoln Elementary to raise money for new playground equipment.",
+                "questions": [
+                    {
+                        "id": "toeic-r7-single-01-q1",  # collides with an existing nested id
+                        "question": "What is the fundraiser raising money for?",
+                        "options": ["A. A field trip", "B. New playground equipment", "C. Books", "D. A trophy"],
+                        "answer": "B",
+                    }
+                ],
+            }
+        ]
+
+    monkeypatch.setattr(generate_module, "generate_questions", fake_generate_questions)
+
+    res = client.post(
+        "/api/generate",
+        json={"exam": "TOEIC", "section": "Reading", "part": "Part 7: Reading Comprehension", "count": 1},
+    )
+    assert res.status_code == 200
+    created = res.json()[0]
+    nested_id = created["content"]["questions"][0]["id"]
+    assert nested_id != "toeic-r7-single-01-q1"  # renamed so it can no longer shadow the original
+
+    # the pre-existing question's own nested id still resolves to ITSELF
+    original = client.post(
+        "/api/practice/submit", json={"answers": [{"source_id": "toeic-r7-single-01-q1", "answer": "B"}]}
+    )
+    assert original.json()["results"][0]["correctAnswer"] == "B"  # "For scheduled renovations"
+
+    # the new item's (renamed) nested id resolves to the NEW item's own answer
+    new_item = client.post("/api/practice/submit", json={"answers": [{"source_id": nested_id, "answer": "B"}]})
+    assert new_item.json()["results"][0]["correct"] is True
+
+
 def test_generate_service_unavailable_returns_503(client, monkeypatch):
     def raise_runtime(*args, **kwargs):
         raise RuntimeError("OPENAI_API_KEY is not set.")
