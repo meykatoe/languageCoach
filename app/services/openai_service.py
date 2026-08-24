@@ -7,6 +7,7 @@ from openai import OpenAI
 from app.database import SessionLocal
 from app.models import AppSetting
 from app.services.crypto import decrypt
+from app.services.openai_retry import call_with_retry
 
 DEFAULT_MODEL = "gpt-4o-mini"
 DEFAULT_TTS_MODEL = "gpt-4o-mini-tts"
@@ -79,7 +80,7 @@ def test_connection(api_key: str | None = None) -> str:
     """Verify an API key works with a minimal, cheap call. If `api_key` is
     omitted, tests whichever key `resolve_config()` currently resolves to
     (saved settings, falling back to .env). Returns the model id used for
-    the check on success; raises RuntimeError/openai.APIError on failure.
+    the check on success; raises RuntimeError (friendly message) on failure.
     """
     if api_key is None:
         api_key, _ = resolve_config()
@@ -87,7 +88,7 @@ def test_connection(api_key: str | None = None) -> str:
         raise RuntimeError("尚未提供任何 API Key 可供測試。")
 
     client = OpenAI(api_key=api_key)
-    models = client.models.list()
+    models = call_with_retry(client.models.list)
     first = next(iter(models), None)
     return first.id if first else "(no models returned, but the key is valid)"
 
@@ -101,7 +102,8 @@ def grade_response(exam: str, task_prompt: str, user_response: str, skill: str) 
     system_prompt = SYSTEM_PROMPT_TEMPLATE.format(rubric=rubric)
 
     client, model = _get_client()
-    completion = client.chat.completions.create(
+    completion = call_with_retry(
+        client.chat.completions.create,
         model=model,
         response_format={"type": "json_object"},
         messages=[
@@ -125,7 +127,8 @@ def synthesize_speech(text: str, voice: str = DEFAULT_TTS_VOICE) -> bytes:
     built-in speechSynthesis with a real, natural-sounding voice).
     """
     client, _ = _get_client()
-    response = client.audio.speech.create(
+    response = call_with_retry(
+        client.audio.speech.create,
         model=DEFAULT_TTS_MODEL, voice=voice, input=text, response_format="mp3"
     )
     return response.content
@@ -141,7 +144,8 @@ def generate_image(description: str) -> bytes:
         "A realistic, candid photograph (no text, no captions, no watermarks) "
         f"depicting: {description}"
     )
-    response = client.images.generate(
+    response = call_with_retry(
+        client.images.generate,
         model=DEFAULT_IMAGE_MODEL, prompt=prompt, size=DEFAULT_IMAGE_SIZE, n=1
     )
     return base64.b64decode(response.data[0].b64_json)
@@ -161,7 +165,8 @@ def translate_text(text: str) -> str:
     Chinese, for the per-question "translate" button on the frontend.
     """
     client, model = _get_client()
-    completion = client.chat.completions.create(
+    completion = call_with_retry(
+        client.chat.completions.create,
         model=model,
         messages=[
             {"role": "system", "content": TRANSLATION_SYSTEM_PROMPT},
@@ -199,7 +204,8 @@ def review_progress_comment(
     system_prompt = REVIEW_PROGRESS_SYSTEM_PROMPT.format(exam=exam, previous_note=previous_note)
 
     client, model = _get_client()
-    completion = client.chat.completions.create(
+    completion = call_with_retry(
+        client.chat.completions.create,
         model=model,
         messages=[
             {"role": "system", "content": system_prompt},
@@ -237,7 +243,8 @@ def explain_mistake(
     system_prompt = MISTAKE_EXPLANATION_SYSTEM_PROMPT.format(exam=exam)
 
     client, model = _get_client()
-    completion = client.chat.completions.create(
+    completion = call_with_retry(
+        client.chat.completions.create,
         model=model,
         messages=[
             {"role": "system", "content": system_prompt},
@@ -279,7 +286,8 @@ def generate_mock_exam_advice(
     system_prompt = MOCK_EXAM_ADVICE_SYSTEM_PROMPT.format(exam=exam)
 
     client, model = _get_client()
-    completion = client.chat.completions.create(
+    completion = call_with_retry(
+        client.chat.completions.create,
         model=model,
         messages=[
             {"role": "system", "content": system_prompt},
@@ -324,7 +332,8 @@ def generate_questions(
     )
 
     client, model = _get_client()
-    completion = client.chat.completions.create(
+    completion = call_with_retry(
+        client.chat.completions.create,
         model=model,
         response_format={"type": "json_object"},
         messages=[
@@ -381,7 +390,8 @@ def generate_from_reference(reference_text: str, count: int = 3) -> list[dict]:
     system_prompt = UPLOAD_GENERATION_SYSTEM_PROMPT.format(count=count)
 
     client, model = _get_client()
-    completion = client.chat.completions.create(
+    completion = call_with_retry(
+        client.chat.completions.create,
         model=model,
         response_format={"type": "json_object"},
         messages=[
