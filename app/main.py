@@ -14,6 +14,7 @@ from app.routers import (  # noqa: E402
     generate,
     grading,
     history,
+    image,
     practice,
     review,
     settings,
@@ -43,6 +44,7 @@ app.include_router(review.router)
 app.include_router(settings.router)
 app.include_router(translate.router)
 app.include_router(tts.router)
+app.include_router(image.router)
 app.include_router(upload.router)
 
 

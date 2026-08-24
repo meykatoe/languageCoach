@@ -1,3 +1,4 @@
+import base64
 import json
 import os
 
@@ -9,6 +10,8 @@ from app.models import AppSetting
 DEFAULT_MODEL = "gpt-4o-mini"
 DEFAULT_TTS_MODEL = "gpt-4o-mini-tts"
 DEFAULT_TTS_VOICE = "alloy"
+DEFAULT_IMAGE_MODEL = "gpt-image-1"
+DEFAULT_IMAGE_SIZE = "1024x1024"
 
 RUBRICS = {
     "IELTS": (
@@ -124,6 +127,22 @@ def synthesize_speech(text: str, voice: str = DEFAULT_TTS_VOICE) -> bytes:
         model=DEFAULT_TTS_MODEL, voice=voice, input=text, response_format="mp3"
     )
     return response.content
+
+
+def generate_image(description: str) -> bytes:
+    """Generate a photograph-style image (PNG bytes) for a TOEIC Part 1
+    "photoDescription", for the listening picture questions that are meant
+    to show a photo instead of describing it in text.
+    """
+    client, _ = _get_client()
+    prompt = (
+        "A realistic, candid photograph (no text, no captions, no watermarks) "
+        f"depicting: {description}"
+    )
+    response = client.images.generate(
+        model=DEFAULT_IMAGE_MODEL, prompt=prompt, size=DEFAULT_IMAGE_SIZE, n=1
+    )
+    return base64.b64decode(response.data[0].b64_json)
 
 
 TRANSLATION_SYSTEM_PROMPT = (

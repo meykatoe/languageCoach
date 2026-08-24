@@ -133,6 +133,10 @@ class TtsRequest(BaseModel):
     text: str = Field(min_length=1, max_length=4000)
 
 
+class ImageRequest(BaseModel):
+    description: str = Field(min_length=1, max_length=4000)
+
+
 class TranslateResponse(BaseModel):
     translation: str
 
