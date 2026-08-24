@@ -8,7 +8,7 @@ from fastapi.templating import Jinja2Templates
 
 load_dotenv()
 
-from app.database import Base, engine, migrate_schema  # noqa: E402
+from app.database import Base, SessionLocal, engine, migrate_schema  # noqa: E402
 from app.routers import (  # noqa: E402
     exams,
     generate,
@@ -24,6 +24,7 @@ from app.routers import (  # noqa: E402
     upload,
 )
 from app.seed import seed  # noqa: E402
+from app.services.crypto import migrate_legacy_plaintext_key  # noqa: E402
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -31,6 +32,13 @@ app = FastAPI(title="Language Coach")
 
 Base.metadata.create_all(bind=engine)
 migrate_schema()
+
+_db = SessionLocal()
+try:
+    migrate_legacy_plaintext_key(_db)
+finally:
+    _db.close()
+
 seed(verbose=False)
 
 app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")

@@ -6,6 +6,7 @@ from openai import OpenAI
 
 from app.database import SessionLocal
 from app.models import AppSetting
+from app.services.crypto import decrypt
 
 DEFAULT_MODEL = "gpt-4o-mini"
 DEFAULT_TTS_MODEL = "gpt-4o-mini-tts"
@@ -55,7 +56,8 @@ def resolve_config() -> tuple[str | None, str]:
     finally:
         db.close()
 
-    api_key = (setting.openai_api_key if setting else None) or os.environ.get("OPENAI_API_KEY")
+    db_key = decrypt(setting.openai_api_key) if setting and setting.openai_api_key else None
+    api_key = db_key or os.environ.get("OPENAI_API_KEY")
     model = (
         (setting.openai_model if setting else None)
         or os.environ.get("OPENAI_MODEL")

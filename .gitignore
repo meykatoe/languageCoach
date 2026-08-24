@@ -4,6 +4,7 @@ __pycache__/
 .env
 data/*.db
 data/tts_cache/
+data/secret.key
 .pytest_cache/
 
 # project ignore

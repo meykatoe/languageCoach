@@ -12,6 +12,7 @@ from app.schemas import (
     TestConnectionRequest,
     TestConnectionResponse,
 )
+from app.services.crypto import decrypt, encrypt
 from app.services.openai_service import DEFAULT_MODEL, test_connection
 
 router = APIRouter(prefix="/api/settings", tags=["settings"])
@@ -19,7 +20,7 @@ router = APIRouter(prefix="/api/settings", tags=["settings"])
 
 def _build_settings_out(db: Session) -> SettingsOut:
     setting = db.query(AppSetting).first()
-    db_key = setting.openai_api_key if setting else None
+    db_key = decrypt(setting.openai_api_key) if setting and setting.openai_api_key else None
     env_key = os.environ.get("OPENAI_API_KEY")
 
     if db_key:
@@ -60,7 +61,7 @@ def update_settings(payload: SettingsUpdateRequest, db: Session = Depends(get_db
     if payload.clear_api_key:
         setting.openai_api_key = None
     elif payload.openai_api_key:
-        setting.openai_api_key = payload.openai_api_key.strip()
+        setting.openai_api_key = encrypt(payload.openai_api_key.strip())
 
     if payload.openai_model is not None:
         setting.openai_model = payload.openai_model.strip() or None
