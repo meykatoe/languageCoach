@@ -22,6 +22,7 @@ from app.routers import (  # noqa: E402
     translate,
     tts,
     upload,
+    vocab,
 )
 from app.seed import seed  # noqa: E402
 from app.services.crypto import migrate_legacy_plaintext_key  # noqa: E402
@@ -56,6 +57,7 @@ app.include_router(tts.router)
 app.include_router(image.router)
 app.include_router(mock_exam.router)
 app.include_router(upload.router)
+app.include_router(vocab.router)
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -91,6 +93,11 @@ def settings_page(request: Request):
 @app.get("/upload", response_class=HTMLResponse)
 def upload_page(request: Request):
     return templates.TemplateResponse(request, "upload.html")
+
+
+@app.get("/vocab", response_class=HTMLResponse)
+def vocab_page(request: Request):
+    return templates.TemplateResponse(request, "vocab.html")
 
 
 @app.get("/health")

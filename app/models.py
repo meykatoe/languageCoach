@@ -90,6 +90,28 @@ class ExamSession(Base):
     advice = Column(String, nullable=True)
 
 
+class VocabEntry(Base):
+    """A word the user selected for translation, auto-saved into their
+    personal vocabulary book. `detail` holds a full dictionary-style entry
+    (definitions per part of speech, examples, synonyms, etc., generated
+    once via OpenAI in the style of the Oxford Learner's Dictionary) so the
+    word can be revisited to memorize it properly, not just glanced at once.
+    `detail` is null while generation is pending or has failed; the
+    /api/vocab/{id}/regenerate endpoint lets the user retry it.
+    """
+
+    __tablename__ = "vocab_entries"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    word = Column(String, nullable=False, index=True, unique=True)
+    created_at = Column(
+        DateTime,
+        default=lambda: datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None),
+        index=True,
+    )
+    detail = Column(JSON, nullable=True)
+
+
 class AppSetting(Base):
     """Single-row table holding user-configurable app settings (currently
     just the OpenAI credentials), so they can be set from the frontend

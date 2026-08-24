@@ -383,6 +383,49 @@ UPLOAD_GENERATION_SYSTEM_PROMPT = (
 )
 
 
+VOCAB_ENTRY_SYSTEM_PROMPT = (
+    "You are a lexicographer writing a dictionary entry for an English word, "
+    "in the style and depth of the Oxford Learner's Dictionary, for a "
+    "language learner who wants to memorize the word thoroughly (not just "
+    "see a one-line translation).\n\n"
+    "Respond with a strict JSON object matching this schema:\n"
+    '{"word": string, "phonetic": string (IPA, e.g. "/rɪˈzɪljəns/"), '
+    '"entries": [{"partOfSpeech": string, "definitions": [{"meaning_en": '
+    'string, "meaning_zh": string (Traditional Chinese), "example_en": '
+    'string, "example_zh": string}]}], "synonyms": string[], '
+    '"antonyms": string[], "collocations": string[], "wordFamily": string[], '
+    '"memoryTip": string (Traditional Chinese)}\n\n'
+    "Cover every common part of speech the word has (e.g. both noun and "
+    "verb if applicable), each with 1-3 of its most common senses, ordered "
+    "by frequency of use. Keep each meaning concise but precise, matching "
+    "real dictionary phrasing. `collocations` are common word combinations "
+    "(e.g. \"make a decision\"). `wordFamily` lists related word forms "
+    "derived from the same root (e.g. other parts of speech). `memoryTip` "
+    "is a short, concrete mnemonic or usage tip to help the word stick. Use "
+    "an empty array for any category with nothing meaningful to add. Output "
+    "only the JSON object, no markdown, no commentary."
+)
+
+
+def generate_vocab_entry(word: str) -> dict:
+    """Generate a full dictionary-style entry for a single English word, for
+    the auto-populated vocabulary book (triggered when the user selects a
+    single word via the site-wide translate-on-select feature).
+    """
+    client, model = _get_client()
+    completion = call_with_retry(
+        client.chat.completions.create,
+        model=model,
+        response_format={"type": "json_object"},
+        messages=[
+            {"role": "system", "content": VOCAB_ENTRY_SYSTEM_PROMPT},
+            {"role": "user", "content": f"Word: {word}"},
+        ],
+    )
+    raw = completion.choices[0].message.content
+    return json.loads(raw)
+
+
 def generate_from_reference(reference_text: str, count: int = 3) -> list[dict]:
     """Generate new practice items inspired by arbitrary uploaded reference
     text (not tied to any existing question bank shape).

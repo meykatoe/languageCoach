@@ -6,7 +6,7 @@ def test_translate_text_returns_translation(client, monkeypatch):
 
     res = client.post("/api/translate/text", json={"text": "The report is due tomorrow."})
     assert res.status_code == 200
-    assert res.json() == {"translation": "[譯] The report is due tomorrow."}
+    assert res.json() == {"translation": "[譯] The report is due tomorrow.", "added_to_vocab": False}
 
 
 def test_translate_text_rejects_empty_text(client):
@@ -45,4 +45,4 @@ def test_translate_returns_translation(client, monkeypatch):
 
     res = client.post("/api/translate", json={"source_id": "toeic-r5-001"})
     assert res.status_code == 200
-    assert res.json() == {"translation": "新進員工手冊概述了所有公司政策..."}
+    assert res.json() == {"translation": "新進員工手冊概述了所有公司政策...", "added_to_vocab": None}

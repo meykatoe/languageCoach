@@ -1,6 +1,8 @@
 // Site-wide "selection translation": select any text on the page and it is
 // replaced in place with its Traditional Chinese translation (hover to see
-// the original text again via the title attribute).
+// the original text again via the title attribute). If the selection is a
+// single word, the backend also auto-saves it into the vocabulary book
+// (/vocab), shown here with a dotted underline.
 (function () {
   let debounceTimer = null;
 
@@ -32,7 +34,8 @@
       span.classList.remove('translated-pending');
       if (res.ok) {
         span.textContent = data.translation;
-        span.title = text;
+        span.title = data.added_to_vocab ? `${text}\n(已加入單字本)` : text;
+        if (data.added_to_vocab) span.classList.add('translated-text-vocab');
       } else {
         span.textContent = text; // revert on failure
       }

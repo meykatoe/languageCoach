@@ -231,6 +231,7 @@ class ImageRequest(BaseModel):
 
 class TranslateResponse(BaseModel):
     translation: str
+    added_to_vocab: Optional[bool] = None
 
 
 class TestConnectionRequest(BaseModel):
@@ -240,3 +241,12 @@ class TestConnectionRequest(BaseModel):
 class TestConnectionResponse(BaseModel):
     ok: bool
     message: str
+
+
+class VocabEntryOut(BaseModel):
+    id: int
+    word: str
+    created_at: datetime.datetime
+    detail: Optional[dict] = None
+
+    model_config = {"from_attributes": True}

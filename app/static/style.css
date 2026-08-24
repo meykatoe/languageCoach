@@ -262,6 +262,23 @@ th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: 
 
 .translated-pending { opacity: 0.55; }
 
+.translated-text-vocab { border-bottom: 2px dotted var(--muted-2); }
+
+.vocab-word-card { cursor: pointer; }
+.vocab-word-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.75rem; flex-wrap: wrap; }
+.vocab-word { font-size: 1.15rem; font-weight: 700; }
+.vocab-phonetic { color: var(--muted); font-size: 0.9rem; margin-left: 0.5rem; font-weight: 400; }
+.vocab-date { color: var(--muted-2); font-size: 0.78rem; }
+.vocab-detail { margin-top: 0.9rem; padding-top: 0.9rem; border-top: 1px solid var(--border); }
+.vocab-pos-block { margin-bottom: 0.9rem; }
+.vocab-pos { font-weight: 700; text-transform: uppercase; font-size: 0.76rem; letter-spacing: 0.04em; color: var(--muted); margin: 0 0 0.4rem; }
+.vocab-detail ol { margin: 0; padding-left: 1.3rem; }
+.vocab-detail li { margin-bottom: 0.6rem; }
+.vocab-example { color: var(--muted); font-style: italic; margin: 0.2rem 0 0; }
+.vocab-tip { background: var(--surface-strong); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 0.7rem 0.9rem; margin-top: 0.6rem; font-size: 0.92rem; }
+.vocab-actions { display: flex; gap: 0.5rem; margin-top: 0.8rem; flex-wrap: wrap; }
+.vocab-actions button { font-size: 0.82rem; padding: 0.35rem 0.75rem; }
+
 .review-mode-toggle { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; cursor: pointer; }
 .review-mode-toggle input { accent-color: var(--text); width: 16px; height: 16px; }
 
