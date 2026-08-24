@@ -45,7 +45,9 @@ app/
 │   ├── openai_service.py         OpenAI API 呼叫、評分規準、出題 prompt
 │   └── file_extract.py            PDF/DOCX/TXT 文字擷取
 ├── templates/            首頁 / 練習頁面 / 學習紀錄頁面 (Jinja2)
-└── static/                app.js (題目渲染+語音播放/口說語音輸入) / history.js / style.css
+└── static/                quiz-render.js(題目渲染/送出批改)、practice.js(練習頁篩選+AI出題)、
+                          audio.js(TTS 語音播放)、speech.js(口說語音輸入)、media.js(圖片生成按鈕)、
+                          question-labels.js、dom-utils.js / history.js / style.css
 
 examQuestions/
 ├── create/               模擬題庫(依 TOEIC/IELTS/TOEFL 分資料夾,詳見其 README)
