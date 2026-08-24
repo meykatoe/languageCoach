@@ -29,9 +29,14 @@ def migrate_schema() -> None:
     first created (this project has no data/rows worth an Alembic setup).
     """
     inspector = inspect(engine)
-    if "app_settings" not in inspector.get_table_names():
-        return
-    columns = {col["name"] for col in inspector.get_columns("app_settings")}
-    if "review_mode" not in columns:
-        with engine.begin() as conn:
-            conn.execute(text("ALTER TABLE app_settings ADD COLUMN review_mode BOOLEAN DEFAULT 0"))
+    if "app_settings" in inspector.get_table_names():
+        columns = {col["name"] for col in inspector.get_columns("app_settings")}
+        if "review_mode" not in columns:
+            with engine.begin() as conn:
+                conn.execute(text("ALTER TABLE app_settings ADD COLUMN review_mode BOOLEAN DEFAULT 0"))
+
+    if "exam_sessions" in inspector.get_table_names():
+        columns = {col["name"] for col in inspector.get_columns("exam_sessions")}
+        if "advice" not in columns:
+            with engine.begin() as conn:
+                conn.execute(text("ALTER TABLE exam_sessions ADD COLUMN advice VARCHAR"))

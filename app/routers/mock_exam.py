@@ -2,6 +2,7 @@ import datetime
 from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query
+from openai import APIError
 from sqlalchemy.orm import Session
 
 from app.database import get_db
@@ -20,12 +21,14 @@ from app.schemas import (
     MockExamStateResponse,
 )
 from app.services.grading import answers_match, find_node_by_id
+from app.services.id_dedup import _walk_ids
 from app.services.mock_exam_spec import (
     LISTENING_MINUTES,
     READING_MINUTES,
     AssemblyError,
     assemble_full_exam,
 )
+from app.services.openai_service import generate_mock_exam_advice
 from app.services.scoring import toeic_scaled_score
 
 router = APIRouter(prefix="/api/mock-exam", tags=["mock-exam"])
@@ -87,6 +90,57 @@ def _grade_section(entries: list[dict], answers: list) -> tuple[int, int, list[G
             )
         )
     return correct, graded, results
+
+
+def _part_breakdown(session: ExamSession) -> list[dict]:
+    """Aggregates correct/total counts per (section, part, qtype), for
+    feeding into the AI advice prompt.
+    """
+    id_to_part: dict[str, tuple[str, str, str]] = {}
+    for section in ("Listening", "Reading"):
+        for entry in session.content.get(section, []):
+            item_ids: set[str] = set()
+            _walk_ids(entry["item"], item_ids)
+            for node_id in item_ids:
+                id_to_part[node_id] = (section, entry["part"], entry["qtype"])
+
+    counts: dict[tuple[str, str, str], list[int]] = {}
+    for results in (session.listening_results or []) + (session.reading_results or []):
+        key = id_to_part.get(results["source_id"])
+        if key is None or results.get("correct") is None:
+            continue
+        bucket = counts.setdefault(key, [0, 0])
+        bucket[1] += 1
+        if results["correct"]:
+            bucket[0] += 1
+
+    return [
+        {"section": section, "part": part, "qtype": qtype, "correct": correct, "total": total}
+        for (section, part, qtype), (correct, total) in counts.items()
+    ]
+
+
+def _generate_advice(session: ExamSession) -> Optional[str]:
+    """Best-effort AI study advice for a completed sitting. Never raises: if
+    the AI call fails (no API key, network error, ...), the submission
+    should still succeed without advice.
+    """
+    listening_score = {
+        "raw_correct": session.raw_listening,
+        "raw_total": session.raw_listening_total,
+        "scaled_score": session.scaled_listening,
+    }
+    reading_score = {
+        "raw_correct": session.raw_reading,
+        "raw_total": session.raw_reading_total,
+        "scaled_score": session.scaled_reading,
+    }
+    try:
+        return generate_mock_exam_advice(
+            session.exam, listening_score, reading_score, _part_breakdown(session)
+        )
+    except (RuntimeError, APIError, ValueError):
+        return None
 
 
 def _get_session(db: Session, session_id: int) -> ExamSession:
@@ -157,6 +211,7 @@ def get_mock_exam(session_id: int, db: Session = Depends(get_db)):
             scaled_total=session.scaled_total,
             listening_results=session.listening_results or [],
             reading_results=session.reading_results or [],
+            advice=session.advice,
         )
 
     return MockExamStateResponse(
@@ -212,6 +267,7 @@ def submit_reading(session_id: int, payload: MockExamSectionSubmitRequest, db: S
     session.scaled_total = session.scaled_listening + session.scaled_reading
     session.status = "completed"
     session.submitted_at = _now()
+    session.advice = _generate_advice(session)
     db.commit()
     db.refresh(session)
 
@@ -232,4 +288,5 @@ def submit_reading(session_id: int, payload: MockExamSectionSubmitRequest, db: S
         scaled_total=session.scaled_total,
         listening_results=session.listening_results,
         reading_results=session.reading_results,
+        advice=session.advice,
     )

@@ -252,6 +252,49 @@ def explain_mistake(
     return completion.choices[0].message.content.strip()
 
 
+MOCK_EXAM_ADVICE_SYSTEM_PROMPT = (
+    "You are an experienced {exam} tutor reviewing a student's full-length "
+    "timed mock exam result. You will be given the scaled scores for "
+    "Listening and Reading, plus a breakdown of which parts/question types "
+    "they got right and wrong. In Traditional Chinese (繁體中文), write "
+    "personalized study advice (4-6 short sentences or bullet points): "
+    "point out the specific parts/question types where they are weakest "
+    "based on the breakdown, note any strong areas briefly, and give "
+    "concrete, actionable next steps for improvement. Do not just restate "
+    "the scores. Respond with plain text only, no JSON, no markdown."
+)
+
+
+def generate_mock_exam_advice(
+    exam: str,
+    listening_score: dict,
+    reading_score: dict,
+    part_breakdown: list[dict],
+) -> str:
+    """Generate personalized study advice for a completed full mock exam,
+    based on the scaled scores and a per-part right/wrong breakdown.
+    """
+    system_prompt = MOCK_EXAM_ADVICE_SYSTEM_PROMPT.format(exam=exam)
+
+    client, model = _get_client()
+    completion = client.chat.completions.create(
+        model=model,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {
+                "role": "user",
+                "content": (
+                    f"Listening score: {json.dumps(listening_score, ensure_ascii=False)}\n"
+                    f"Reading score: {json.dumps(reading_score, ensure_ascii=False)}\n"
+                    f"Per-part breakdown (correct/total):\n"
+                    f"{json.dumps(part_breakdown, ensure_ascii=False)}"
+                ),
+            },
+        ],
+    )
+    return completion.choices[0].message.content.strip()
+
+
 GENERATION_SYSTEM_PROMPT = (
     "You are an expert item writer who creates official-style {exam} {section} "
     "practice questions for the part: {part}.\n\n"

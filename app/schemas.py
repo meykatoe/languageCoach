@@ -161,6 +161,7 @@ class MockExamFinalResult(BaseModel):
     scaled_total: int
     listening_results: list[GradedAnswer]
     reading_results: list[GradedAnswer]
+    advice: Optional[str] = None
     disclaimer: str = "換算分數為依答對題數所做的近似估算，並非官方正式成績，僅供練習參考。"
 
 

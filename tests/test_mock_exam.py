@@ -1,3 +1,4 @@
+import app.routers.mock_exam as mock_exam_router
 import app.services.mock_exam_spec as spec_module
 
 
@@ -72,6 +73,57 @@ def test_full_mock_exam_flow_and_scoring(client):
     res3 = client.get(f"/api/mock-exam/{session_id}")
     assert res3.status_code == 200
     assert res3.json()["result"]["scaled_total"] == 990
+
+
+def test_completed_exam_includes_ai_advice(client, monkeypatch):
+    captured = {}
+
+    def fake_advice(exam, listening_score, reading_score, part_breakdown):
+        captured["args"] = (exam, listening_score, reading_score, part_breakdown)
+        return "先加強 Part 5 文法題,聽力表現不錯。"
+
+    monkeypatch.setattr(mock_exam_router, "generate_mock_exam_advice", fake_advice)
+
+    data = _start(client)
+    session_id = data["id"]
+    res = client.post(
+        f"/api/mock-exam/{session_id}/submit-listening",
+        json={"answers": _answers_for(data["listening"]["questions"])},
+    )
+    reading_questions = res.json()["reading"]["questions"]
+    res2 = client.post(
+        f"/api/mock-exam/{session_id}/submit-reading",
+        json={"answers": _answers_for(reading_questions)},
+    )
+    result = res2.json()
+    assert result["advice"] == "先加強 Part 5 文法題,聽力表現不錯。"
+    assert captured["args"][0] == "TOEIC"
+    assert captured["args"][3]  # non-empty per-part breakdown
+
+    # advice is persisted and returned again on resume
+    res3 = client.get(f"/api/mock-exam/{session_id}")
+    assert res3.json()["result"]["advice"] == "先加強 Part 5 文法題,聽力表現不錯。"
+
+
+def test_advice_generation_failure_does_not_break_submission(client, monkeypatch):
+    def failing_advice(*args, **kwargs):
+        raise RuntimeError("no api key")
+
+    monkeypatch.setattr(mock_exam_router, "generate_mock_exam_advice", failing_advice)
+
+    data = _start(client)
+    session_id = data["id"]
+    res = client.post(
+        f"/api/mock-exam/{session_id}/submit-listening",
+        json={"answers": _answers_for(data["listening"]["questions"])},
+    )
+    reading_questions = res.json()["reading"]["questions"]
+    res2 = client.post(
+        f"/api/mock-exam/{session_id}/submit-reading",
+        json={"answers": _answers_for(reading_questions)},
+    )
+    assert res2.status_code == 200
+    assert res2.json()["advice"] is None
 
 
 def test_cannot_resubmit_listening_twice(client):

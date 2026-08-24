@@ -297,6 +297,25 @@ th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: 
   margin: 0.9rem 0 0.4rem;
 }
 
+.mock-exam-advice {
+  white-space: pre-wrap;
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1.1rem;
+  margin: 0.9rem 0;
+  font-size: 0.92rem;
+}
+
+.mock-exam-advice h3 {
+  margin: 0 0 0.5rem;
+  font-size: 0.98rem;
+}
+
+.mock-exam-advice p {
+  margin: 0;
+}
+
 .site-footer {
   max-width: 860px;
   margin: 1.5rem auto 0;

@@ -85,6 +85,10 @@ class ExamSession(Base):
     listening_results = Column(JSON, nullable=True)
     reading_results = Column(JSON, nullable=True)
 
+    # AI-generated study advice based on this sitting's results, filled in
+    # once the reading section (and thus the whole exam) is submitted
+    advice = Column(String, nullable=True)
+
 
 class AppSetting(Base):
     """Single-row table holding user-configurable app settings (currently

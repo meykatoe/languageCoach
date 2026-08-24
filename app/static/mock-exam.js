@@ -136,6 +136,14 @@ function showResult(result) {
   resultEl.appendChild(el('p', { class: 'mock-exam-total' }, `總分約 ${result.scaled_total} / 990`));
   resultEl.appendChild(el('p', { class: 'question-meta' }, result.disclaimer));
 
+  if (result.advice) {
+    const adviceBox = el('div', { class: 'mock-exam-advice' }, [
+      el('h3', {}, 'AI 學習建議'),
+      el('p', {}, result.advice),
+    ]);
+    resultEl.appendChild(adviceBox);
+  }
+
   const retryBtn = el('button', { class: 'secondary' }, '再考一次');
   retryBtn.addEventListener('click', () => location.reload());
   resultEl.appendChild(retryBtn);
