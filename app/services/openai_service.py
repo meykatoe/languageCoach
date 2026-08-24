@@ -13,7 +13,7 @@ DEFAULT_MODEL = "gpt-4o-mini"
 DEFAULT_TTS_MODEL = "gpt-4o-mini-tts"
 DEFAULT_TTS_VOICE = "alloy"
 DEFAULT_IMAGE_MODEL = "gpt-image-1"
-DEFAULT_IMAGE_SIZE = "1024x1024"
+DEFAULT_IMAGE_SIZE = "1536x1024"  # landscape, matching real TOEIC Part 1 photos
 
 RUBRICS = {
     "IELTS": (
@@ -134,16 +134,36 @@ def synthesize_speech(text: str, voice: str = DEFAULT_TTS_VOICE) -> bytes:
     return response.content
 
 
+IMAGE_PROMPT_TEMPLATE = (
+    "A professional stock photograph in the exact style used in official "
+    "TOEIC Listening Part 1 test booklets: a clear, well-lit, high-resolution "
+    "commercial/documentary photo (like a Getty Images or iStock business "
+    "stock photo), full color, sharp focus, natural indoor or outdoor "
+    "setting appropriate to the scene, wide landscape framing that shows the "
+    "full scene and action clearly.\n\n"
+    "The photo must depict exactly this scene, with every element in it "
+    "clearly and unambiguously visible: {description}\n\n"
+    "Do not add any people, objects, actions, or background details beyond "
+    "what is described above - the photo will be used as the single visual "
+    "basis for a listening comprehension question, so it must show only "
+    "this scene, with nothing else that could be mistaken for a different "
+    "action or object. The main subject(s) and action must be the clear "
+    "focal point, unambiguous at a glance. No text, no captions, no "
+    "watermarks, no logos, no illustration or cartoon style - a real "
+    "photograph only."
+)
+
+
 def generate_image(description: str) -> bytes:
     """Generate a photograph-style image (PNG bytes) for a TOEIC Part 1
     "photoDescription", for the listening picture questions that are meant
-    to show a photo instead of describing it in text.
+    to show a photo instead of describing it in text. Styled to match real
+    TOEIC test-booklet photos: full-color, landscape stock photography with
+    only the described elements visible (so distractor answer choices stay
+    clearly wrong, not just unmentioned).
     """
     client, _ = _get_client()
-    prompt = (
-        "A realistic, candid photograph (no text, no captions, no watermarks) "
-        f"depicting: {description}"
-    )
+    prompt = IMAGE_PROMPT_TEMPLATE.format(description=description)
     response = call_with_retry(
         client.images.generate,
         model=DEFAULT_IMAGE_MODEL, prompt=prompt, size=DEFAULT_IMAGE_SIZE, n=1
