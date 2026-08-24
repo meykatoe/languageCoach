@@ -48,6 +48,44 @@ class Attempt(Base):
     detail = Column(JSON, nullable=True)  # correctAnswer/submittedAnswer or full AI feedback
 
 
+class ExamSession(Base):
+    """One full timed mock-exam sitting (currently TOEIC): a fixed,
+    real-exam-shaped set of questions assembled up front and stored in
+    `content`, graded section-by-section as the user submits Listening then
+    Reading within their time limits.
+    """
+
+    __tablename__ = "exam_sessions"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    exam = Column(String, nullable=False, index=True)
+    mode = Column(String, nullable=False)  # "bank" | "ai_generated"
+    status = Column(String, nullable=False, default="listening")  # listening|reading|completed
+    created_at = Column(
+        DateTime,
+        default=lambda: datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None),
+        index=True,
+    )
+    listening_deadline = Column(DateTime, nullable=True)
+    reading_deadline = Column(DateTime, nullable=True)
+    submitted_at = Column(DateTime, nullable=True)
+
+    # {"Listening": [{"part", "qtype", "item"}, ...], "Reading": [...]}
+    content = Column(JSON, nullable=False)
+
+    raw_listening = Column(Integer, nullable=True)
+    raw_listening_total = Column(Integer, nullable=True)
+    raw_reading = Column(Integer, nullable=True)
+    raw_reading_total = Column(Integer, nullable=True)
+    scaled_listening = Column(Integer, nullable=True)
+    scaled_reading = Column(Integer, nullable=True)
+    scaled_total = Column(Integer, nullable=True)
+
+    # list of GradedAnswer-shaped dicts, filled in once each section is graded
+    listening_results = Column(JSON, nullable=True)
+    reading_results = Column(JSON, nullable=True)
+
+
 class AppSetting(Base):
     """Single-row table holding user-configurable app settings (currently
     just the OpenAI credentials), so they can be set from the frontend

@@ -7,6 +7,7 @@ from sqlalchemy.orm import Session
 from app.database import get_db
 from app.models import AppSetting, Attempt, Question
 from app.schemas import GradedAnswer, PracticeSubmitRequest, PracticeSubmitResponse
+from app.services.grading import answers_match, find_node_by_id
 from app.services.openai_service import explain_mistake, review_progress_comment
 
 router = APIRouter(prefix="/api/practice", tags=["practice"])
@@ -53,36 +54,6 @@ def _generate_review_comment(
         return None
 
 
-def _find_node_by_id(node: Any, target_id: str) -> Optional[dict]:
-    """Depth-first search for a dict with id == target_id anywhere inside a
-    question's JSON content (handles nested sub-questions in conversations,
-    passages, cue cards, etc.).
-    """
-    if isinstance(node, dict):
-        if node.get("id") == target_id:
-            return node
-        for value in node.values():
-            found = _find_node_by_id(value, target_id)
-            if found is not None:
-                return found
-    elif isinstance(node, list):
-        for item in node:
-            found = _find_node_by_id(item, target_id)
-            if found is not None:
-                return found
-    return None
-
-
-def _answers_match(expected: Any, submitted: Any) -> bool:
-    if isinstance(expected, list):
-        if isinstance(submitted, list):
-            return sorted(str(x).strip().upper() for x in expected) == sorted(
-                str(x).strip().upper() for x in submitted
-            )
-        return False
-    return str(expected).strip().upper() == str(submitted).strip().upper()
-
-
 @router.post("/submit", response_model=PracticeSubmitResponse)
 def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db)):
     results: list[GradedAnswer] = []
@@ -96,7 +67,7 @@ def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db
         node = None
         parent: Optional[Question] = None
         for q in all_questions:
-            node = _find_node_by_id(q.content, ans.source_id)
+            node = find_node_by_id(q.content, ans.source_id)
             if node is not None:
                 parent = q
                 break
@@ -105,7 +76,7 @@ def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db
         is_correct: Optional[bool] = None
         note: Optional[str] = None
         if expected is not None:
-            is_correct = _answers_match(expected, ans.answer)
+            is_correct = answers_match(expected, ans.answer)
             graded_count += 1
             if is_correct:
                 correct_count += 1

@@ -263,6 +263,40 @@ th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: 
 .review-mode-toggle { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; cursor: pointer; }
 .review-mode-toggle input { accent-color: var(--text); width: 16px; height: 16px; }
 
+.mock-exam-timer-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  position: sticky;
+  top: 0.75rem;
+  z-index: 5;
+}
+
+.mock-exam-timer {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.mock-exam-timer-low { color: var(--wrong); }
+
+.mock-exam-score-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.mock-exam-total {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0.9rem 0 0.4rem;
+}
+
 .site-footer {
   max-width: 860px;
   margin: 1.5rem auto 0;

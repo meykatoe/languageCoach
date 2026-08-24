@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import AppSetting, Attempt, Question
-from app.routers.practice import _find_node_by_id
+from app.services.grading import find_node_by_id
 from app.schemas import QuestionOut
 
 router = APIRouter(prefix="/api/review", tags=["review"])
@@ -53,14 +53,14 @@ def get_review_questions(
         for q in all_questions:
             if q.id in included_parent_ids:
                 continue
-            node = _find_node_by_id(q.content, sub_id)
+            node = find_node_by_id(q.content, sub_id)
             if node is not None:
                 out = QuestionOut.model_validate(q)
                 if not review_mode:
                     out.reviewNotes = {
                         other_id: wrong_notes[other_id]
                         for other_id in wrong_source_ids
-                        if other_id in wrong_notes and _find_node_by_id(q.content, other_id) is not None
+                        if other_id in wrong_notes and find_node_by_id(q.content, other_id) is not None
                     } or None
                 result.append(out)
                 included_parent_ids.add(q.id)

@@ -106,6 +106,89 @@ class HistorySummary(BaseModel):
     recent: list[AttemptOut]
 
 
+class MockExamStartRequest(BaseModel):
+    exam: str = "TOEIC"
+    mode: str = Field(default="bank", pattern="^(bank|ai_generated)$")
+
+
+class MockExamQuestion(BaseModel):
+    source_id: str
+    exam: str
+    section: str
+    part: Optional[str]
+    qtype: str
+    source_file: str
+    content: Any
+    reviewNotes: Optional[dict[str, str]] = None
+
+
+class MockExamSectionPayload(BaseModel):
+    section: str
+    deadline: datetime.datetime
+    questions: list[MockExamQuestion]
+
+
+class MockExamStartResponse(BaseModel):
+    id: int
+    exam: str
+    mode: str
+    status: str
+    listening: MockExamSectionPayload
+
+
+class MockExamSectionSubmitRequest(BaseModel):
+    answers: list[AnswerSubmission]
+
+
+class MockExamListeningSubmitResponse(BaseModel):
+    id: int
+    status: str
+    reading: MockExamSectionPayload
+
+
+class MockExamSectionScore(BaseModel):
+    raw_correct: int
+    raw_total: int
+    scaled_score: int
+
+
+class MockExamFinalResult(BaseModel):
+    id: int
+    exam: str
+    status: str
+    listening: MockExamSectionScore
+    reading: MockExamSectionScore
+    scaled_total: int
+    listening_results: list[GradedAnswer]
+    reading_results: list[GradedAnswer]
+    disclaimer: str = "換算分數為依答對題數所做的近似估算，並非官方正式成績，僅供練習參考。"
+
+
+class MockExamStateResponse(BaseModel):
+    id: int
+    exam: str
+    mode: str
+    status: str
+    listening_deadline: Optional[datetime.datetime]
+    reading_deadline: Optional[datetime.datetime]
+    listening: Optional[MockExamSectionPayload] = None
+    reading: Optional[MockExamSectionPayload] = None
+    result: Optional[MockExamFinalResult] = None
+
+
+class MockExamHistoryItem(BaseModel):
+    id: int
+    exam: str
+    mode: str
+    status: str
+    created_at: datetime.datetime
+    scaled_listening: Optional[int]
+    scaled_reading: Optional[int]
+    scaled_total: Optional[int]
+
+    model_config = {"from_attributes": True}
+
+
 class SettingsUpdateRequest(BaseModel):
     openai_api_key: Optional[str] = None
     openai_model: Optional[str] = None

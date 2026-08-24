@@ -15,6 +15,7 @@ from app.routers import (  # noqa: E402
     grading,
     history,
     image,
+    mock_exam,
     practice,
     review,
     settings,
@@ -45,6 +46,7 @@ app.include_router(settings.router)
 app.include_router(translate.router)
 app.include_router(tts.router)
 app.include_router(image.router)
+app.include_router(mock_exam.router)
 app.include_router(upload.router)
 
 
@@ -56,6 +58,11 @@ def index(request: Request):
 @app.get("/practice", response_class=HTMLResponse)
 def practice_page(request: Request):
     return templates.TemplateResponse(request, "practice.html")
+
+
+@app.get("/mock-exam", response_class=HTMLResponse)
+def mock_exam_page(request: Request):
+    return templates.TemplateResponse(request, "mock-exam.html")
 
 
 @app.get("/history", response_class=HTMLResponse)
