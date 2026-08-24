@@ -1,10 +1,13 @@
+from typing import Optional
+
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import Attempt
-from app.schemas import AttemptOut, ExamStat, HistorySummary
+from app.schemas import AttemptOut, ExamStat, HistorySummary, WeaknessStat
+from app.services.grading import latest_objective_attempts
 
 router = APIRouter(prefix="/api/history", tags=["history"])
 
@@ -42,6 +45,25 @@ def get_history(
             )
         )
 
+    # Weakness breakdown: among currently-unresolved wrong answers (the same
+    # "latest attempt per question" definition /api/review uses), which
+    # exam/section/part has the most, worst first — so the user can see at a
+    # glance where to focus, and jump to /review to actually work through them.
+    wrong_counts: dict[tuple[str, str, Optional[str]], int] = {}
+    for a in latest_objective_attempts(db):
+        if a.is_correct is False:
+            key = (a.exam, a.section, a.part)
+            wrong_counts[key] = wrong_counts.get(key, 0) + 1
+
+    weaknesses = sorted(
+        (
+            WeaknessStat(exam=exam, section=section, part=part, wrong_count=count)
+            for (exam, section, part), count in wrong_counts.items()
+        ),
+        key=lambda w: w.wrong_count,
+        reverse=True,
+    )
+
     recent = (
         db.query(Attempt).order_by(Attempt.created_at.desc()).limit(limit).all()
     )
@@ -49,5 +71,6 @@ def get_history(
     return HistorySummary(
         total_attempts=total_attempts,
         stats=stats,
+        weaknesses=weaknesses,
         recent=[AttemptOut.model_validate(r) for r in recent],
     )

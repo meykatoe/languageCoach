@@ -17,6 +17,16 @@ fetch('/api/history?limit=50').then(r => r.json()).then(data => {
     statsBody.innerHTML = '<tr><td colspan="6">尚無作答紀錄,請先到練習頁面作答。</td></tr>';
   }
 
+  const weaknessBody = document.querySelector('#weakness-table tbody');
+  data.weaknesses.forEach(w => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${w.exam}</td><td>${w.section}</td><td>${w.part || '-'}</td><td>${w.wrong_count}</td>`;
+    weaknessBody.appendChild(tr);
+  });
+  if (!data.weaknesses.length) {
+    weaknessBody.innerHTML = '<tr><td colspan="4">目前沒有尚未答對的題目,做得很好!</td></tr>';
+  }
+
   const recentBody = document.querySelector('#recent-table tbody');
   data.recent.forEach(a => {
     const result = a.item_type === 'objective'

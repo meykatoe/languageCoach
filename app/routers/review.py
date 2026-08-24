@@ -2,8 +2,8 @@ from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import AppSetting, Attempt, Question
-from app.services.grading import find_node_by_id
+from app.models import AppSetting, Question
+from app.services.grading import find_node_by_id, latest_objective_attempts
 from app.schemas import QuestionOut
 
 router = APIRouter(prefix="/api/review", tags=["review"])
@@ -22,20 +22,9 @@ def get_review_questions(
     setting = db.query(AppSetting).first()
     review_mode = bool(setting and setting.review_mode)
 
-    attempts = (
-        db.query(Attempt)
-        .filter(Attempt.item_type == "objective")
-        .order_by(Attempt.created_at.desc())
-        .all()
-    )
-
-    seen_source_ids: set[str] = set()
     wrong_source_ids: list[str] = []
     wrong_notes: dict[str, str] = {}
-    for a in attempts:
-        if a.source_id in seen_source_ids:
-            continue
-        seen_source_ids.add(a.source_id)
+    for a in latest_objective_attempts(db):
         if a.is_correct is False:
             wrong_source_ids.append(a.source_id)
             note = (a.detail or {}).get("note") if a.detail else None

@@ -100,9 +100,17 @@ class ExamStat(BaseModel):
     accuracy: Optional[float]
 
 
+class WeaknessStat(BaseModel):
+    exam: str
+    section: str
+    part: Optional[str]
+    wrong_count: int
+
+
 class HistorySummary(BaseModel):
     total_attempts: int
     stats: list[ExamStat]
+    weaknesses: list[WeaknessStat]
     recent: list[AttemptOut]
 
 

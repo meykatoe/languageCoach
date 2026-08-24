@@ -4,6 +4,10 @@ submission (app/routers/practice.py) and full mock-exam grading
 """
 from typing import Any, Optional
 
+from sqlalchemy.orm import Session
+
+from app.models import Attempt
+
 
 def find_node_by_id(node: Any, target_id: str) -> Optional[dict]:
     """Depth-first search for a dict with id == target_id anywhere inside a
@@ -23,6 +27,28 @@ def find_node_by_id(node: Any, target_id: str) -> Optional[dict]:
             if found is not None:
                 return found
     return None
+
+
+def latest_objective_attempts(db: Session) -> list[Attempt]:
+    """One row per objective source_id: its most recent attempt, newest
+    overall first. This is "current state" (did the student get it right
+    the last time they tried it), used by both the error-notebook review
+    list and the history page's weakness breakdown so the two stay in sync.
+    """
+    attempts = (
+        db.query(Attempt)
+        .filter(Attempt.item_type == "objective")
+        .order_by(Attempt.created_at.desc())
+        .all()
+    )
+    seen: set[str] = set()
+    latest: list[Attempt] = []
+    for a in attempts:
+        if a.source_id in seen:
+            continue
+        seen.add(a.source_id)
+        latest.append(a)
+    return latest
 
 
 def answers_match(expected: Any, submitted: Any) -> bool:
