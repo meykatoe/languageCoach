@@ -307,6 +307,9 @@ async function submitObjective(container, radioIdMap) {
       marker.className = r.correct ? 'result-correct' : 'result-wrong';
     }
   });
+  container.querySelectorAll('.transcript').forEach(t => { t.style.display = 'block'; });
+  container.querySelectorAll('.transcript-hint').forEach(h => { h.style.display = 'none'; });
+
   const summary = el('p', { class: 'summary-bar' }, `得分: ${res.correct} / ${res.graded}`);
   container.appendChild(summary);
 }
@@ -476,7 +479,8 @@ function renderItem(q, wrapper) {
     objectiveIds.push(item.id);
   } else if (item.transcript && Array.isArray(item.questions)) {
     addSpeakButton(item.transcript, card);
-    card.appendChild(el('div', { class: 'transcript' }, item.transcript));
+    card.appendChild(el('p', { class: 'transcript-hint' }, '(送出答案後顯示聽力文字稿)'));
+    card.appendChild(el('div', { class: 'transcript', style: 'display:none' }, item.transcript));
     renderSubQuestions(item.questions, card, notes);
     item.questions.forEach(sq => { radioIdMap.push({ name: `q-${sq.id}`, sourceId: sq.id }); objectiveIds.push(sq.id); });
   } else if (item.passage && Array.isArray(item.questions) && typeof item.passage === 'string') {
@@ -533,7 +537,8 @@ function renderItem(q, wrapper) {
     });
   } else if (item.form && Array.isArray(item.form.fields)) {
     if (item.transcript) addSpeakButton(item.transcript, card);
-    card.appendChild(el('div', { class: 'transcript' }, item.transcript || ''));
+    if (item.transcript) card.appendChild(el('p', { class: 'transcript-hint' }, '(送出答案後顯示聽力文字稿)'));
+    card.appendChild(el('div', { class: 'transcript', style: 'display:none' }, item.transcript || ''));
     card.appendChild(el('p', {}, item.form.title || ''));
     item.form.fields.forEach(f => {
       const row = el('div', { class: 'question-block' });
@@ -545,7 +550,8 @@ function renderItem(q, wrapper) {
     });
   } else if (Array.isArray(item.sentences)) {
     if (item.transcript) addSpeakButton(item.transcript, card);
-    card.appendChild(el('div', { class: 'transcript' }, item.transcript || ''));
+    if (item.transcript) card.appendChild(el('p', { class: 'transcript-hint' }, '(送出答案後顯示聽力文字稿)'));
+    card.appendChild(el('div', { class: 'transcript', style: 'display:none' }, item.transcript || ''));
     item.sentences.forEach(s => {
       const row = el('div', { class: 'question-block' });
       row.appendChild(el('p', {}, s.text));

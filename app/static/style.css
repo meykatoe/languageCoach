@@ -183,6 +183,12 @@ button.secondary {
   font-size: 0.95rem;
 }
 
+.transcript-hint {
+  color: var(--text-muted, #888);
+  font-size: 0.85rem;
+  margin: 0.3rem 0 0.6rem;
+}
+
 .options { display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.5rem; }
 .options label {
   display: block;
