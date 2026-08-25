@@ -7,17 +7,30 @@ from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import VocabEntry
-from app.schemas import VocabEntryOut, VocabReviewAnswerIn, VocabReviewQuestion, VocabReviewResult
+from app.schemas import VocabEntryOut, VocabReviewAnswerIn, VocabReviewDueCount, VocabReviewQuestion, VocabReviewResult
 from app.services.openai_service import generate_vocab_entry
 from app.services.vocab import apply_review_result, build_blank_sentence
 
 router = APIRouter(prefix="/api/vocab", tags=["vocab"])
 
 
+def _due_query(db: Session):
+    now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
+    return db.query(VocabEntry).filter(or_(VocabEntry.next_review_at.is_(None), VocabEntry.next_review_at <= now))
+
+
 @router.get("", response_model=list[VocabEntryOut])
 def list_vocab(db: Session = Depends(get_db)):
     entries = db.query(VocabEntry).order_by(VocabEntry.created_at.desc()).all()
     return [VocabEntryOut.model_validate(e) for e in entries]
+
+
+@router.get("/review/due-count", response_model=VocabReviewDueCount)
+def get_review_due_count(db: Session = Depends(get_db)):
+    """Lightweight count of words currently due for review, for a home-page
+    reminder widget that shouldn't pay the cost of building blank sentences
+    for every due entry."""
+    return VocabReviewDueCount(due=_due_query(db).count())
 
 
 @router.get("/review/queue", response_model=list[VocabReviewQuestion])
@@ -28,10 +41,8 @@ def get_review_queue(limit: int = Query(default=20, ge=1, le=100), db: Session =
     example (detail not generated yet, or no example contains the word) are
     skipped.
     """
-    now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
     entries = (
-        db.query(VocabEntry)
-        .filter(or_(VocabEntry.next_review_at.is_(None), VocabEntry.next_review_at <= now))
+        _due_query(db)
         .order_by(VocabEntry.next_review_at.asc().nulls_first())
         .limit(limit * 2)  # over-fetch since some entries may have no usable example
         .all()
