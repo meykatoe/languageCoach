@@ -37,8 +37,14 @@ def test_generate_creates_questions(client, monkeypatch):
     assert all(i["source_file"] == "ai-generated" for i in items)
     assert all(i["exam"] == "TOEIC" and i["section"] == "Reading" for i in items)
 
-    # generated items should now be fetchable through the normal questions endpoint
-    res2 = client.get("/api/questions", params={"exam": "TOEIC", "section": "Reading", "limit": 100})
+    # generated items should now be fetchable through the normal questions endpoint.
+    # /api/questions samples randomly up to `limit`, so filter down to the part
+    # (well under the 100-row cap) rather than the whole section, which can hold
+    # far more than 100 questions once the real question bank is seeded.
+    res2 = client.get(
+        "/api/questions",
+        params={"exam": "TOEIC", "section": "Reading", "part": "Part 5: Incomplete Sentences", "limit": 100},
+    )
     fetched_ids = {q["source_id"] for q in res2.json()}
     assert ids <= fetched_ids
 
