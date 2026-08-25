@@ -248,5 +248,28 @@ class VocabEntryOut(BaseModel):
     word: str
     created_at: datetime.datetime
     detail: Optional[dict] = None
+    interval_days: int
+    repetitions: int
+    next_review_at: Optional[datetime.datetime] = None
 
     model_config = {"from_attributes": True}
+
+
+class VocabReviewQuestion(BaseModel):
+    id: int
+    word: str
+    phonetic: Optional[str] = None
+    sentence: str
+
+    model_config = {"from_attributes": True}
+
+
+class VocabReviewAnswerIn(BaseModel):
+    answer: str
+
+
+class VocabReviewResult(BaseModel):
+    correct: bool
+    correct_answer: str
+    interval_days: int
+    next_review_at: datetime.datetime

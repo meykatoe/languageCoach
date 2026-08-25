@@ -1,7 +1,10 @@
 """Vocabulary-book logic: deciding whether a selected snippet of text is a
-single word worth saving, and generating/storing its dictionary entry.
+single word worth saving, generating/storing its dictionary entry, and the
+spaced-repetition (simplified SM-2) fill-in-the-blank review flow.
 """
 
+import datetime
+import random
 import re
 
 from app.database import SessionLocal
@@ -63,3 +66,62 @@ def save_new_word_for_background_generation(word: str) -> VocabEntry:
         return entry
     finally:
         db.close()
+
+
+def build_blank_sentence(entry: VocabEntry) -> str | None:
+    """Pick one example sentence from the entry's generated dictionary
+    detail and blank out the target word, for a fill-in-the-blank review
+    prompt. Returns None if there's no usable example (detail not generated
+    yet, or none of the examples actually contain the word).
+    """
+    if not entry.detail:
+        return None
+    examples = [
+        d.get("example_en", "")
+        for e in entry.detail.get("entries", [])
+        for d in e.get("definitions", [])
+        if d.get("example_en")
+    ]
+    random.shuffle(examples)
+
+    word_re = re.compile(re.escape(entry.word), re.IGNORECASE)
+    for example in examples:
+        if word_re.search(example):
+            return word_re.sub("_____", example, count=1)
+    return None
+
+
+def _srs_defaults(entry: VocabEntry) -> None:
+    """SQLAlchemy column defaults only apply on flush, so a freshly loaded
+    row from a pre-migration DB can still have None here; treat that the
+    same as "never reviewed"."""
+    if entry.repetitions is None:
+        entry.repetitions = 0
+    if entry.ease_factor is None:
+        entry.ease_factor = 2.5
+    if entry.interval_days is None:
+        entry.interval_days = 0
+
+
+def apply_review_result(entry: VocabEntry, correct: bool) -> None:
+    """Update an entry's spaced-repetition schedule (simplified SM-2) after
+    a review attempt. Mutates `entry` in place; caller commits.
+    """
+    _srs_defaults(entry)
+
+    if correct:
+        entry.repetitions += 1
+        if entry.repetitions == 1:
+            entry.interval_days = 1
+        elif entry.repetitions == 2:
+            entry.interval_days = 6
+        else:
+            entry.interval_days = round(entry.interval_days * entry.ease_factor)
+        entry.ease_factor = min(2.5, entry.ease_factor + 0.1)
+    else:
+        entry.repetitions = 0
+        entry.interval_days = 1
+        entry.ease_factor = max(1.3, entry.ease_factor - 0.2)
+
+    now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
+    entry.next_review_at = now + datetime.timedelta(days=entry.interval_days)

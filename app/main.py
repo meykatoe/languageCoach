@@ -100,6 +100,11 @@ def vocab_page(request: Request):
     return templates.TemplateResponse(request, "vocab.html")
 
 
+@app.get("/vocab/review", response_class=HTMLResponse)
+def vocab_review_page(request: Request):
+    return templates.TemplateResponse(request, "vocab-review.html")
+
+
 @app.get("/health")
 def health():
     return {"status": "ok"}

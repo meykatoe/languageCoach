@@ -1,6 +1,6 @@
 import datetime
 
-from sqlalchemy import JSON, Boolean, Column, DateTime, Integer, String, UniqueConstraint
+from sqlalchemy import JSON, Boolean, Column, DateTime, Float, Integer, String, UniqueConstraint
 
 from app.database import Base
 
@@ -110,6 +110,14 @@ class VocabEntry(Base):
         index=True,
     )
     detail = Column(JSON, nullable=True)
+
+    # Spaced-repetition scheduling (simplified SM-2). next_review_at is null
+    # until the word is reviewed for the first time, which makes it due
+    # immediately.
+    interval_days = Column(Integer, nullable=False, default=0)
+    ease_factor = Column(Float, nullable=False, default=2.5)
+    repetitions = Column(Integer, nullable=False, default=0)
+    next_review_at = Column(DateTime, nullable=True, index=True)
 
 
 class AppSetting(Base):
