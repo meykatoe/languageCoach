@@ -40,3 +40,15 @@ def migrate_schema() -> None:
         if "advice" not in columns:
             with engine.begin() as conn:
                 conn.execute(text("ALTER TABLE exam_sessions ADD COLUMN advice VARCHAR"))
+
+    if "vocab_entries" in inspector.get_table_names():
+        columns = {col["name"] for col in inspector.get_columns("vocab_entries")}
+        with engine.begin() as conn:
+            if "interval_days" not in columns:
+                conn.execute(text("ALTER TABLE vocab_entries ADD COLUMN interval_days INTEGER DEFAULT 0"))
+            if "ease_factor" not in columns:
+                conn.execute(text("ALTER TABLE vocab_entries ADD COLUMN ease_factor FLOAT DEFAULT 2.5"))
+            if "repetitions" not in columns:
+                conn.execute(text("ALTER TABLE vocab_entries ADD COLUMN repetitions INTEGER DEFAULT 0"))
+            if "next_review_at" not in columns:
+                conn.execute(text("ALTER TABLE vocab_entries ADD COLUMN next_review_at DATETIME"))

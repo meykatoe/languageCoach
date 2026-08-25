@@ -1,11 +1,15 @@
-from fastapi import APIRouter, Depends, HTTPException
+import datetime
+
+from fastapi import APIRouter, Depends, HTTPException, Query
 from openai import APIError
+from sqlalchemy import or_
 from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import VocabEntry
-from app.schemas import VocabEntryOut
+from app.schemas import VocabEntryOut, VocabReviewAnswerIn, VocabReviewQuestion, VocabReviewResult
 from app.services.openai_service import generate_vocab_entry
+from app.services.vocab import apply_review_result, build_blank_sentence
 
 router = APIRouter(prefix="/api/vocab", tags=["vocab"])
 
@@ -14,6 +18,53 @@ router = APIRouter(prefix="/api/vocab", tags=["vocab"])
 def list_vocab(db: Session = Depends(get_db)):
     entries = db.query(VocabEntry).order_by(VocabEntry.created_at.desc()).all()
     return [VocabEntryOut.model_validate(e) for e in entries]
+
+
+@router.get("/review/queue", response_model=list[VocabReviewQuestion])
+def get_review_queue(limit: int = Query(default=20, ge=1, le=100), db: Session = Depends(get_db)):
+    """Words due for spaced-repetition review (never reviewed, or whose
+    schedule has come due), each turned into a fill-in-the-blank question
+    from one of its dictionary example sentences. Entries without a usable
+    example (detail not generated yet, or no example contains the word) are
+    skipped.
+    """
+    now = datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None)
+    entries = (
+        db.query(VocabEntry)
+        .filter(or_(VocabEntry.next_review_at.is_(None), VocabEntry.next_review_at <= now))
+        .order_by(VocabEntry.next_review_at.asc().nulls_first())
+        .limit(limit * 2)  # over-fetch since some entries may have no usable example
+        .all()
+    )
+    questions = []
+    for entry in entries:
+        sentence = build_blank_sentence(entry)
+        if sentence is None:
+            continue
+        phonetic = (entry.detail or {}).get("phonetic")
+        questions.append(VocabReviewQuestion(id=entry.id, word=entry.word, phonetic=phonetic, sentence=sentence))
+        if len(questions) >= limit:
+            break
+    return questions
+
+
+@router.post("/{entry_id}/review", response_model=VocabReviewResult)
+def submit_review_answer(entry_id: int, payload: VocabReviewAnswerIn, db: Session = Depends(get_db)):
+    entry = db.get(VocabEntry, entry_id)
+    if entry is None:
+        raise HTTPException(status_code=404, detail=f"Vocab entry '{entry_id}' not found")
+
+    correct = payload.answer.strip().lower() == entry.word.lower()
+    apply_review_result(entry, correct)
+    db.commit()
+    db.refresh(entry)
+
+    return VocabReviewResult(
+        correct=correct,
+        correct_answer=entry.word,
+        interval_days=entry.interval_days,
+        next_review_at=entry.next_review_at,
+    )
 
 
 @router.delete("/{entry_id}", status_code=204)

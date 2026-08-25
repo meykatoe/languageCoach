@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>單字本 - Language Coach</title>
+  <title>單字填空複習 - Language Coach</title>
   <link rel="stylesheet" href="/static/style.css" />
 </head>
 <body>
@@ -20,21 +20,18 @@
   </header>
   <main>
     <div class="card">
-      <h1>單字本</h1>
+      <h1>單字填空複習</h1>
       <p class="hint">
-        在任何頁面上,用滑鼠選取(反白)一個英文單字並放開,系統就會自動幫你翻譯,
-        同時把這個單字加進單字本,並自動生成如牛津字典般詳細的完整釋義,方便你之後深入複習記憶。
+        依照間隔重複排程，複習到期的單字：看例句、把缺空填回正確的單字。答對會拉長下次複習間隔，答錯則從頭開始。
+        <a href="/vocab">回單字本</a>
       </p>
-      <p id="vocab-count">載入中...</p>
-      <p><a href="/vocab/review">開始填空複習 →</a></p>
-      <input type="text" id="vocab-search" placeholder="搜尋單字本..." />
+      <p id="vocab-review-progress"></p>
     </div>
-    <div id="vocab-list"></div>
+    <div id="vocab-review-area"></div>
   </main>
   <footer class="site-footer">
     <p>本平台為獨立開發之練習工具，與 ETS(TOEIC&reg;/TOEFL&reg;)、IDP、British Council、Cambridge Assessment English(IELTS&reg;)無任何關聯，亦未獲其授權或認可。TOEIC&reg;、TOEFL&reg; 為 ETS 之註冊商標；IELTS&reg; 為其權利人之註冊商標。所有題目內容均為原創編寫，僅供個人練習使用。</p>
   </footer>
-  <script src="/static/selection-translate.js"></script>
-  <script src="/static/vocab.js"></script>
+  <script src="/static/vocab-review.js"></script>
 </body>
 </html>
