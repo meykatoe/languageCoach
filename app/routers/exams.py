@@ -1,0 +1,48 @@
+from fastapi import APIRouter, Depends, Query
+from sqlalchemy import func
+from sqlalchemy.orm import Session
+
+from app.database import get_db
+from app.models import Question
+from app.schemas import ExamSummary, QuestionOut
+
+router = APIRouter(prefix="/api", tags=["exams"])
+
+
+@router.get("/exams", response_model=list[ExamSummary])
+def list_exams(db: Session = Depends(get_db)):
+    rows = (
+        db.query(
+            Question.exam,
+            Question.section,
+            Question.part,
+            Question.qtype,
+            func.count(Question.id).label("count"),
+        )
+        .group_by(Question.exam, Question.section, Question.part, Question.qtype)
+        .order_by(Question.exam, Question.section, Question.part)
+        .all()
+    )
+    return [
+        ExamSummary(exam=r[0], section=r[1], part=r[2], qtype=r[3], count=r[4])
+        for r in rows
+    ]
+
+
+@router.get("/questions", response_model=list[QuestionOut])
+def list_questions(
+    exam: str | None = Query(default=None),
+    section: str | None = Query(default=None),
+    part: str | None = Query(default=None),
+    limit: int = Query(default=10, ge=1, le=100),
+    db: Session = Depends(get_db),
+):
+    q = db.query(Question)
+    if exam:
+        q = q.filter(Question.exam == exam)
+    if section:
+        q = q.filter(Question.section == section)
+    if part:
+        q = q.filter(Question.part == part)
+    rows = q.order_by(func.random()).limit(limit).all()
+    return rows

@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+openai
+cryptography
+python-dotenv
+jinja2
+python-multipart
+httpx
+pytest
+pypdf
+python-docx

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Language Coach</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="site">
+    <a href="/">Language Coach</a>
+    <nav>
+      <a href="/practice">開始練習</a>
+      <a href="/mock-exam">正式模考</a>
+      <a href="/review">錯題複習</a>
+      <a href="/history">學習紀錄</a>
+      <a href="/vocab">單字本</a>
+      <a href="/upload">上傳出題</a>
+      <a href="/settings" class="gear-link" title="設定" aria-label="設定"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M19.4 13a7.4 7.4 0 0 0 .06-1l1.86-1.46a.9.9 0 0 0 .2-1.15l-1.76-3.05a.9.9 0 0 0-1.09-.39l-2.2.88a7.3 7.3 0 0 0-1.73-1l-.33-2.34a.9.9 0 0 0-.89-.77h-3.52a.9.9 0 0 0-.89.77l-.33 2.34c-.63.25-1.21.58-1.73 1l-2.2-.88a.9.9 0 0 0-1.09.39L1.94 9.4a.9.9 0 0 0 .2 1.15L4 12a7.4 7.4 0 0 0 0 2l-1.86 1.46a.9.9 0 0 0-.2 1.15l1.76 3.05c.24.4.72.57 1.15.39l2.2-.88c.52.42 1.1.75 1.73 1l.33 2.34c.07.44.46.77.89.77h3.52c.43 0 .82-.33.89-.77l.33-2.34c.63-.25 1.21-.58 1.73-1l2.2.88c.43.18.91.01 1.15-.39l1.76-3.05a.9.9 0 0 0-.2-1.15L19.4 13Z"/></svg></a>
+    </nav>
+  </header>
+  <main>
+    <div class="card">
+      <h1>AI 語言教練</h1>
+      <p>提供 TOEIC、IELTS、TOEFL 模擬題練習，客觀題自動批改，寫作與口說由 OpenAI API 提供評分與回饋。</p>
+      <button onclick="location.href='/practice'">開始練習</button>
+      <button class="secondary" onclick="location.href='/mock-exam'">TOEIC 正式模考</button>
+    </div>
+    <div class="card">
+      <h2>題庫總覽</h2>
+      <div id="exam-summary">載入中...</div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>本平台為獨立開發之練習工具，與 ETS(TOEIC&reg;/TOEFL&reg;)、IDP、British Council、Cambridge Assessment English(IELTS&reg;)無任何關聯，亦未獲其授權或認可。TOEIC&reg;、TOEFL&reg; 為 ETS 之註冊商標；IELTS&reg; 為其權利人之註冊商標。所有題目內容均為原創編寫，僅供個人練習使用。</p>
+  </footer>
+  <script src="/static/selection-translate.js"></script>
+  <script>
+    fetch('/api/exams').then(r => r.json()).then(rows => {
+      const el = document.getElementById('exam-summary');
+      if (!rows.length) { el.textContent = '尚無題目資料。'; return; }
+      const byExam = {};
+      rows.forEach(r => {
+        byExam[r.exam] = byExam[r.exam] || { total: 0, sections: {} };
+        byExam[r.exam].total += r.count;
+        byExam[r.exam].sections[r.section] = (byExam[r.exam].sections[r.section] || 0) + r.count;
+      });
+      el.innerHTML = Object.entries(byExam).map(([exam, info]) => `
+        <p><strong>${exam}</strong> - 共 ${info.total} 題
+        ${Object.entries(info.sections).map(([s, c]) => `${s}: ${c}`).join('　')}</p>
+      `).join('');
+    });
+  </script>
+</body>
+</html>

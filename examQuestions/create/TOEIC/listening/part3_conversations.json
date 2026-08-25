@@ -1,0 +1,195 @@
+{
+  "exam": "TOEIC",
+  "section": "Listening",
+  "part": "Part 3: Conversations",
+  "instructions": "Listen to each conversation between two or three speakers and answer the three questions that follow.",
+  "conversations": [
+    {
+      "id": "toeic-l3-conv-01",
+      "transcript": "Woman: Hi, I'm calling about the order I placed last week, order number 4521. It still hasn't arrived.\nMan: I'm sorry about that. Let me check the tracking information... It looks like it's been delayed at the shipping warehouse due to a system error.\nWoman: That's frustrating. Can you tell me when I can expect it now?\nMan: I can offer you expedited shipping at no extra cost, so it should arrive within two business days.",
+      "questions": [
+        {"id": "toeic-l3-conv-01-q1", "question": "Why is the woman calling?", "options": ["A. To cancel her order", "B. To ask about a delayed order", "C. To request a refund", "D. To change her shipping address"], "answer": "B"},
+        {"id": "toeic-l3-conv-01-q2", "question": "What caused the problem, according to the man?", "options": ["A. A payment issue", "B. Bad weather", "C. A system error at the warehouse", "D. An incorrect address"], "answer": "C"},
+        {"id": "toeic-l3-conv-01-q3", "question": "What does the man offer to do?", "options": ["A. Provide a discount", "B. Cancel the order", "C. Provide free expedited shipping", "D. Send a replacement item"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-02",
+      "transcript": "Man: Did you hear that the annual sales conference has been moved to the Grand Hotel this year instead of the office?\nWoman: Really? I thought it was staying at headquarters. Do you know why they changed the venue?\nMan: I heard the office couldn't accommodate the number of attendees this year since registration doubled.\nWoman: That makes sense. I'll need to update the invitations with the new location and parking instructions.",
+      "questions": [
+        {"id": "toeic-l3-conv-02-q1", "question": "What are the speakers mainly discussing?", "options": ["A. A change of conference venue", "B. A canceled meeting", "C. New parking regulations", "D. A hotel renovation"], "answer": "A"},
+        {"id": "toeic-l3-conv-02-q2", "question": "Why was the venue changed?", "options": ["A. The hotel offered a better price", "B. Registration numbers increased significantly", "C. The office is being renovated", "D. The date of the event changed"], "answer": "B"},
+        {"id": "toeic-l3-conv-02-q3", "question": "What will the woman most likely do next?", "options": ["A. Book a hotel room", "B. Contact the venue directly", "C. Update the invitations", "D. Cancel her registration"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-03",
+      "transcript": "Woman: Excuse me, I'm looking for a laptop that's lightweight but still good for video editing.\nMan: We have a great option right here—it has a powerful processor and a large screen, but it's still under two kilograms.\nWoman: That sounds perfect. Is it currently in stock, and does it come with a warranty?\nMan: Yes, it's in stock, and it includes a one-year manufacturer's warranty. We also offer an extended warranty for an additional fee.",
+      "questions": [
+        {"id": "toeic-l3-conv-03-q1", "question": "What is the woman shopping for?", "options": ["A. A smartphone", "B. A lightweight laptop", "C. A camera", "D. A printer"], "answer": "B"},
+        {"id": "toeic-l3-conv-03-q2", "question": "What feature does the man emphasize?", "options": ["A. Its low price", "B. Its light weight and processing power", "C. Its color options", "D. Its battery life"], "answer": "B"},
+        {"id": "toeic-l3-conv-03-q3", "question": "What does the man say about the warranty?", "options": ["A. There is no warranty available", "B. Only an extended warranty is offered", "C. A one-year warranty is included, with an extended option", "D. The warranty must be purchased separately"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-04",
+      "transcript": "Man: Sandra, could you take a look at the budget spreadsheet before the finance meeting this afternoon?\nWoman: Of course. Is there something specific you'd like me to check?\nMan: Yes, I noticed the travel expenses for last month seem much higher than usual, and I want to confirm the numbers are accurate before we present them.\nWoman: I'll go through the receipts and get back to you within the hour.",
+      "questions": [
+        {"id": "toeic-l3-conv-04-q1", "question": "What does the man ask the woman to do?", "options": ["A. Prepare a presentation", "B. Review a budget spreadsheet", "C. Book a flight", "D. Schedule a meeting"], "answer": "B"},
+        {"id": "toeic-l3-conv-04-q2", "question": "What is the man concerned about?", "options": ["A. Unusually high travel expenses", "B. A missed deadline", "C. Incorrect meeting time", "D. Low sales figures"], "answer": "A"},
+        {"id": "toeic-l3-conv-04-q3", "question": "What will the woman probably do next?", "options": ["A. Cancel the meeting", "B. Check the receipts", "C. Call a client", "D. Book a hotel"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-05",
+      "transcript": "Woman 1: Have you two decided on a caterer for the company anniversary event yet?\nMan: We're still comparing two options, but one of them specializes in vegetarian menus, which several employees requested.\nWoman 2: I think we should go with that one, then. When do we need to confirm the final headcount?\nMan: The caterer needs the number by next Wednesday, so let's finalize it by Monday's meeting.",
+      "questions": [
+        {"id": "toeic-l3-conv-05-q1", "question": "What are the speakers planning?", "options": ["A. A company anniversary event", "B. A product launch", "C. A staff training session", "D. A client dinner"], "answer": "A"},
+        {"id": "toeic-l3-conv-05-q2", "question": "Why does the man prefer one caterer?", "options": ["A. It is less expensive", "B. It offers vegetarian options", "C. It is closer to the office", "D. It has better reviews"], "answer": "B"},
+        {"id": "toeic-l3-conv-05-q3", "question": "What needs to happen by Monday?", "options": ["A. The invitations must be sent", "B. The caterer must be finalized", "C. The venue must be booked", "D. The budget must be approved"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-02-70b3",
+      "transcript": "Man: Good afternoon, this is Mark from Tech Solutions. How can I assist you today?\nWoman: Hi, Mark. I have been experiencing issues with my internet connection for the past few days.\nMan: I understand. Can you tell me if you’ve tried restarting your modem?\nWoman: Yes, I did that, but it didn’t help.\nMan: Let me run some diagnostics on your line to identify the problem.",
+      "questions": [
+        {"id": "toeic-l3-conv-02-q1-50b9", "question": "What issue is the woman calling about?", "options": ["A. A billing discrepancy", "B. A problem with her internet connection", "C. A malfunctioning computer", "D. A software installation"], "answer": "B"},
+        {"id": "toeic-l3-conv-02-q2-a067", "question": "What action has the woman already taken?", "options": ["A. Changed her service plan", "B. Restarted her modem", "C. Contacted customer service previously", "D. Bought a new router"], "answer": "B"},
+        {"id": "toeic-l3-conv-02-q3-f488", "question": "What does Mark offer to do?", "options": ["A. Schedule a technician visit", "B. Run diagnostics on the woman's line", "C. Provide a refund", "D. Upgrade her internet speed"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-03-c16f",
+      "transcript": "Woman: Hi, I'm looking for the new marketing manager, Tom Larkin. Can you tell me where I can find him?\nMan: Sure! He’s in the conference room right now. They’re having a meeting.\nWoman: Do you know when the meeting will end?\nMan: It should wrap up in about 30 minutes, then he’ll be back at his desk.",
+      "questions": [
+        {"id": "toeic-l3-conv-03-q1-5663", "question": "Who is the woman looking for?", "options": ["A. The head of the marketing department", "B. Tom Larkin", "C. A client", "D. A coworker"], "answer": "B"},
+        {"id": "toeic-l3-conv-03-q2-4573", "question": "Where is Tom currently located?", "options": ["A. In his office", "B. In the break room", "C. In the conference room", "D. At a client meeting"], "answer": "C"},
+        {"id": "toeic-l3-conv-03-q3-a29c", "question": "How much longer is the meeting expected to last?", "options": ["A. 15 minutes", "B. 30 minutes", "C. 1 hour", "D. 45 minutes"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-04-3216",
+      "transcript": "Man: Hello, I’d like to book a table for two for dinner tonight. Is that possible?\nWoman: Yes, what time would you like the reservation?\nMan: Can you book it for 7 PM?\nWoman: Let me check... Yes, we have availability at that time.",
+      "questions": [
+        {"id": "toeic-l3-conv-04-q1-5750", "question": "What is the man trying to do?", "options": ["A. Change his dinner plans", "B. Order takeout food", "C. Make a reservation for dinner", "D. Cancel a previous reservation"], "answer": "C"},
+        {"id": "toeic-l3-conv-04-q2-7527", "question": "For how many people is the reservation?", "options": ["A. One", "B. Two", "C. Three", "D. Four"], "answer": "B"},
+        {"id": "toeic-l3-conv-04-q3-4495", "question": "What time does the man want the reservation for?", "options": ["A. 6 PM", "B. 7 PM", "C. 8 PM", "D. 9 PM"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-05-f994",
+      "transcript": "Woman: I’m looking for some feedback on my presentation. Do you think it was effective?\nMan: Overall, I think you did a great job. The visuals were clear, but you might want to slow down a bit.\nWoman: Thank you! That’s really helpful. Any other suggestions?\nMan: Maybe try to engage the audience more with questions or discussions.",
+      "questions": [
+        {"id": "toeic-l3-conv-05-q1-35f5", "question": "What does the woman want?", "options": ["A. Suggestions for improvement", "B. To showcase her presentation again", "C. A formal evaluation", "D. To change her presentation topic"], "answer": "A"},
+        {"id": "toeic-l3-conv-05-q2-e0e5", "question": "What was one point of praise from the man?", "options": ["A. The length of the presentation", "B. The clarity of the visuals", "C. The choice of topic", "D. The amount of interaction"], "answer": "B"},
+        {"id": "toeic-l3-conv-05-q3-eed4", "question": "What suggestion does the man give?", "options": ["A. To reduce the number of slides", "B. To include more statistics", "C. To slow down the pacing", "D. To avoid technical jargon"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-06",
+      "transcript": "Man: Hi Linda, did you get a chance to look over the new marketing plan?\nWoman: Yes, I went through it this morning. I think the budget is quite optimistic.\nMan: I agree. Do you think we need to adjust some figures?\nWoman: Yes, especially the advertising costs seem high to me.",
+      "questions": [
+        {"id": "toeic-l3-conv-06-q1", "question": "What has Linda reviewed?", "options": ["A. A sales report", "B. A marketing plan", "C. A financial statement", "D. A product presentation"], "answer": "B"},
+        {"id": "toeic-l3-conv-06-q2", "question": "How does Linda feel about the budget?", "options": ["A. It’s too low", "B. It’s realistic", "C. It’s optimistic", "D. It’s complicated"], "answer": "C"},
+        {"id": "toeic-l3-conv-06-q3", "question": "What specific cost does Linda mention as high?", "options": ["A. Staffing costs", "B. Maintenance costs", "C. Advertising costs", "D. Production costs"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-02-dbe1",
+      "transcript": "Man: Good afternoon, this is James from the IT department. How can I assist you today?\nWoman: Hi James, I'm having trouble logging into my account. It keeps saying my password is incorrect.\nMan: I can help you with that. Have you tried resetting your password?\nWoman: Yes, but I didn’t receive the reset email in my inbox.",
+      "questions": [
+        {"id": "toeic-l3-conv-02-q1-13ff", "question": "What issue is the woman experiencing?", "options": ["A. She can't find her account settings.", "B. She is unable to log into her account.", "C. She has lost her password.", "D. She needs to update her account information."], "answer": "B"},
+        {"id": "toeic-l3-conv-02-q2-0f9b", "question": "What does the man suggest to resolve the issue?", "options": ["A. Contact customer support", "B. Try resetting her password", "C. Check her internet connection", "D. Use a different browser"], "answer": "B"},
+        {"id": "toeic-l3-conv-02-q3-e430", "question": "What problem did the woman encounter while resetting her password?", "options": ["A. She forgot her security questions.", "B. The reset email did not arrive.", "C. She entered the wrong email address.", "D. The website was down."], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-03-a686",
+      "transcript": "Woman: Hello, can I speak to the sales team, please?\nMan: Sure, I can connect you to them. What is your inquiry about?\nWoman: I would like to know more about the bulk purchase discounts.\nMan: Let me transfer you; they should be able to provide you with detailed information.",
+      "questions": [
+        {"id": "toeic-l3-conv-03-q1-347f", "question": "Who does the woman want to speak with?", "options": ["A. The marketing team", "B. The delivery service", "C. The sales team", "D. The customer service team"], "answer": "C"},
+        {"id": "toeic-l3-conv-03-q2-13ae", "question": "What is the woman inquiring about?", "options": ["A. Return policies", "B. Shipping costs", "C. Bulk purchase discounts", "D. Product availability"], "answer": "C"},
+        {"id": "toeic-l3-conv-03-q3-5c83", "question": "What does the man say he will do?", "options": ["A. Take her message", "B. Provide the information himself", "C. Transfer her to the sales team", "D. Call her back later"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-04-1675",
+      "transcript": "Man: Hi there! Do you have a moment to discuss your recent feedback?\nWoman: Yes, I do. I was pleased with the service but encountered some delays.\nMan: I appreciate your feedback. Can you specify what caused the delay?\nWoman: It was mostly due to late responses from customer service.",
+      "questions": [
+        {"id": "toeic-l3-conv-04-q1-8143", "question": "What does the man want to discuss?", "options": ["A. The woman's recent complaint", "B. The company's future plans", "C. An upcoming meeting", "D. The feedback she provided"], "answer": "D"},
+        {"id": "toeic-l3-conv-04-q2-ea91", "question": "How does the woman feel about the service?", "options": ["A. She is dissatisfied with it.", "B. She had a neutral experience.", "C. She was pleased with it.", "D. She had a great deal of frustration."], "answer": "C"},
+        {"id": "toeic-l3-conv-04-q3-8299", "question": "What specific issue does the woman mention?", "options": ["A. Incomplete orders", "B. Shipping delays", "C. Late responses from customer service", "D. Payment issues"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-05-d59c",
+      "transcript": "Woman: I'm looking for a new smartphone. Can you recommend any models?\nMan: Certainly! Are you looking for any specific features?\nWoman: Yes, I’d like a phone with a good camera and long battery life.\nMan: In that case, I would suggest the latest XYZ model. It has excellent reviews for both of those features.",
+      "questions": [
+        {"id": "toeic-l3-conv-05-q1-d6b6", "question": "What does the woman want?", "options": ["A. A tablet", "B. A laptop", "C. A new smartphone", "D. A smartwatch"], "answer": "C"},
+        {"id": "toeic-l3-conv-05-q2-5aae", "question": "What specific features does the woman want in her smartphone?", "options": ["A. Large storage and fast processor", "B. Good camera and long battery life", "C. Lightweight design and waterproofing", "D. Customizable interface and unique colors"], "answer": "B"},
+        {"id": "toeic-l3-conv-05-q3-1d43", "question": "Which model does the man recommend?", "options": ["A. The XYZ model", "B. The ABC model", "C. The LMN model", "D. The 123 model"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-06-228b",
+      "transcript": "Man: Hello, I’m calling to inquire about the conference room bookings. Are you able to help?\nWoman: Of course! What dates are you looking to book?\nMan: I need to reserve the room for next Friday.\nWoman: Let me check our availability for that date.",
+      "questions": [
+        {"id": "toeic-l3-conv-06-q1-b98c", "question": "Why is the man calling?", "options": ["A. To confirm a reservation", "B. To inquire about conference room bookings", "C. To cancel an event", "D. To check on catering services"], "answer": "B"},
+        {"id": "toeic-l3-conv-06-q2-d086", "question": "What day does the man want to book the room for?", "options": ["A. This Friday", "B. Next Saturday", "C. Next Wednesday", "D. Next Friday"], "answer": "D"},
+        {"id": "toeic-l3-conv-06-q3-efb0", "question": "What is the woman's response to the request?", "options": ["A. She will book it immediately.", "B. She needs to check the availability.", "C. She suggests another venue.", "D. She offers a discount."], "answer": "B"}
+      ]
+    },
+    {"id": "toeic-l3-conv-02-4cec", "transcript": "Man: Good afternoon, I'm calling to confirm my appointment for tomorrow at 3 PM with Dr. Smith.\nWoman: Let me check your schedule... Yes, you are all set for tomorrow. Would you like a reminder via email?\nMan: Yes, please. That would be very helpful.\nWoman: Alright, I will send you a reminder today."},
+    {"id": "toeic-l3-conv-02-q1-a482", "question": "What is the man confirming?", "options": ["A. His insurance details", "B. His appointment time", "C. The doctor’s location", "D. His medical history"], "answer": "B"},
+    {"id": "toeic-l3-conv-02-q2-2573", "question": "What does the woman offer the man?", "options": ["A. A different appointment time", "B. A reminder via email", "C. A discount on the visit", "D. A prescription refill"], "answer": "B"},
+    {"id": "toeic-l3-conv-02-q3-211a", "question": "What time is the man's appointment?", "options": ["A. 2 PM", "B. 3 PM", "C. 4 PM", "D. 5 PM"], "answer": "B"},
+    {"id": "toeic-l3-conv-03-5f24", "transcript": "Woman: Hi, I saw that there is a sale on laptops this weekend. Can you tell me about the models on discount?\nMan: Sure! We have a variety of models, including the latest ultrabook and a gaming laptop. They are both 20% off.\nWoman: That sounds great! What is the difference between the two?\nMan: The ultrabook is lightweight and perfect for travel, while the gaming laptop has a more powerful graphics card."},
+    {"id": "toeic-l3-conv-03-q1-f7e4", "question": "What is the woman inquiring about?", "options": ["A. Laptop accessories", "B. Laptop models on sale", "C. Laptop warranty options", "D. Laptop repair services"], "answer": "B"},
+    {"id": "toeic-l3-conv-03-q2-39b5", "question": "What is the discount percentage on the laptops?", "options": ["A. 10%", "B. 15%", "C. 20%", "D. 25%"], "answer": "C"},
+    {"id": "toeic-l3-conv-03-q3-fd00", "question": "What is the key feature of the ultrabook mentioned by the man?", "options": ["A. High storage capacity", "B. Lightweight design", "C. Gaming capabilities", "D. Long battery life"], "answer": "B"},
+    {"id": "toeic-l3-conv-04-f077", "transcript": "Man: Hey, did you get a chance to review the report I submitted?\nWoman: Yes, I did. I think it looks good overall, but there are a few sections that need more data.\nMan: I see, what parts do you think need improvement?\nWoman: Mostly, the financial analysis is lacking details. We need to back up our figures with historical data."},
+    {"id": "toeic-l3-conv-04-q1-c2ee", "question": "What did the man submit for review?", "options": ["A. A presentation", "B. A report", "C. A budget plan", "D. An email"], "answer": "B"},
+    {"id": "toeic-l3-conv-04-q2-e118", "question": "What does the woman think about the report?", "options": ["A. It needs to be rewritten completely", "B. It has some good points but lacks data", "C. It is perfect as it is", "D. It was submitted too late"], "answer": "B"},
+    {"id": "toeic-l3-conv-04-q3-894b", "question": "Which section needs more detail according to the woman?", "options": ["A. The introduction", "B. The financial analysis", "C. The summary", "D. The methodology"], "answer": "B"},
+    {"id": "toeic-l3-conv-05-6053", "transcript": "Woman: Hi, I’m looking for assistance with my travel plans. I want to book a flight to Paris next month.\nMan: I can help with that. Do you have specific dates in mind?\nWoman: Yes, I want to leave on the 10th and return on the 20th.\nMan: Great! Let me check for available flights around those dates."},
+    {"id": "toeic-l3-conv-05-q1-cde6", "question": "What is the woman trying to do?", "options": ["A. Change her hotel reservation", "B. Book a flight to Paris", "C. Rent a car in Paris", "D. Buy travel insurance"], "answer": "B"},
+    {"id": "toeic-l3-conv-05-q2-6d5c", "question": "When does the woman want to depart?", "options": ["A. On the 1st", "B. On the 10th", "C. On the 15th", "D. On the 20th"], "answer": "B"},
+    {"id": "toeic-l3-conv-05-q3-ff45", "question": "What does the man need to check?", "options": ["A. Hotel availability", "B. Flight options", "C. Car rentals", "D. Travel insurance rates"], "answer": "B"},
+    {
+      "id": "toeic-l3-conv-02-489b",
+      "transcript": "Man: Good morning, I’m looking to set up a meeting for next week. Could you check the availability of the conference room?\nWoman: Sure! Which day are you considering?\nMan: I was thinking Wednesday or Thursday.\nWoman: Let me see... It’s available on Wednesday from 2 PM to 4 PM, but it’s already booked on Thursday.",
+      "questions": [
+        {"id": "toeic-l3-conv-02-q1-a04d", "question": "Why does the man call?", "options": ["A. To book a conference room", "B. To cancel a meeting", "C. To discuss a project", "D. To find out about room features"], "answer": "A"},
+        {"id": "toeic-l3-conv-02-q2-3b69", "question": "What day is the conference room available?", "options": ["A. Monday", "B. Tuesday", "C. Wednesday", "D. Thursday"], "answer": "C"},
+        {"id": "toeic-l3-conv-02-q3-8315", "question": "What time can the man book the room on Wednesday?", "options": ["A. 10 AM to 12 PM", "B. 12 PM to 1 PM", "C. 2 PM to 4 PM", "D. All day"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-03-aba7",
+      "transcript": "Woman: Hi, I’d like to return a shirt I bought last week. It didn’t fit as expected.\nMan: I’m sorry to hear that. Do you have the receipt with you?\nWoman: Yes, here it is.\nMan: Great! Would you like to exchange it for a different size or get a refund?",
+      "questions": [
+        {"id": "toeic-l3-conv-03-q1-3da0", "question": "What is the woman’s reason for returning the shirt?", "options": ["A. It was the wrong color", "B. It didn’t fit", "C. It was damaged", "D. She changed her mind"], "answer": "B"},
+        {"id": "toeic-l3-conv-03-q2-8df9", "question": "What does the man ask the woman to provide?", "options": ["A. A membership card", "B. The tag from the shirt", "C. The receipt", "D. A photo of the shirt"], "answer": "C"},
+        {"id": "toeic-l3-conv-03-q3-9c2f", "question": "What options does the man offer the woman?", "options": ["A. Store credit or a gift card", "B. Exchange for a different item or refund", "C. A discount on future purchases", "D. A repair service"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-04-0eb8",
+      "transcript": "Man: Have you had a chance to review the report I sent you?\nWoman: Yes, I went through it yesterday. It looks good, but I have a few questions.\nMan: Sure, what do you need clarification on?\nWoman: I’m not clear on the revenue projections for next quarter.",
+      "questions": [
+        {"id": "toeic-l3-conv-04-q1-1d10", "question": "What did the woman do yesterday?", "options": ["A. Sent a report", "B. Reviewed a report", "C. Attended a meeting", "D. Prepared a presentation"], "answer": "B"},
+        {"id": "toeic-l3-conv-04-q2-97fa", "question": "What does the woman want to clarify?", "options": ["A. The budget allocation", "B. The revenue projections", "C. The project timeline", "D. The team responsibilities"], "answer": "B"},
+        {"id": "toeic-l3-conv-04-q3-f803", "question": "Who sent the report?", "options": ["A. The woman", "B. The man", "C. Their manager", "D. A colleague"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l3-conv-05-68aa",
+      "transcript": "Woman: I noticed that the office kitchen is running out of supplies. Should we restock it?\nMan: Yes, I’ve noticed that too. Let’s make a list of what we need.\nWoman: Great! We should include coffee, sugar, and milk, as well as some snacks.\nMan: Good idea! Should I take care of the ordering?",
+      "questions": [
+        {"id": "toeic-l3-conv-05-q1-e9fc", "question": "What is the main topic of this conversation?", "options": ["A. Planning an office event", "B. Restocking kitchen supplies", "C. Cleaning the office", "D. Organizing a team meeting"], "answer": "B"},
+        {"id": "toeic-l3-conv-05-q2-4e12", "question": "What items do they plan to include?", "options": ["A. Beverages and fruit", "B. Coffee, sugar, and milk", "C. Paper products and utensils", "D. Office furniture"], "answer": "B"},
+        {"id": "toeic-l3-conv-05-q3-52e2", "question": "Who is responsible for ordering the supplies?", "options": ["A. The woman", "B. The man", "C. Both of them", "D. The office manager"], "answer": "B"}
+      ]
+    }
+  ]
+}

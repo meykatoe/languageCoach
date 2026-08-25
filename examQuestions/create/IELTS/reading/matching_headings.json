@@ -1,0 +1,614 @@
+{
+  "exam": "IELTS",
+  "section": "Reading",
+  "part": "Matching Headings",
+  "instructions": "The passage has several paragraphs. Choose the correct heading for each paragraph from the list of headings.",
+  "passages": [
+    {
+      "id": "ielts-r-mh-01",
+      "title": "The Impact of Remote Work",
+      "headingList": [
+        "i. The environmental consequences of fewer commutes",
+        "ii. Early skepticism from company leadership",
+        "iii. Challenges to team cohesion and mentorship",
+        "iv. A shift accelerated by unforeseen global events",
+        "v. Predictions for a fully automated workplace",
+        "vi. Financial savings for both employers and employees"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-01-pA", "label": "Paragraph A", "text": "For decades, remote work remained a niche arrangement, adopted by a small number of freelancers and technology firms. Most executives believed that productivity depended on physical presence and direct supervision, and proposals to expand remote work policies were frequently dismissed in favor of maintaining traditional office structures.", "answer": "ii"},
+        {"id": "ielts-r-mh-01-pB", "label": "Paragraph B", "text": "This resistance changed dramatically when a global public health crisis forced organizations worldwide to adopt remote arrangements almost overnight. What had been considered impractical suddenly became not just feasible but, for many companies, indispensable to continued operations.", "answer": "iv"},
+        {"id": "ielts-r-mh-01-pC", "label": "Paragraph C", "text": "Companies quickly discovered that maintaining office space came with substantial overhead costs, from rent to utilities, and that eliminating or reducing these expenses translated directly into improved profit margins. Employees, meanwhile, reported saving significant amounts on commuting costs, work attire, and daily meals.", "answer": "vi"},
+        {"id": "ielts-r-mh-01-pD", "label": "Paragraph D", "text": "However, not all outcomes have been positive. Managers have reported difficulty building strong team relationships among employees who rarely meet in person, and junior staff in particular have struggled to receive the informal mentorship that once occurred naturally in shared office spaces.", "answer": "iii"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-02",
+      "title": "The Benefits of Urban Green Spaces",
+      "headingList": [
+        "i. Enhancing biodiversity within cities",
+        "ii. The negative effects of urbanization",
+        "iii. Promoting mental health and well-being",
+        "iv. The role of community engagement",
+        "v. Innovative designs for sustainable parks",
+        "vi. Challenges in urban planning decisions"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-02-pA", "label": "Paragraph A", "text": "Studies have shown that urban green spaces provide significant psychological benefits, promoting relaxation and reducing stress among city dwellers. Access to parks and gardens has been linked to improved mood and increased physical activity.", "answer": "iii"},
+        {"id": "ielts-r-mh-02-pB", "label": "Paragraph B", "text": "As cities expand, urban planners face the challenge of balancing development with the preservation of natural spaces. While construction is often prioritized to accommodate growing populations, the environmental cost can lead to reduced urban biodiversity.", "answer": "ii"},
+        {"id": "ielts-r-mh-02-pC", "label": "Paragraph C", "text": "Innovative designs that incorporate sustainable practices in parks can significantly enhance ecosystem services, such as improving air quality and providing habitats for urban wildlife. These designs often reflect the unique character of the surrounding community.", "answer": "v"},
+        {"id": "ielts-r-mh-02-pD", "label": "Paragraph D", "text": "Community involvement in the maintenance and planning of green spaces results in stronger ties among residents and ensures that the parks meet the specific needs of the neighbourhood. Collaborative efforts create a sense of ownership and pride in these areas.", "answer": "iv"},
+        {"id": "ielts-r-mh-02-pE", "label": "Paragraph E", "text": "Despite the obvious benefits, there are significant challenges in securing funding and space for green initiatives. Many municipalities are grappling with limited budgets, which can delay or prevent the implementation of vital green projects.", "answer": "vi"},
+        {"id": "ielts-r-mh-02-pF", "label": "Paragraph F", "text": "In addition to fostering community bonds, green spaces also play a critical role in enhancing the ecological health of urban areas. They offer a refuge for various species and create vital links between fragmented habitats.", "answer": "i"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-03",
+      "title": "The Rise of Plant-Based Diets",
+      "headingList": [
+        "i. Shift towards sustainability in food production",
+        "ii. Challenges faced by traditional livestock farming",
+        "iii. Nutritional benefits of plant-based foods",
+        "iv. The influence of social media on dietary choices",
+        "v. Potential limitations of vegan diets",
+        "vi. Popularity among younger generations"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-03-pA", "label": "Paragraph A", "text": "As environmental awareness grows, many people are embracing plant-based diets as a strategy to reduce their carbon footprint. This shift in diet can significantly lessen the environmental impact associated with livestock farming, leading to a more sustainable food system.", "answer": "i"},
+        {"id": "ielts-r-mh-03-pB", "label": "Paragraph B", "text": "Younger consumers, in particular, have adopted plant-based lifestyles rapidly, driven in part by social media influencers promoting veganism as a trendy and ethical choice. This demographic shift is reshaping market trends in the food industry.", "answer": "vi"},
+        {"id": "ielts-r-mh-03-pC", "label": "Paragraph C", "text": "While plant-based diets offer numerous health benefits, such as lower cholesterol levels and better heart health, they may also present potential limitations in nutrition if not carefully planned. It is essential to ensure an adequate intake of vitamins and minerals.", "answer": "v"},
+        {"id": "ielts-r-mh-03-pD", "label": "Paragraph D", "text": "Much of the growth in plant-based eating can be attributed to the challenges facing traditional livestock farming. Increased public scrutiny over animal welfare has led to a reevaluation of meat consumption practices in many western societies.", "answer": "ii"},
+        {"id": "ielts-r-mh-03-pE", "label": "Paragraph E", "text": "Including a variety of fruits, vegetables, legumes, and grains, plant-based meals are known for their rich nutritional profile. These foods are high in dietary fiber, aiding digestion and potentially lowering the risk of chronic diseases.", "answer": "iii"},
+        {"id": "ielts-r-mh-03-pF", "label": "Paragraph F", "text": "Despite the appeal of plant-based diets, there are still many misconceptions, including the belief that they are lacking in essential nutrients or that they require excessive preparation time. Educating consumers on the practicality of such diets is crucial.", "answer": "iv"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-04",
+      "title": "The Evolution of Renewable Energy",
+      "headingList": [
+        "i. The role of government policies in energy transition",
+        "ii. Advances in solar panel technology",
+        "iii. Public perception and acceptance of renewable sources",
+        "iv. The impact of global climate initiatives",
+        "v. Challenges faced by fossil fuel industries",
+        "vi. The future of sustainable energy markets"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-04-pA", "label": "Paragraph A", "text": "Innovations in solar panel technology have made renewable energy more efficient and accessible than ever before. New materials and manufacturing techniques have led to a significant drop in production costs, increasing the competitiveness of solar energy compared to traditional fossil fuels.", "answer": "ii"},
+        {"id": "ielts-r-mh-04-pB", "label": "Paragraph B", "text": "Government policies play a crucial role in fostering the growth of renewable energy industries. Incentives and subsidies can encourage businesses to invest in green technologies and help accelerate the transition away from fossil fuels.", "answer": "i"},
+        {"id": "ielts-r-mh-04-pC", "label": "Paragraph C", "text": "As global awareness of climate change increases, there has been a marked shift in public perception regarding renewable energy sources. Many consumers now view clean energy as essential for a sustainable future, driving demand for greener alternatives.", "answer": "iii"},
+        {"id": "ielts-r-mh-04-pD", "label": "Paragraph D", "text": "The fossil fuel industry faces significant challenges as a result of the global movement towards sustainable energy practices. Many major oil companies are investing in renewable technologies, indicating a willingness to adapt in order to survive in a changing market.", "answer": "v"},
+        {"id": "ielts-r-mh-04-pE", "label": "Paragraph E", "text": "International climate initiatives are shaping the growth and development of renewable energy sectors. These agreements are fostering collaboration among nations and leading to innovative solutions to combat climate change.", "answer": "iv"},
+        {"id": "ielts-r-mh-04-pF", "label": "Paragraph F", "text": "Looking forward, the future of energy markets seems to be leaning heavily towards sustainability. As technology advances and demand for green energy rises, we can expect significant transformations within global energy systems.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-05",
+      "title": "The Importance of Sleep",
+      "headingList": [
+        "i. Correlation between sleep and cognitive function",
+        "ii. Consequences of sleep deprivation",
+        "iii. Cultural attitudes towards napping",
+        "iv. Recommended practices for better sleep hygiene",
+        "v. The science behind sleep cycles",
+        "vi. The impact of technology on sleep patterns"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-05-pA", "label": "Paragraph A", "text": "Research consistently indicates a strong correlation between adequate sleep and improved cognitive performance. Tasks requiring focus, memory retention, and problem-solving skills tend to suffer when individuals experience insufficient rest.", "answer": "i"},
+        {"id": "ielts-r-mh-05-pB", "label": "Paragraph B", "text": "The negative effects of sleep deprivation can impact both mental and physical health, leading to an increased risk of chronic conditions such as obesity, diabetes, and heart disease. Consistently poor sleep is also linked to mood disorders.", "answer": "ii"},
+        {"id": "ielts-r-mh-05-pC", "label": "Paragraph C", "text": "In several cultures around the world, napping is not only common but socially accepted, seen as a necessary break to recharge. Conversely, in some societies, a lack of sleep is often glorified as a sign of hard work and dedication.", "answer": "iii"},
+        {"id": "ielts-r-mh-05-pD", "label": "Paragraph D", "text": "To ensure better sleep quality, experts recommend several hygiene practices, such as maintaining a consistent sleep schedule, creating a relaxing bedtime routine, and minimizing screen time before bed to enhance melatonin production.", "answer": "iv"},
+        {"id": "ielts-r-mh-05-pE", "label": "Paragraph E", "text": "Understanding sleep cycles is crucial to improving sleep quality. Sleep is divided into various stages, including light sleep and REM sleep, each serving distinct purposes and affecting how rested a person feels the next day.", "answer": "v"},
+        {"id": "ielts-r-mh-05-pF", "label": "Paragraph F", "text": "The proliferation of technology has profoundly affected sleep patterns, as many individuals find it difficult to disconnect from devices. The blue light emitted from screens can interfere with melatonin production, disrupting natural sleep cycles.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-02-d9ec",
+      "title": "The Evolution of Sustainable Fashion",
+      "headingList": [
+        "i. The rise of eco-friendly alternatives",
+        "ii. Impact on traditional clothing manufacturers",
+        "iii. Consumer demand for transparency",
+        "iv. Innovations in fabric production",
+        "v. The role of social media influencers",
+        "vi. Challenges faced by new brands"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-02-pA-c20e", "label": "Paragraph A", "text": "Sustainable fashion has emerged as a key trend, as consumers increasingly prioritize eco-friendly choices. This shift has led to a growing market for sustainable fabrics made from recycled materials and agricultural by-products, appealing to those who want to reduce their environmental footprint.", "answer": "i"},
+        {"id": "ielts-r-mh-02-pB-c520", "label": "Paragraph B", "text": "As the demand for sustainability has surged, traditional clothing manufacturers have faced pressure to adapt. Many have begun altering their production processes to incorporate sustainable practices, risking a clash with established methods that prioritize rapid, cost-effective production.", "answer": "ii"},
+        {"id": "ielts-r-mh-02-pC-9284", "label": "Paragraph C", "text": "With increased awareness about the environmental impact of fashion, consumers now expect brands to be transparent about their sourcing and manufacturing practices. This demand for clarity has pushed many companies to publicly share information that was once kept behind closed doors, allowing consumers to make informed choices.", "answer": "iii"},
+        {"id": "ielts-r-mh-02-pD-7494", "label": "Paragraph D", "text": "Innovations in fabric production have played a pivotal role in the rise of sustainable fashion. From biodegradable materials to textiles produced through less resource-intensive methods, these advancements help brands reduce their ecological impact while appealing to eco-conscious consumers.", "answer": "iv"},
+        {"id": "ielts-r-mh-02-pE-2fd8", "label": "Paragraph E", "text": "Social media influencers have become key players in promoting sustainable fashion. By sharing their choices and advocating for environmentally friendly brands, they connect with a younger audience, driving the message of sustainability further into mainstream culture.", "answer": "v"},
+        {"id": "ielts-r-mh-02-pF-6019", "label": "Paragraph F", "text": "Despite the growth of sustainable fashion, new brands face significant challenges in gaining traction. Issues such as high production costs, competition with well-established companies, and consumer hesitance to pay premium prices can hinder their success.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-03-ecc6",
+      "title": "The Rise of E-learning",
+      "headingList": [
+        "i. Flexible learning schedules for students",
+        "ii. The emergence of new educational platforms",
+        "iii. Challenges in maintaining student engagement",
+        "iv. The role of technology in education",
+        "v. A response to global educational inequalities",
+        "vi. The increasing importance of digital literacy"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-03-pA-0b6e", "label": "Paragraph A", "text": "E-learning has transformed education by offering flexible learning schedules that allow students to learn at their own pace. This adaptability has proved especially beneficial for non-traditional students who balance work and family commitments.", "answer": "i"},
+        {"id": "ielts-r-mh-03-pB-f7a5", "label": "Paragraph B", "text": "Numerous online platforms have emerged, providing a wide array of courses covering diverse subjects. These platforms not only democratize access to education but also offer opportunities for individuals to acquire skills tailored to the job market.", "answer": "ii"},
+        {"id": "ielts-r-mh-03-pC-d203", "label": "Paragraph C", "text": "Maintaining student engagement in an online environment has proven to be a challenge for educators. Many instructors are constantly seeking innovative strategies to motivate students who may lack the structure of a traditional classroom.", "answer": "iii"},
+        {"id": "ielts-r-mh-03-pD-f036", "label": "Paragraph D", "text": "Technology has played a critical role in the expansion of online learning. From interactive video lectures to collaborative tools, the advancements in digital resources have vastly enhanced the learning experience for students worldwide.", "answer": "iv"},
+        {"id": "ielts-r-mh-03-pE-2ca5", "label": "Paragraph E", "text": "The COVID-19 pandemic underscored the need for accessible education globally, highlighting disparities in educational opportunities. E-learning platforms have become essential in bridging these gaps, making education available to disadvantaged communities.", "answer": "v"},
+        {"id": "ielts-r-mh-03-pF-b6cb", "label": "Paragraph F", "text": "As digital technologies pervade various industries, the importance of digital literacy has risen. Individuals equipped with digital skills are better prepared for contemporary job markets, where many roles now require proficiency in technology.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-04-2c6b",
+      "title": "Exploring Urban Green Spaces",
+      "headingList": [
+        "i. The role of parks in enhancing mental health",
+        "ii. Initiatives to increase biodiversity in cities",
+        "iii. Historical significance of urban gardens",
+        "iv. The influence of green spaces on real estate",
+        "v. Community engagement in maintaining gardens",
+        "vi. Challenges faced by urban planners"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-04-pA-e82b", "label": "Paragraph A", "text": "Urban parks are more than just recreational areas; they are vital for enhancing mental health among city dwellers. Studies have shown that access to green spaces can reduce stress, anxiety, and depression, promoting overall well-being.", "answer": "i"},
+        {"id": "ielts-r-mh-04-pB-b4b7", "label": "Paragraph B", "text": "Many cities have launched initiatives to increase biodiversity within urban environments. Projects that incorporate native plants and wildlife habitats aim to create ecosystems that support various species and encourage ecological education.", "answer": "ii"},
+        {"id": "ielts-r-mh-04-pC-e445", "label": "Paragraph C", "text": "Historically, urban gardens have played a significant role in city life, providing not only food but also community cohesion. These gardens reflect cultural heritage and serve as a reminder of the importance of sustainable practices.", "answer": "iii"},
+        {"id": "ielts-r-mh-04-pD-4559", "label": "Paragraph D", "text": "The presence of green spaces can significantly influence real estate markets. Homes near parks or gardens often see increased property values as prospective buyers recognize the added benefit of living close to nature.", "answer": "iv"},
+        {"id": "ielts-r-mh-04-pE-0c4c", "label": "Paragraph E", "text": "Community involvement is crucial for the success and upkeep of urban gardens. Residents who engage in gardening activities not only improve their environment but also strengthen social bonds, fostering a sense of pride in their neighborhoods.", "answer": "v"},
+        {"id": "ielts-r-mh-04-pF-2287", "label": "Paragraph F", "text": "Urban planners face challenges in integrating green spaces into densely populated areas. Balancing land use and meeting the demands of growing urban populations presents a complex dilemma that requires innovative solutions.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-05-9ed4",
+      "title": "The Future of Renewable Energy",
+      "headingList": [
+        "i. Innovations driving efficiency",
+        "ii. The role of government policies",
+        "iii. The impact of renewable energy on job creation",
+        "iv. The challenges of transitioning from fossil fuels",
+        "v. Global investment trends in clean energy",
+        "vi. Public perception and acceptance"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-05-pA-e9cf", "label": "Paragraph A", "text": "Advancements in technology are driving the future of renewable energy, with innovations leading to greater efficiency and lower costs. Researchers are developing better materials and more sophisticated systems to harness energy from sources like wind and solar.", "answer": "i"},
+        {"id": "ielts-r-mh-05-pB-5897", "label": "Paragraph B", "text": "Government policies play a crucial role in promoting renewable energy adoption. Subsidies, tax incentives, and regulations aimed at reducing carbon emissions are essential for boosting investments in clean energy projects.", "answer": "ii"},
+        {"id": "ielts-r-mh-05-pC-2d46", "label": "Paragraph C", "text": "As the renewable energy sector expands, it has the potential to create numerous job opportunities. From engineering to installation, the shift towards clean energy presents a chance for workforce retraining and new employment.", "answer": "iii"},
+        {"id": "ielts-r-mh-05-pD-a6df", "label": "Paragraph D", "text": "Transitioning from fossil fuels to renewable sources faces significant challenges. These include infrastructure adjustments and the need for reliable energy storage solutions to address the intermittency of resources like solar and wind.", "answer": "iv"},
+        {"id": "ielts-r-mh-05-pE-9a45", "label": "Paragraph E", "text": "Global investments in renewable energy continue to soar, reflecting an increasing recognition of its long-term benefits. As nations prioritize sustainability, financial backing for clean energy technologies is becoming more commonplace.", "answer": "v"},
+        {"id": "ielts-r-mh-05-pF-6a65", "label": "Paragraph F", "text": "Public perception of renewable energy is evolving, with surveys indicating a growing acceptance. Efforts to educate communities about the advantages of clean energy sources are critical to fostering a supportive environment for future initiatives.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-02-5580",
+      "title": "The Benefits of Sustainable Agriculture",
+      "headingList": [
+        "i. Enhancing soil health and biodiversity",
+        "ii. The role of technology in promoting sustainability",
+        "iii. Challenges in transitioning to sustainable methods",
+        "iv. Community engagement in agricultural practices",
+        "v. Financial incentives for eco-friendly farming",
+        "vi. The impact on local economies and food systems"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-02-pA-296a", "label": "Paragraph A", "text": "Sustainable agriculture seeks to balance the demand for food production with the need to preserve the environment. Practices such as crop rotation, reduced pesticide use, and organic farming not only contribute to healthier ecosystems but also enhance the resilience of food systems against climate change.", "answer": "i"},
+        {"id": "ielts-r-mh-02-pB-8a06", "label": "Paragraph B", "text": "Despite its numerous advantages, transitioning to sustainable agriculture can pose significant challenges for farmers accustomed to conventional methods. Risk aversion and a lack of knowledge about eco-friendly practices often temper enthusiasm for change, creating barriers that need to be overcome through education and support.", "answer": "iii"},
+        {"id": "ielts-r-mh-02-pC-870b", "label": "Paragraph C", "text": "Community engagement plays a vital role in the adoption of sustainable farming practices. By involving local populations in decision-making processes and educational initiatives, farmers can foster a sense of ownership and responsibility towards their food sources and environmental stewardship.", "answer": "iv"},
+        {"id": "ielts-r-mh-02-pD-5b21", "label": "Paragraph D", "text": "Financial incentives from governmental and non-governmental organizations increasingly support farmers willing to adopt sustainable practices. These incentives not only lessen the economic burden of transitioning but also underscore the importance of eco-friendly farming for future generations.", "answer": "v"},
+        {"id": "ielts-r-mh-02-pE-c886", "label": "Paragraph E", "text": "An often-overlooked benefit of sustainable agriculture is its positive impact on local economies. By sourcing ingredients locally and promoting direct farmer-consumer relationships, communities can enjoy fresher produce while simultaneously stimulating economic growth within their regions.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-03-0bae",
+      "title": "The Evolution of Digital Learning",
+      "headingList": [
+        "i. Accessibility for diverse populations",
+        "ii. The rise of interactive learning environments",
+        "iii. Challenges in maintaining student engagement",
+        "iv. A shift towards lifelong learning models",
+        "v. The importance of teacher training in the digital age",
+        "vi. The role of social media in educational trends"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-03-pA-ea49", "label": "Paragraph A", "text": "Digital learning has rapidly evolved from a supplementary resource to a mainstream educational method, providing unprecedented accessibility to learners around the globe. This evolution opens doors for previously marginalized groups to gain equal footing in their educational journeys.", "answer": "i"},
+        {"id": "ielts-r-mh-03-pB-f338", "label": "Paragraph B", "text": "As technology progresses, so too does the emphasis on interactive learning environments that engage students more effectively. Tools such as gamification and virtual simulations foster active participation, enriching the overall learning experience and enhancing knowledge retention.", "answer": "ii"},
+        {"id": "ielts-r-mh-03-pC-ea7d", "label": "Paragraph C", "text": "While digital platforms present clear advantages, keeping students engaged remains a significant challenge for educators. The abundance of distractions available online necessitates the development of innovative instructional strategies that maintain focus and motivation among learners.", "answer": "iii"},
+        {"id": "ielts-r-mh-03-pD-0256", "label": "Paragraph D", "text": "The landscape of education is increasingly shifting towards models that promote lifelong learning. As job markets transform and the demand for new skills grows, individuals are encouraged to continuously adapt and expand their knowledge through various digital platforms.", "answer": "iv"},
+        {"id": "ielts-r-mh-03-pE-ae06", "label": "Paragraph E", "text": "For educators, adapting to the digital age necessitates comprehensive training that equips them with the skills to utilize new technologies effectively. Ongoing professional development ensures that teachers are well-prepared to meet the diverse needs of their students in a rapidly changing educational landscape.", "answer": "v"},
+        {"id": "ielts-r-mh-03-pF-cbb7", "label": "Paragraph F", "text": "Social media has played a critical role in shaping educational trends. Platforms that facilitate collaboration and sharing among users foster a community of learners who can easily access information and support from peers, enhancing the overall learning experience.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-04-2ecd",
+      "title": "The Future of Urban Transportation",
+      "headingList": [
+        "i. Innovations in ride-sharing technology",
+        "ii. The push for greener alternatives",
+        "iii. Impacts of urban sprawl on transportation planning",
+        "iv. Integrating public transport systems with new technologies",
+        "v. Challenges of high-density urban areas",
+        "vi. The role of government policy in shaping future mobility"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-04-pA-8f8f", "label": "Paragraph A", "text": "As cities expand and populations grow, urban transportation systems face significant pressure to evolve. Innovations such as autonomous vehicles and improved ride-sharing services signal a potential revolution in how individuals navigate increasingly crowded urban landscapes.", "answer": "i"},
+        {"id": "ielts-r-mh-04-pB-4800", "label": "Paragraph B", "text": "A growing emphasis on sustainability reflects a societal push for greener transportation alternatives. Cities are exploring new modes of transport, such as electric buses and bike-sharing initiatives, as they aim to reduce their carbon footprints and enhance air quality.", "answer": "ii"},
+        {"id": "ielts-r-mh-04-pC-8793", "label": "Paragraph C", "text": "Urban sprawl presents a profound challenge for transportation planning. As communities extend into suburbs, city planners must develop integrated transportation networks that accommodate not only intra-city commutes but also connections to surrounding areas.", "answer": "iii"},
+        {"id": "ielts-r-mh-04-pD-45f5", "label": "Paragraph D", "text": "Incorporating new technologies into public transport systems is essential to meet the demands of modern commuters. Smart ticketing systems and real-time tracking applications help improve the efficiency and convenience of public transit options.", "answer": "iv"},
+        {"id": "ielts-r-mh-04-pE-c59c", "label": "Paragraph E", "text": "High-density urban areas pose unique challenges to transportation planners, including traffic congestion and limited parking. Finding solutions that prioritize pedestrian safety and enhance mobility will be vital to the long-term livability of these regions.", "answer": "v"},
+        {"id": "ielts-r-mh-04-pF-6f10", "label": "Paragraph F", "text": "Government policy plays a crucial role in shaping future mobility by facilitating investment in infrastructure and encouraging sustainable practices. Effective strategies must balance the needs of various stakeholders while fostering innovation for improved urban transport.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-05-7c4f",
+      "title": "The Advancements in Renewable Energy",
+      "headingList": [
+        "i. The economic viability of renewable resources",
+        "ii. Innovations driving efficiency in solar energy",
+        "iii. The interconnectedness of renewable energy systems",
+        "iv. Challenges in energy storage solutions",
+        "v. Societal acceptance of renewable technologies",
+        "vi. The future landscape of energy generation"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-05-pA-f2c3", "label": "Paragraph A", "text": "As technology advances, the economic viability of renewable energy sources such as wind, solar, and hydro has significantly improved. Lower installation costs and ongoing maintenance have made these options increasingly attractive for consumers and investors alike.", "answer": "i"},
+        {"id": "ielts-r-mh-05-pB-771e", "label": "Paragraph B", "text": "Recent innovations in solar technology, such as improved photovoltaic cells, are driving efficiency to new heights. These developments promise to convert sunlight into usable energy at significantly higher rates, making solar a more competitive option in the energy market.", "answer": "ii"},
+        {"id": "ielts-r-mh-05-pC-b483", "label": "Paragraph C", "text": "The future of renewable energy is increasingly characterized by interconnected systems that allow for seamless integration of various energy sources. This interconnectedness enables grid stability and offers consumers greater energy independence.", "answer": "iii"},
+        {"id": "ielts-r-mh-05-pD-9b59", "label": "Paragraph D", "text": "However, challenges remain, particularly in energy storage solutions. Developing efficient batteries and other storage methods is crucial for ensuring that renewable energy can be harnessed and used even when conditions are not optimal.", "answer": "iv"},
+        {"id": "ielts-r-mh-05-pE-2867", "label": "Paragraph E", "text": "Public perception plays a vital role in the advancement of renewable technologies. The degree of societal acceptance can drive policy decisions and investment in research and development, which in turn affect the pace of renewable energy adoption.", "answer": "v"},
+        {"id": "ielts-r-mh-05-pF-4e26", "label": "Paragraph F", "text": "Looking ahead, the landscape of energy generation promises to evolve as renewable resources become increasingly dominant. The shift towards sustainable energy practices is not just beneficial for the environment but is integral to the future of global energy security.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-02-26c4",
+      "title": "The Role of Artificial Intelligence in Education",
+      "headingList": [
+        "i. Enhancements in personalized learning experiences",
+        "ii. The challenges of implementing AI technologies in classrooms",
+        "iii. Historical perspectives on technology in education",
+        "iv. Changes in assessment methods due to AI integration",
+        "v. Concerns over data privacy and security",
+        "vi. Predictions for future learning environments"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-02-pA-c29b", "label": "Paragraph A", "text": "The introduction of artificial intelligence into educational settings promises a transformation in how students learn. AI can tailor educational content to individual needs, adjusting the pace and style of instruction to optimize each learner's experience. Supporters argue that this customization may enhance student engagement and retention.", "answer": "i"},
+        {"id": "ielts-r-mh-02-pB-ea1a", "label": "Paragraph B", "text": "Despite the potential benefits, integrating AI in classrooms faces numerous hurdles. Many educators express skepticism about the reliability of AI systems and the need for adequate training to effectively utilize these tools. Resistance to change among teaching staff can also slow down the adoption process.", "answer": "ii"},
+        {"id": "ielts-r-mh-02-pC-6115", "label": "Paragraph C", "text": "Historically, the education sector has seen many technological advances, from calculators to interactive whiteboards. These innovations often sparked debate, with some educators embracing the change while others remained cautious. Each advancement has contributed to the ongoing evolution of teaching methods.", "answer": "iii"},
+        {"id": "ielts-r-mh-02-pD-bc2d", "label": "Paragraph D", "text": "AI's role is also reshaping assessment strategies within education. Real-time feedback and automated evaluation processes are gaining traction, allowing for more timely interventions. This shift could encourage a more formative approach to student progress rather than relying solely on summative assessments.", "answer": "iv"},
+        {"id": "ielts-r-mh-02-pE-e9ec", "label": "Paragraph E", "text": "Nevertheless, the reliance on technology raises significant concerns regarding data privacy. The collection and analysis of student data can lead to potential breaches of information security, leading to discussions among policymakers about necessary regulations and safeguards for students' data.", "answer": "v"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-03-e478",
+      "title": "Urban Gardening Trends",
+      "headingList": [
+        "i. The impact of local food production on communities",
+        "ii. Techniques adopted for small-space gardening",
+        "iii. The role of government in supporting urban gardening",
+        "iv. Historical context of urban agriculture",
+        "v. Psychological benefits associated with gardening",
+        "vi. Environmental benefits of urban green spaces"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-03-pA-544d", "label": "Paragraph A", "text": "In recent years, urban gardening has surged in popularity, with residents increasingly transforming rooftops, balconies, and community lots into green spaces. This movement reflects a growing awareness of the benefits of locally sourced food and the desire for healthier lifestyles amidst urbanization.", "answer": "i"},
+        {"id": "ielts-r-mh-03-pB-f3d4", "label": "Paragraph B", "text": "Gardening in limited spaces often requires innovative techniques. Urban gardeners frequently adapt container gardening, vertical gardens, and hydroponics to maximize yield while minimizing the area needed for cultivation. These methods have made gardening accessible to individuals with little outdoor space.", "answer": "ii"},
+        {"id": "ielts-r-mh-03-pC-8147", "label": "Paragraph C", "text": "Government initiatives have begun to recognize the importance of urban gardening. Various programs now provide funding, education, and resources to support aspiring gardeners, promoting green initiatives that contribute to urban sustainability and community resilience.", "answer": "iii"},
+        {"id": "ielts-r-mh-03-pD-3c5a", "label": "Paragraph D", "text": "Urban agriculture is not a new concept; it has historical roots that stretch back centuries. City dwellers have cultivated their own food for generations, adapting to the available resources and conditions of their environment, which highlights a long-standing relationship between cities and agriculture.", "answer": "iv"},
+        {"id": "ielts-r-mh-03-pE-d7aa", "label": "Paragraph E", "text": "Furthermore, gardening can serve as a therapeutic outlet, as many studies suggest that engaging with plants and nature can reduce stress and improve overall mental well-being. The act of nurturing living things fosters a sense of accomplishment and connection to the environment.", "answer": "v"},
+        {"id": "ielts-r-mh-03-pF-4c84", "label": "Paragraph F", "text": "Creating green spaces within urban environments also offers significant ecological advantages. These areas can help alleviate urban heat, improve air quality, and promote biodiversity, showcasing the essential role that greenery plays in city ecosystems.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-04-509c",
+      "title": "The Evolution of Public Transportation",
+      "headingList": [
+        "i. The advantages of modern transit systems",
+        "ii. The historical significance of public transport",
+        "iii. Innovations driving efficiency in transit",
+        "iv. Challenges faced by developing transit infrastructures",
+        "v. The social implications of public transport access",
+        "vi. Future trends in urban mobility solutions"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-04-pA-00f5", "label": "Paragraph A", "text": "Public transportation has evolved dramatically over the past century, moving from horse-drawn carriages to high-speed rail systems. This evolution reflects changes in technology and society's growing demand for efficient and sustainable transit options.", "answer": "ii"},
+        {"id": "ielts-r-mh-04-pB-63cf", "label": "Paragraph B", "text": "Modern transit systems are designed to accommodate increasing urban populations while minimizing environmental impact. Improved public transport not only reduces traffic congestion but also promotes the use of cleaner energy sources, helping combat climate change.", "answer": "i"},
+        {"id": "ielts-r-mh-04-pC-4cfd", "label": "Paragraph C", "text": "Innovative solutions such as real-time tracking, smart ticketing, and integrated transport networks are enhancing user experience and operational efficiency. These advancements have made public transport more accessible and user-friendly, aligning with the lifestyles of modern commuters.", "answer": "iii"},
+        {"id": "ielts-r-mh-04-pD-71ab", "label": "Paragraph D", "text": "While many cities boast advanced transit systems, developing regions often struggle with inadequate infrastructures. These challenges include underfunding, lack of political will, and logistical issues that hinder efforts to improve public transport accessibility.", "answer": "iv"},
+        {"id": "ielts-r-mh-04-pE-aaf6", "label": "Paragraph E", "text": "Access to reliable public transport can significantly affect social equity. Communities with robust transit options often see better job opportunities and economic growth, whereas those without can face increased isolation and limited access to essential services.", "answer": "v"},
+        {"id": "ielts-r-mh-04-pF-632c", "label": "Paragraph F", "text": "Looking ahead, trends indicate a shift towards personalized mobility solutions, including autonomous vehicles and shared transport systems, which promise to reshape how people navigate urban spaces and interact with public transportation networks.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-05-b8cc",
+      "title": "The Revival of Traditional Crafts",
+      "headingList": [
+        "i. The role of social media in craft promotion",
+        "ii. Benefits of handmade goods in the modern market",
+        "iii. Historical context of craftsmanship",
+        "iv. Environmental sustainability through traditional methods",
+        "v. Community engagement in craft movements",
+        "vi. Challenges facing contemporary artisans"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-05-pA-ee2f", "label": "Paragraph A", "text": "As mass production dominates the consumer market, a counter-movement has emerged focused on the revival of traditional crafts. Artisans and crafters are re-emphasizing the value of handmade goods, which are often seen as more personal, unique, and environmentally friendly alternatives to industrial products.", "answer": "ii"},
+        {"id": "ielts-r-mh-05-pB-6180", "label": "Paragraph B", "text": "Historically, craftsmanship has played a vital role in local economies, shaping cultures and communities. This heritage continues to influence contemporary artisans who seek to blend traditional techniques with modern preferences to create appealing products for today’s consumers.", "answer": "iii"},
+        {"id": "ielts-r-mh-05-pC-68b5", "label": "Paragraph C", "text": "Social media platforms have significantly contributed to the craft revival, providing artisans with a global audience and marketing opportunities. Many craftspeople utilize these platforms to share their stories and showcase their work, fostering connections with customers and other makers.", "answer": "i"},
+        {"id": "ielts-r-mh-05-pD-8ec3", "label": "Paragraph D", "text": "Sustainability is a crucial element of many traditional crafts, as they often utilize locally sourced materials and centuries-old techniques. The revival of these crafts may promote environmentally sustainable practices, contrasting sharply with the environmental toll of fast fashion and mass production.", "answer": "iv"},
+        {"id": "ielts-r-mh-05-pE-ea9d", "label": "Paragraph E", "text": "Despite the resurgence of interest in traditional crafts, contemporary artisans face significant challenges, including competition from mass-produced items and the struggle to maintain profitability while adhering to artisanal standards. These issues complicate the viability of a craft-focused business.", "answer": "vi"},
+        {"id": "ielts-r-mh-05-pF-c2b0", "label": "Paragraph F", "text": "Furthermore, community involvement is integral to the growth of craft movements. Many craftspeople engage local residents through workshops and markets, creating a sense of camaraderie and shared purpose among both makers and consumers.", "answer": "v"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-02-3260",
+      "title": "The Evolution of Electric Vehicles",
+      "headingList": [
+        "i. The challenges of battery production",
+        "ii. Incentives for consumers to switch",
+        "iii. Historical resistance from traditional automakers",
+        "iv. Improvements in charging infrastructure",
+        "v. Future prospects for autonomous vehicles",
+        "vi. The role of government in promoting sustainability"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-02-pA-fc79", "label": "Paragraph A", "text": "While electric vehicles (EVs) have existed for over a century, they faced significant setbacks due to the dominance of gasoline-powered cars. Established automotive companies were reluctant to invest in the technology, arguing that the infrastructure and market for EVs were insufficient.", "answer": "iii"},
+        {"id": "ielts-r-mh-02-pB-c27c", "label": "Paragraph B", "text": "As environmental concerns regarding fossil fuels have risen, many governments around the world have introduced incentives such as tax breaks and rebates to encourage consumers to purchase electric vehicles, making them increasingly accessible to the average buyer.", "answer": "ii"},
+        {"id": "ielts-r-mh-02-pC-1be3", "label": "Paragraph C", "text": "Recent advancements in battery technology and charging stations have alleviated some of the logistical issues that previously hindered EV adoption. With longer ranges and faster charging times, drivers are more willing to switch to electric alternatives.", "answer": "iv"},
+        {"id": "ielts-r-mh-02-pD-ef7b", "text": "Battery production remains a complex issue, particularly concerning environmental impacts and resource extraction. The demand for environmentally friendly solutions continues to push researchers to develop more sustainable practices in this area.", "answer": "i"},
+        {"id": "ielts-r-mh-02-pE-50c2", "label": "Paragraph E", "text": "Looking ahead, the future of electric vehicles is promising, with innovations in autonomous driving technology on the horizon. This evolution could revolutionize not only personal transportation but also delivery services and public transportation systems.", "answer": "v"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-03-28b4",
+      "title": "The Significance of Urban Green Spaces",
+      "headingList": [
+        "i. Psychological benefits of nature exposure",
+        "ii. Balancing urbanization and biodiversity",
+        "iii. The role of public policy in green space design",
+        "iv. Community engagement in urban planning",
+        "v. Environmental impacts on heat reduction",
+        "vi. Green spaces as recreational hubs"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-03-pA-74f5", "label": "Paragraph A", "text": "As cities expand, the importance of maintaining green spaces cannot be overstated. These areas provide essential habitats for local wildlife, helping to preserve biodiversity amid fast-paced urban development.", "answer": "ii"},
+        {"id": "ielts-r-mh-03-pB-9a02", "label": "Paragraph B", "text": "Research indicates that access to nature significantly lowers stress levels and improves mental well-being. Parks and gardens serve as essential retreats where individuals can unwind and reconnect with nature.", "answer": "i"},
+        {"id": "ielts-r-mh-03-pC-6037", "label": "Paragraph C", "text": "Public policy plays a crucial role in ensuring that green spaces are incorporated into urban design. City planners often must consider a balance between development and the preservation of these vital ecosystems.", "answer": "iii"},
+        {"id": "ielts-r-mh-03-pD-beb8", "label": "Paragraph D", "text": "Engaging communities in the planning process fosters a sense of ownership and responsibility toward local parks. Such involvement can lead to better-maintained and more widely used recreational areas.", "answer": "iv"},
+        {"id": "ielts-r-mh-03-pE-a58e", "label": "Paragraph E", "text": "Additionally, urban green spaces contribute to lowering the temperature in cities. Trees and vegetation provide shade and reduce the heat island effect, thus enhancing the overall climate in urban settings.", "answer": "v"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-04-2cb4",
+      "title": "The Role of Arts in Education",
+      "headingList": [
+        "i. Encouraging critical thinking skills",
+        "ii. Integrating technology in art education",
+        "iii. Fostering cultural awareness through art",
+        "iv. The impact of art on emotional intelligence",
+        "v. Enhancing creativity and innovation",
+        "vi. The importance of art funding in schools"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-04-pA-27a5", "label": "Paragraph A", "text": "Art education plays a crucial role in developing critical thinking skills. Engaging with various art forms encourages students to analyze, interpret, and critique, which translates into stronger analytical abilities across subjects.", "answer": "i"},
+        {"id": "ielts-r-mh-04-pB-d937", "label": "Paragraph B", "text": "The integration of technology in art classes has opened new avenues for creativity and expression. Digital platforms and tools allow students to experiment with artistic techniques that were previously impractical.", "answer": "ii"},
+        {"id": "ielts-r-mh-04-pC-88a0", "label": "Paragraph C", "text": "Exposure to diverse art forms fosters cultural appreciation and awareness. Through studying various art movements, students gain insights into different societal values and historical contexts, enriching their educational experience.", "answer": "iii"},
+        {"id": "ielts-r-mh-04-pD-7d03", "label": "Paragraph D", "text": "Moreover, participation in art education enhances emotional intelligence. Students learn to express their feelings and understand those of others, which is vital for personal and professional relationships.", "answer": "iv"},
+        {"id": "ielts-r-mh-04-pE-a27c", "label": "Paragraph E", "text": "Finally, securing funding for art programs is critical in schools to ensure that students receive comprehensive education. Adequate financial support allows schools to offer diverse art initiatives and resources.", "answer": "vi"},
+        {"id": "ielts-r-mh-04-pF-90bf", "label": "Paragraph F", "text": "Overall, fostering creativity and innovation through art education prepares students for diverse careers where imaginative thinking is valued, contributing positively to society.", "answer": "v"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-05-22aa",
+      "title": "The Future of Renewable Energy",
+      "headingList": [
+        "i. Economic implications of renewable technologies",
+        "ii. Challenges in energy storage solutions",
+        "iii. Global collaboration on environmental policies",
+        "iv. Advancements in solar and wind technologies",
+        "v. The shift toward decentralized energy systems",
+        "vi. Educating the public about energy efficiency"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-05-pA-e500", "label": "Paragraph A", "text": "The renewable energy sector is experiencing rapid growth, with investments pouring into innovative technologies. However, transitioning away from fossil fuels requires significant economic adjustments and considerations.", "answer": "i"},
+        {"id": "ielts-r-mh-05-pB-3f79", "label": "Paragraph B", "text": "One of the pressing challenges in the field of renewable energy is efficient energy storage. As reliance on renewable sources such as solar and wind increases, finding ways to store energy for use when production is low becomes critical.", "answer": "ii"},
+        {"id": "ielts-r-mh-05-pC-3b5d", "label": "Paragraph C", "text": "International cooperation is essential in establishing effective environmental policies aimed at promoting renewable energy adoption. Countries must work together to share knowledge and resources to combat climate change effectively.", "answer": "iii"},
+        {"id": "ielts-r-mh-05-pD-81ee", "label": "Paragraph D", "text": "Technological advancements in solar panels and wind turbines have led to more efficient and cost-effective energy generation. Ongoing research aims to continue improving these technologies while ensuring sustainability.", "answer": "iv"},
+        {"id": "ielts-r-mh-05-pE-128c", "label": "Paragraph E", "text": "Another trend is the movement toward decentralized energy systems, allowing communities to produce their own energy instead of relying solely on centralized power grids. This shift fosters greater energy independence.", "answer": "v"},
+        {"id": "ielts-r-mh-05-pF-2263", "label": "Paragraph F", "text": "In addition, educating the public on energy efficiency practices is essential to maximize the benefits of renewable technologies. Awareness campaigns can lead to more responsible energy consumption habits.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-02-0fa5",
+      "title": "The Influence of Social Media on Modern Marketing",
+      "headingList": [
+        "i. The decline of traditional advertising methods",
+        "ii. Enhanced consumer engagement through interactive content",
+        "iii. The challenges of measuring social media ROI",
+        "iv. Case studies of brands that thrived through social platforms",
+        "v. The emergence of influencer marketing",
+        "vi. A shift towards personalization in advertising"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-02-pA-5c5b", "label": "Paragraph A", "text": "Many companies have witnessed a dramatic shift in their marketing approaches as traditional forms of advertising such as print and television have become less effective. Brands increasingly realize that direct engagement with consumers online is far more impactful.", "answer": "i"},
+        {"id": "ielts-r-mh-02-pB-ebee", "label": "Paragraph B", "text": "Social platforms offer marketers the ability to create interactive content that captivates audiences, fostering a dialogue between consumers and brands that was rare in traditional media. This two-way interaction helps build loyalty and brand identity.", "answer": "ii"},
+        {"id": "ielts-r-mh-02-pC-bd59", "label": "Paragraph C", "text": "Nevertheless, businesses face hurdles when it comes to measuring the return on investment of their social media efforts. Unlike traditional advertising, quantifying success on social media can be complicated and often requires sophisticated analytic tools.", "answer": "iii"},
+        {"id": "ielts-r-mh-02-pD-e398", "label": "Paragraph D", "text": "Several brands have successfully leveraged social media for growth by innovating their marketing strategies. By closely aligning their messaging with the culture and interests of their audiences, these companies have captured significant market share.", "answer": "iv"},
+        {"id": "ielts-r-mh-02-pE-6639", "label": "Paragraph E", "text": "The rise of influencers has changed the landscape of advertising entirely. Businesses now collaborate with social media personalities who hold the trust of their followers, using them as conduits to reach new audiences.", "answer": "v"},
+        {"id": "ielts-r-mh-02-pF-a382", "label": "Paragraph F", "text": "This evolution has led marketers to pursue increasingly personalized campaigns that cater to individual preferences and behaviors. Tailoring advertising messages significantly improves engagement rates and conversion outcomes.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-03-3a48",
+      "title": "The Role of Urban Green Spaces",
+      "headingList": [
+        "i. Contributions to local biodiversity",
+        "ii. The impact of greenery on mental health",
+        "iii. Challenges in maintaining urban parks",
+        "iv. Green spaces as community gathering points",
+        "v. The economic benefits of parks",
+        "vi. Strategies for integrating greenery in urban planning"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-03-pA-faef", "label": "Paragraph A", "text": "Urban environments often lack sufficient green spaces, which can negatively impact both the ecosystem and the lives of residents. Parks play a crucial role in supporting local flora and fauna, becoming vital sanctuaries for various species.", "answer": "i"},
+        {"id": "ielts-r-mh-03-pB-db2d", "label": "Paragraph B", "text": "Research indicates that access to green spaces has remarkable benefits for mental well-being. Time spent in nature promotes relaxation and reduces stress, making city parks essential for the psychological health of urban dwellers.", "answer": "ii"},
+        {"id": "ielts-r-mh-03-pC-1a80", "label": "Paragraph C", "text": "Despite their importance, many urban parks face ongoing maintenance difficulties. Budget constraints often lead city councils to prioritize other public services, which can result in neglected green areas.", "answer": "iii"},
+        {"id": "ielts-r-mh-03-pD-038f", "label": "Paragraph D", "text": "Besides environmental impacts, parks serve as vital community hubs where residents can engage in social activities, partake in events, and foster a sense of belonging that strengthens community ties.", "answer": "iv"},
+        {"id": "ielts-r-mh-03-pE-46ca", "label": "Paragraph E", "text": "Studies show that well-maintained parks can enhance property values and attract businesses, contributing significantly to a local economy. Investing in green spaces can yield long-term financial benefits for cities.", "answer": "v"},
+        {"id": "ielts-r-mh-03-pF-1e73", "label": "Paragraph F", "text": "To ensure the sustainability of urban green spaces, city planners are exploring innovative strategies to integrate nature into urban designs, such as green roofs and vertical gardens in densely populated areas.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-04-aad0",
+      "title": "The Evolution of Renewable Energy Sources",
+      "headingList": [
+        "i. Historical reliance on fossil fuels",
+        "ii. Innovations in solar technology",
+        "iii. The importance of energy storage solutions",
+        "iv. Global trends in renewable energy adoption",
+        "v. The role of government in promoting green energy",
+        "vi. Environmental impact assessments for new projects"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-04-pA-2b0f", "label": "Paragraph A", "text": "For many decades, global economies have been predominantly fueled by fossil fuels, leading to significant environmental degradation. Governments and societies have come to realize the urgent need for a more sustainable energy source to mitigate climate change.", "answer": "i"},
+        {"id": "ielts-r-mh-04-pB-c565", "label": "Paragraph B", "text": "Recent breakthroughs in solar energy technology have revolutionized its efficiency and affordability, making solar panels a viable option for homes and businesses alike. These advancements are crucial in the transition to cleaner energy.", "answer": "ii"},
+        {"id": "ielts-r-mh-04-pC-55a1", "label": "Paragraph C", "text": "A notable challenge in the renewable energy sector rests in energy storage technologies. As solar and wind energy production is intermittent, developing effective storage solutions has become essential for reliable energy supply.", "answer": "iii"},
+        {"id": "ielts-r-mh-04-pD-3fb2", "label": "Paragraph D", "text": "In recent years, many countries have seen a marked increase in the adoption of renewable energy sources. This trend reflects a collective commitment to reduce carbon footprints and embrace sustainable practices in energy consumption.", "answer": "iv"},
+        {"id": "ielts-r-mh-04-pE-090b", "label": "Paragraph E", "text": "Governments play a pivotal role in encouraging the shift to renewable energy by implementing policies and incentives that support green technologies, such as tax breaks and grants for clean energy projects.", "answer": "v"},
+        {"id": "ielts-r-mh-04-pF-e424", "label": "Paragraph F", "text": "When considering new renewable energy projects, comprehensive environmental impact assessments are required to evaluate potential effects on local ecosystems and communities, ensuring that development is both responsible and sustainable.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-05-3efa",
+      "title": "The Importance of Early Childhood Education",
+      "headingList": [
+        "i. Socioeconomic factors affecting access",
+        "ii. Cognitive benefits of early learning",
+        "iii. Parental engagement in educational activities",
+        "iv. Long-term effects on social behavior",
+        "v. Mastery of basic skills in young children",
+        "vi. The role of play in learning"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-05-pA-a8e0", "label": "Paragraph A", "text": "Access to quality early childhood education often varies greatly depending on socioeconomic status. Families with higher incomes typically have more options and resources available for enrolling their children in preschool programs.", "answer": "i"},
+        {"id": "ielts-r-mh-05-pB-95ba", "label": "Paragraph B", "text": "Research has shown that early educational experiences can significantly enhance a child’s cognitive abilities, setting a strong foundation for future learning and academic success throughout their lives.", "answer": "ii"},
+        {"id": "ielts-r-mh-05-pC-21fb", "label": "Paragraph C", "text": "Parental involvement plays a critical role in reinforcing the lessons learned in early educational settings. Engaged parents can support their children's development through reading, interactive play, and participation in school activities.", "answer": "iii"},
+        {"id": "ielts-r-mh-05-pD-1f30", "label": "Paragraph D", "text": "Children who receive early education often exhibit improved social behaviors later in life, illustrating that a strong start can influence interpersonal skills and relationships as they grow.", "answer": "iv"},
+        {"id": "ielts-r-mh-05-pE-faeb", "label": "Paragraph E", "text": "Mastery of fundamental skills such as literacy and numeracy at a young age correlates with improved academic performance in later years, showcasing the necessity of introducing these concepts early on.", "answer": "v"},
+        {"id": "ielts-r-mh-05-pF-6d4c", "label": "Paragraph F", "text": "Play-based learning is essential for young children, allowing them to explore, create, and interact with their environment. Through play, children not only learn but also develop critical thinking and problem-solving skills.", "answer": "vi"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-02-9688",
+      "title": "The Rise of Electric Vehicles",
+      "headingList": [
+        "i. The struggle for battery disposal solutions",
+        "ii. Economic benefits of reduced fuel dependency",
+        "iii. Regulatory changes promoting cleaner alternatives",
+        "iv. Environmental concerns regarding manufacturing",
+        "v. Advances in charging infrastructure",
+        "vi. The social aspect of car ownership shifts"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-02-pA-c5a7", "label": "Paragraph A", "text": "Electric vehicles (EVs) have quickly gained traction in the automotive world as consumers look for greener alternatives to traditional gasoline-powered cars. With global warming at the forefront of environmental concerns, the demand for EVs has surged, prompting manufacturers to invest heavily in development.", "answer": "iii"},
+        {"id": "ielts-r-mh-02-pB-bff0", "label": "Paragraph B", "text": "As consumers recognize the long-term savings associated with electric vehicles—such as reduced fuel and maintenance costs—many are shifting their preferences. Government incentives and tax breaks have further accelerated this transition, encouraging more people to make the switch.", "answer": "ii"},
+        {"id": "ielts-r-mh-02-pC-b1f1", "label": "Paragraph C", "text": "Nevertheless, the rise in electric vehicle usage raises new concerns, especially in terms of battery disposal. The environmental implications of producing lithium-ion batteries and their eventual disposal pose significant challenges that society has yet to address effectively.", "answer": "i"},
+        {"id": "ielts-r-mh-02-pD-54c8", "label": "Paragraph D", "text": "Moreover, the expansion of charging infrastructure is crucial for the success of electric vehicles. As more charging stations are installed in urban and rural areas, the range anxiety that potential buyers face is gradually decreasing, enhancing the viability of EVs.", "answer": "v"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-03-9cce",
+      "title": "Cultural Changes in Music Consumption",
+      "headingList": [
+        "i. The resurgence of vinyl records",
+        "ii. The impact of streaming services",
+        "iii. How social media has influenced artists",
+        "iv. The decline of physical music sales",
+        "v. Innovations in music distribution",
+        "vi. Nostalgia's role in music popularity"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-03-pA-ce40", "label": "Paragraph A", "text": "Over the last decade, streaming platforms have dramatically altered the music landscape, allowing listeners immediate access to an immense array of content. This shift has changed how people discover and enjoy music, favouring singles over albums.", "answer": "ii"},
+        {"id": "ielts-r-mh-03-pB-3322", "label": "Paragraph B", "text": "In contrast, there has been a surprising revival of vinyl records. Once deemed obsolete, the nostalgic quality and tangible experience of vinyl resonate strongly with both older and younger generations, contributing to its recent popularity.", "answer": "i"},
+        {"id": "ielts-r-mh-03-pC-d554", "label": "Paragraph C", "text": "Social media platforms have empowered artists to reach their audiences directly, bypassing traditional radio and record label constraints. This direct engagement allows musicians to develop their identities and cultivate loyal fanbases more effectively.", "answer": "iii"},
+        {"id": "ielts-r-mh-03-pD-2b57", "label": "Paragraph D", "text": "Despite these changes, physical sales of music have declined sharply, presenting challenges for artists reliant on album sales for revenue. The trend signifies a broader transformation in how music is valued in the digital age.", "answer": "iv"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-04-06c6",
+      "title": "The Advancements in Renewable Energy",
+      "headingList": [
+        "i. The evolving landscape of solar technology",
+        "ii. Global commitment to carbon neutrality",
+        "iii. The role of wind farms in energy efficiency",
+        "iv. Economic implications of transitioning to renewables",
+        "v. The debate over land use for energy production",
+        "vi. Innovations driving battery storage solutions"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-04-pA-1e60", "label": "Paragraph A", "text": "The commitment to renewable energy sources is growing globally, with nations implementing policies aimed at achieving carbon neutrality by mid-century. This dedication reflects a shift in consciousness surrounding climate change and its associated impacts.", "answer": "ii"},
+        {"id": "ielts-r-mh-04-pB-547c", "label": "Paragraph B", "text": "Solar technology has seen tremendous advancements, including improvements in efficiency and reductions in costs, making it a more appealing option for residential and commercial installations alike. The result is a more accessible energy source for many households.", "answer": "i"},
+        {"id": "ielts-r-mh-04-pC-02c7", "label": "Paragraph C", "text": "Wind energy, harnessed through expansive wind farms, has emerged as a key player in the renewable energy sector known for its efficiency. By capitalizing on wind resources, many countries are diversifying their energy portfolios and reducing their reliance on fossil fuels.", "answer": "iii"},
+        {"id": "ielts-r-mh-04-pD-7be5", "text": "However, the transition to renewable energy carries economic implications, particularly in terms of job displacement in traditional energy sectors. Balancing economic stability while shifting to sustainable energy sources is an ongoing challenge for many governments.", "answer": "iv"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-05-a3f0",
+      "title": "The Evolution of Urban Architecture",
+      "headingList": [
+        "i. Balancing functionality with sustainability",
+        "ii. The role of smart technology in residential designs",
+        "iii. Adapting architecture to climate change",
+        "iv. Historical influences on contemporary designs",
+        "v. The rise of mixed-use developments",
+        "vi. The influence of community needs on urban planning"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-05-pA-8716", "label": "Paragraph A", "text": "Modern urban architecture increasingly seeks to blend functionality with sustainability. Architects are re-imagining building designs to minimize energy consumption and promote environmental stewardship within city landscapes.", "answer": "i"},
+        {"id": "ielts-r-mh-05-pB-079b", "label": "Paragraph B", "text": "The fusion of smart technology with urban planning is revolutionizing how residents interact with their living spaces. Innovative automation and interconnected systems enhance not just convenience but also energy efficiency within homes.", "answer": "ii"},
+        {"id": "ielts-r-mh-05-pC-c9c7", "label": "Paragraph C", "text": "As climate change poses new challenges, architects are adapting structures to withstand extreme weather events. This adaptation is becoming essential not only for safety but also for longevity in urban development.", "answer": "iii"},
+        {"id": "ielts-r-mh-05-pD-5927", "label": "Paragraph D", "text": "The emergence of mixed-use developments reflects changing societal needs, encouraging vibrant community integration. These designs foster interactions between residential, commercial, and recreational spaces, contributing to holistic urban growth.", "answer": "v"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-02-9277",
+      "title": "The Evolution of Renewable Energy",
+      "headingList": [
+        "i. Technological breakthroughs in solar power",
+        "ii. The economic implications of fossil fuel dependency",
+        "iii. Government policies promoting sustainable practices",
+        "iv. Public perception and its effect on adoption rates",
+        "v. The role of education in advancing energy solutions",
+        "vi. Challenges in integrating renewables into the grid"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-02-pA-eaae", "label": "Paragraph A", "text": "Historically, reliance on fossil fuels has been underpinned by both economic and infrastructural factors, leading many governments and companies to hesitate in fully adopting renewable alternatives. This dependency has prompted discussions about the long-term viability of current energy practices and their environmental footprint.", "answer": "ii"},
+        {"id": "ielts-r-mh-02-pB-7b8f", "label": "Paragraph B", "text": "As advancements in technology have improved the efficiency of solar panels and wind turbines, many nations have begun adjusting their energy strategies. These innovations have decreased the costs associated with renewable energy production significantly, making them more attractive to consumers and businesses alike.", "answer": "i"},
+        {"id": "ielts-r-mh-02-pC-5a01", "label": "Paragraph C", "text": "Government initiatives, such as subsidies and tax incentives for renewable installations, have played a critical role in promoting sustainable energy sources. In many regions, these policies have successfully encouraged increased adoption rates and facilitated a transition towards greener energy solutions.", "answer": "iii"},
+        {"id": "ielts-r-mh-02-pD-3437", "label": "Paragraph D", "text": "Despite the progress, there remain significant hurdles to the widespread integration of renewable energy into existing power grids. Issues such as fluctuating energy supplies and the need for updated infrastructure pose challenges that must be addressed to ensure reliability and consistency.", "answer": "vi"},
+        {"id": "ielts-r-mh-02-pE-e979", "label": "Paragraph E", "text": "Public perception also plays a vital role in the adoption of renewable energy. While awareness of environmental issues has increased, skepticism about the effectiveness of renewables and misinformation can impede broader acceptance and implementation in everyday life.", "answer": "iv"},
+        {"id": "ielts-r-mh-02-pF-8ea4", "label": "Paragraph F", "text": "Education is increasingly recognized as a key factor in advancing renewable energy solutions. By equipping future generations with knowledge about sustainable practices, societies can foster a culture that prioritizes environmental stewardship and encourages innovative approaches to energy challenges.", "answer": "v"}
+      ]
+    },
+    {
+      "id": "ielts-r-mh-03-de5d",
+      "title": "The Future of Urban Transportation",
+      "headingList": [
+        "i. The rise of micro-mobility options",
+        "ii. Environmental impacts of vehicular congestion",
+        "iii. Urban planning for improved public transit",
+        "iv. The integration of technology in transport systems",
+        "v. A shift towards shared mobility solutions",
+        "vi. Challenges presented by infrastructure modernization"
+      ],
+      "paragraphs": [
+        {"id": "ielts-r-mh-03-pA-fedc", "label": "Paragraph A", "text": "With cities across the globe facing increasing congestion, urban planners are exploring various strategies to enhance transportation systems. Prioritizing public transit and walking infrastructure can significantly reduce reliance on personal vehicles and alleviate traffic-related issues.", "answer": "iii"},
+        {"id": "ielts-r-mh-03-pB-01e3", "label": "Paragraph B", "text": "Transportation innovators have introduced a range of micro-mobility solutions, such as e-scooters and bike-sharing programs. These options aim to provide commuters with convenient alternatives that ease the burden on public transit while promoting eco-friendly travel.", "answer": "i"},
+        {"id": "ielts-r-mh-03-pC-ae09", "label": "Paragraph C", "text": "The increasing number of vehicles on the roads has raised significant environmental concerns. Air quality diminishes as congestion increases, underscoring the need for cities to embrace more sustainable transportation methods to safeguard public health.", "answer": "ii"},
+        {"id": "ielts-r-mh-03-pD-e831", "label": "Paragraph D", "text": "Modernizing transport infrastructure requires substantial investment and commitment from both public and private sectors. While technology integration can enhance transport efficiency, the challenges of updating existing systems without disrupting service remain a persistent obstacle.", "answer": "vi"},
+        {"id": "ielts-r-mh-03-pE-1d76", "label": "Paragraph E", "text": "The concept of shared mobility, where individuals utilize resources collectively, is gaining traction as a viable model for urban transport. Services such as car-sharing and ride-hailing are reshaping traditional notions of ownership and convenience, potentially leading to fewer cars on the streets.", "answer": "v"},
+        {"id": "ielts-r-mh-03-pF-09a3", "label": "Paragraph F", "text": "The integration of smart technology into urban transport systems is paving the way for improved navigation, real-time updates, and enhanced user experiences. Innovations like AI-driven traffic management systems are becoming essential for reducing delays and streamlining transportation networks.", "answer": "iv"}
+      ]
+    }
+  ]
+}

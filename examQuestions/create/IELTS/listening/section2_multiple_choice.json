@@ -1,0 +1,288 @@
+{
+  "exam": "IELTS",
+  "section": "Listening",
+  "part": "Section 2: Multiple Choice / Monologue in everyday context (e.g. talk about local facilities)",
+  "instructions": "Listen to the talk and choose the correct letter, A, B, or C.",
+  "tasks": [
+    {
+      "id": "ielts-l2-01",
+      "transcript": "Welcome to Hartley Community Centre. I'll give you a quick overview of what we offer. Our main hall is used for fitness classes throughout the week, including yoga on Tuesdays and Thursdays. The centre also has a smaller room for arts and crafts sessions, which run every Saturday morning. Please note that the swimming pool we used to have has been closed permanently due to renovation costs, so unfortunately that facility is no longer available. Membership costs $30 a month and includes access to all classes except the pottery workshop, which requires an additional $10 materials fee.",
+      "questions": [
+        {"id": "ielts-l2-01-q1", "question": "When does the yoga class take place?", "options": ["A. Mondays and Wednesdays", "B. Tuesdays and Thursdays", "C. Every day"], "answer": "B"},
+        {"id": "ielts-l2-01-q2", "question": "What happened to the swimming pool?", "options": ["A. It is being renovated and will reopen soon", "B. It has closed permanently", "C. It is only open in summer"], "answer": "B"},
+        {"id": "ielts-l2-01-q3", "question": "What does the monthly membership fee NOT include?", "options": ["A. Yoga classes", "B. Arts and crafts sessions", "C. Pottery workshop materials"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ielts-l2-02",
+      "transcript": "Good morning, and thank you for joining today's orientation tour of Millbrook Botanical Gardens. The gardens are divided into four main sections: the Rose Garden, the Tropical Greenhouse, the Herb Garden, and the newly opened Sculpture Trail. The Tropical Greenhouse is currently closed to the public on weekdays for maintenance but remains open on weekends. If you're interested in guided tours, they depart from the main entrance every hour, though the last tour of the day leaves at 4 p.m., not 5 p.m. as listed in our old brochures. The gift shop, located near the exit, closes thirty minutes after the gardens do.",
+      "questions": [
+        {"id": "ielts-l2-02-q1", "question": "What is currently closed on weekdays?", "options": ["A. The Rose Garden", "B. The Tropical Greenhouse", "C. The Sculpture Trail"], "answer": "B"},
+        {"id": "ielts-l2-02-q2", "question": "What time does the last guided tour actually leave?", "options": ["A. 3 p.m.", "B. 4 p.m.", "C. 5 p.m."], "answer": "B"},
+        {"id": "ielts-l2-02-q3", "question": "Where is the gift shop located?", "options": ["A. Near the main entrance", "B. Inside the greenhouse", "C. Near the exit"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ielts-l2-02-146f",
+      "transcript": "Hello everyone! Welcome to the Riverside Library. Let me share some highlights of our services. We have a vast collection of books, including a special section for children which is open all day Saturday. Our computer lab offers free internet access and is available to all members from Monday to Friday. Additionally, we host a movie night every Friday at 7 PM. Please be aware that our cafe will be closed for renovations for the next month. Membership fees are set at $25 annually, which includes all library events, but there is a $5 charge for the movie night.",
+      "questions": [
+        {"id": "ielts-l2-02-q1-07a6", "question": "When is the children's section available?", "options": ["A. All week", "B. Only on Saturdays", "C. Weekdays only"], "answer": "B"},
+        {"id": "ielts-l2-02-q2-4cf3", "question": "What is happening to the cafe?", "options": ["A. It is relocating to a new site", "B. It will be closed for renovations", "C. It is opening a new branch"], "answer": "B"},
+        {"id": "ielts-l2-02-q3-c5f6", "question": "How much is the fee for movie night?", "options": ["A. Free for members", "B. $5 charge", "C. $25 annual fee"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-03",
+      "transcript": "Good afternoon! I’m here to tell you about the City Fitness Club. Our gym has a variety of equipment, including new cardio machines. Group fitness classes are held throughout the week; Pilates is on Mondays and Wednesdays, while Zumba classes are offered on Tuesdays and Fridays. We also have personal trainers available for an additional cost. Note that our spa facilities including the sauna are currently out of service until next month. Membership costs $40 a month, which covers all classes but personal training fees.",
+      "questions": [
+        {"id": "ielts-l2-03-q1", "question": "Which classes are scheduled for Mondays and Wednesdays?", "options": ["A. Zumba", "B. Cardio", "C. Pilates"], "answer": "C"},
+        {"id": "ielts-l2-03-q2", "question": "What is the status of the spa facilities?", "options": ["A. They are fully operational", "B. They are out of service", "C. They are open to members only"], "answer": "B"},
+        {"id": "ielts-l2-03-q3", "question": "What does the monthly membership fee include?", "options": ["A. Personal training", "B. All group classes", "C. Spa access"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-04",
+      "transcript": "Welcome to the Downtown Cultural Centre! Here, we offer a range of artistic programs. Our art gallery showcases local artists, and it’s open from Tuesday to Sunday. We also have workshops for painting and pottery on Saturdays. Don’t miss our special music events which happen every last weekend of the month. Importantly, the library within the centre is closing for upgrades until the end of the month. The entry fee for our events is $10 unless you are a member, in which case it’s free.",
+      "questions": [
+        {"id": "ielts-l2-04-q1", "question": "When can visitors view the art gallery?", "options": ["A. Monday to Friday", "B. Tuesday to Sunday", "C. Every day"], "answer": "B"},
+        {"id": "ielts-l2-04-q2", "question": "What is happening to the library?", "options": ["A. It will be expanded", "B. It’s closing for upgrades", "C. It is opening a new section"], "answer": "B"},
+        {"id": "ielts-l2-04-q3", "question": "How much does it cost for non-members to attend events?", "options": ["A. Free for everyone", "B. $10 per event", "C. Membership is required"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-05",
+      "transcript": "Hello and welcome to the Green Valley Park. I’d like to inform you about the facilities available here. Our playground area is designed for younger children and is open daily. We have picnic spots with barbecue grills, which can be reserved for group events. On the other hand, our nature trails are currently closed for maintenance. Please take note that the walking track is open every day and is free of charge. Entrance to the park is complimentary for everyone.",
+      "questions": [
+        {"id": "ielts-l2-05-q1", "question": "When is the playground open?", "options": ["A. Only on weekends", "B. Daily", "C. When reserved"], "answer": "B"},
+        {"id": "ielts-l2-05-q2", "question": "What is the status of the nature trails?", "options": ["A. They are open to the public", "B. They are under maintenance", "C. They are being expanded"], "answer": "B"},
+        {"id": "ielts-l2-05-q3", "question": "Is there an entrance fee for the park?", "options": ["A. Yes, $5", "B. No, it is free", "C. Only for group events"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-06",
+      "transcript": "Welcome to the Harbor Community Garden! We’re excited to show you what we have available. Our garden is open to all residents and is maintained by volunteers. We have community plots where you can grow vegetables and herbs; these are available for use from April to October. Also, we organize monthly cooking classes on the last Sunday of each month. Take note that our composting facility is currently undergoing repairs, so please don't use it for now. Registration for participation in garden activities is free.",
+      "questions": [
+        {"id": "ielts-l2-06-q1", "question": "When can residents use the community plots?", "options": ["A. Throughout the year", "B. Only in spring", "C. From April to October"], "answer": "C"},
+        {"id": "ielts-l2-06-q2", "question": "What is the situation with the composting facility?", "options": ["A. It is already functioning", "B. It is undergoing repairs", "C. It is closing permanently"], "answer": "B"},
+        {"id": "ielts-l2-06-q3", "question": "How much does it cost to register for garden activities?", "options": ["A. $10 fee", "B. Free of charge", "C. Membership required"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-02-0e75",
+      "transcript": "Hello and welcome to the Riverside Library. We’re excited to share our latest services with you. Apart from our extensive collection of books, we now offer a digital lending service for e-books and audiobooks, available 24/7. Each Saturday, there’s a children’s storytelling session beginning at 10 AM. However, please be aware that our cafe is currently closed for renovations. The library membership is free, but a small fee may apply for printing documents, which is 10 cents per page.",
+      "questions": [
+        {"id": "ielts-l2-02-q1-99f5", "question": "What new service does the library provide?", "options": ["A. Free printing", "B. Digital lending for e-books", "C. Book donations"], "answer": "B"},
+        {"id": "ielts-l2-02-q2-20d5", "question": "When does the storytelling session for children occur?", "options": ["A. Every Sunday at 11 AM", "B. Saturday at 10 AM", "C. Friday at 9 AM"], "answer": "B"},
+        {"id": "ielts-l2-02-q3-93a6", "question": "What service is currently unavailable at the library?", "options": ["A. Digital lending", "B. Cafe", "C. Book rentals"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-03-5b8b",
+      "transcript": "Welcome to the Oakwood Sports Club. Here in our facility, we host a range of activities including basketball, swimming, and tennis. Our basketball league meets every Thursday evening. We also have swimming lessons for children every Saturday afternoon. Be informed that our gym has extended hours this month, now opening at 5 AM. Monthly membership is available at $25, which covers access to all sports except swimming lessons that have an added fee of $15.",
+      "questions": [
+        {"id": "ielts-l2-03-q1-ee2e", "question": "What day is the basketball league held?", "options": ["A. Tuesday", "B. Thursday", "C. Weekend"], "answer": "B"},
+        {"id": "ielts-l2-03-q2-c730", "question": "What additional cost is associated with swimming lessons?", "options": ["A. $25", "B. $15", "C. $30"], "answer": "B"},
+        {"id": "ielts-l2-03-q3-4f5a", "question": "What are the new opening hours for the gym this month?", "options": ["A. 6 AM", "B. 5 AM", "C. 7 AM"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-04-35bd",
+      "transcript": "Thank you for your interest in the Greenfield Community Garden. Our garden is open to all resident members, allowing you to cultivate your vegetables and flowers. Every Sunday at 2 PM, we hold workshops on organic gardening. Please note that there is a small annual subscription fee of $20 to join the garden. Unfortunately, we cannot allow pets on the premises to protect the plants.",
+      "questions": [
+        {"id": "ielts-l2-04-q1-5467", "question": "When are the organic gardening workshops held?", "options": ["A. Every Saturday", "B. Every Sunday at 2 PM", "C. Twice a month on Wednesdays"], "answer": "B"},
+        {"id": "ielts-l2-04-q2-975d", "question": "What is the annual fee to join the garden?", "options": ["A. $15", "B. $20", "C. $25"], "answer": "B"},
+        {"id": "ielts-l2-04-q3-1da9", "question": "Why are pets not allowed in the garden?", "options": ["A. For the enjoyment of visitors", "B. To protect the plants", "C. Due to health regulations"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-05-92cc",
+      "transcript": "Welcome to Millfield Art Gallery. We are delighted to showcase local artists every first Friday of the month at our exhibition night. Additionally, we have art classes available on Wednesdays from 4 PM to 6 PM. Please note that there is a small fee of $25 for the art classes. Unfortunately, the sculpture park is closed for maintenance until further notice. Admission to the gallery is free for all visitors.",
+      "questions": [
+        {"id": "ielts-l2-05-q1-1bb0", "question": "When is the exhibition night held?", "options": ["A. Every Friday", "B. First Friday of the month", "C. Last Friday of the month"], "answer": "B"},
+        {"id": "ielts-l2-05-q2-f05a", "question": "What time do the art classes take place on Wednesdays?", "options": ["A. 3 PM to 5 PM", "B. 4 PM to 6 PM", "C. 5 PM to 7 PM"], "answer": "B"},
+        {"id": "ielts-l2-05-q3-6caa", "question": "What is currently closed at the gallery?", "options": ["A. The café", "B. The exhibition hall", "C. The sculpture park"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ielts-l2-06-46b5",
+      "transcript": "Greetings and welcome to the Northview Theater. This evening, we’ll be showing a classic film starting at 7 PM, followed by a discussion panel. Tickets are priced at $12, and if you’re a student, please bring your student ID for a discount. We also host weekly live music nights on Fridays, featuring local musicians. Please remember that the theater's concessions are cash only, so make sure to bring cash for snacks and drinks.",
+      "questions": [
+        {"id": "ielts-l2-06-q1-a91b", "question": "What time does the classic film start?", "options": ["A. 6 PM", "B. 7 PM", "C. 8 PM"], "answer": "B"},
+        {"id": "ielts-l2-06-q2-b82f", "question": "What is the ticket price for the film?", "options": ["A. $10", "B. $12", "C. $15"], "answer": "B"},
+        {"id": "ielts-l2-06-q3-9854", "question": "What payment method is required for concessions?", "options": ["A. Credit card only", "B. Cash only", "C. Both cash and card"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-02-ab85",
+      "transcript": "Hello everyone, and welcome to the Maplewood Library. Today, I'll share some information about our services and programs. We have a range of books available for all ages, plus a dedicated children’s section. Additionally, we hold weekly storytime sessions for kids every Wednesday at 10 AM. Our technology lab is equipped with computers and free Wi-Fi for all visitors. Please note that our quiet study area has been updated to include more comfortable seating. Membership is free, but we do encourage donations to help sustain our programs.",
+      "questions": [
+        {"id": "ielts-l2-02-q1-bcf2", "question": "When are the storytime sessions held?", "options": ["A. Every Thursday", "B. Every Wednesday at 10 AM", "C. On weekends"], "answer": "B"},
+        {"id": "ielts-l2-02-q2-6a3c", "question": "What is the purpose of the technology lab?", "options": ["A. Renting out computers", "B. Providing free Wi-Fi and computer access", "C. Offering advanced tech courses"], "answer": "B"},
+        {"id": "ielts-l2-02-q3-17ff", "question": "What has been updated in the library?", "options": ["A. The book collection", "B. The staff", "C. The quiet study area"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ielts-l2-03-1566",
+      "transcript": "Welcome to the Greenfield Sports Complex. Today, I am excited to tell you about our facilities. We have an outdoor swimming pool that is open from May to September, and a gym that is available year-round. Additionally, we offer tennis courts which can be booked in advance. Our group fitness classes, like Zumba and spin, are available on different days throughout the week. Please be aware that our equipment rental is paid separately, and all users must be members, which costs $50 annually.",
+      "questions": [
+        {"id": "ielts-l2-03-q1-86d6", "question": "When is the outdoor swimming pool open?", "options": ["A. All year round", "B. From May to September", "C. Only in the summer"], "answer": "B"},
+        {"id": "ielts-l2-03-q2-9b8a", "question": "What must visitors do to use the facilities?", "options": ["A. Pay for a day pass", "B. Become members", "C. Take a training course"], "answer": "B"},
+        {"id": "ielts-l2-03-q3-b0cd", "question": "What type of classes does the complex offer?", "options": ["A. Cooking classes", "B. Group fitness classes", "C. Language classes"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-04-1022",
+      "transcript": "Hello, and welcome to the Sunnydale Farmers' Market. Every Saturday, local farmers set up stalls to sell fresh produce, meats, and handmade goods. We also have live music performances to create a fun atmosphere. The market opens at 8 AM and closes at 1 PM. For those interested in workshops, we offer cooking classes on the first Saturday of each month. You should also be aware that there’s an ATM on-site for your convenience. Remember to bring reusable bags for your purchases!",
+      "questions": [
+        {"id": "ielts-l2-04-q1-a6f4", "question": "What day of the week does the Farmers' Market take place?", "options": ["A. Fridays", "B. Saturdays", "C. Sundays"], "answer": "B"},
+        {"id": "ielts-l2-04-q2-f444", "question": "What time does the market close?", "options": ["A. 2 PM", "B. 1 PM", "C. 12 PM"], "answer": "B"},
+        {"id": "ielts-l2-04-q3-bff3", "question": "What type of classes are offered at the market?", "options": ["A. Gardening classes", "B. Cooking classes", "C. Craft classes"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-05-4219",
+      "transcript": "Welcome to Hilltown Community Theatre. This month we are excited to showcase a variety of performances, including drama, music, and dance. Shows are scheduled every Friday and Saturday evening at 7 PM. We also have matinee performances on Sundays at 3 PM. For those wishing to support the theatre, we have a patrons’ program that offers special benefits. Tickets vary in price but average around $15 per show, and you can buy them online or at the box office. Don’t forget to check our schedule for special events during the holidays.",
+      "questions": [
+        {"id": "ielts-l2-05-q1-1df8", "question": "When are the evening performances held?", "options": ["A. Thursdays and Fridays", "B. Fridays and Saturdays", "C. Saturdays and Sundays"], "answer": "B"},
+        {"id": "ielts-l2-05-q2-3122", "question": "How much do average tickets cost?", "options": ["A. $10", "B. $15", "C. $20"], "answer": "B"},
+        {"id": "ielts-l2-05-q3-fe57", "question": "What is the schedule for matinee performances?", "options": ["A. On Saturdays at 5 PM", "B. Every Sunday at 3 PM", "C. Every Monday at 2 PM"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-02-916c",
+      "transcript": "Hello everyone! Welcome to our local library. We offer a wide range of services for all ages. Our reading room is available for quiet study and reading, and we host storytelling sessions for children every Friday afternoon. There's also a computer area with internet access, which is free for all library members. Unfortunately, our café has been closed due to maintenance issues, but we expect to reopen it within the next few months. Membership for adults is $15 per year, while children can join for just $5. Additionally, some special events may require a small fee.",
+      "questions": [
+        {"id": "ielts-l2-02-q1-1b10", "question": "When are storytelling sessions held?", "options": ["A. Saturdays", "B. Fridays", "C. Sundays"], "answer": "B"},
+        {"id": "ielts-l2-02-q2-539d", "question": "What is currently unavailable in the library?", "options": ["A. Reading room", "B. Computer area", "C. Café"], "answer": "C"},
+        {"id": "ielts-l2-02-q3-be29", "question": "What is the membership fee for children?", "options": ["A. $5", "B. $15", "C. Free"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "ielts-l2-03-eadb",
+      "transcript": "Good afternoon! I’m glad you could join us at the Riverside Park. We have several facilities that cater to the community. There is a playground for children, open from sunrise to sunset. We also have a running track that is popular among fitness enthusiasts. Please note, however, that the picnic area is closed for improvements and will reopen next month. Entry to the park is free, but some activities, like organized sports, may have a fee associated with them.",
+      "questions": [
+        {"id": "ielts-l2-03-q1-04c6", "question": "What time is the playground open?", "options": ["A. 8 AM to 8 PM", "B. Sunrise to sunset", "C. All day"], "answer": "B"},
+        {"id": "ielts-l2-03-q2-0448", "question": "What facility is currently being improved?", "options": ["A. Running track", "B. Picnic area", "C. Playground"], "answer": "B"},
+        {"id": "ielts-l2-03-q3-3aee", "question": "Is entry to Riverside Park free?", "options": ["A. Yes", "B. No, there is a fee", "C. Only for children"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "ielts-l2-04-8000",
+      "transcript": "Welcome to the Willow Creek Fitness Studio! We are open from 6 AM to 10 PM every day. We offer a variety of classes, including Zumba on Mondays and Thursdays, and spinning classes on Wednesdays. Our sauna facility is available, but please be aware that it requires an additional fee of $5 per use. Membership here is priced at $40 per month, and it includes unlimited access to all fitness classes and the gym, but not the sauna or personal training sessions.",
+      "questions": [
+        {"id": "ielts-l2-04-q1-5d51", "question": "When are Zumba classes held?", "options": ["A. Tuesdays and Fridays", "B. Mondays and Thursdays", "C. Every day"], "answer": "B"},
+        {"id": "ielts-l2-04-q2-7fc4", "question": "What is required to use the sauna?", "options": ["A. Membership", "B. An additional fee", "C. Special equipment"], "answer": "B"},
+        {"id": "ielts-l2-04-q3-547f", "question": "What does the membership include?", "options": ["A. Personal training sessions", "B. Unlimited fitness classes", "C. Sauna access"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-05-67d0",
+      "transcript": "Hello and welcome to the Greenfield Community Art Gallery! We host a variety of exhibitions throughout the year featuring local artists. The gallery is open from 10 AM to 6 PM, Tuesday through Sunday. We also hold art workshops for adults every second Saturday, and children’s art camps during the summer holidays. Admission to the gallery is free, but advanced booking is required for the workshops, which carry a fee of $20 per participant.",
+      "questions": [
+        {"id": "ielts-l2-05-q1-5009", "question": "What are the gallery's open days?", "options": ["A. Monday to Friday", "B. Tuesday to Sunday", "C. Every day"], "answer": "B"},
+        {"id": "ielts-l2-05-q2-4a3e", "question": "When do adult art workshops take place?", "options": ["A. Every week", "B. Every second Saturday", "C. On Sundays only"], "answer": "B"},
+        {"id": "ielts-l2-05-q3-de1b", "question": "Is there a fee for the workshops?", "options": ["A. Yes, $20", "B. No, they are free", "C. Only for children"], "answer": "A"}
+      ]
+    },
+    {"id": "ielts-l2-06-4272", "transcript": "Greetings! Welcome to the Brookside Veterinary Clinic. We provide pet care services including vaccinations, check-ups, and grooming. Our clinic is open Monday to Saturday from 9 AM to 5 PM. We also have a pet adoption event every month on the last Sunday, which can help find loving homes for stray animals. Please remember that appointments are necessary for vaccinations and grooming. The basic check-up fee is $50, but adoption is free. Donations are appreciated to support our shelter."},
+    {
+      "id": "ielts-l2-02-4bd8",
+      "transcript": "Hello, and welcome to the Riverside Library. We have a wonderful selection of books, eBooks, and audiobooks for all ages. Our children's section hosts story time every Wednesday at 3 PM, while the adult book club meets the first Thursday of each month at 6 PM. The library provides free internet access and also holds a weekly workshop on digital skills every Saturday morning. Please remember that late returns incur a fine of $0.25 per day.",
+      "questions": [
+        {"id": "ielts-l2-02-q1-7817", "question": "When is story time for children?", "options": ["A. Every Saturday", "B. Wednesdays at 3 PM", "C. First Thursday of the month"], "answer": "B"},
+        {"id": "ielts-l2-02-q2-80c1", "question": "What is the fine for late returns?", "options": ["A. $0.10 per day", "B. $0.25 per day", "C. $1.00 per day"], "answer": "B"},
+        {"id": "ielts-l2-02-q3-c510", "question": "What type of sessions does the library offer on Saturdays?", "options": ["A. Story time for children", "B. Digital skills workshops", "C. Adult book club meetings"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-03-b22c",
+      "transcript": "Welcome to the Green Valley Park! Here, you can enjoy various outdoor activities including hiking, cycling, and picnicking. The park has designated trails for each activity; the hiking trails are open from sunrise to sunset, while cycling is permitted on specific paths. There's also a children’s playground near the main entrance and picnic tables scattered throughout the park. Please note, dogs must be on a leash at all times. Make sure to clean up after your pets.",
+      "questions": [
+        {"id": "ielts-l2-03-q1-a607", "question": "When can you hike in the park?", "options": ["A. Only during the day", "B. At night", "C. From sunrise to sunset"], "answer": "C"},
+        {"id": "ielts-l2-03-q2-4a5e", "question": "What should pet owners do?", "options": ["A. Allow pets to roam freely", "B. Keep dogs on a leash", "C. Take pets only to the playground"], "answer": "B"},
+        {"id": "ielts-l2-03-q3-e4ea", "question": "What facilities are available in the park?", "options": ["A. Only cycling paths", "B. Playground and picnic tables", "C. Indoor sports facilities"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-04-83ab",
+      "transcript": "Good afternoon, everyone! I’m excited to talk to you about the upcoming art exhibition at the Downtown Gallery. The exhibition opens next Friday and will showcase local artists. We’ll have a panel discussion on the opening night, starting at 7 PM. Admission is free, but donations are welcomed to support the artists. The exhibition will run for two weeks, closing on Sunday of the following week. Don’t miss the chance to see some amazing works!",
+      "questions": [
+        {"id": "ielts-l2-04-q1-46b8", "question": "When does the art exhibition open?", "options": ["A. Next Friday", "B. The following week", "C. This weekend"], "answer": "A"},
+        {"id": "ielts-l2-04-q2-c23b", "question": "What is the cost of admission?", "options": ["A. $5", "B. Free with donations", "C. $10"], "answer": "B"},
+        {"id": "ielts-l2-04-q3-e271", "question": "How long will the exhibition last?", "options": ["A. One week", "B. Two weeks", "C. Three weeks"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-05-3132",
+      "transcript": "Hello! We are excited to announce the opening of the new fitness center, City Gym, located downtown. The gym will feature a wide range of equipment and classes, from spinning to Zumba. We also offer personal training sessions for those looking for more individualized attention, which need to be booked in advance. A monthly membership will cost $40, giving full access to all classes and facilities. Remember that the introductory offer is valid for the first month at only $25!",
+      "questions": [
+        {"id": "ielts-l2-05-q1-aa91", "question": "How much is the monthly membership fee?", "options": ["A. $25", "B. $40", "C. $50"], "answer": "B"},
+        {"id": "ielts-l2-05-q2-d96a", "question": "What special offer is available?", "options": ["A. Free personal training", "B. $25 for the first month", "C. No fees for the first month"], "answer": "B"},
+        {"id": "ielts-l2-05-q3-0a6b", "question": "What types of classes will the gym offer?", "options": ["A. Only Yoga", "B. Spinning and Zumba among others", "C. Martial arts only"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-06-1a7c",
+      "transcript": "Welcome to the City Farmers Market! We are here every Sunday morning from 9 AM to 1 PM, offering fresh produce from local farms. You will find a variety of fruits, vegetables, and homemade goods like jams and baked items. Make sure to come early for the best selection! There are also workshops on sustainable gardening that take place once a month on the first Saturday. Parking is available nearby but can fill up quickly, so consider walking or biking if you live close.",
+      "questions": [
+        {"id": "ielts-l2-06-q1-faf8", "question": "When does the farmers market operate?", "options": ["A. Saturdays only", "B. Every Sunday from 9 AM to 1 PM", "C. Fridays all day"], "answer": "B"},
+        {"id": "ielts-l2-06-q2-dec4", "question": "What can you find at the market?", "options": ["A. Only fruits", "B. Fresh produce and homemade goods", "C. Pet supplies only"], "answer": "B"},
+        {"id": "ielts-l2-06-q3-295a", "question": "How often are gardening workshops held?", "options": ["A. Weekly", "B. Once a month", "C. Every two weeks"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-02-f406",
+      "transcript": "Hello everyone! Welcome to the Greenfield Library. Today, I'll highlight our new services. We now offer digital borrowing, so you can check out e-books and audiobooks online. Our reading nook is perfect for quiet study, and it’s open from 9 AM to 6 PM every day. We also host a book club meeting every first Friday of the month, which is free for all members. However, please be aware that the café within the library has closed down, and we’re working to find a new vendor. Membership allows you to access all services, including special events and workshops.",
+      "questions": [
+        {"id": "ielts-l2-02-q1-c130", "question": "What new service is available at the library?", "options": ["A. Digital borrowing", "B. Expanded café menu", "C. Outdoor reading areas"], "answer": "A"},
+        {"id": "ielts-l2-02-q2-3921", "question": "When are the book club meetings held?", "options": ["A. Last Saturday of every month", "B. First Friday of every month", "C. Every Wednesday evening"], "answer": "B"},
+        {"id": "ielts-l2-02-q3-6d0c", "question": "What has happened to the library café?", "options": ["A. It has relocated", "B. It has closed down", "C. It is undergoing renovations"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-03-8e1d",
+      "transcript": "Welcome to the Riverside Park information desk. I’m here to share some details about our facilities. We have a lovely playground for children that operates from dawn until dusk. Our picnic areas can be reserved for gatherings, and we strongly recommend booking in advance, especially on weekends. The jogging track is open year-round, but please note that the public restrooms will be closed for maintenance until the end of the month. Admission to the park is free, and we encourage everyone to enjoy the beautiful scenery!",
+      "questions": [
+        {"id": "ielts-l2-03-q1-84d3", "question": "What hours is the playground open?", "options": ["A. 24 hours a day", "B. Dawn until dusk", "C. 9 AM to 9 PM"], "answer": "B"},
+        {"id": "ielts-l2-03-q2-a851", "question": "What must you do to reserve a picnic area?", "options": ["A. Pay a fee", "B. Reserve in advance", "C. Arrive early on the day"], "answer": "B"},
+        {"id": "ielts-l2-03-q3-a234", "question": "When will the public restrooms reopen?", "options": ["A. At the end of the week", "B. By the end of the month", "C. They are permanently closed"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-04-b7a2",
+      "transcript": "Good afternoon! Welcome to Bella's Fitness Studio. I’d like to give you a brief overview of what we offer. Our main studio has group classes in Zumba on Wednesdays and Fridays. Additionally, we have personal training sessions available, which you can book individually. Please note, the sauna is currently not in operation due to electrical issues, and we're aiming to fix it within the next few weeks. A monthly membership costs $50 and allows access to all classes, but personal training sessions incur an extra fee.",
+      "questions": [
+        {"id": "ielts-l2-04-q1-5b76", "question": "On which days are Zumba classes held?", "options": ["A. Tuesdays and Saturdays", "B. Wednesdays and Fridays", "C. Mondays and Thursdays"], "answer": "B"},
+        {"id": "ielts-l2-04-q2-04e7", "question": "What issue is affecting the sauna?", "options": ["A. Renovation", "B. Electrical problems", "C. Plumbing issues"], "answer": "B"},
+        {"id": "ielts-l2-04-q3-4bdd", "question": "What is included in the monthly membership fee?", "options": ["A. Personal training sessions", "B. Access to all classes", "C. Sauna usage"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-05-709d",
+      "transcript": "Welcome to the Local Art Gallery! I’m excited to share our current exhibitions and upcoming events with you. Our main gallery showcases contemporary art, and we have guided tours every Saturday and Sunday at 2 PM. This month, we're featuring a local artist with a special spotlight event next Thursday evening. Admission to the gallery is free, but donations are always appreciated. Additionally, our gift shop is open from 10 AM to 5 PM daily, and it features unique art-inspired merchandise.",
+      "questions": [
+        {"id": "ielts-l2-05-q1-a614", "question": "When are the guided tours offered?", "options": ["A. Every Friday evening", "B. Saturday and Sunday at 2 PM", "C. Daily at noon"], "answer": "B"},
+        {"id": "ielts-l2-05-q2-615d", "question": "What special event is happening next Thursday?", "options": ["A. A workshop for children", "B. A spotlight event for a local artist", "C. An exhibition opening"], "answer": "B"},
+        {"id": "ielts-l2-05-q3-91d9", "question": "Is there an admission fee to the gallery?", "options": ["A. Yes, it's $10", "B. Admission is free, donations accepted", "C. Children under 12 are free"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l2-02-1007",
+      "transcript": "Hello everyone, and welcome to the Sunnyvale Public Library. I'm here to share some of the exciting services we provide. Our library boasts a vast collection of books, magazines, and digital media, accessible during our long operating hours from 9 AM to 8 PM on weekdays. We also host storytime for children each Saturday morning at 10 AM. If you're looking to study, we have dedicated study rooms that can be reserved in advance. However, please be aware that our cafe is temporarily closed for renovations and will reopen next month. Membership is free for local residents, and all public programs are available to members without any fees.",
+      "questions": [
+        {"id": "ielts-l2-02-q1-79bf", "question": "What time does the library close on weekdays?", "options": ["A. 6 PM", "B. 7 PM", "C. 8 PM"], "answer": "C"},
+        {"id": "ielts-l2-02-q2-7660", "question": "When does the storytime for children take place?", "options": ["A. Every weekday afternoon", "B. Saturday morning", "C. Sunday evening"], "answer": "B"},
+        {"id": "ielts-l2-02-q3-7d8d", "question": "What is currently closed in the library?", "options": ["A. The study rooms", "B. The book section", "C. The cafe"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ielts-l2-03-fe88",
+      "transcript": "Welcome to the Riverside Park Recreation Area! I'm delighted to tell you about the facilities we offer. Our main playground is perfect for young kids, featuring swings and slide equipment. We also have a sports field where you can play soccer and a picnic area equipped with benches and grills. Nature walks are held every Sunday at 11 AM, which is a great way to explore the local flora. Unfortunately, our basketball court is currently closed for resurfacing work and is expected to reopen in three weeks. Entry to the park is free, but sports equipment rental costs $5 per hour.",
+      "questions": [
+        {"id": "ielts-l2-03-q1-6628", "question": "What features does the main playground have?", "options": ["A. A climbing wall", "B. Swings and slides", "C. An obstacle course"], "answer": "B"},
+        {"id": "ielts-l2-03-q2-d58f", "question": "What is scheduled for Sundays at 11 AM?", "options": ["A. A picnic gathering", "B. Nature walks", "C. Soccer games"], "answer": "B"},
+        {"id": "ielts-l2-03-q3-11ca", "question": "How much does it cost to rent sports equipment?", "options": ["A. $3 per hour", "B. $5 per hour", "C. $10 per hour"], "answer": "B"}
+      ]
+    }
+  ]
+}
