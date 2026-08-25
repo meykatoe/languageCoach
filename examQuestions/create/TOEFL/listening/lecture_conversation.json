@@ -1,0 +1,371 @@
+{
+  "exam": "TOEFL",
+  "section": "Listening",
+  "instructions": "Listen to the lecture or conversation and answer the questions.",
+  "conversations": [
+    {
+      "id": "toefl-l-conv-01",
+      "setting": "A student is talking to a university housing office employee.",
+      "transcript": "Student: Hi, I submitted a request to change dormitories two weeks ago, but I haven't heard back yet.\nEmployee: Let me look that up. Okay, I see your request here—you're currently in Hartwell Hall and requested a transfer to Redwood Commons, is that right?\nStudent: Yes, exactly. My roommate situation isn't working out, and Redwood has more single rooms available.\nEmployee: I understand. Unfortunately, Redwood Commons is fully booked for this semester. However, we do have openings in Birchwood Hall, which also has single rooms and is actually closer to the science buildings.\nStudent: Hmm, I hadn't considered that. Is it a similar price?\nEmployee: It's actually about ten dollars less per month. I can process that transfer for you today if you'd like.\nStudent: That sounds great, let's go with Birchwood then.",
+      "questions": [
+        {"id": "toefl-l-conv-01-q1", "question": "Why does the student visit the housing office?", "options": ["A. To complain about noise", "B. To follow up on a dormitory transfer request", "C. To pay an overdue fee", "D. To report a maintenance issue"], "answer": "B"},
+        {"id": "toefl-l-conv-01-q2", "question": "Why does the student want to move out of Hartwell Hall?", "options": ["A. It's too far from class", "B. The roommate situation isn't working out", "C. It's too expensive", "D. It lacks laundry facilities"], "answer": "B"},
+        {"id": "toefl-l-conv-01-q3", "question": "What does the employee suggest instead of Redwood Commons?", "options": ["A. Staying in Hartwell Hall", "B. Birchwood Hall", "C. Off-campus housing", "D. A waiting list for Redwood"], "answer": "B"},
+        {"id": "toefl-l-conv-01-q4", "question": "What does the student decide to do?", "options": ["A. Stay in his current room", "B. Join the waiting list for Redwood", "C. Transfer to Birchwood Hall", "D. Look for off-campus housing"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-conv-02",
+      "setting": "A student is discussing food options with a campus dining services staff member.",
+      "transcript": "Student: Hi there, I wanted to check if you have any gluten-free options available in the dining hall.\nStaff: Yes, we do offer gluten-free meals. We have a special section in the buffet that is dedicated to gluten-free foods.\nStudent: That's great! Do you have any specific options for dinner tonight?\nStaff: Tonight, we have grilled chicken, quinoa salad, and roasted vegetables—all gluten-free.\nStudent: Awesome! And do you have any desserts available?\nStaff: Yes, we have gluten-free brownies and fresh fruit. You should definitely try the brownies; they’re quite popular.\nStudent: Sounds delicious! I’ll be sure to take a look.",
+      "questions": [
+        {"id": "toefl-l-conv-02-q1", "question": "What is the student inquiring about?", "options": ["A. Meal prices", "B. Vegetarian options", "C. Gluten-free options", "D. Catering services"], "answer": "C"},
+        {"id": "toefl-l-conv-02-q2", "question": "What gluten-free options does the staff mention for dinner?", "options": ["A. Pasta and salad", "B. Grilled chicken, quinoa salad, and roasted vegetables", "C. Burgers and fries", "D. Tacos and rice"], "answer": "B"},
+        {"id": "toefl-l-conv-02-q3", "question": "What dessert options are available?", "options": ["A. Ice cream and cake", "B. Gluten-free brownies and fresh fruit", "C. Cookies and pastries", "D. Chocolate and pie"], "answer": "B"},
+        {"id": "toefl-l-conv-02-q4", "question": "What does the student plan to do?", "options": ["A. Skip dinner", "B. Try the gluten-free brownies", "C. Eat somewhere else", "D. Request a special meal"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-conv-03",
+      "setting": "A student is speaking to a library assistant about overdue books.",
+      "transcript": "Student: Hi, I came to ask about the overdue books I borrowed last month. I thought I returned them on time.\nAssistant: Let me check your account. Yes, it appears that you have two books that were due a week ago.\nStudent: Oh no! I could have sworn I returned them. What are the fines for those?\nAssistant: Each book is a dollar a day overdue. Since it's been a week, that would be fourteen dollars total.\nStudent: That’s a bit more than I expected. Is there a way for me to appeal the fine?\nAssistant: You can fill out an appeal form. If you have a valid reason, we may waive some of the fees.\nStudent: I’ll definitely do that. Thank you for your help!",
+      "questions": [
+        {"id": "toefl-l-conv-03-q1", "question": "Why does the student visit the library assistant?", "options": ["A. To return books", "B. To question overdue fines", "C. To borrow new books", "D. To ask about library hours"], "answer": "B"},
+        {"id": "toefl-l-conv-03-q2", "question": "How much is the total fine for the overdue books?", "options": ["A. Eight dollars", "B. Ten dollars", "C. Fourteen dollars", "D. Twenty dollars"], "answer": "C"},
+        {"id": "toefl-l-conv-03-q3", "question": "What does the assistant suggest the student can do?", "options": ["A. Ignore the fines", "B. Pay the fines immediately", "C. Fill out an appeal form", "D. Return the books"], "answer": "C"},
+        {"id": "toefl-l-conv-03-q4", "question": "How does the student feel about the fine?", "options": ["A. Indifferent", "B. Relieved", "C. Surprised", "D. Happy"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-conv-04",
+      "setting": "A student is meeting with their academic advisor to discuss course selection.",
+      "transcript": "Student: Hi, I’m here to talk about which courses I should take next semester.\nAdvisor: Of course! What major are you pursuing?\nStudent: I’m majoring in Environmental Science.\nAdvisor: Great choice! I recommend you take Ecology and a lab course this semester to fulfill your major requirements.\nStudent: That sounds good. Are there any electives you think I should consider?\nAdvisor: Yes, we have a new course on Sustainable Practices that’s getting a lot of interest—you might find it really engaging.\nStudent: Thank you for the suggestions! I’ll look into those.",
+      "questions": [
+        {"id": "toefl-l-conv-04-q1", "question": "What is the focus of the student's major?", "options": ["A. Computer Science", "B. Environmental Science", "C. Business Management", "D. Psychology"], "answer": "B"},
+        {"id": "toefl-l-conv-04-q2", "question": "What course does the advisor suggest to fulfill major requirements?", "options": ["A. Chemistry", "B. Ecology and a lab course", "C. Philosophy", "D. Literature"], "answer": "B"},
+        {"id": "toefl-l-conv-04-q3", "question": "What elective course does the advisor mention?", "options": ["A. Renewable Energy Systems", "B. Sustainable Practices", "C. Urban Planning", "D. Wildlife Conservation"], "answer": "B"},
+        {"id": "toefl-l-conv-04-q4", "question": "How does the student respond to the advisor's suggestions?", "options": ["A. They disagree.", "B. They ask for more options.", "C. They express thanks and show interest.", "D. They feel overwhelmed."], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-conv-05",
+      "setting": "A student is discussing a group project with a fellow student in the library.",
+      "transcript": "Student 1: Did you get a chance to review the project guidelines for our group assignment?\nStudent 2: Yes, I went over them last night. It seems like we need to include a research component this time.\nStudent 1: Right, I was wondering how we can divide the work effectively.\nStudent 2: How about I handle the research, and you could focus on creating the presentation?\nStudent 1: That sounds like a good plan. When do you think we should meet again to discuss our progress?\nStudent 2: Maybe we can meet at the library next Wednesday after classes?\nStudent 1: Perfect! Let’s aim for that.",
+      "questions": [
+        {"id": "toefl-l-conv-05-q1", "question": "What is the main topic of the conversation?", "options": ["A. A class test", "B. A group project assignment", "C. A study group meeting", "D. A tutoring session"], "answer": "B"},
+        {"id": "toefl-l-conv-05-q2", "question": "What task does Student 2 offer to take on?", "options": ["A. Creating the presentation", "B. Conducting the research", "C. Organizing meetings", "D. Writing the report"], "answer": "B"},
+        {"id": "toefl-l-conv-05-q3", "question": "When do the students plan to meet again?", "options": ["A. This Friday", "B. Next Monday", "C. Next Wednesday", "D. This weekend"], "answer": "C"},
+        {"id": "toefl-l-conv-05-q4", "question": "What does Student 1 think about the work division?", "options": ["A. It's unfair.", "B. It's a good plan.", "C. It's too complicated.", "D. They need to include more people."], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-conv-02-4744",
+      "setting": "A student is discussing class options with an academic advisor.",
+      "transcript": "Student: Hello, I'm trying to decide which electives to take next semester. I’ve already completed my core classes, but I'm unsure about my options.\nAdvisor: Of course! What areas are you interested in exploring?\nStudent: I’m thinking about taking a course in environmental science, but I’m also considering creative writing.\nAdvisor: Both are great choices! Environmental science can really enhance your understanding of current issues, while creative writing would strengthen your communication skills.\nStudent: That's a good point. Is there a specific course in environmental science you'd recommend?\nAdvisor: I suggest we look at the 'Sustainable Practices' course; it covers important concepts and has a hands-on project component. It pairs well with any writing course you choose, too.\nStudent: That sounds excellent! I’d like to sign up for that one and a writing course too then.",
+      "questions": [
+        {"id": "toefl-l-conv-02-q1-aa8c", "question": "What is the purpose of the student's visit to the advisor?", "options": ["A. To complain about course difficulty", "B. To ask about elective courses", "C. To schedule an appointment for tutoring", "D. To discuss graduation requirements"], "answer": "B"},
+        {"id": "toefl-l-conv-02-q2-1ac0", "question": "What subjects does the student express interest in?", "options": ["A. Mathematics and Statistics", "B. Environmental Science and Creative Writing", "C. History and Philosophy", "D. Business and Economics"], "answer": "B"},
+        {"id": "toefl-l-conv-02-q3-4e42", "question": "Which course does the advisor recommend?", "options": ["A. Advanced Writing Techniques", "B. Sustainable Practices", "C. Poetry and Prose", "D. Environmental Biology"], "answer": "B"},
+        {"id": "toefl-l-conv-02-q4-e044", "question": "What decision does the student make by the end of the conversation?", "options": ["A. To take only environmental science", "B. To take only creative writing", "C. To enroll in Sustainable Practices and a writing course", "D. To drop all electives"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-conv-03-df20",
+      "setting": "A student is speaking with a library staff member about overdue books.",
+      "transcript": "Student: Hi, I just realized that a book I borrowed is overdue and I’m worried about the fines.\nStaff: No problem! Let me check your account for you. It looks like you have one book overdue, but I can extend the loan for you if you’re still using it.\nStudent: Oh, that would be great! I still need it for my research paper.\nStaff: Sure! Just how many more days do you think you’ll need?\nStudent: Probably at least another week. I’ve just been busy with other assignments.\nStaff: That’s understandable. I’ll extend it for another week, but please remember to return it by then to avoid any fines.\nStudent: Thank you! I will definitely return it on time.",
+      "questions": [
+        {"id": "toefl-l-conv-03-q1-580d", "question": "Why does the student visit the library staff member?", "options": ["A. To return a book", "B. To find a study room", "C. To inquire about overdue books", "D. To request a book purchase"], "answer": "C"},
+        {"id": "toefl-l-conv-03-q2-59bd", "question": "What does the librarian offer to do for the student?", "options": ["A. Waive all fines", "B. Check book availability", "C. Extend the loan period", "D. Reserve a study room"], "answer": "C"},
+        {"id": "toefl-l-conv-03-q3-5392", "question": "How long does the student ask to extend the loan?", "options": ["A. Three days", "B. One week", "C. Two weeks", "D. Until the end of the semester"], "answer": "B"},
+        {"id": "toefl-l-conv-03-q4-983b", "question": "What does the student promise to do?", "options": ["A. Return the book immediately", "B. Use the book for another semester", "C. Return the book on time", "D. Ask for more extensions"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-conv-04-2089",
+      "setting": "A student is discussing a group project with a classmate.",
+      "transcript": "Student: Hi! Have you started working on our group project yet? \nClassmate: I have a few ideas, but I haven't written anything down yet. What about you?\nStudent: I’ve gathered some research and outlined the main points we should cover. We need to finalize our topic soon though.\nClassmate: Great! What do you think about focusing on renewable energy?\nStudent: I like that idea! We can explore different types of renewable energy sources and their benefits.\nClassmate: Exactly! Maybe we can split up the research tasks and then come back together to combine our findings?\nStudent: That sounds like a plan. Let’s meet again next week to discuss what we've both found.\nClassmate: Perfect! I’ll make sure to take notes and share them with you.",
+      "questions": [
+        {"id": "toefl-l-conv-04-q1-380c", "question": "What is the main goal of the conversation?", "options": ["A. To discuss a social event", "B. To plan a group project", "C. To arrange a meeting with the professor", "D. To settle a dispute"], "answer": "B"},
+        {"id": "toefl-l-conv-04-q2-663c", "question": "What topic does the classmate suggest for the project?", "options": ["A. Climate change", "B. Renewable energy", "C. Fossil fuels", "D. Traditional power sources"], "answer": "B"},
+        {"id": "toefl-l-conv-04-q3-5139", "question": "What is one plan they agree on during the conversation?", "options": ["A. To present their findings separately", "B. To meet again next week", "C. To increase the group size", "D. To choose a different topic"], "answer": "B"},
+        {"id": "toefl-l-conv-04-q4-7779", "question": "What will the classmate do before their next meeting?", "options": ["A. Prepare a presentation", "B. Write down research notes", "C. Choose a new project partner", "D. Submit their proposal"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-conv-05-11c5",
+      "setting": "A student is asking about a part-time job at the campus bookstore.",
+      "transcript": "Student: Hello, I'm interested in applying for a part-time position at the bookstore. Do you have any openings?\nEmployee: Yes, we actually have a few positions available. What kind of experience do you have?\nStudent: I’ve worked at a café for the past year, so I'm used to customer service and handling cash.\nEmployee: That's great experience! We're looking for someone who can provide good customer service. Can you work during weekends?\nStudent: Yes, I can work weekends and I’m flexible with hours during the week as well.\nEmployee: Perfect! We will need you to fill out an application form and set up an interview. Would you like to do that now?\nStudent: Absolutely, I’d love to apply!",
+      "questions": [
+        {"id": "toefl-l-conv-05-q1-4e3a", "question": "What is the purpose of the student's visit to the bookstore?", "options": ["A. To buy textbooks", "B. To apply for a job", "C. To return a purchased item", "D. To inquire about events"], "answer": "B"},
+        {"id": "toefl-l-conv-05-q2-3d11", "question": "What relevant experience does the student have?", "options": ["A. Working in a warehouse", "B. Volunteering at an animal shelter", "C. Serving in a café", "D. Tutoring high school students"], "answer": "C"},
+        {"id": "toefl-l-conv-05-q3-a878", "question": "What does the employee ask about the student's availability?", "options": ["A. If they can work later hours", "B. If they can work on holidays", "C. If they can work weekends", "D. If they can work full-time"], "answer": "C"},
+        {"id": "toefl-l-conv-05-q4-4c23", "question": "What are the next steps the student needs to take?", "options": ["A. Fill out an application and schedule an interview", "B. Submit a resume and cover letter", "C. Contact the manager by phone", "D. Arrange for a reference letter"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toefl-l-conv-02-16a4",
+      "setting": "A student is discussing course selection with an academic advisor.",
+      "transcript": "Student: Hi, I'm trying to decide which courses to take next semester. I heard that the introductory biology class fills up quickly.\nAdvisor: Yes, it tends to be popular. Are you considering it for your major?\nStudent: I'm not sure yet. I am thinking about biology, but I am also interested in environmental science.\nAdvisor: That's a good combination. If you take biology now, it will satisfy some prerequisites for environmental science later.\nStudent: That sounds helpful. Are there any other courses you'd recommend for someone with those interests?\nAdvisor: You might also want to consider taking ecology; it complements biology very well and is essential for environmental science.\nStudent: Great! I'll look into those. Thank you for your advice.",
+      "questions": [
+        {"id": "toefl-l-conv-02-q1-ff27", "question": "Why does the student visit the academic advisor?", "options": ["A. To confirm graduation requirements", "B. To discuss course selection for the next semester", "C. To inquire about internship opportunities", "D. To change their major"], "answer": "B"},
+        {"id": "toefl-l-conv-02-q2-081e", "question": "What course does the advisor suggest to the student?", "options": ["A. Advanced chemistry", "B. Microbiology", "C. Ecology", "D. Genetics"], "answer": "C"},
+        {"id": "toefl-l-conv-02-q3-1eac", "question": "What reason does the advisor give for taking biology?", "options": ["A. It's a requirement for graduation", "B. It's a popular class among students", "C. It has no other prerequisites", "D. It will fulfill prerequisites for environmental science"], "answer": "D"},
+        {"id": "toefl-l-conv-02-q4-73ae", "question": "What is the student's main interest?", "options": ["A. Working in a lab", "B. Becoming a doctor", "C. Biology and environmental science", "D. Teaching biology"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-conv-03-ae38",
+      "setting": "A student is talking with a librarian about research resources.",
+      "transcript": "Student: Good afternoon! I’m working on a research paper about climate change and I need some credible sources.\nLibrarian: Sure! You can start by checking out our database of academic journals; it has a lot of peer-reviewed articles.\nStudent: That sounds perfect. Are there any specific journals you recommend?\nLibrarian: I would suggest looking at the Journal of Climate Change and the Environmental Research Letters. They have high impact factors.\nStudent: Great, how do I access those?\nLibrarian: You can access them online through our library portal. If you have trouble, just let me know and I can help you.\nStudent: Thanks! I appreciate your assistance.",
+      "questions": [
+        {"id": "toefl-l-conv-03-q1-4e4e", "question": "What is the student's research topic?", "options": ["A. Renewable energy", "B. Air pollution", "C. Climate change", "D. Water conservation"], "answer": "C"},
+        {"id": "toefl-l-conv-03-q2-4319", "question": "What resource does the librarian suggest for finding articles?", "options": ["A. Online forums", "B. Academic journals database", "C. Newspaper archives", "D. Personal interviews"], "answer": "B"},
+        {"id": "toefl-l-conv-03-q3-1aa1", "question": "Which journals does the librarian mention?", "options": ["A. Journal of Environmental Studies", "B. Journal of Climate Change and Environmental Research Letters", "C. Climate Science Review", "D. Global Warming Updates"], "answer": "B"},
+        {"id": "toefl-l-conv-03-q4-b46d", "question": "What assistance does the librarian offer to the student?", "options": ["A. Access to books on climate change", "B. Help with online access to articles", "C. Recommendations for researchers", "D. Formatting the paper"], "answer": "B"}
+      ]
+    }
+  ],
+  "lectures": [
+    {
+      "id": "toefl-l-lecture-01",
+      "subject": "Biology",
+      "transcript": "Professor: Today we're going to talk about a fascinating survival strategy called mimicry, specifically Batesian mimicry. This occurs when a harmless species evolves to resemble a harmful or unpalatable species, gaining protection from predators without actually possessing any defense mechanism itself. A classic example is the viceroy butterfly, which for a long time was believed to mimic the toxic monarch butterfly. Predators that had previously eaten a monarch and experienced its unpleasant taste would then avoid anything resembling it, including the harmless viceroy.\n\nNow, interestingly, later research revealed that viceroy butterflies aren't actually as harmless as scientists once thought—they're somewhat unpalatable themselves, just less so than monarchs. This actually reclassifies the relationship as something closer to Müllerian mimicry, where two unpalatable species evolve to resemble each other, reinforcing predator avoidance for both. This shows how scientific understanding can evolve as new evidence emerges.\n\nOne question you might ask is, why would evolution favor mimicry over developing an actual defense mechanism? The answer often comes down to efficiency. Producing toxins or venom requires significant biological resources. If a species can achieve the same protective benefit simply by resembling a toxic species, without the metabolic cost of producing toxins, that's a more efficient evolutionary path.",
+      "questions": [
+        {"id": "toefl-l-lecture-01-q1", "question": "What is the main topic of the lecture?", "options": ["A. The migration patterns of butterflies", "B. Batesian and Müllerian mimicry", "C. The toxicity of monarch butterflies", "D. Predator hunting strategies"], "answer": "B"},
+        {"id": "toefl-l-lecture-01-q2", "question": "What did later research reveal about viceroy butterflies?", "options": ["A. They are completely harmless", "B. They are more toxic than monarchs", "C. They are somewhat unpalatable themselves", "D. They do not resemble monarchs at all"], "answer": "C"},
+        {"id": "toefl-l-lecture-01-q3", "question": "According to the professor, why might evolution favor mimicry over producing toxins?", "options": ["A. Toxins attract more predators", "B. Mimicry is more visually appealing", "C. Producing toxins requires significant biological resources", "D. Mimicry allows for faster reproduction"], "answer": "C"},
+        {"id": "toefl-l-lecture-01-q4", "question": "What is Müllerian mimicry, based on the lecture?", "options": ["A. A harmless species mimicking a toxic one", "B. Two unpalatable species resembling each other", "C. A predator mimicking its prey", "D. A species changing color seasonally"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-02",
+      "subject": "Economics",
+      "transcript": "Professor: Let's discuss the concept of opportunity cost, which is fundamental to economic decision-making. Opportunity cost refers to the value of the next best alternative that is given up when a choice is made. It's important to understand that opportunity cost isn't just about money—it applies to time and resources as well.\n\nConsider a farmer who owns a piece of land. If he chooses to grow wheat on that land, the opportunity cost isn't simply the cost of seeds and labor—it's also the potential profit he could have earned by growing a different crop, say corn, on that same land instead. Even if growing wheat is profitable, if growing corn would have been more profitable, there's still an opportunity cost associated with the decision.\n\nThis concept extends to everyday decisions too. If you spend an evening watching a movie, the opportunity cost might be the two hours you could have spent studying or working a part-time job. Businesses use this concept constantly when deciding how to allocate limited resources, whether that's factory space, employee time, or capital investment, since choosing one project inevitably means forgoing others.",
+      "questions": [
+        {"id": "toefl-l-lecture-02-q1", "question": "What is the lecture mainly about?", "options": ["A. Farming techniques", "B. The concept of opportunity cost", "C. How to calculate profit", "D. Time management strategies"], "answer": "B"},
+        {"id": "toefl-l-lecture-02-q2", "question": "In the farmer example, what does the opportunity cost of growing wheat represent?", "options": ["A. The cost of seeds only", "B. The potential profit from growing a different crop instead", "C. The cost of the land itself", "D. The labor cost of harvesting"], "answer": "B"},
+        {"id": "toefl-l-lecture-02-q3", "question": "According to the professor, does opportunity cost apply only to money?", "options": ["A. Yes, it applies only to financial decisions", "B. No, it also applies to time and resources", "C. It applies only to business decisions", "D. It applies only to agricultural decisions"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-02-1656",
+      "subject": "Environmental Science",
+      "transcript": "Professor: Today, we are examining an important concept in environmental science: the carbon cycle. The carbon cycle is crucial for regulating Earth's climate. Carbon exists in the atmosphere as carbon dioxide, which plants absorb during photosynthesis to produce oxygen and glucose. This process is essential for life on Earth.\n\nAs animals consume plants, they take in carbon compounds. When these animals respire, carbon is released back into the atmosphere. Similarly, when organic matter decomposes, carbon is returned to the soil and atmosphere, completing the cycle. Human activities, like burning fossil fuels, significantly alter this cycle by increasing carbon dioxide levels, which leads to global warming and climate change. Thus, understanding the carbon cycle is critical for addressing environmental issues.",
+      "questions": [
+        {"id": "toefl-l-lecture-02-q1-9178", "question": "What is the main focus of the lecture?", "options": ["A. The process of photosynthesis in plants", "B. The importance of the carbon cycle", "C. The effects of global warming", "D. Animal respiration methods"], "answer": "B"},
+        {"id": "toefl-l-lecture-02-q2-8860", "question": "How do animals contribute to the carbon cycle?", "options": ["A. By producing oxygen during photosynthesis", "B. By consuming plants and releasing carbon dioxide", "C. By breaking down fossil fuels", "D. By filtering carbon from the atmosphere"], "answer": "B"},
+        {"id": "toefl-l-lecture-02-q3-e43e", "question": "What role do human activities play in the carbon cycle?", "options": ["A. They enhance photosynthesis in plants", "B. They decrease carbon dioxide levels", "C. They disrupt the natural balance of carbon", "D. They promote animal respiration"], "answer": "C"},
+        {"id": "toefl-l-lecture-02-q4", "question": "What occurs during the process of decomposition in the carbon cycle?", "options": ["A. Carbon is produced for photosynthesis", "B. Carbon compounds are absorbed from the soil", "C. Carbon is released back into the atmosphere", "D. Carbon is stored in animal bodies"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-03",
+      "subject": "Psychology",
+      "transcript": "Professor: In today's lecture, we will delve into the topic of cognitive dissonance, a psychological theory describing the mental discomfort experienced when a person holds contradictory beliefs or values. For instance, if someone values health but smokes cigarettes, they may feel conflicted about their choices.\n\nTo alleviate this discomfort, individuals often change their beliefs or rationalize their behavior. This theory was first proposed by Leon Festinger in the 1950s and has since been supported by various studies. Understanding cognitive dissonance can help explain behaviors in varied contexts such as addiction, decision-making, and social interactions.",
+      "questions": [
+        {"id": "toefl-l-lecture-03-q1", "question": "What is the primary subject of the lecture?", "options": ["A. The impact of addiction on health", "B. The concept of cognitive dissonance", "C. The history of psychological theories", "D. Decision-making processes"], "answer": "B"},
+        {"id": "toefl-l-lecture-03-q2", "question": "Who proposed the theory of cognitive dissonance?", "options": ["A. Sigmund Freud", "B. B.F. Skinner", "C. Leon Festinger", "D. Carl Rogers"], "answer": "C"},
+        {"id": "toefl-l-lecture-03-q3", "question": "How do individuals typically respond to cognitive dissonance?", "options": ["A. By confronting others about their beliefs", "B. By changing their beliefs or rationalizing their behavior", "C. By completely ignoring the dissonance", "D. By seeking additional information to confirm their beliefs"], "answer": "B"},
+        {"id": "toefl-l-lecture-03-q4", "question": "What types of behaviors can cognitive dissonance explain?", "options": ["A. Only addictive behaviors", "B. Only social interactions", "C. A variety of behaviors including addiction and decision-making", "D. None, it only applies to health-related decisions"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-04",
+      "subject": "History",
+      "transcript": "Professor: Today, let's discuss the effects of the Industrial Revolution on society. The Industrial Revolution, which began in the late 18th century, marked a significant turning point in human history. It shifted economies from agrarian-based systems to industrial and manufacturing systems, leading to urbanization as people moved to cities for work.\n\nThis shift had profound effects on social structures, including the rise of a middle class and changes in labor conditions. Factories introduced new roles, but they also contributed to challenging working environments. Overall, the Industrial Revolution laid the foundation for modern economies and fundamentally changed societal dynamics.",
+      "questions": [
+        {"id": "toefl-l-lecture-04-q1", "question": "What is the focus of the lecture?", "options": ["A. The causes of the Industrial Revolution", "B. The social effects of the Industrial Revolution", "C. The technological advancements during the Industrial Revolution", "D. The historical figures of the Industrial Revolution"], "answer": "B"},
+        {"id": "toefl-l-lecture-04-q2", "question": "What major shift occurred during the Industrial Revolution?", "options": ["A. A move from urban to rural living", "B. A transition from agrarian to industrial economies", "C. A decline in population growth", "D. A decrease in global trade"], "answer": "B"},
+        {"id": "toefl-l-lecture-04-q3", "question": "What social change did the Industrial Revolution help create?", "options": ["A. The decline of the middle class", "B. The rise of a middle class", "C. The stabilization of labor conditions", "D. The reduction of urbanization"], "answer": "B"},
+        {"id": "toefl-l-lecture-04-q4", "question": "What were some consequences of factory work during the Industrial Revolution?", "options": ["A. Safe working conditions for all workers", "B. Establishment of rural communities", "C. Challenging working environments", "D. Increased leisure time for workers"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-05",
+      "subject": "Literature",
+      "transcript": "Professor: Today, we will explore the theme of isolation as depicted in classic literature. Many authors have addressed isolation in various forms, whether emotional, social, or physical. For example, in Mary Shelley's 'Frankenstein,' the creature experiences profound isolation due to societal rejection.\n\nSimilarly, in 'The Catcher in the Rye' by J.D. Salinger, Holden Caulfield's feelings of alienation highlight the struggles of adolescence. Analyzing these works can deepen our understanding of how isolation impacts characters' motivations and actions. Understanding this theme can also lead to greater empathy towards individuals experiencing similar feelings in real life.",
+      "questions": [
+        {"id": "toefl-l-lecture-05-q1", "question": "What is the primary theme discussed in the lecture?", "options": ["A. The role of childhood in literature", "B. The theme of isolation in classic literature", "C. The importance of friendship in novels", "D. The influence of nature on literary characters"], "answer": "B"},
+        {"id": "toefl-l-lecture-05-q2", "question": "Which character from 'Frankenstein' is mentioned as experiencing isolation?", "options": ["A. Victor Frankenstein", "B. The creature", "C. Elizabeth Lavenza", "D. Henry Clerval"], "answer": "B"},
+        {"id": "toefl-l-lecture-05-q3", "question": "According to the professor, how does isolation affect characters?", "options": ["A. It amplifies their friendships", "B. It has no impact on their motivations", "C. It influences their motivations and actions", "D. It leads to their eventual happiness"], "answer": "C"},
+        {"id": "toefl-l-lecture-05-q4", "question": "In which book does Holden Caulfield struggle with feelings of alienation?", "options": ["A. 'Pride and Prejudice'", "B. 'The Great Gatsby'", "C. 'The Catcher in the Rye'", "D. '1984'"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-06",
+      "subject": "Physics",
+      "transcript": "Professor: In today's class, we will cover the concept of thermodynamics, particularly focusing on the laws of thermodynamics. The first law states that energy cannot be created or destroyed, only transformed from one form to another. For example, when ice melts into water, it absorbs heat from its surroundings, demonstrating energy transformation.\n\nThe second law introduces the idea of entropy, which measures the level of disorder in a system. Essentially, in any energy exchange, if no energy enters or leaves the system, the entropy will increase over time. This principle has significant implications in understanding heat engines and the efficiency of various physical processes, such as refrigeration. Understanding these laws is essential for the study of energy systems and engineering.",
+      "questions": [
+        {"id": "toefl-l-lecture-06-q1", "question": "What main concept is discussed in the lecture?", "options": ["A. The principles of electricity", "B. Laws of thermodynamics", "C. The structure of atoms", "D. The behavior of light"], "answer": "B"},
+        {"id": "toefl-l-lecture-06-q2", "question": "What does the first law of thermodynamics state?", "options": ["A. Energy can be created and destroyed", "B. Energy can only be transformed, not created or destroyed", "C. Entropy decreases in energy exchanges", "D. Heat cannot be transferred between systems"], "answer": "B"},
+        {"id": "toefl-l-lecture-06-q3", "question": "What is the second law of thermodynamics primarily concerned with?", "options": ["A. The creation of energy", "B. The concept of entropy", "C. The properties of gases", "D. The speed of sound"], "answer": "B"},
+        {"id": "toefl-l-lecture-06-q4", "question": "How is entropy related to energy systems?", "options": ["A. It decreases efficiency in heat engines", "B. It increases when energy exchanges occur", "C. It has no impact on energy systems", "D. It is constant in all physical processes"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-02-b83c",
+      "subject": "Astronomy",
+      "transcript": "Professor: Today, we're diving into the intriguing phenomenon of black holes. A black hole forms when a massive star collapses under its own gravity after exhausting its nuclear fuel. The core compresses to a point with infinite density, known as a singularity, while the outer layer creates an event horizon, a boundary beyond which nothing can escape the gravitational pull. This makes black holes invisible to the naked eye, leading to their name—'black' as in no light can escape.\n\nInterestingly, while we can't observe black holes directly, we can infer their existence by observing the effects they have on nearby matter. For instance, gas and dust spiraling into a black hole heat up and emit X-rays, allowing astronomers to detect them indirectly. In recent years, the Event Horizon Telescope has even captured the first image of a black hole's event horizon, providing invaluable evidence of their existence and opening new avenues for research in astrophysics.",
+      "questions": [
+        {"id": "toefl-l-lecture-02-q1-423e", "question": "What forms a black hole?", "options": ["A. The cooling of a star", "B. The explosion of a supernova", "C. The collapse of a massive star under its own gravity", "D. The merging of two galaxies"], "answer": "C"},
+        {"id": "toefl-l-lecture-02-q2-bda9", "question": "How can astronomers detect black holes if they cannot see them directly?", "options": ["A. By observing light emitted by them", "B. By studying the X-rays emitted from surrounding matter", "C. By measuring their mass with a scale", "D. By tracking their movements"], "answer": "B"},
+        {"id": "toefl-l-lecture-02-q3-c588", "question": "What is an event horizon?", "options": ["A. The location within a black hole where time stops", "B. The boundary around a black hole beyond which nothing can escape", "C. The area where light is emitted from a black hole", "D. The surface of a massive star before it collapses"], "answer": "B"},
+        {"id": "toefl-l-lecture-02-q4-a4c1", "question": "What significant achievement did the Event Horizon Telescope accomplish?", "options": ["A. It discovered a new type of star", "B. It captured the first image of a black hole's event horizon", "C. It measured the distance between galaxies", "D. It proved the existence of dark matter"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-03-7913",
+      "subject": "Anthropology",
+      "transcript": "Professor: In our discussion today, we are exploring the concept of cultural relativism, which is the idea that a person's beliefs and activities should be understood based on that person's own culture, rather than be judged against the criteria of another culture. This perspective is crucial in anthropology, as it promotes understanding and tolerance. Cultural relativism allows anthropologists to analyze and interpret behaviors and rituals within their specific cultural context instead of dismissing them as strange or primitive. However, it is essential to strike a balance because some practices may contradict universal human rights, prompting deeper ethical considerations in our analysis.",
+      "questions": [
+        {"id": "toefl-l-lecture-03-q1-61ae", "question": "What is the main focus of cultural relativism?", "options": ["A. Judging cultural practices against a universal standard", "B. Understanding beliefs within their own cultural context", "C. Comparing cultures to highlight differences", "D. Promoting a single cultural perspective"], "answer": "B"},
+        {"id": "toefl-l-lecture-03-q2-0f36", "question": "What benefit does cultural relativism provide anthropologists?", "options": ["A. It helps them form stereotypes about different cultures", "B. It encourages them to embrace their own cultures exclusively", "C. It aids in analyzing behaviors within specific cultural contexts", "D. It eliminates the need for ethical considerations"], "answer": "C"},
+        {"id": "toefl-l-lecture-03-q3-106e", "question": "What potential issue can arise from cultural relativism?", "options": ["A. It encourages cultural homogeneity", "B. It may conflict with universal human rights", "C. It promotes ethnocentrism", "D. It prevents cultural understanding"], "answer": "B"},
+        {"id": "toefl-l-lecture-03-q4-65ca", "question": "Why is it important to find a balance in cultural relativism?", "options": ["A. To become experts on all cultures", "B. To avoid excessive subjectivity in cultural analysis", "C. To ignore cultural differences", "D. To encourage cultural superiority"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-04-b1e8",
+      "subject": "Economics",
+      "transcript": "Professor: Today, we will examine the concept of supply and demand in economic theory. Supply refers to how much of a product is available to consumers, while demand represents consumers' desire to purchase that product. The interaction between supply and demand determines market prices. When demand exceeds supply, prices typically rise, creating a sellers' market. Conversely, when supply exceeds demand, prices tend to fall, leading to a buyers' market. This dynamic interplay is crucial for understanding market behaviors and is often visualized with a supply and demand graph, where the point at which the two curves intersect indicates market equilibrium—a state where supply meets demand.",
+      "questions": [
+        {"id": "toefl-l-lecture-04-q1-f95a", "question": "What are the two fundamental concepts discussed in the lecture?", "options": ["A. Supply and inflation", "B. Supply and demand", "C. Supply and production costs", "D. Demand and consumer preferences"], "answer": "B"},
+        {"id": "toefl-l-lecture-04-q2-f63f", "question": "What happens when demand exceeds supply?", "options": ["A. Prices usually fall", "B. Prices usually rise", "C. Prices remain unchanged", "D. Prices fluctuate randomly"], "answer": "B"},
+        {"id": "toefl-l-lecture-04-q3-1072", "question": "How is market equilibrium defined?", "options": ["A. A lot of buyers and few sellers", "B. A state where demand exceeds supply", "C. A state where supply meets demand", "D. A situation where prices do not change"], "answer": "C"},
+        {"id": "toefl-l-lecture-04-q4-e6d0", "question": "What is a sellers' market?", "options": ["A. When supply exceeds demand", "B. When demand is equal to supply", "C. When demand exceeds supply", "D. When prices are fixed"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-05-2b3d",
+      "subject": "Psychology",
+      "transcript": "Professor: In today's lecture, we will explore cognitive dissonance, a psychological theory proposed by Leon Festinger in the late 1950s. Cognitive dissonance occurs when an individual holds contradictory beliefs or attitudes, leading to discomfort. For instance, if someone values health but smokes cigarettes, they may experience conflicting emotions. To alleviate this discomfort, individuals often change their beliefs or behaviors to create harmony. This theory has broad applications in areas like marketing and behavioral change, as understanding cognitive dissonance can help shape more effective strategies for influencing consumer behavior.",
+      "questions": [
+        {"id": "toefl-l-lecture-05-q1-8a3a", "question": "What is cognitive dissonance?", "options": ["A. A method for improving mental health", "B. A psychological comfort zone", "C. The experience of holding contradictory beliefs", "D. A technique for behavioral conditioning"], "answer": "C"},
+        {"id": "toefl-l-lecture-05-q2-29bb", "question": "Who proposed the theory of cognitive dissonance?", "options": ["A. Sigmund Freud", "B. Leon Festinger", "C. Carl Rogers", "D. B.F. Skinner"], "answer": "B"},
+        {"id": "toefl-l-lecture-05-q3-21e2", "question": "What might a person do to alleviate cognitive dissonance?", "options": ["A. Ignore their beliefs completely", "B. Change their beliefs or behaviors", "C. Seek mental health treatment", "D. Maintain their contradictory beliefs"], "answer": "B"},
+        {"id": "toefl-l-lecture-05-q4-38c1", "question": "How is cognitive dissonance applied in marketing?", "options": ["A. To eliminate all consumer preferences", "B. To create conflicts in consumer beliefs", "C. To shape strategies that influence consumer behavior", "D. To provide discounts and offers"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-06-c41c",
+      "subject": "History",
+      "transcript": "Professor: Today’s lecture highlights the significance of the Renaissance, a cultural movement that began in Italy during the 14th century and spread throughout Europe. It marked a period of renewed interest in classical art, literature, and scientific inquiry. The Renaissance saw great advancements in various fields such as painting, sculpture, architecture, and literature. Artists like Leonardo da Vinci and Michelangelo revolutionized art with their unparalleled techniques. This movement also fostered humanism, a philosophy that emphasized human potential and achievements. Understanding the Renaissance is vital for grasping the evolution of Western culture and its impacts that resonate even today.",
+      "questions": [
+        {"id": "toefl-l-lecture-06-q1-1cfb", "question": "What was a central theme of the Renaissance?", "options": ["A. Focus on religious art exclusively", "B. Renewed interest in classical art and literature", "C. The rise of medieval academic traditions", "D. Emphasis on feudalism and monarchy"], "answer": "B"},
+        {"id": "toefl-l-lecture-06-q2-cd2f", "question": "Who were two prominent figures in Renaissance art?", "options": ["A. Van Gogh and Picasso", "B. Rembrandt and Turner", "C. da Vinci and Michelangelo", "D. Matisse and Monet"], "answer": "C"},
+        {"id": "toefl-l-lecture-06-q3-d745", "question": "What did the Renaissance promote regarding humanism?", "options": ["A. A focus on divine right", "B. A neglect of scientific inquiry", "C. The emphasis on human potential and achievements", "D. The belief in predestination"], "answer": "C"},
+        {"id": "toefl-l-lecture-06-q4-f4c8", "question": "Why is understanding the Renaissance crucial for Western culture?", "options": ["A. It led to the downfall of monarchy", "B. It marked the start of the Industrial Revolution", "C. Its impacts are still evident in modern society", "D. It was a period of sustained peace"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-02-32a8",
+      "subject": "Psychology",
+      "transcript": "Professor: In today's lecture, we will explore the concept of cognitive dissonance. This psychological phenomenon occurs when an individual experiences conflicting beliefs or behaviors, leading to discomfort. For example, a person who values health may smoke cigarettes. The tension between their value of health and the act of smoking creates dissonance. To resolve this discomfort, individuals often change their beliefs or rationalize their behavior instead of quitting smoking.\n\nFurthermore, research shows that cognitive dissonance can also be a driving force behind how individuals make decisions. When faced with choices, the unease caused by dissonance can lead people to change their preferences, reinforcing the idea that our beliefs are not always as fixed as we might assume. Understanding cognitive dissonance is crucial in fields like marketing and therapy, as it can influence consumer behavior and personal development.",
+      "questions": [
+        {"id": "toefl-l-lecture-02-q1-7b36", "question": "What is the main focus of the lecture?", "options": ["A. The effects of smoking on health", "B. The concept of cognitive dissonance", "C. Techniques for effective decision-making", "D. The role of marketing in consumer behavior"], "answer": "B"},
+        {"id": "toefl-l-lecture-02-q2-e3e0", "question": "What can a person do to alleviate cognitive dissonance?", "options": ["A. Ignore their conflicting beliefs", "B. Change their conflicting behavior or beliefs", "C. Seek external validation from others", "D. Embrace the discomfort and avoid change"], "answer": "B"},
+        {"id": "toefl-l-lecture-02-q3-be82", "question": "How can cognitive dissonance affect decision-making?", "options": ["A. It leads to more cautious decision-making.", "B. It has no impact on decision-making.", "C. It can motivate individuals to change their preferences.", "D. It encourages people to make spontaneous choices."], "answer": "C"},
+        {"id": "toefl-l-lecture-02-q4-5d14", "question": "In what areas is understanding cognitive dissonance particularly valuable?", "options": ["A. Science and mathematics", "B. Marketing and therapy", "C. Sports and athletics", "D. Literature and art"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-03-a819",
+      "subject": "Geology",
+      "transcript": "Professor: Today, we’ll discuss plate tectonics, which is the theory that explains the movement of the Earth's lithosphere. This theory emphasizes that the Earth's outer shell is divided into several large plates that glide over the mantle beneath. The interactions between these plates lead to geological phenomena like earthquakes, volcanic activity, and mountain building.\n\nFor instance, the collision of two continental plates can cause uplift and the formation of mountain ranges, such as the Himalayas, which arose from the collision of the Indian and Eurasian plates. Furthermore, the movement of tectonic plates is driven by forces such as mantle convection and gravity. As scientists continue to study plate tectonics, they also gather valuable data that aids in understanding Earth's past.",
+      "questions": [
+        {"id": "toefl-l-lecture-03-q1-a3d5", "question": "What is the theory of plate tectonics about?", "options": ["A. The composition of the Earth's core", "B. The movement of the Earth's lithosphere", "C. The history of volcanic eruptions", "D. The process of sedimentary rock formation"], "answer": "B"},
+        {"id": "toefl-l-lecture-03-q2-e55e", "question": "What can happen when two continental plates collide?", "options": ["A. Earthquakes occur without further effects", "B. Oceans are formed between them", "C. Mountain ranges can be formed", "D. The plates become completely fused"], "answer": "C"},
+        {"id": "toefl-l-lecture-03-q3-7584", "question": "What drives the movement of tectonic plates?", "options": ["A. Wind currents and solar energy", "B. Gravity and mantle convection", "C. Ocean currents and atmospheric pressures", "D. The Earth's magnetic field"], "answer": "B"},
+        {"id": "toefl-l-lecture-03-q4-198f", "question": "Why is studying plate tectonics important?", "options": ["A. It helps predict weather patterns.", "B. It improves methods for mining minerals.", "C. It aids in understanding Earth's geological history.", "D. It clarifies the causes of climate change."], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-04-2082",
+      "subject": "Sociology",
+      "transcript": "Professor: In sociology, we often examine the concept of social norms, which are the accepted behaviors within a society. These norms dictate how individuals are expected to behave in various situations. For example, in many cultures, it is considered polite to say 'please' and 'thank you', while in others, more direct communication is appreciated.\n\nAdditionally, social norms can change over time and differ across cultures. For instance, what was once seen as acceptable in past generations may now be viewed as inappropriate. Understanding social norms is essential for analyzing social behavior and can inform areas like policy-making and community programs, helping to foster a cohesive society.",
+      "questions": [
+        {"id": "toefl-l-lecture-04-q1-6ed6", "question": "What are social norms?", "options": ["A. Laws created by the government", "B. Guidelines for acceptable behavior in society", "C. Personal beliefs held by individuals", "D. The economic systems in a culture"], "answer": "B"},
+        {"id": "toefl-l-lecture-04-q2-99f2", "question": "How do social norms change?", "options": ["A. They are always the same across cultures.", "B. They remain unchanged through generations.", "C. They reflect the evolving values of a society.", "D. They are dictated by economic conditions."], "answer": "C"},
+        {"id": "toefl-l-lecture-04-q3-a954", "question": "Why is understanding social norms important?", "options": ["A. It allows individuals to avoid social gatherings.", "B. It helps analyze social behavior and inform policy.", "C. It indicates personal feelings about others.", "D. It limits freedom of expression."], "answer": "B"},
+        {"id": "toefl-l-lecture-04-q4-e79d", "question": "What is an example of a social norm mentioned in the lecture?", "options": ["A. Wearing formal clothing to a wedding", "B. Driving on the left side of the road", "C. Quoting famous literature in conversation", "D. Saying 'please' and 'thank you' in communication"], "answer": "D"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-05-97ab",
+      "subject": "Environmental Science",
+      "transcript": "Professor: Today, we are going to discuss the concept of ecological footprints, which measure the environmental impact of individuals or populations. An ecological footprint takes into account various factors, including the amount of land required to produce food, the resources used for energy, and the waste generated.\n\nFor example, people living in urban areas typically have a different ecological footprint compared to those in rural areas due to lifestyle differences. Urban dwellers might have a higher consumption of goods and services but potentially less land use. It is essential to understand these footprints for developing sustainable practices and policies that can help reduce overall environmental impact, ensuring a healthier planet for future generations.",
+      "questions": [
+        {"id": "toefl-l-lecture-05-q1-6881", "question": "What does an ecological footprint measure?", "options": ["A. The number of species in an ecosystem", "B. The energy efficiency of a community", "C. The environmental impact of individuals or populations", "D. The economic value of natural resources"], "answer": "C"},
+        {"id": "toefl-l-lecture-05-q2-62b0", "question": "How do urban and rural lifestyles affect ecological footprints?", "options": ["A. Urban lifestyles always have lower footprints.", "B. Rural lifestyles use more goods and services.", "C. Urban dwellers typically consume more but use less land.", "D. Rural lifestyles generate more waste than urban ones."], "answer": "C"},
+        {"id": "toefl-l-lecture-05-q3-e4cd", "question": "Why is it important to understand ecological footprints?", "options": ["A. To measure individual success and wealth.", "B. To develop sustainable practices and policies.", "C. To promote urban development at all costs.", "D. To enhance recreational activities in nature."], "answer": "B"},
+        {"id": "toefl-l-lecture-05-q4-11a7", "question": "What might be a goal of analyzing ecological footprints?", "options": ["A. To increase resource consumption among populations.", "B. To ensure a healthier planet for future generations.", "C. To eliminate all waste in urban areas.", "D. To restrict access to natural resources."], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-06-a07c",
+      "subject": "Economics",
+      "transcript": "Professor: In today's lecture, we will explore the principle of supply and demand, a fundamental concept in economics that describes how the price of a good or service is determined in a market. According to this theory, when demand for a product increases, prices tend to rise, as suppliers respond to the increased consumer interest.\n\nConversely, if the supply of a product exceeds demand, prices typically fall. Take, for example, the housing market: if there are more houses for sale than buyers, prices will decrease. This relationship between supply, demand, and price is crucial for understanding market dynamics and making informed economic decisions.",
+      "questions": [
+        {"id": "toefl-l-lecture-06-q1-a985", "question": "What principle is central to today's lecture?", "options": ["A. The importance of economic growth", "B. The principle of supply and demand", "C. The effects of government regulation", "D. The impact of inflation on prices"], "answer": "B"},
+        {"id": "toefl-l-lecture-06-q2-879e", "question": "What happens to prices when demand increases?", "options": ["A. Prices generally decrease", "B. Prices typically remain unchanged", "C. Prices tend to rise", "D. Prices become more stable"], "answer": "C"},
+        {"id": "toefl-l-lecture-06-q3-1aa7", "question": "What occurs when supply exceeds demand?", "options": ["A. Prices tend to rise significantly", "B. Prices generally decrease", "C. Demand increases to match supply", "D. The market becomes unregulated"], "answer": "B"},
+        {"id": "toefl-l-lecture-06-q4-7bc8", "question": "Why is understanding supply and demand important?", "options": ["A. It helps to predict consumer preferences.", "B. It allows individuals to assess their income.", "C. It is crucial for making informed economic decisions.", "D. It simplifies complex financial systems."], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-02-6f3c",
+      "subject": "Psychology",
+      "transcript": "Professor: Today we're diving into the fascinating concept of cognitive dissonance. This occurs when a person holds two or more contradictory beliefs, values, or ideas, leading to discomfort. A classic example is when someone who smokes knows that smoking is bad for their health. To alleviate the dissonance, they might downplay the harmful effects of smoking or convince themselves that they will quit in the near future. This process helps maintain their self-image and reduce psychological tension.\n\nInterestingly, cognitive dissonance doesn't just apply to trivial behaviors; it can also influence significant life decisions. For instance, a person who has invested heavily in a failing business may continue to support it, even against better judgment, because acknowledging the truth would create dissonance. This adds an important layer to our understanding of decision-making and self-justification in human behavior.",
+      "questions": [
+        {"id": "toefl-l-lecture-02-q1-21b2", "question": "What is the primary focus of the lecture?", "options": ["A. Decisions in business investments", "B. The psychology of cognitive dissonance", "C. The benefits of smoking", "D. The concept of self-esteem"], "answer": "B"},
+        {"id": "toefl-l-lecture-02-q2-13b6", "question": "What is an example of cognitive dissonance given in the lecture?", "options": ["A. A student studying for exams", "B. A smoker justifying their habit", "C. A dieter resisting sweets", "D. A teacher grading assignments"], "answer": "B"},
+        {"id": "toefl-l-lecture-02-q3-805b", "question": "How does cognitive dissonance affect major life decisions, according to the professor?", "options": ["A. It helps make logical choices easier.", "B. It can lead to continued investment in poor choices.", "C. It encourages individuals to quit harmful habits.", "D. It reveals a person's core values."], "answer": "B"},
+        {"id": "toefl-l-lecture-02-q4-be22", "question": "What is the purpose of self-justification in cognitive dissonance?", "options": ["A. To enhance personal relationships", "B. To reduce psychological discomfort", "C. To promote honest self-reflection", "D. To increase knowledge retention"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-03-eb7e",
+      "subject": "Environmental Science",
+      "transcript": "Professor: This lecture addresses the critical issue of plastic pollution in our oceans. Millions of tons of plastic waste enter marine ecosystems every year, posing a significant threat to marine life. Sea turtles, for instance, often mistake plastic bags for jellyfish, which are a natural part of their diet. Ingesting plastic can cause serious health issues for these animals and often leads to death.\n\nFurthermore, microplastics, which are tiny plastic particles, are now found in the bodies of marine creatures. This not only affects the creatures themselves but can also enter the human food chain, leading to potential health risks. The good news is that increased awareness and initiatives are emerging to address this pollution, such as beach clean-ups and bans on single-use plastics. However, collective global action is still needed to mitigate this ongoing crisis.",
+      "questions": [
+        {"id": "toefl-l-lecture-03-q1-9be9", "question": "What is the main topic of the lecture?", "options": ["A. Marine ecosystems and biodiversity", "B. The impact of plastic pollution in oceans", "C. The feeding habits of sea turtles", "D. Initiatives for ocean conservation"], "answer": "B"},
+        {"id": "toefl-l-lecture-03-q2-3176", "question": "According to the professor, how do sea turtles commonly interact with plastic waste?", "options": ["A. They avoid plastic altogether.", "B. They use plastic to build nests.", "C. They mistake plastic for food.", "D. They consume plastics for nutrients."], "answer": "C"},
+        {"id": "toefl-l-lecture-03-q3-8256", "question": "What are microplastics, based on the lecture?", "options": ["A. Large pieces of discarded plastic", "B. Tiny plastic particles found in marine life", "C. Plastics used for packaging", "D. Biodegradable substitutes for plastics"], "answer": "B"},
+        {"id": "toefl-l-lecture-03-q4-99b5", "question": "What initiatives are mentioned as ways to combat plastic pollution?", "options": ["A. Banning all forms of plastic production", "B. Promoting marine reserves", "C. Organizing beach clean-ups and banning single-use plastics", "D. Educating children about recycling"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-04-e0d5",
+      "subject": "Anthropology",
+      "transcript": "Professor: In today's lecture, we will explore the concept of cultural relativism. This principle suggests that a person's beliefs and activities should be understood based on that person's own culture rather than be judged against the criteria of another culture. For example, the practice of arranged marriages is commonplace in some cultures, while it may seem foreign or unacceptable in others. Understanding cultural relativism is crucial for anthropologists, as it helps them study societies without bias and promotes a greater understanding of human behavior across cultures.\n\nHowever, it's important to note that cultural relativism does not mean that all practices are acceptable; rather, it invites dialogue about moral values while recognizing that these values vary significantly among different cultures.",
+      "questions": [
+        {"id": "toefl-l-lecture-04-q1-4fb2", "question": "What is the main focus of this lecture?", "options": ["A. The ethics of marriage practices", "B. The principle of cultural relativism", "C. The role of anthropologists in society", "D. Cross-cultural communication techniques"], "answer": "B"},
+        {"id": "toefl-l-lecture-04-q2-fd6b", "question": "Which example does the professor use to illustrate cultural relativism?", "options": ["A. Celebration of holidays", "B. Arranged marriages", "C. Dietary restrictions", "D. Clothing styles"], "answer": "B"},
+        {"id": "toefl-l-lecture-04-q3-f7f2", "question": "Why is cultural relativism important for anthropologists?", "options": ["A. It promotes international tourism.", "B. It helps study cultures without bias.", "C. It encourages the adoption of foreign practices.", "D. It simplifies cultural comparison."], "answer": "B"},
+        {"id": "toefl-l-lecture-04-q4-4f47", "question": "What does cultural relativism invite according to the lecture?", "options": ["A. Acceptance of all cultural practices.", "B. Dialogue about moral values.", "C. The imposition of one culture over another.", "D. A rejection of anthropological studies."], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-05-b462",
+      "subject": "Physics",
+      "transcript": "Professor: In today's lecture, we will discuss the principle of conservation of energy. This fundamental concept states that energy cannot be created or destroyed, only transformed from one form to another. For example, when you turn on a light bulb, electrical energy is converted into light energy and heat energy. This principle is crucial in understanding various physical systems, from engines to ecosystems.\n\nInterestingly, the conservation of energy also applies to biological systems. For instance, during photosynthesis, plants transform light energy from the sun into chemical energy stored in glucose. This process is essential not just for the plant but for all life on Earth, as it forms the base of the food chain. Understanding this principle allows scientists to analyze energy flows and efficiency within different systems.",
+      "questions": [
+        {"id": "toefl-l-lecture-05-q1-9a9d", "question": "What is the primary topic of the lecture?", "options": ["A. The efficiency of renewable energy sources", "B. The principle of conservation of energy", "C. The properties of light", "D. The processes of photosynthesis"], "answer": "B"},
+        {"id": "toefl-l-lecture-05-q2-327d", "question": "What happens when a light bulb is turned on, according to the professor?", "options": ["A. Light energy is stored in batteries.", "B. Electrical energy is transformed into light and heat energy.", "C. Chemical energy is released into the atmosphere.", "D. Solar energy is absorbed directly."], "answer": "B"},
+        {"id": "toefl-l-lecture-05-q3-b619", "question": "How does conservation of energy relate to photosynthesis?", "options": ["A. Plants produce energy from soil.", "B. Sunlight is converted directly into heat.", "C. Light energy is transformed into chemical energy.", "D. Energy is lost during the process."], "answer": "C"},
+        {"id": "toefl-l-lecture-05-q4-bb4a", "question": "Why is the principle of conservation of energy significant?", "options": ["A. It simplifies complex physical theories.", "B. It helps analyze energy flows and efficiency in systems.", "C. It only applies to mechanical systems.", "D. It explains the creation of energy."], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toefl-l-lecture-06-e37d",
+      "subject": "History",
+      "transcript": "Professor: Welcome to our lecture on the Renaissance, a pivotal period in European history characterized by a revival of art, literature, and learning. This era, spanning from the 14th to the 17th century, marked a transition from the Middle Ages to Modernity. Key figures such as Leonardo da Vinci and Michelangelo emerged during this time, bringing innovations in techniques and themes that shaped Western art.\n\nNotably, the Renaissance was fueled by a renewed interest in classical antiquity, with humanism as a central philosophical movement. Humanists emphasized the value of individual experience and the study of classical texts, advocating for a more secular approach to knowledge. This shift laid the groundwork for advancements in various academic fields and set the stage for the scientific revolution that followed.",
+      "questions": [
+        {"id": "toefl-l-lecture-06-q1-190d", "question": "What is the main topic of this lecture?", "options": ["A. The role of religion in the Renaissance", "B. The key features of the Renaissance period", "C. The economic factors leading to the Renaissance", "D. The influence of the Middle Ages on Renaissance art"], "answer": "B"},
+        {"id": "toefl-l-lecture-06-q2-08fa", "question": "Which two prominent figures are mentioned in the lecture?", "options": ["A. Leonardo da Vinci and Vincent van Gogh", "B. Michelangelo and Pablo Picasso", "C. Leonardo da Vinci and Michelangelo", "D. Raphael and Claude Monet"], "answer": "C"},
+        {"id": "toefl-l-lecture-06-q3-14c1", "question": "What philosophical movement is highlighted in the lecture?", "options": ["A. Rationalism", "B. Humanism", "C. Empiricism", "D. Existentialism"], "answer": "B"},
+        {"id": "toefl-l-lecture-06-q4-b719", "question": "What was a significant result of the Renaissance according to the professor?", "options": ["A. The decline of scientific inquiry", "B. A return to medieval practices", "C. The groundwork for the scientific revolution", "D. An emphasis on religious teachings"], "answer": "C"}
+      ]
+    }
+  ]
+}

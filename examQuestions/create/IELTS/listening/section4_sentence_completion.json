@@ -1,0 +1,328 @@
+{
+  "exam": "IELTS",
+  "section": "Listening",
+  "part": "Section 4: Sentence Completion / Academic lecture (single speaker)",
+  "instructions": "Complete the sentences below. Write NO MORE THAN THREE WORDS for each answer.",
+  "tasks": [
+    {
+      "id": "ielts-l4-01",
+      "transcript": "Today's lecture examines the history of coffee cultivation. Coffee is believed to have originated in the Ethiopian highlands, where local legend credits a goat herder named Kaldi with discovering its stimulating effects. From there, cultivation spread to the Arabian Peninsula, particularly Yemen, by the fifteenth century, where it became central to social and religious life. By the seventeenth century, coffee houses had spread across Europe, becoming important hubs for intellectual discussion, often nicknamed 'penny universities' because a cup of coffee cost only a penny and granted access to hours of stimulating conversation. Today, Brazil is the world's largest producer, accounting for roughly a third of global coffee output.",
+      "sentences": [
+        {"id": "ielts-l4-01-q1", "text": "Coffee is believed to have originated in the ___________.", "answer": "Ethiopian highlands"},
+        {"id": "ielts-l4-01-q2", "text": "Cultivation spread to the Arabian Peninsula, particularly ___________, by the fifteenth century.", "answer": "Yemen"},
+        {"id": "ielts-l4-01-q3", "text": "European coffee houses were nicknamed ___________.", "answer": "penny universities"},
+        {"id": "ielts-l4-01-q4", "text": "___________ is today the world's largest coffee producer.", "answer": "Brazil"}
+      ]
+    },
+    {
+      "id": "ielts-l4-02",
+      "transcript": "This lecture focuses on the development of public transportation in the nineteenth century. The first underground railway opened in London in 1863, primarily to reduce street-level congestion caused by horse-drawn traffic. Early trains were powered by steam locomotives, which created significant ventilation problems in the tunnels. It wasn't until the introduction of electric trains in the 1890s that underground travel became significantly more comfortable and practical. Other major cities, including Budapest and Paris, followed London's example, building their own underground systems by the turn of the century. Today, over 160 cities worldwide operate metro systems, carrying billions of passengers annually.",
+      "sentences": [
+        {"id": "ielts-l4-02-q1", "text": "The first underground railway opened in London in ___________.", "answer": "1863"},
+        {"id": "ielts-l4-02-q2", "text": "Early trains caused ___________ problems due to steam locomotives.", "answer": "ventilation"},
+        {"id": "ielts-l4-02-q3", "text": "Electric trains were introduced in the ___________.", "answer": "1890s"},
+        {"id": "ielts-l4-02-q4", "text": "Today, over ___________ cities operate metro systems.", "answer": "160"}
+      ]
+    },
+    {
+      "id": "ielts-l4-02-d708",
+      "transcript": "In today's lecture, we will explore the evolution of renewable energy sources. The quest for sustainable energy began in the late 20th century, driven by increasing concerns over fossil fuel depletion and climate change. One key development was the advancement of solar panel technology, which became more efficient and affordable in the 2000s. Wind energy also gained attention, with wind farms sprouting up across many countries. Today, many nations are investing heavily in these technologies, aiming to reduce their carbon footprints and transition to a greener future.",
+      "sentences": [
+        {"id": "ielts-l4-02-q1-07bb", "text": "The quest for sustainable energy began in the __________ century.", "answer": "late 20th"},
+        {"id": "ielts-l4-02-q2-9565", "text": "Advancements in __________ technology made it more affordable in the 2000s.", "answer": "solar panel"},
+        {"id": "ielts-l4-02-q3-2de4", "text": "Wind _________ have been established across many countries.", "answer": "farms"},
+        {"id": "ielts-l4-02-q4-7665", "text": "Nations are investing to reduce their __________ footprints.", "answer": "carbon"}
+      ]
+    },
+    {
+      "id": "ielts-l4-03",
+      "transcript": "Today's discussion focuses on the impact of urbanization on biodiversity. As cities expand, natural habitats are often replaced by concrete structures. This leads to the extinction of various species and the disruption of ecosystems. Key measures have been proposed to mitigate these effects, such as developing green spaces and protecting urban wildlife corridors. Research shows that urban biodiversity can enhance city resilience against climate change and improve residents' well-being.",
+      "sentences": [
+        {"id": "ielts-l4-03-q1", "text": "Urbanization often replaces natural habitats with __________ structures.", "answer": "concrete"},
+        {"id": "ielts-l4-03-q2", "text": "The extinction of various __________ is a major concern.", "answer": "species"},
+        {"id": "ielts-l4-03-q3", "text": "Developing __________ spaces is one proposed measure to mitigate urbanization effects.", "answer": "green"},
+        {"id": "ielts-l4-03-q4", "text": "Urban biodiversity can improve residents' __________.", "answer": "well-being"}
+      ]
+    },
+    {
+      "id": "ielts-l4-04",
+      "transcript": "In this lecture, we will delve into the advancements in artificial intelligence, particularly in the field of healthcare. AI has transformed diagnostic procedures, leading to more accurate patient assessments. Machine learning algorithms enable the analysis of vast amounts of data quickly. Additionally, AI improves treatment plans through predictive analytics, which can foresee patient outcomes and optimize interventions. As research expands, ethical considerations around AI usage also come into play, particularly regarding patient privacy.",
+      "sentences": [
+        {"id": "ielts-l4-04-q1", "text": "AI has transformed __________ procedures in healthcare.", "answer": "diagnostic"},
+        {"id": "ielts-l4-04-q2", "text": "Machine learning algorithms analyze large amounts of __________.", "answer": "data"},
+        {"id": "ielts-l4-04-q3", "text": "Predictive analytics foresee patient __________.", "answer": "outcomes"},
+        {"id": "ielts-l4-04-q4", "text": "Ethical considerations around AI include concerns over patient __________.", "answer": "privacy"}
+      ]
+    },
+    {
+      "id": "ielts-l4-05",
+      "transcript": "This lecture highlights the importance of cultural heritage in contemporary societies. As globalization accelerates, many communities face the challenge of preserving their unique cultural identities. Heritage sites, such as historic buildings and traditional practices, are vital in this preservation process. Governments and organizations play a crucial role in maintaining these resources, ensuring they are protected for future generations. The balance between modern development and heritage conservation is often debated.",
+      "sentences": [
+        {"id": "ielts-l4-05-q1", "text": "Cultural heritage helps communities preserve their unique __________ identities.", "answer": "cultural"},
+        {"id": "ielts-l4-05-q2", "text": "Heritage sites include historic buildings and traditional __________.", "answer": "practices"},
+        {"id": "ielts-l4-05-q3", "text": "Governments and organizations are key in maintaining __________ resources.", "answer": "heritage"},
+        {"id": "ielts-l4-05-q4", "text": "The balance between modern development and heritage __________ is a topic of debate.", "answer": "conservation"}
+      ]
+    },
+    {
+      "id": "ielts-l4-06",
+      "transcript": "In today's lecture, we will discuss the role of psychology in consumer behavior. Understanding the mental processes behind purchasing decisions can offer valuable insights for businesses. Factors such as emotions, social influences, and personal beliefs heavily impact consumer actions. Marketers utilize psychological principles to create effective advertising strategies aimed at driving sales. By analyzing consumer behavior, businesses can tailor their products and marketing efforts to better meet customer needs.",
+      "sentences": [
+        {"id": "ielts-l4-06-q1", "text": "Psychology helps to understand the mental processes behind __________ decisions.", "answer": "purchasing"},
+        {"id": "ielts-l4-06-q2", "text": "Emotions and social influences heavily impact consumer __________.", "answer": "actions"},
+        {"id": "ielts-l4-06-q3", "text": "Marketers use psychological principles to create effective advertising __________.", "answer": "strategies"},
+        {"id": "ielts-l4-06-q4", "text": "Businesses can tailor products based on analyzed consumer __________.", "answer": "behavior"}
+      ]
+    },
+    {
+      "id": "ielts-l4-02-b5c3",
+      "transcript": "In today's lecture, we will delve into the fascinating world of renewable energy sources. Among these, solar energy stands out due to its abundance and the technological advancements that have made it more accessible. The concept of harnessing the sun's energy dates back to the 19th century, but it wasn't until the 1970s that solar panels began to gain widespread acceptance, driven by the oil crisis and a growing environmental awareness. Today, solar power accounts for approximately 3% of global electricity generation, with installations rapidly increasing in countries such as Germany and the United States.",
+      "sentences": [
+        {"id": "ielts-l4-02-q1-c39f", "text": "Solar energy is considered abundant and has seen significant __________ advancements.", "answer": "technological"},
+        {"id": "ielts-l4-02-q2-2ef4", "text": "The concept of harnessing solar energy began in the __________ century.", "answer": "19th"},
+        {"id": "ielts-l4-02-q3-df54", "text": "Solar power gained popularity in the __________ due to the oil crisis.", "answer": "1970s"},
+        {"id": "ielts-l4-02-q4-a3d6", "text": "Currently, solar power makes up about __________ of global electricity generation.", "answer": "3%"}
+      ]
+    },
+    {
+      "id": "ielts-l4-03-c790",
+      "transcript": "Today’s lecture focuses on the rise of artificial intelligence in various sectors. AI applications span from healthcare to finance, revolutionizing the way data is analyzed and decisions are made. In medicine, AI systems assist in diagnosing diseases more accurately than traditional methods, while in finance, algorithms enable high-speed trading and risk assessment. However, the rapid adoption of AI raises ethical questions about job displacement and data privacy, prompting ongoing debates among policymakers and industry leaders.",
+      "sentences": [
+        {"id": "ielts-l4-03-q1-80d1", "text": "AI is transforming sectors such as __________ and finance.", "answer": "healthcare"},
+        {"id": "ielts-l4-03-q2-0321", "text": "In healthcare, AI systems help in diagnosing diseases more __________.", "answer": "accurately"},
+        {"id": "ielts-l4-03-q3-10f0", "text": "High-speed trading is one of AI's applications in __________.", "answer": "finance"},
+        {"id": "ielts-l4-03-q4-8e39", "text": "The rapid rise of AI brings concerns regarding job __________.", "answer": "displacement"}
+      ]
+    },
+    {
+      "id": "ielts-l4-04-d624",
+      "transcript": "In this lecture, we will explore the concept of urbanization and its impact on society. Urbanization refers to the increasing number of people living in urban areas, which has significant implications for social, economic, and environmental aspects. As cities grow, they offer more job opportunities, but they also face challenges such as increased pollution and housing shortages. Urban planning plays a crucial role in addressing these issues, promoting sustainable development and improving the quality of life for residents.",
+      "sentences": [
+        {"id": "ielts-l4-04-q1-9c0b", "text": "Urbanization results in more people moving to __________ areas.", "answer": "urban"},
+        {"id": "ielts-l4-04-q2-168b", "text": "Growing cities provide more job __________.", "answer": "opportunities"},
+        {"id": "ielts-l4-04-q3-d4ba", "text": "Challenges of urbanization include pollution and housing __________.", "answer": "shortages"},
+        {"id": "ielts-l4-04-q4-2837", "text": "Urban planning is essential for promoting sustainable __________.", "answer": "development"}
+      ]
+    },
+    {
+      "id": "ielts-l4-05-a4ed",
+      "transcript": "In today’s discussion, we turn our attention to marine biodiversity and its importance in maintaining ecological balance. Oceans house numerous species, playing critical roles in ecosystems, and providing resources such as food and medicine. However, human activities like overfishing and pollution threaten these habitats. Conservation efforts are crucial, including establishing marine protected areas and regulations on fishing practices to ensure that future generations can benefit from the ocean’s rich biodiversity.",
+      "sentences": [
+        {"id": "ielts-l4-05-q1-8c6e", "text": "Marine biodiversity is vital for maintaining __________ balance.", "answer": "ecological"},
+        {"id": "ielts-l4-05-q2-2835", "text": "Oceans contain countless species that provide food and __________.", "answer": "medicine"},
+        {"id": "ielts-l4-05-q3-bfde", "text": "Overfishing and pollution are serious threats to marine __________.", "answer": "habitats"},
+        {"id": "ielts-l4-05-q4-871a", "text": "Conservation efforts involve creating marine protected __________.", "answer": "areas"}
+      ]
+    },
+    {
+      "id": "ielts-l4-06-eb21",
+      "transcript": "This lecture explores the historical significance of the Silk Road as a trade network connecting the East and West. Established over two thousand years ago, the Silk Road facilitated not just the exchange of goods like silk and spices, but also the sharing of culture, technology, and ideas. This interaction led to significant advancements in science and art, shaping civilizations along the route. Today, the legacy of the Silk Road continues to influence global trade and cultural exchanges.",
+      "sentences": [
+        {"id": "ielts-l4-06-q1-5135", "text": "The Silk Road was a significant trade network between the __________ and West.", "answer": "East"},
+        {"id": "ielts-l4-06-q2-ffed", "text": "Silk and spices were key __________ exchanged along the Silk Road.", "answer": "goods"},
+        {"id": "ielts-l4-06-q3-1f6e", "text": "The interaction along the Silk Road advanced science and __________.", "answer": "art"},
+        {"id": "ielts-l4-06-q4-2cb2", "text": "The legacy of the Silk Road continues to influence global __________.", "answer": "trade"}
+      ]
+    },
+    {
+      "id": "ielts-l4-02-1691",
+      "transcript": "In this lecture, we will explore the fascinating evolution of the printing press. Invented in the mid-15th century by Johannes Gutenberg, it revolutionized the way information was disseminated. The ability to print texts quickly and in large quantities meant that books became more accessible to the general public. This technological advancement helped spur the Renaissance and the Reformation, as literacy rates soared. By the 18th century, the printing press had established itself as an essential tool for education and communication across Europe, profoundly impacting society.",
+      "sentences": [
+        {"id": "ielts-l4-02-q1-5b1a", "text": "The printing press was invented in the __________ century.", "answer": "15th"},
+        {"id": "ielts-l4-02-q2-2100", "text": "Gutenberg's invention made books more __________ to the general public.", "answer": "accessible"},
+        {"id": "ielts-l4-02-q3-c887", "text": "The printing press helped to spur the __________ and the Reformation.", "answer": "Renaissance"},
+        {"id": "ielts-l4-02-q4-b80d", "text": "By the 18th century, the printing press became an important tool for __________.", "answer": "education"}
+      ]
+    },
+    {
+      "id": "ielts-l4-03-0e80",
+      "transcript": "Today's discussion centers on the impact of climate change on marine biodiversity. Rising sea temperatures and ocean acidification are altering habitats, leading to shifts in species distribution. Coral reefs, often referred to as the 'rainforests of the sea', are particularly vulnerable, with bleaching events occurring more frequently. These environmental changes not only threaten marine species but also the livelihoods of communities that rely on fishing. As we move forward, it is crucial to implement sustainable practices to conserve marine ecosystems.",
+      "sentences": [
+        {"id": "ielts-l4-03-q1-1bfa", "text": "Climate change is causing rising sea temperatures and __________.", "answer": "ocean acidification"},
+        {"id": "ielts-l4-03-q2-643e", "text": "Coral reefs are often called the '___________ of the sea'.", "answer": "rainforests"},
+        {"id": "ielts-l4-03-q3-634a", "text": "Bleaching events are occurring more __________ in coral reefs.", "answer": "frequently"},
+        {"id": "ielts-l4-03-q4-b0f5", "text": "Implementing sustainable practices is crucial for conserving __________.", "answer": "marine ecosystems"}
+      ]
+    },
+    {
+      "id": "ielts-l4-04-2432",
+      "transcript": "This lecture will examine the cultural significance of traditional music across various societies. Music is not merely a form of entertainment; it serves as an important means of communication and expression of identity. In many cultures, music is intricately linked to rituals, celebrations, and storytelling. Instruments vary widely, reflecting the unique heritage of each region, from African drums to Asian string instruments. Understanding these musical traditions provides valuable insights into the social fabric of a community.",
+      "sentences": [
+        {"id": "ielts-l4-04-q1-7140", "text": "Traditional music serves as a means of __________ and identity expression.", "answer": "communication"},
+        {"id": "ielts-l4-04-q2-e370", "text": "In many cultures, music is linked to rituals and __________.", "answer": "celebrations"},
+        {"id": "ielts-l4-04-q3-b970", "text": "Instruments reflect the unique __________ of each region.", "answer": "heritage"},
+        {"id": "ielts-l4-04-q4-4f73", "text": "Musical traditions offer insights into a community's __________ fabric.", "answer": "social"}
+      ]
+    },
+    {
+      "id": "ielts-l4-05-87d9",
+      "transcript": "In today's talk, we will discuss the principles of sustainable architecture. This concept incorporates environmentally responsible practices in design and building processes. Sustainable architecture aims to reduce ecological impact through energy efficiency, the use of renewable resources, and sustainable materials. An important aspect is creating buildings that harmonize with their environment. Additionally, such structures often include features like green roofs and rainwater harvesting systems, contributing to a healthier urban ecosystem.",
+      "sentences": [
+        {"id": "ielts-l4-05-q1-9424", "text": "Sustainable architecture incorporates environmentally responsible practices in __________.", "answer": "design"},
+        {"id": "ielts-l4-05-q2-0938", "text": "It aims to reduce ecological impact through energy __________.", "answer": "efficiency"},
+        {"id": "ielts-l4-05-q3-5091", "text": "Sustainable materials are an important consideration in __________ architecture.", "answer": "sustainable"},
+        {"id": "ielts-l4-05-q4-0e52", "text": "Buildings may include features like green roofs and rainwater __________ systems.", "answer": "harvesting"}
+      ]
+    },
+    {
+      "id": "ielts-l4-06-c930",
+      "transcript": "This lecture focuses on the significance of biodiversity in ecosystems. Biodiversity enhances the resilience of ecosystems, making them more capable of withstanding environmental changes. Species diversity contributes to various ecosystem services, such as pollination and nutrient cycling. Loss of biodiversity can lead to ecosystem collapse, impacting food security and human health. As conservation efforts increase, understanding how different species interact becomes crucial for maintaining the integrity of our natural world.",
+      "sentences": [
+        {"id": "ielts-l4-06-q1-e867", "text": "Biodiversity improves the __________ of ecosystems.", "answer": "resilience"},
+        {"id": "ielts-l4-06-q2-18a8", "text": "Species diversity is important for services like __________.", "answer": "pollination"},
+        {"id": "ielts-l4-06-q3-4361", "text": "Loss of biodiversity can lead to ecosystem __________.", "answer": "collapse"},
+        {"id": "ielts-l4-06-q4-1b16", "text": "Understanding species interactions is crucial for maintaining __________.", "answer": "integrity"}
+      ]
+    },
+    {
+      "id": "ielts-l4-02-2adb",
+      "transcript": "In today's lecture, we will explore the fascinating world of honey bees and their crucial role in ecosystems. These small insects are indispensable pollinators, contributing to about one-third of the food we consume. Their ability to communicate through a waggle dance allows them to share information about food sources with fellow bees. Unfortunately, honey bee populations have been declining due to pesticide use, habitat loss, and diseases. Conservation efforts, including creating bee-friendly gardens and reducing chemical applications, are essential for maintaining healthy bee populations.",
+      "sentences": [
+        {"id": "ielts-l4-02-q1-a89d", "text": "Honey bees are responsible for pollinating about ___________ of the food we consume.", "answer": "one-third"},
+        {"id": "ielts-l4-02-q2-0410", "text": "The waggle dance is a method of communication used by bees to indicate ___________.", "answer": "food sources"},
+        {"id": "ielts-l4-02-q3-2495", "text": "Honey bee populations are declining due to pesticides, habitat loss, and ___________.", "answer": "diseases"},
+        {"id": "ielts-l4-02-q4-cdd0", "text": "Creating bee-friendly gardens is part of ___________ efforts.", "answer": "conservation"}
+      ]
+    },
+    {
+      "id": "ielts-l4-03-782a",
+      "transcript": "Today's discussion focuses on the evolution of electric vehicles (EVs) and their impact on the automotive industry. Initially developed in the 19th century, EVs did not gain popularity until recent decades due to advancements in battery technology and concerns about environmental pollution from traditional cars. Major car manufacturers have now committed to transitioning to electric models, aiming to reduce greenhouse gas emissions. Government subsidies and growing consumer demand are also driving the shift towards sustainable transportation.",
+      "sentences": [
+        {"id": "ielts-l4-03-q1-355f", "text": "Electric vehicles were first developed in the ___________ century.", "answer": "19th"},
+        {"id": "ielts-l4-03-q2-1ab9", "text": "Advancements in ___________ technology have increased the popularity of EVs.", "answer": "battery"},
+        {"id": "ielts-l4-03-q3-51f8", "text": "Major car manufacturers are transitioning to electric models to reduce ___________ emissions.", "answer": "greenhouse gas"},
+        {"id": "ielts-l4-03-q4-c1e1", "text": "Growing consumer demand is driving the shift towards ___________ transportation.", "answer": "sustainable"}
+      ]
+    },
+    {
+      "id": "ielts-l4-04-25da",
+      "transcript": "In this lecture, we will study the formation of coral reefs and their significance in marine biodiversity. Coral reefs are often referred to as the 'rainforests of the sea' because they provide habitat for a multitude of marine organisms. These ecosystems are built by tiny coral polyps that secrete calcium carbonate, forming the reef structure. However, factors like ocean acidification and rising sea temperatures pose serious threats to coral reefs globally, necessitating urgent conservation measures to protect these vital ecosystems.",
+      "sentences": [
+        {"id": "ielts-l4-04-q1-4eee", "text": "Coral reefs are known as the 'rainforests of the sea' because of their ___________ for marine organisms.", "answer": "habitat"},
+        {"id": "ielts-l4-04-q2-7fd3", "text": "Coral reefs are formed by tiny coral ___________ that secrete calcium carbonate.", "answer": "polyps"},
+        {"id": "ielts-l4-04-q3-07a2", "text": "Ocean acidification and rising sea temperatures threaten ___________ reefs.", "answer": "coral"},
+        {"id": "ielts-l4-04-q4-12a3", "text": "Urgent conservation measures are needed to protect these vital ___________.", "answer": "ecosystems"}
+      ]
+    },
+    {
+      "id": "ielts-l4-05-0c93",
+      "transcript": "This lecture will examine the significance of sustainable agriculture in addressing food security. Traditional farming practices often lead to soil degradation and a decrease in crop yields over time. In contrast, sustainable agriculture emphasizes methods that maintain soil health, such as crop rotation, organic fertilizers, and water conservation techniques. By focusing on sustainability, farmers can ensure food security for future generations while also protecting the environment.",
+      "sentences": [
+        {"id": "ielts-l4-05-q1-9515", "text": "Traditional farming practices often result in soil ___________.", "answer": "degradation"},
+        {"id": "ielts-l4-05-q2-d77b", "text": "Sustainable agriculture emphasizes maintaining ___________ health.", "answer": "soil"},
+        {"id": "ielts-l4-05-q3-dd43", "text": "Methods like crop rotation and organic fertilizers are part of ___________ practices.", "answer": "sustainable"},
+        {"id": "ielts-l4-05-q4-ead8", "text": "The focus on sustainability aims to ensure food security for ___________ generations.", "answer": "future"}
+      ]
+    },
+    {
+      "id": "ielts-l4-06-aa5c",
+      "transcript": "In today's lecture, we will explore the role of artificial intelligence in healthcare. AI technologies are being used to enhance diagnostics, streamline administrative tasks, and personalize patient care. Machine learning algorithms analyze vast amounts of data, enabling healthcare professionals to make more informed decisions. However, ethical concerns surrounding patient data privacy and the potential for bias in AI systems must be addressed as these technologies become more integrated into healthcare settings.",
+      "sentences": [
+        {"id": "ielts-l4-06-q1-7418", "text": "Artificial intelligence is being implemented to improve ___________ in healthcare.", "answer": "diagnostics"},
+        {"id": "ielts-l4-06-q2-5417", "text": "Machine learning algorithms help professionals make more ___________ decisions.", "answer": "informed"},
+        {"id": "ielts-l4-06-q3-e583", "text": "Concerns regarding patient data ___________ are crucial in the use of AI in healthcare.", "answer": "privacy"},
+        {"id": "ielts-l4-06-q4-caa2", "text": "As AI technologies advance, issues of ___________ in AI systems must be addressed.", "answer": "bias"}
+      ]
+    },
+    {
+      "id": "ielts-l4-02-cfb0",
+      "transcript": "In this lecture, we will explore the fascinating world of artificial intelligence and its various applications across different fields. AI is increasingly being used in healthcare to improve diagnostic accuracy and personalize treatment plans. For example, machine learning algorithms can analyze medical imaging with remarkable precision, often surpassing human professionals. Additionally, the finance industry utilizes AI for algorithmic trading, risk assessment, and fraud detection, enhancing both efficiency and security. As AI continues to develop, its impact on daily life and business practices becomes more profound.",
+      "sentences": [
+        {"id": "ielts-l4-02-q1-f09a", "text": "AI is increasingly used in __________ to improve diagnostic accuracy.", "answer": "healthcare"},
+        {"id": "ielts-l4-02-q2-3117", "text": "Machine learning algorithms can analyze medical __________ with remarkable precision.", "answer": "imaging"},
+        {"id": "ielts-l4-02-q3-58c7", "text": "In the finance industry, AI is used for algorithmic trading and __________ detection.", "answer": "fraud"},
+        {"id": "ielts-l4-02-q4-1ed3", "text": "The impact of AI on daily life and business practices is becoming more __________.", "answer": "profound"}
+      ]
+    },
+    {
+      "id": "ielts-l4-03-d651",
+      "transcript": "This lecture focuses on renewable energy sources, particularly wind and solar power. As climate change becomes a pressing issue, transitioning to renewable energy is crucial to reducing carbon emissions. Wind power, generated by turbines, has expanded significantly over the past few decades, providing clean energy to millions. Similarly, solar energy harnesses sunlight using photovoltaic cells, making it increasingly affordable and accessible. Governments around the world are investing in these technologies to promote sustainability and combat environmental challenges.",
+      "sentences": [
+        {"id": "ielts-l4-03-q1-d83b", "text": "Renewable energy is crucial to reducing __________ emissions.", "answer": "carbon"},
+        {"id": "ielts-l4-03-q2-adee", "text": "Wind power is generated by __________.", "answer": "turbines"},
+        {"id": "ielts-l4-03-q3-3373", "text": "Solar energy harnesses sunlight using __________ cells.", "answer": "photovoltaic"},
+        {"id": "ielts-l4-03-q4-b76c", "text": "Governments are investing in these technologies to promote __________.", "answer": "sustainability"}
+      ]
+    },
+    {
+      "id": "ielts-l4-04-b26e",
+      "transcript": "Today, we will examine the principles of effective communication in business settings. Effective communication is essential for teamwork and collaboration, promoting a positive work environment. Key elements include clarity, active listening, and non-verbal cues. Clarity ensures that messages are understood correctly, while active listening demonstrates respect and engagement. Additionally, non-verbal cues, such as body language, complement spoken words and convey emotions. Mastering these principles can lead to improved relationships within a professional context.",
+      "sentences": [
+        {"id": "ielts-l4-04-q1-1d0a", "text": "Effective communication is essential for ______________ and collaboration.", "answer": "teamwork"},
+        {"id": "ielts-l4-04-q2-ae15", "text": "Active listening demonstrates respect and __________.", "answer": "engagement"},
+        {"id": "ielts-l4-04-q3-f66f", "text": "Non-verbal cues, such as ______________, complement spoken words.", "answer": "body language"},
+        {"id": "ielts-l4-04-q4-336b", "text": "Mastering communication principles can improve relationships within a __________.", "answer": "professional context"}
+      ]
+    },
+    {
+      "id": "ielts-l4-05-a328",
+      "transcript": "In this session, we will discuss the importance of biodiversity and its role in ecosystem stability. Biodiversity refers to the variety of life on Earth, encompassing different species, genetic variations, and ecosystems. Healthy ecosystems are resilient and can better withstand environmental changes. Conservation efforts aim to protect biodiversity because the loss of species can disrupt food webs and lead to ecosystem collapse. Promoting biodiversity is essential for maintaining the planet's ecological balance.",
+      "sentences": [
+        {"id": "ielts-l4-05-q1-acbd", "text": "Biodiversity refers to the __________ of life on Earth.", "answer": "variety"},
+        {"id": "ielts-l4-05-q2-42f2", "text": "Healthy ecosystems are more resilient to __________ changes.", "answer": "environmental"},
+        {"id": "ielts-l4-05-q3-3411", "text": "Conservation efforts aim to protect __________.", "answer": "biodiversity"},
+        {"id": "ielts-l4-05-q4-bca3", "text": "The loss of species can disrupt food webs and lead to ecosystem __________.", "answer": "collapse"}
+      ]
+    },
+    {
+      "id": "ielts-l4-06-b5de",
+      "transcript": "This lecture will cover the impact of technology on education. Advances in digital technology have transformed traditional learning methods, enabling greater access to information and collaborative opportunities. Online platforms and resources allow learners to engage with materials at their own pace. However, this shift also presents challenges, including the digital divide, where some students may lack access to necessary technology. Educators are tasked with finding ways to integrate technology effectively while ensuring equity in educational access.",
+      "sentences": [
+        {"id": "ielts-l4-06-q1-a886", "text": "Advances in digital technology have transformed traditional __________ methods.", "answer": "learning"},
+        {"id": "ielts-l4-06-q2-c69f", "text": "Online platforms enable learners to engage with materials at their own __________.", "answer": "pace"},
+        {"id": "ielts-l4-06-q3-8134", "text": "The digital divide refers to students lacking access to __________ technology.", "answer": "necessary"},
+        {"id": "ielts-l4-06-q4-09e0", "text": "Educators must integrate technology effectively while ensuring __________ in access.", "answer": "equity"}
+      ]
+    },
+    {
+      "id": "ielts-l4-01-e7ff",
+      "transcript": "This lecture explores the development of renewable energy sources over the last few decades. Initially, solar power was seen as a niche market, primarily utilized in residential applications. However, advancements in technology and significant reductions in costs have opened up broader possibilities, leading to major solar farms being established worldwide. In addition, wind energy has also gained traction, especially in coastal areas where wind patterns are favorable. By 2020, wind and solar collectively contributed to over twenty percent of the global electricity generation. This shift towards renewables is crucial in combating climate change, providing cleaner alternatives to fossil fuels.",
+      "sentences": [
+        {"id": "ielts-l4-01-q1-76bc", "text": "Solar power was initially seen as a __________ market.", "answer": "niche"},
+        {"id": "ielts-l4-01-q2-901f", "text": "Major solar farms have been established __________.", "answer": "worldwide"},
+        {"id": "ielts-l4-01-q3-fa8b", "text": "Wind energy is particularly prominent in __________ areas.", "answer": "coastal"},
+        {"id": "ielts-l4-01-q4-2211", "text": "By 2020, wind and solar contributed to over twenty percent of __________ generation.", "answer": "electricity"}
+      ]
+    },
+    {
+      "id": "ielts-l4-02-dfb4",
+      "transcript": "In today's lecture, we will discuss the fascinating world of fungi and their vital ecological roles. Fungi are not only decomposers but also form symbiotic relationships with plants through mycorrhizal associations. These relationships enhance nutrient uptake for plants and improve soil health. Furthermore, fungi have been recognized for their potential in bioremediation, where they assist in breaking down pollutants found in the environment. Recent studies suggest that certain fungi can even help in the production of biofuels, making them crucial in sustainable energy efforts.",
+      "sentences": [
+        {"id": "ielts-l4-02-q1-7e62", "text": "Fungi form __________ relationships with plants.", "answer": "symbiotic"},
+        {"id": "ielts-l4-02-q2-bac7", "text": "These relationships enhance nutrient uptake and improve __________ health.", "answer": "soil"},
+        {"id": "ielts-l4-02-q3-f33b", "text": "Fungi help in breaking down __________ found in the environment.", "answer": "pollutants"},
+        {"id": "ielts-l4-02-q4-dfa6", "text": "Some fungi are also involved in the production of __________.", "answer": "biofuels"}
+      ]
+    },
+    {
+      "id": "ielts-l4-03-6c6c",
+      "transcript": "Today's discussion centers around the cultural significance of pottery in ancient civilizations. Pottery was often used for storage, cooking, and ceremonial purposes, reflecting the daily lives and beliefs of the people. Archaeological findings reveal that different regions developed distinct styles, influenced by local traditions and available resources. Furthermore, pottery was not only functional but also served as a canvas for artistic expression, often depicting religious symbols or community events. The durability of ancient pottery allows us to gain insights into the past, making it an invaluable resource for historians.",
+      "sentences": [
+        {"id": "ielts-l4-03-q1-aa24", "text": "Pottery was used for storage, cooking, and __________ purposes.", "answer": "ceremonial"},
+        {"id": "ielts-l4-03-q2-902d", "text": "Different regions developed __________ styles of pottery.", "answer": "distinct"},
+        {"id": "ielts-l4-03-q3-59ed", "text": "Pottery often depicted religious __________.", "answer": "symbols"},
+        {"id": "ielts-l4-03-q4-1fe4", "text": "Ancient pottery is a valuable resource for __________.", "answer": "historians"}
+      ]
+    },
+    {
+      "id": "ielts-l4-04-28e3",
+      "transcript": "In today's lecture, we will examine the impact of urbanization on biodiversity. Urban areas often drive habitat loss, leading to diminished wildlife populations. The conversion of green spaces into concrete landscapes disrupts ecosystems and can result in the extinction of certain species. However, some urban environments are incorporating green roofs and vertical gardens to mitigate these effects and enhance urban biodiversity. These innovations not only provide habitats for various organisms but also improve air quality. As urbanization continues to rise, it's vital to find a balance that supports both development and the preservation of nature.",
+      "sentences": [
+        {"id": "ielts-l4-04-q1-35f3", "text": "Urbanization often leads to habitat __________.", "answer": "loss"},
+        {"id": "ielts-l4-04-q2-2964", "text": "The conversion of green spaces disrupts __________.", "answer": "ecosystems"},
+        {"id": "ielts-l4-04-q3-faed", "text": "Urban environments can incorporate green roofs and __________ gardens.", "answer": "vertical"},
+        {"id": "ielts-l4-04-q4-1341", "text": "These innovations can improve __________ quality.", "answer": "air"}
+      ]
+    },
+    {
+      "id": "ielts-l4-05-db41",
+      "transcript": "This lecture focuses on the significance of the Great Barrier Reef as an ecological marvel. Recognized as one of the largest coral reef systems in the world, it provides habitat and sustenance for a diverse array of marine life. The reef faces numerous threats, including climate change and coral bleaching, both of which are detrimental to its health. Conservation efforts are being made to protect and restore the reef, involving sustainable tourism practices and research into coral resilience. Understanding the ecosystem's dynamics is crucial for the long-term survival of the Great Barrier Reef.",
+      "sentences": [
+        {"id": "ielts-l4-05-q1-8446", "text": "The Great Barrier Reef is recognized as one of the largest __________ systems.", "answer": "coral reef"},
+        {"id": "ielts-l4-05-q2-cbbc", "text": "It provides habitat and sustenance for a diverse array of __________ life.", "answer": "marine"},
+        {"id": "ielts-l4-05-q3-80e7", "text": "Threats to the reef include climate change and coral __________.", "answer": "bleaching"},
+        {"id": "ielts-l4-05-q4-aa6d", "text": "Conservation efforts involve sustainable __________ practices.", "answer": "tourism"}
+      ]
+    }
+  ]
+}

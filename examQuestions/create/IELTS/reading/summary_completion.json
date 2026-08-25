@@ -1,0 +1,387 @@
+{
+  "exam": "IELTS",
+  "section": "Reading",
+  "part": "Summary Completion",
+  "instructions": "Complete the summary using words from the passage. Write NO MORE THAN TWO WORDS for each answer.",
+  "passages": [
+    {
+      "id": "ielts-r-sc-01",
+      "title": "The Domestication of the Dog",
+      "passage": "Genetic evidence suggests that dogs were domesticated from wolves at least 15,000 years ago, making them the first domesticated species, predating even the domestication of plants for agriculture. Researchers debate whether domestication occurred in a single location, such as East Asia, or independently in multiple regions. One prevailing theory suggests that wolves began scavenging near human settlements, and those less fearful of humans gained access to food scraps, gradually leading to a self-selecting process toward tameness. Over thousands of years, this relationship deepened, with early humans selectively breeding dogs for specific traits such as hunting ability, guarding instincts, and companionship, resulting in the vast diversity of breeds seen today.",
+      "summary": "Dogs were domesticated from wolves over 15,000 years ago, making them the ___(1)___ domesticated species. Scientists disagree on whether this happened in one place or ___(2)___ in several regions. According to one theory, wolves that were less ___(3)___ of humans were able to access food scraps near settlements. Over time, humans practiced ___(4)___ breeding to develop dogs suited for hunting, guarding, and companionship.",
+      "blanks": [
+        {"id": "ielts-r-sc-01-b1", "answer": "first"},
+        {"id": "ielts-r-sc-01-b2", "answer": "independently"},
+        {"id": "ielts-r-sc-01-b3", "answer": "fearful"},
+        {"id": "ielts-r-sc-01-b4", "answer": "selective"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-02",
+      "title": "Ocean Plastic Pollution",
+      "passage": "It is estimated that over eight million tons of plastic enter the world's oceans every year, much of it originating from land-based sources such as improperly managed waste in coastal regions. Once in the ocean, plastic debris breaks down into smaller fragments known as microplastics, which can persist in marine environments for centuries. These particles are frequently ingested by marine organisms, entering the food chain and potentially affecting human health through seafood consumption. Efforts to address the crisis include international agreements to reduce single-use plastics, as well as technological innovations such as ocean cleanup devices designed to collect floating debris before it fragments further.",
+      "summary": "Approximately eight million tons of plastic enter the oceans annually, mostly from ___(1)___ sources. Over time, this debris breaks into smaller pieces called ___(2)___, which can last for centuries. Marine animals often ___(3)___ these particles, allowing them to enter the food chain. Solutions include international agreements and ___(4)___ innovations such as cleanup devices.",
+      "blanks": [
+        {"id": "ielts-r-sc-02-b1", "answer": "land-based"},
+        {"id": "ielts-r-sc-02-b2", "answer": "microplastics"},
+        {"id": "ielts-r-sc-02-b3", "answer": "ingest"},
+        {"id": "ielts-r-sc-02-b4", "answer": "technological"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-02-88e0",
+      "title": "The Process of Photosynthesis",
+      "passage": "Photosynthesis is the process by which green plants and some other organisms use sunlight to synthesize foods with the help of chlorophyll in their cells. This process converts carbon dioxide from the atmosphere and water from the soil into glucose and oxygen. The overall reaction can be summarized by the equation: 6CO2 + 6H2O + light energy -> C6H12O6 + 6O2. Photosynthesis is crucial not only because it provides energy for plants but also because it forms the base of the food chain for virtually all living organisms on Earth.",
+      "summary": "Photosynthesis allows green plants to convert ___(1)___ and water into glucose and oxygen using sunlight. The process plays a vital role in providing energy for plants and is essential for the ___(2)___ of the food chain. The chemical equation representing photosynthesis can be summarized as ___(3)___.",
+      "blanks": [
+        {"id": "ielts-r-sc-02-b1-7378", "answer": "carbon dioxide"},
+        {"id": "ielts-r-sc-02-b2-cf1d", "answer": "foundation"},
+        {"id": "ielts-r-sc-02-b3-74dc", "answer": "6CO2 + 6H2O + light energy -> C6H12O6 + 6O2"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-03",
+      "title": "The Benefits of Mindfulness Meditation",
+      "passage": "Mindfulness meditation is a practice that encourages individuals to focus on the present moment and to cultivate a non-judgmental awareness of their thoughts and feelings. Research has shown that practicing mindfulness can lead to decreased levels of stress and anxiety, as well as improved emotional regulation. Moreover, it has been associated with enhanced attention and concentration, resulting in better performance in daily tasks. Dedicating just a few minutes each day to mindfulness meditation can yield significant benefits for mental health and overall well-being.",
+      "summary": "Mindfulness meditation helps people focus on the ___(1)___ and develop a non-judgmental awareness of their thoughts. Studies indicate it may reduce ___(2)___ and enhance emotional regulation. Regular practice can improve ___(3)___ and concentration, leading to better performance in daily activities.",
+      "blanks": [
+        {"id": "ielts-r-sc-03-b1", "answer": "present moment"},
+        {"id": "ielts-r-sc-03-b2", "answer": "stress"},
+        {"id": "ielts-r-sc-03-b3", "answer": "attention"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-04",
+      "title": "The History of the Internet",
+      "passage": "The internet has transformed communication and information sharing across the globe. It originated in the late 1960s with ARPANET, a project funded by the U.S. Department of Defense. Initially intended for military purposes, the ARPANET eventually expanded to connect universities and research institutions. By the mid-1990s, the internet became accessible to the general public and rapidly grew, giving rise to an era of information exchange that revolutionized various aspects of society including commerce, education, and entertainment. Today, it plays an integral role in everyday life.",
+      "summary": "Originating from ARPANET in the 1960s, the ___(1)___ has significantly changed communication worldwide. Initially meant for military use, it later connected educational and research institutions. By the 1990s, it was available to the ___(2)___, causing a dramatic increase in information sharing that affected many sectors, including ___(3)___.",
+      "blanks": [
+        {"id": "ielts-r-sc-04-b1", "answer": "internet"},
+        {"id": "ielts-r-sc-04-b2", "answer": "public"},
+        {"id": "ielts-r-sc-04-b3", "answer": "commerce"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-05",
+      "title": "The Importance of Clean Water",
+      "passage": "Access to clean water is vital for human health and well-being. It is essential for maintaining hydration, proper sanitation, and food preparation. Lack of access to clean water can lead to severe health issues, including waterborne diseases. According to the World Health Organization, millions of people, especially in low-income countries, suffer from inadequate access to safe drinking water. Efforts to improve water quality and accessibility are crucial to enhancing public health and reducing inequalities in health care.",
+      "summary": "Clean water is essential for maintaining ___(1)___ and sanitation. Without it, individuals face risks of ___(2)___ diseases. The World Health Organization reports millions struggle with unsafe drinking water, especially in ___(3)___. Improving water quality is critical for public health.",
+      "blanks": [
+        {"id": "ielts-r-sc-05-b1", "answer": "hydration"},
+        {"id": "ielts-r-sc-05-b2", "answer": "waterborne"},
+        {"id": "ielts-r-sc-05-b3", "answer": "low-income countries"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-06",
+      "title": "The Effects of Climate Change",
+      "passage": "Climate change refers to significant and long-term changes in the global climate, primarily due to human activities such as the burning of fossil fuels, deforestation, and industrial processes. These activities increase greenhouse gas emissions, leading to global warming and resulting in severe weather events, rising sea levels, and disruptions to ecosystems. The consequences of climate change impact not only the environment but also human health, agriculture, and economies worldwide. Urgent action is required to mitigate its effects.",
+      "summary": "Primarily driven by human actions, climate change results in long-term changes to the global ___(1)___. Activities like burning fossil fuels lead to increased ___(2)___ gas emissions and global warming. Its effects include severe weather, rising sea levels, and threats to ecosystems and ___(3)___.",
+      "blanks": [
+        {"id": "ielts-r-sc-06-b1", "answer": "climate"},
+        {"id": "ielts-r-sc-06-b2", "answer": "greenhouse"},
+        {"id": "ielts-r-sc-06-b3", "answer": "economies"}
+      ]
+    },
+    {
+      "id": "ai-historical-evidence-01",
+      "title": "The Construction of Ancient Pyramids",
+      "passage": "The ancient Egyptians were remarkable architects, known primarily for the construction of pyramids. These monumental structures served as tombs for pharaohs and were constructed using massive limestone blocks. The Great Pyramid of Giza, built during the Fourth Dynasty, is one of the most iconic, showcasing the sophistication of their engineering techniques. Evidence shows that the workforce comprised skilled laborers and not slaves, as often popularly believed. The alignment and placement of the pyramids were meticulously calculated to reflect celestial phenomena, giving them both a practical and symbolic significance in ancient Egyptian culture.",
+      "summary": "The Egyptians were skilled architects recognized for building ___(1)___, which served as tombs for their rulers. The Great Pyramid of Giza is an iconic example that highlights their ___(2)___. Contrary to common beliefs, the workforce was mostly made up of ___(3)___ laborers. The design of the pyramids was also related to ___(4)___ events, adding to their cultural importance.",
+      "blanks": [
+        {"id": "ai-historical-evidence-01-b1", "answer": "pyramids"},
+        {"id": "ai-historical-evidence-01-b2", "answer": "engineering"},
+        {"id": "ai-historical-evidence-01-b3", "answer": "skilled"},
+        {"id": "ai-historical-evidence-01-b4", "answer": "celestial"}
+      ]
+    },
+    {
+      "id": "ai-ancient-greece-02",
+      "title": "The Influence of Ancient Greek Philosophy",
+      "passage": "Ancient Greek philosophy has had a lasting impact on Western thought, with philosophers like Socrates, Plato, and Aristotle laying the groundwork for critical thinking and ethics. Socratic questioning encouraged deeper inquiry into moral concepts, while Plato’s theory of forms provided a framework for understanding the ideal versus the real. Aristotle's empirical approach emphasized observation and logic, forming the basis for the scientific method used today. The integration of these philosophies into education has been pivotal, encouraging generations to engage critically with ideas and fostering intellectual development.",
+      "summary": "Greek philosophy significantly shaped Western thought, with figures like Socrates promoting ___(1)___ into ethics. Plato introduced the idea of forms, contrasting the ___(2)___ with the real world. Aristotle's focus on observation and logic promoted the ___(3)___ that underpins modern science. This philosophical integration into education has encouraged critical engagement and has been crucial for ___(4)___ intellectual growth.",
+      "blanks": [
+        {"id": "ai-ancient-greece-02-b1", "answer": "inquiry"},
+        {"id": "ai-ancient-greece-02-b2", "answer": "ideal"},
+        {"id": "ai-ancient-greece-02-b3", "answer": "methodology"},
+        {"id": "ai-ancient-greece-02-b4", "answer": "fostering"}
+      ]
+    },
+    {
+      "id": "ai-climate-change-03",
+      "title": "The Effects of Climate Change on Biodiversity",
+      "passage": "Climate change poses a significant threat to biodiversity worldwide, affecting ecosystems across the globe. Rising temperatures and shifting precipitation patterns disrupt habitats, leading to species extinction and the loss of biodiversity. Coral reefs, which are particularly sensitive to temperature changes, have seen significant bleaching events, decimating marine life. Additionally, alteration in climate affects migratory patterns of birds and the blooming cycles of plants, resulting in mismatches in ecological relationships. To mitigate these impacts, global cooperation is required to implement effective conservation strategies.",
+      "summary": "Climate change significantly endangers global ___(1)___, disrupting ecosystems and increasing species loss. Rising temperatures cause coral reefs to experience ___(2)___ events, impacting marine life. Changes in climate also influence migratory patterns and plant blooming cycles, causing ___(3)___. Addressing these challenges requires worldwide ___(4)___ to implement successful conservation measures.",
+      "blanks": [
+        {"id": "ai-climate-change-03-b1", "answer": "biodiversity"},
+        {"id": "ai-climate-change-03-b2", "answer": "bleaching"},
+        {"id": "ai-climate-change-03-b3", "answer": "mismatches"},
+        {"id": "ai-climate-change-03-b4", "answer": "collaboration"}
+      ]
+    },
+    {
+      "id": "ai-space-exploration-04",
+      "title": "The Era of Space Exploration",
+      "passage": "The Space Age began in the mid-20th century, marked by the launch of Sputnik by the Soviet Union in 1957. This event sparked a global interest in space exploration, leading to numerous missions aimed at understanding the cosmos. The Apollo program, which culminated in the moon landing of 1969, symbolized humanity's triumph over Earth's limitations. In recent years, both governmental and private organizations have stepped up efforts, focusing on Mars exploration and the possibility of human settlement on other planets. As technology advances, the future of space exploration holds the promise of uncovering the mysteries of the universe.",
+      "summary": "The Space Age was initiated in the mid-20th century when the Soviet Union launched ___(1)___. This event ignited worldwide enthusiasm for ___(2)___. The Apollo program culminated in the 1969 moon landing, representing a significant achievement for humanity. Recently, increased efforts from both public and ___(3)___ sectors have concentrated on exploring Mars and human colonization. Advances in technology indicate a bright ___(4)__ for uncovering cosmic mysteries.",
+      "blanks": [
+        {"id": "ai-space-exploration-04-b1", "answer": "Sputnik"},
+        {"id": "ai-space-exploration-04-b2", "answer": "space exploration"},
+        {"id": "ai-space-exploration-04-b3", "answer": "private"},
+        {"id": "ai-space-exploration-04-b4", "answer": "future"}
+      ]
+    },
+    {
+      "id": "ai-technology-advancement-05",
+      "title": "The Impact of Artificial Intelligence",
+      "passage": "Artificial intelligence (AI) is transforming various sectors of society by automating tasks previously performed by humans. Its applications range from healthcare, where AI assists in diagnostics, to finance, where algorithms predict market trends. While AI offers substantial benefits, such as increased efficiency and accuracy, it also raises ethical concerns regarding job displacement and privacy. As businesses increasingly adopt AI technologies, a pressing need arises to establish guidelines that ensure responsible use while maximizing its potential benefits. Ongoing discussions in the field will shape the development of AI in the coming years.",
+      "summary": "AI is revolutionizing different sectors by automating tasks that humans used to ___(1)___. Its use in healthcare includes assisting in ___(2)___, while in finance, it helps forecast trends. Despite its advantages like greater ___(3)___, concerns about job loss and privacy persist. As businesses implement AI, it is crucial to create regulations for responsible usage that enhance its ___(4)___.",
+      "blanks": [
+        {"id": "ai-technology-advancement-05-b1", "answer": "perform"},
+        {"id": "ai-technology-advancement-05-b2", "answer": "diagnostics"},
+        {"id": "ai-technology-advancement-05-b3", "answer": "efficiency"},
+        {"id": "ai-technology-advancement-05-b4", "answer": "benefits"}
+      ]
+    },
+    {
+      "id": "ai-climate-change-01",
+      "title": "Understanding Climate Change",
+      "passage": "Climate change refers to significant changes in global temperatures and weather patterns over time. While natural processes contribute to these changes, recent evidence indicates that human activities, particularly the burning of fossil fuels, are accelerating the process. This increase in greenhouse gases, such as carbon dioxide, traps heat in the atmosphere, leading to rising sea levels, extreme weather events, and alterations in ecosystems. Mitigation strategies include reducing emissions, transitioning to renewable energy, and enhancing carbon sinks like forests.",
+      "summary": "Climate change involves major shifts in global ____(1)____ and weather. Human actions are believed to significantly ____(2)____ this trend, especially through fossil fuel consumption. Greenhouse gases cause heat to become trapped in the atmosphere, resulting in ____(3)____ sea levels and climate variability. To combat these effects, strategies focus on reducing emissions and promoting ____(4)____ energy alternatives.",
+      "blanks": [
+        {"id": "ai-climate-change-01-b1", "answer": "temperatures"},
+        {"id": "ai-climate-change-01-b2", "answer": "accelerate"},
+        {"id": "ai-climate-change-01-b3", "answer": "rising"},
+        {"id": "ai-climate-change-01-b4", "answer": "renewable"}
+      ]
+    },
+    {
+      "id": "ai-the-science-of-sleep-02",
+      "title": "The Science of Sleep",
+      "passage": "Sleep is a critical component of human health, affecting physical and mental processes. During sleep, the body undergoes various restorative processes, which are crucial for brain function, immune response, and overall well-being. Disruptions in sleep can lead to numerous health issues, including cognitive decline, obesity, and cardiovascular diseases. Experts emphasize the importance of maintaining a consistent sleep schedule, creating a conducive sleep environment, and practicing relaxation techniques to improve sleep quality.",
+      "summary": "Sleep significantly impacts human ____(1)____ and mental health, playing a key role in restorative processes. Poor sleep can lead to health ____(2)____, such as cognitive decline and obesity. It is advised to keep a regular sleep schedule and create an optimal ____(3)____ for rest. Additionally, using ____(4)____ techniques can enhance sleep quality.",
+      "blanks": [
+        {"id": "ai-the-science-of-sleep-02-b1", "answer": "health"},
+        {"id": "ai-the-science-of-sleep-02-b2", "answer": "problems"},
+        {"id": "ai-the-science-of-sleep-02-b3", "answer": "environment"},
+        {"id": "ai-the-science-of-sleep-02-b4", "answer": "relaxation"}
+      ]
+    },
+    {
+      "id": "ai-ancient-civilizations-03-1524",
+      "title": "Ancient Civilizations",
+      "passage": "Ancient civilizations laid the foundations for modern societies through their innovations in writing, architecture, and governance. The Sumerians of Mesopotamia are often credited with developing one of the earliest known writing systems, cuneiform. The Egyptians made remarkable architectural advancements, including the construction of the pyramids, which showcased their engineering skills. In addition, political systems began to evolve, with city-states and empires that shaped social hierarchies and laws, influencing future generations.",
+      "summary": "Ancient societies are crucial for modern ____(1)____ due to their innovations in writing and ____(2)____. The Sumerians developed cuneiform as an early writing system, while the Egyptians excelled in ____(3)____, exemplified by the pyramids. These civilizations also introduced political structures like city-states, affecting social ____(4)____ and laws.",
+      "blanks": [
+        {"id": "ai-ancient-civilizations-03-b1", "answer": "societies"},
+        {"id": "ai-ancient-civilizations-03-b2", "answer": "architecture"},
+        {"id": "ai-ancient-civilizations-03-b3", "answer": "engineering"},
+        {"id": "ai-ancient-civilizations-03-b4", "answer": "hierarchies"}
+      ]
+    },
+    {
+      "id": "ai-healthy-eating-04",
+      "title": "Healthy Eating Habits",
+      "passage": "Healthy eating is essential for maintaining a strong body and mind. A balanced diet includes a variety of nutrients from fruits, vegetables, whole grains, and proteins while minimizing processed foods high in sugar and fat. Nutritionists recommend planning meals ahead and being mindful of portion sizes to avoid overeating. Additionally, hydration is vital, and drinking water throughout the day plays a crucial role in overall health and wellness.",
+      "summary": "Maintaining a balanced diet with ____(1)____ from various food groups is important for health. It is advised to limit ____(2)____ foods and plan meals to control portion sizes. Staying hydrated by drinking ____(3)____ regularly is also essential for overall health and wellness.",
+      "blanks": [
+        {"id": "ai-healthy-eating-04-b1", "answer": "nutrients"},
+        {"id": "ai-healthy-eating-04-b2", "answer": "processed"},
+        {"id": "ai-healthy-eating-04-b3", "answer": "water"},
+        {"id": "ai-healthy-eating-04-b4", "answer": "mindfulness"}
+      ]
+    },
+    {
+      "id": "ai-robotics-innovation-05",
+      "title": "Advancements in Robotics",
+      "passage": "Robotics has seen remarkable advancements in recent years, impacting various sectors including manufacturing, healthcare, and customer service. Robots are now able to perform complex tasks, such as surgical procedures or assembling intricate products. These innovations have contributed to increased efficiency and reduced human error. However, ethical considerations, such as job displacement and the moral implications of autonomous decision-making, present challenges as society integrates these technologies.",
+      "summary": "Recent advancements in robotics have a significant impact on areas like ____(1)____ and healthcare, allowing robots to undertake complex tasks. This progress boosts ____(2)____ and minimizes human error, but raises ethical concerns about job displacement and autonomous ____(3)____. These challenges must be addressed as robotics expand in our daily lives.",
+      "blanks": [
+        {"id": "ai-robotics-innovation-05-b1", "answer": "manufacturing"},
+        {"id": "ai-robotics-innovation-05-b2", "answer": "efficiency"},
+        {"id": "ai-robotics-innovation-05-b3", "answer": "decision-making"},
+        {"id": "ai-robotics-innovation-05-b4", "answer": "integration"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-01-4336",
+      "title": "The Impact of Plastic Pollution",
+      "passage": "Plastic pollution is a growing environmental crisis affecting marine and terrestrial ecosystems worldwide. An estimated 8 million tons of plastic enter the oceans each year, leading to the deterioration of marine habitats and affecting countless species. Sea turtles mistake plastic bags for jellyfish, while birds feed plastic debris to their chicks, often resulting in fatal consequences. Efforts to mitigate this crisis include banning single-use plastics, improving waste management systems, and promoting community awareness programs. Nevertheless, without significant action, the problem is expected to worsen in the coming years.",
+      "summary": "Plastic pollution poses a significant threat to ___(1)___ and terrestrial ecosystems globally. Each year, millions of tons of plastic enter the oceans, harming marine ___(2)___. Animals such as sea turtles and birds often ingest plastic, which can lead to ___(3)___ consequences. To address this issue, various measures like banning single-use plastics and enhancing waste ___(4)___ are being implemented.",
+      "blanks": [
+        {"id": "ielts-r-sc-01-b1-7039", "answer": "marine"},
+        {"id": "ielts-r-sc-01-b2-2b49", "answer": "life"},
+        {"id": "ielts-r-sc-01-b3-3e1f", "answer": "deadly"},
+        {"id": "ielts-r-sc-01-b4-2e90", "answer": "management"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-02-8e19",
+      "title": "The Discovery of Penicillin",
+      "passage": "In 1928, Alexander Fleming made a groundbreaking discovery when he noticed that a mold called Penicillium notatum had contaminated one of his Petri dishes and was killing surrounding bacteria. This unexpected observation led to the development of penicillin, the world’s first antibiotic, which has saved millions of lives since its introduction. Penicillin revolutionized medicine by effectively treating bacterial infections that were previously fatal. Despite its miraculous impact, some bacteria have developed resistance to penicillin over time, posing a new challenge in medical treatment.",
+      "summary": "Alexander Fleming discovered penicillin in 1928 when he observed that the mold ___(1)___ was killing bacteria in his Petri dish. This discovery led to the creation of the first ___(2)___, saving countless lives. Penicillin transformed the treatment of bacterial infections, though bacteria are increasingly developing ___(3)___ to it, creating modern medical challenges. The significance of Fleming's work revolutionized ___(4)___ care.",
+      "blanks": [
+        {"id": "ielts-r-sc-02-b1-5786", "answer": "Penicillium"},
+        {"id": "ielts-r-sc-02-b2-8b00", "answer": "antibiotic"},
+        {"id": "ielts-r-sc-02-b3-67c2", "answer": "resistance"},
+        {"id": "ielts-r-sc-02-b4-8811", "answer": "health"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-03-a4a7",
+      "title": "The Benefits of Meditation",
+      "passage": "Meditation, a practice with roots in ancient spiritual traditions, has gained popularity in modern times due to its numerous mental and physical health benefits. Regular meditation can reduce stress, enhance concentration, and improve emotional well-being. Research shows that mindfulness meditation, in particular, can positively affect brain structure, leading to improved memory and cognitive function. As people increasingly seek balance in a fast-paced world, meditation provides a pathway to mental clarity and personal growth, making it a valuable tool for overall wellness.",
+      "summary": "Meditation, derived from ancient traditions, has become popular for its various mental and physical ___(1)___. It is known to help reduce stress and enhance ___(2)___. Mindfulness meditation is associated with structural changes in the brain that can improve ___(3)___. As the world accelerates, meditation offers a route to ___(4)___ and personal growth.",
+      "blanks": [
+        {"id": "ielts-r-sc-03-b1-e6d1", "answer": "health benefits"},
+        {"id": "ielts-r-sc-03-b2-a0f4", "answer": "concentration"},
+        {"id": "ielts-r-sc-03-b3-e81f", "answer": "memory"},
+        {"id": "ielts-r-sc-03-b4", "answer": "clarity"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-04-bb4f",
+      "title": "The Role of Bees in Pollination",
+      "passage": "Bees play a crucial role in pollinating various plants, an essential process for food production and maintaining biodiversity. Approximately one-third of the food we consume relies on pollinators, with bees being among the most efficient. As they gather nectar, bees transfer pollen from one flower to another, facilitating fertilization. However, bee populations are threatened by habitat loss, pesticide use, and climate change, which pose risks to global food security. Conservation efforts are vital to protect these essential creatures and the ecosystems they support.",
+      "summary": "Bees are vital for the ___(1)___ of plants, which is essential for food production. About one-third of the global food supply depends on ___(2)___, with bees being particularly efficient at this task. They help in the ___(3)___ of flowers by transferring pollen while collecting nectar. Unfortunately, several factors, including habitat loss and ___(4)___, endanger bee populations, threatening food security.",
+      "blanks": [
+        {"id": "ielts-r-sc-04-b1-cecc", "answer": "pollination"},
+        {"id": "ielts-r-sc-04-b2-6a27", "answer": "pollinators"},
+        {"id": "ielts-r-sc-04-b3-ee6b", "answer": "fertilization"},
+        {"id": "ielts-r-sc-04-b4", "answer": "pesticide use"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-05-dba1",
+      "title": "The Evolution of Human Language",
+      "passage": "The evolution of human language is a complex process that spans thousands of years. Researchers believe that language originated as simple gestures and vocalizations among early humans, eventually developing into sophisticated systems of communication. Theories suggest that social interaction and the need for cooperation in hunting and gathering played crucial roles in this development. With the advent of written language, our ability to share complex ideas surged, allowing for cultural evolution and the preservation of knowledge over generations, which continues to shape human societies today.",
+      "summary": "Language has evolved over thousands of years from basic gestures and ___(1)___. It likely developed due to the social needs of early humans for ___(2)___ and communication. The introduction of written language allowed for the sharing of complex ___(3)___ and has significantly influenced cultural evolution. This capacity for communication remains a key element in shaping ___(4)___.",
+      "blanks": [
+        {"id": "ielts-r-sc-05-b1-6438", "answer": "vocalizations"},
+        {"id": "ielts-r-sc-05-b2-49a1", "answer": "cooperation"},
+        {"id": "ielts-r-sc-05-b3-9dbe", "answer": "ideas"},
+        {"id": "ielts-r-sc-05-b4", "answer": "societies"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-02-1389",
+      "title": "The Importance of Bees in Ecosystems",
+      "passage": "Bees are crucial pollinators in various ecosystems, contributing to the reproduction of numerous plants that form the foundation of food chains. Their decline poses a risk to biodiversity and agriculture, as many crops depend on bee pollination. Factors contributing to bee population decline include habitat loss, pesticide use, and climate change, which disrupts their foraging patterns. Conservation efforts focus on protecting bee habitats, reducing pesticide application, and promoting sustainable agricultural practices to ensure their survival and the health of ecosystems.",
+      "summary": "Bees play an essential role as ___(1)___ in ecosystems, supporting the reproduction of many plants. Their decline threatens both biodiversity and ___(2)___. Key factors causing this decline are habitat loss, pesticides, and ___(3)___. To aid their survival, conservation strategies involve habitat protection and a reduction in ___(4)___ usage.",
+      "blanks": [
+        {"id": "ielts-r-sc-02-b1-7ae5", "answer": "pollinators"},
+        {"id": "ielts-r-sc-02-b2-0067", "answer": "agriculture"},
+        {"id": "ielts-r-sc-02-b3-09be", "answer": "climate change"},
+        {"id": "ielts-r-sc-02-b4-9ab8", "answer": "pesticide"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-03-5c92",
+      "title": "The Evolution of Electric Vehicles",
+      "passage": "Electric vehicles (EVs) have seen a resurgence in popularity due to advancements in battery technology and a growing awareness of environmental issues. Initially developed in the 19th century, they were sidelined by gasoline-powered cars. However, with rising fuel prices and increasing regulatory pressures to reduce carbon emissions, EVs are once again becoming a viable option for many consumers. Innovations such as faster charging stations and longer battery life are further driving their adoption in the automotive market.",
+      "summary": "Electric vehicles have become popular again due to improvements in ___(1)___ technology and heightened environmental awareness. Although invented in the 19th century, they lost prominence to ___(2)___. Current factors such as rising fuel costs and regulations to minimize ___(3)___ emissions are making EVs more appealing. Advances like quicker charging stations and extended battery life are enhancing their ___(4)___.",
+      "blanks": [
+        {"id": "ielts-r-sc-03-b1-413e", "answer": "battery"},
+        {"id": "ielts-r-sc-03-b2-07e5", "answer": "gasoline cars"},
+        {"id": "ielts-r-sc-03-b3-43a0", "answer": "carbon"},
+        {"id": "ielts-r-sc-03-b4-51f8", "answer": "adoption"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-04-37ee",
+      "title": "The Benefits of Meditation",
+      "passage": "Meditation has been practiced for thousands of years, offering a pathway to mental clarity and emotional well-being. Studies indicate that regular meditation can significantly reduce stress, improve focus, and enhance overall cognitive function. Various forms of meditation, including mindfulness and transcendental meditation, cater to different individuals' needs and preferences. The growing popularity of meditation in Western societies highlights a shift towards holistic health practices that emphasize mindfulness and self-awareness.",
+      "summary": "Meditation provides numerous benefits for mental clarity and ___(1)___. Research shows it can lower stress levels and boost ____(2)____. Different meditation techniques like mindfulness and transcendental cater to varying ___(3)____. Its increasing acceptance in Western communities reflects a trend towards ___(4)____ health practices.",
+      "blanks": [
+        {"id": "ielts-r-sc-04-b1-1112", "answer": "emotional well-being"},
+        {"id": "ielts-r-sc-04-b2-ca43", "answer": "focus"},
+        {"id": "ielts-r-sc-04-b3-d357", "answer": "preferences"},
+        {"id": "ielts-r-sc-04-b4-abef", "answer": "holistic"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-05-fe66",
+      "title": "The Role of Technology in Education",
+      "passage": "Technology has transformed the educational landscape, enabling students to access a wealth of information and learning resources beyond traditional classrooms. Online learning platforms allow for flexible study options that accommodate diverse learning styles. Furthermore, educational technology tools, such as interactive software and virtual reality, enhance engagement and comprehension. However, the integration of technology in education also presents challenges, including the digital divide and the need for teacher training in new technologies.",
+      "summary": "Technology has changed education by providing access to vast ___(1)___ and resources outside of classrooms. Online platforms promote flexible learning that supports different ___(2)___. Tools like interactive software increase ___(3)___ and understanding. Yet, challenges exist, such as the digital divide and the necessity for ___(4)___ in technological training for educators.",
+      "blanks": [
+        {"id": "ielts-r-sc-05-b1-ad3d", "answer": "information"},
+        {"id": "ielts-r-sc-05-b2-efd9", "answer": "learning styles"},
+        {"id": "ielts-r-sc-05-b3-2b3a", "answer": "engagement"},
+        {"id": "ielts-r-sc-05-b4-bb5e", "answer": "teacher training"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-06-cb5c",
+      "title": "The Impact of Climate Change on Oceans",
+      "passage": "Climate change is significantly affecting the world's oceans, leading to rising sea levels, ocean acidification, and altered marine ecosystems. Warmer temperatures cause dramatic changes in water conditions, impacting coral reefs and fish populations. These changes threaten the livelihoods of communities reliant on fishing and tourism. Efforts to combat these effects include conservation initiatives and international agreements aimed at reducing carbon emissions and promoting sustainable practices to protect marine environments.",
+      "summary": "Climate change is having a profound effect on oceans, resulting in increased ___(1)___, acidification, and shifts in marine ecosystems. Higher temperatures are leading to changes that endanger coral reefs and fish ____(2)____. Such impacts pose risks to communities depended on ___(3)___ and tourism. Strategies to address these issues involve conservation efforts and global agreements to cut ___(4)___ emissions.",
+      "blanks": [
+        {"id": "ielts-r-sc-06-b1-fada", "answer": "sea levels"},
+        {"id": "ielts-r-sc-06-b2-06a3", "answer": "populations"},
+        {"id": "ielts-r-sc-06-b3-4f10", "answer": "fishing"},
+        {"id": "ielts-r-sc-06-b4", "answer": "carbon"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-02-acbb",
+      "title": "The History of Chocolate",
+      "passage": "Chocolate has a rich history that dates back to the ancient civilizations of Mesoamerica. The Olmecs, around 1500 BC, are often credited as the first to cultivate the cacao plant. Subsequently, the Maya and Aztec cultures expanded its use, primarily as a bitter beverage rather than the sweet treat we know today. Chocolate was also used in religious ceremonies and was a symbol of wealth and status. The introduction of chocolate to Europe in the 16th century transformed it into a sweetened delicacy, leading to its widespread popularity and the establishment of chocolate factories. Today, chocolate is a multi-billion dollar industry with a variety of forms, flavors, and brands.",
+      "summary": "Chocolate's origins trace back to Mesoamerican civilizations, starting with the Olmecs around ___(1)___ BC. The Maya and Aztec cultures later utilized cacao mainly as a ___(2)___ drink. In Europe, chocolate became popular in the 16th century, evolving from a bitter beverage to a ___(3)___ delicacy. Presently, it represents a significant industry with numerous ___(4)___.",
+      "blanks": [
+        {"id": "ielts-r-sc-02-b1-2c02", "answer": "1500"},
+        {"id": "ielts-r-sc-02-b2-1bc4", "answer": "bitter"},
+        {"id": "ielts-r-sc-02-b3-7089", "answer": "sweetened"},
+        {"id": "ielts-r-sc-02-b4-6e82", "answer": "brands"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-03-cb95",
+      "title": "The Process of Photosynthesis",
+      "passage": "Photosynthesis is the process by which green plants, algae, and some bacteria convert light energy into chemical energy, using sunlight, carbon dioxide, and water. This process occurs primarily in the chloroplasts of plant cells, where chlorophyll captures light energy. During photosynthesis, carbon dioxide is absorbed from the atmosphere, and oxygen is released as a byproduct. This process is crucial for life on Earth, as it provides oxygen for respiration and is the foundation of the food chain, supporting both herbivores and carnivores.",
+      "summary": "Photosynthesis allows green organisms to convert light energy into ___(1)___ energy using sunlight, carbon dioxide, and water. It mainly takes place in the plant cell's ___(2)___. During this process, carbon dioxide is taken in and ___(3)___ is released. This mechanism is essential as it produces oxygen for breathing and supports the ___(4)___.",
+      "blanks": [
+        {"id": "ielts-r-sc-03-b1-0e8d", "answer": "chemical"},
+        {"id": "ielts-r-sc-03-b2-2e01", "answer": "chloroplasts"},
+        {"id": "ielts-r-sc-03-b3-55d9", "answer": "oxygen"},
+        {"id": "ielts-r-sc-03-b4-b60a", "answer": "food chain"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-04-e1ca",
+      "title": "The Invention of the Printing Press",
+      "passage": "Johannes Gutenberg's invention of the printing press in the mid-15th century revolutionized the way information was disseminated. Prior to this invention, books were painstakingly copied by hand, making them rare and expensive. The printing press allowed for the mass production of texts, which made literature and knowledge more accessible to the general public. This led to a dramatic increase in literacy rates, as more people could afford books. Additionally, the spread of printed material played a significant role in the Renaissance and the Reformation, inspiring new ideas and movements across Europe.",
+      "summary": "Gutenberg's printing press, developed in the mid-___(1)___ century, transformed the distribution of information. Before its invention, books were copied ___(2)___ by hand. The printing press enabled the mass production of texts, resulting in increased ___(3)___. It was fundamental in influencing the Renaissance and the ___(4)___.",
+      "blanks": [
+        {"id": "ielts-r-sc-04-b1-b750", "answer": "15th"},
+        {"id": "ielts-r-sc-04-b2-02c5", "answer": "painstakingly"},
+        {"id": "ielts-r-sc-04-b3-486d", "answer": "literacy"},
+        {"id": "ielts-r-sc-04-b4-58be", "answer": "Reformation"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-05-2935",
+      "title": "The Impact of Social Media",
+      "passage": "Social media has become an integral part of modern society, profoundly influencing communication, entertainment, and even commerce. Platforms like Facebook, Instagram, and Twitter enable individuals to connect with others across the globe. However, the rise of social media has also raised concerns regarding privacy and mental health. While it fosters connections and allows for immediate sharing of information, it can also contribute to feelings of loneliness and anxiety among users. Many studies suggest that moderation in social media use can result in a more positive experience.",
+      "summary": "Social media plays a crucial role in today's world, affecting communication and ___(1)___. Platforms like Facebook allow global connections, but they also pose risks, such as ___(2)___. While enabling quick information sharing, social media may lead to increased feelings of ___(3)___. Research indicates that ___(4)___ use can enhance user experience.",
+      "blanks": [
+        {"id": "ielts-r-sc-05-b1-9c87", "answer": "entertainment"},
+        {"id": "ielts-r-sc-05-b2-0ba1", "answer": "privacy"},
+        {"id": "ielts-r-sc-05-b3-89ba", "answer": "loneliness"},
+        {"id": "ielts-r-sc-05-b4-45e9", "answer": "moderation"}
+      ]
+    },
+    {
+      "id": "ielts-r-sc-06-c031",
+      "title": "The Development of Renewable Energy",
+      "passage": "The development of renewable energy sources has gained momentum in recent years due to concerns surrounding climate change and fossil fuel depletion. Solar, wind, and hydropower are among the most widely adopted renewable technologies. These energy sources are not only sustainable but also significantly reduce greenhouse gas emissions. Governments and private entities are investing heavily in research and infrastructure to promote clean energy solutions. The transition to renewable energy is expected to create new jobs while also helping to combat global warming and enhance energy security.",
+      "summary": "Renewable energy has become more essential recently because of worries about climate change and the depletion of ___(1)___. Solar, wind, and hydropower are recognized as sustainable energy sources that lessen ___(2)___. Significant investments are being made in ___(3)___ to support clean energy development. Shifting to renewable energy is anticipated to generate new jobs and improve energy ____(4)___.",
+      "blanks": [
+        {"id": "ielts-r-sc-06-b1-7eb0", "answer": "fossil fuels"},
+        {"id": "ielts-r-sc-06-b2-77a5", "answer": "greenhouse gas emissions"},
+        {"id": "ielts-r-sc-06-b3-0d72", "answer": "research and infrastructure"},
+        {"id": "ielts-r-sc-06-b4-f6de", "answer": "security"}
+      ]
+    }
+  ]
+}

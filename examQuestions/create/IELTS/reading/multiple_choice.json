@@ -1,0 +1,328 @@
+{
+  "exam": "IELTS",
+  "section": "Reading",
+  "part": "Multiple Choice",
+  "instructions": "Read the passage and choose the correct letter, A, B, C, or D.",
+  "passages": [
+    {
+      "id": "ielts-r-mc-01",
+      "title": "The Rise of Urban Beekeeping",
+      "passage": "Over the past two decades, beekeeping has moved from rural farms into the heart of major cities. Rooftops in New York, London, and Paris now host thousands of hives, a trend driven partly by growing concern over declining bee populations worldwide. Urban environments, somewhat counterintuitively, can offer bees certain advantages over rural settings: cities are often warmer due to the heat-island effect, extending the foraging season, and urban gardens frequently offer a greater diversity of flowering plants than monoculture farmland, where a single crop dominates the landscape. However, critics argue that the trend has become overly fashionable, with some urban centers now supporting more hives than the local flower supply can sustainably support, leading to increased competition among bee colonies and, ultimately, reduced yields for individual hives. Proponents counter that urban beekeeping raises public awareness of pollinator health, which they argue outweighs the localized strain on food resources.",
+      "questions": [
+        {"id": "ielts-r-mc-01-q1", "question": "According to the passage, why might cities offer bees an advantage?", "options": ["A. Cities have fewer predators", "B. The heat-island effect extends the foraging season", "C. Urban beekeepers provide more sugar water", "D. Cities have stricter pesticide regulations"], "answer": "B"},
+        {"id": "ielts-r-mc-01-q2", "question": "What do critics say about the current trend?", "options": ["A. It has reduced bee populations overall", "B. It has led to too many hives competing for limited flowers", "C. It is too expensive for most beekeepers", "D. It has been banned in several cities"], "answer": "B"},
+        {"id": "ielts-r-mc-01-q3", "question": "What is the proponents' main counterargument?", "options": ["A. Urban beekeeping is more profitable", "B. Public awareness benefits outweigh localized strain", "C. Rural farmland is disappearing rapidly", "D. Urban hives produce more honey than rural ones"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-r-mc-02",
+      "title": "The Psychology of Procrastination",
+      "passage": "Procrastination is often misunderstood as simple laziness, but psychological research suggests it is better understood as a problem of emotional regulation rather than time management. According to this view, people delay tasks not because they don't understand the consequences, but because the task itself provokes an unpleasant emotion, such as anxiety, boredom, or self-doubt, and procrastination offers short-term relief from that discomfort. Studies using functional MRI scans have shown that the brain regions associated with threat perception become more active when individuals confront tasks they intend to avoid. Interestingly, research also indicates that self-compassion, rather than stricter self-discipline, may be more effective in reducing procrastination, since excessive self-criticism after procrastinating tends to increase stress and, paradoxically, make future procrastination more likely.",
+      "questions": [
+        {"id": "ielts-r-mc-02-q1", "question": "What does the passage suggest procrastination is fundamentally about?", "options": ["A. Poor time management skills", "B. Emotional regulation", "C. Lack of intelligence", "D. Physical fatigue"], "answer": "B"},
+        {"id": "ielts-r-mc-02-q2", "question": "What did the fMRI studies find?", "options": ["A. Threat-related brain regions become more active", "B. Memory regions are impaired", "C. The brain shows no unusual activity", "D. Procrastinators have smaller brains"], "answer": "A"},
+        {"id": "ielts-r-mc-02-q3", "question": "What does the passage suggest about self-criticism?", "options": ["A. It effectively reduces procrastination", "B. It can increase the likelihood of future procrastination", "C. It has no measurable effect", "D. It is the best long-term solution"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-technology-advancements",
+      "title": "The Impact of Artificial Intelligence on Job Markets",
+      "passage": "Artificial Intelligence (AI) is transforming industries at an unprecedented pace. While some experts believe that AI will lead to job displacement, others argue that it will create new job opportunities by enhancing productivity. Particularly in sectors like healthcare, AI can assist in diagnostics, allowing professionals to focus more on patient care rather than administrative tasks. However, the skills required in the workforce are shifting, leading to calls for retraining and upskilling to prepare workers for a future that heavily integrates AI technologies. The debate continues on whether the long-term effects of AI will result in a net gain or loss of employment opportunities.",
+      "questions": [
+        {"id": "ai-technology-advancements-q1", "question": "What is one potential benefit of AI in healthcare according to the passage?", "options": ["A. It will replace all human jobs", "B. It will reduce healthcare costs significantly", "C. It can improve diagnostic accuracy", "D. It has no impact on patient care"], "answer": "C"},
+        {"id": "ai-technology-advancements-q2", "question": "What concern do experts express regarding job markets?", "options": ["A. AI will only create low-skilled jobs", "B. AI may result in job displacement for some workers", "C. AI is too advanced for current technology", "D. AI has no impact on productivity"], "answer": "B"},
+        {"id": "ai-technology-advancements-q3", "question": "What solution is proposed to cope with changes in the job market?", "options": ["A. Increase job automation in all industries", "B. Provide financial support to AI developers", "C. Focus on retraining and upskilling workers", "D. Encourage a reduction in AI usage"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ai-environmental-conservation",
+      "title": "Innovations in Sustainable Agriculture",
+      "passage": "As climate change intensifies, sustainable agriculture has gained significance in food production practices. Innovations such as precision farming, which utilizes technology to monitor and manage field variability, have shown promise in improving crop yields while minimizing resource use. Techniques like crop rotation and agroforestry also support biodiversity and soil health. However, these methods can sometimes require significant initial investment, causing concern among farmers already facing financial pressures. The balance between profitability and environmental responsibility continues to challenge many in the agricultural sector.",
+      "questions": [
+        {"id": "ai-environmental-conservation-q1", "question": "What is one goal of sustainable agriculture innovations mentioned in the passage?", "options": ["A. To reduce food production rates", "B. To minimize resource use while improving yields", "C. To completely eliminate traditional farming methods", "D. To increase the use of pesticides"], "answer": "B"},
+        {"id": "ai-environmental-conservation-q2", "question": "What concern is raised about implementing sustainable practices?", "options": ["A. They require no financial investment", "B. They may not be effective in all areas", "C. Initial costs can be significant for farmers", "D. They have no effect on biodiversity"], "answer": "C"},
+        {"id": "ai-environmental-conservation-q3", "question": "Which practice is highlighted as beneficial for soil health?", "options": ["A. Monoculture planting", "B. Agroforestry", "C. Synthetic fertilizer use", "D. Pesticide application"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-global-culture",
+      "title": "The Influence of Globalization on Cultural Heritage",
+      "passage": "Globalization has a profound influence on cultural heritage, often leading to the blending of diverse traditions and practices. While this fusion can create enriched cultural experiences, it also raises concerns about the erosion of unique cultural identities. Many communities strive to preserve their heritage through initiatives that promote traditional arts, music, and customs amidst the pressures of a homogenizing global culture. Advocates argue that maintaining cultural diversity is crucial for fostering mutual respect and understanding in a increasingly interconnected world.",
+      "questions": [
+        {"id": "ai-global-culture-q1", "question": "What is one positive impact of globalization mentioned in the passage?", "options": ["A. It erases all cultural identities", "B. It leads to the blending of diverse traditions", "C. It reduces the need for community initiatives", "D. It isolates cultures from each other"], "answer": "B"},
+        {"id": "ai-global-culture-q2", "question": "What do communities often do to respond to globalization?", "options": ["A. Abandon their traditions entirely", "B. Promote traditional arts and customs", "C. Reject any form of modernization", "D. Isolate themselves from the global community"], "answer": "B"},
+        {"id": "ai-global-culture-q3", "question": "According to advocates, why is maintaining cultural diversity important?", "options": ["A. It fosters respect and understanding", "B. It is unnecessary in a globalized world", "C. It leads to cultural conflict", "D. It makes tourism less appealing"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "ai-mental-health",
+      "title": "The Increasing Awareness of Mental Health Issues",
+      "passage": "In recent years, there has been a significant shift in public perception regarding mental health. No longer stigmatized, mental health issues are increasingly recognized as legitimate health concerns. Campaigns aimed at raising awareness have played a vital role in fostering understanding and empathy. Schools and workplaces are implementing programs to support mental well-being, yet challenges remain, including access to professional help and the need for continued public education. The movement advocates for integration of mental health resources into general healthcare systems to ensure that everyone receives adequate support.",
+      "questions": [
+        {"id": "ai-mental-health-q1", "question": "What has changed in the perception of mental health issues according to the passage?", "options": ["A. They are now seen as irrelevant", "B. They are recognized as legitimate health concerns", "C. They are only discussed in private", "D. They are more stigmatized than before"], "answer": "B"},
+        {"id": "ai-mental-health-q2", "question": "What role do awareness campaigns play?", "options": ["A. They discourage discussion of mental health", "B. They foster understanding and empathy", "C. They focus solely on treatment options", "D. They only target specific age groups"], "answer": "B"},
+        {"id": "ai-mental-health-q3", "question": "What challenge remains in mental health support?", "options": ["A. There is too much professional help available", "B. Public education is unnecessary", "C. Access to professional help is limited", "D. Mental health resources are overabundant"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ai-renewable-energy",
+      "title": "Shifting Towards Renewable Energy Sources",
+      "passage": "As the world grapples with climate change, the transition to renewable energy sources such as solar, wind, and hydroelectric power has become crucial. These sources not only reduce dependency on fossil fuels but also contribute to lower greenhouse gas emissions. While the initial investment in renewable technology can be significant, long-term savings on energy bills and environmental benefits often outweigh these costs. Governments worldwide are beginning to take action by implementing policies that promote renewable energy, though challenges in infrastructure development and resource allocation continue to persist. The urgency for action has never been greater.",
+      "questions": [
+        {"id": "ai-renewable-energy-q1", "question": "What is one advantage of renewable energy mentioned in the passage?", "options": ["A. It completely eliminates energy costs", "B. It reduces greenhouse gas emissions", "C. It has no environmental impact", "D. It only pertains to solar power"], "answer": "B"},
+        {"id": "ai-renewable-energy-q2", "question": "What challenge is associated with renewable energy adoption?", "options": ["A. There is too much investment in fossil fuels", "B. Policies are already fully developed", "C. Infrastructure development takes time", "D. Renewable energy sources are declining"], "answer": "C"},
+        {"id": "ai-renewable-energy-q3", "question": "Why do some believe the transition to renewable energy is necessary?", "options": ["A. To increase fossil fuel usage", "B. To respond to climate change", "C. To promote traditional energy sources", "D. To sustain current energy practices"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-r-mc-02-6fa8",
+      "title": "The Impact of Plastic Waste on Marine Life",
+      "passage": "Plastic pollution in the oceans has become a pressing environmental issue, threatening marine life and ecosystems. Millions of tons of plastic enter the oceans annually, with discarded fishing gear being a significant contributor to the problem. Sea turtles, birds, and marine mammals often mistake plastic for food, leading to severe health complications or death. Moreover, microplastics, which are tiny plastic particles, have been found in the stomachs of various marine species, resulting in disruption of their biological functions. Scientists emphasize the necessity of reducing plastic usage and improving waste management strategies to combat this growing crisis effectively.",
+      "questions": [
+        {"id": "ielts-r-mc-02-q1-1a7e", "question": "What is a major source of plastic pollution mentioned in the passage?", "options": ["A. Packaging materials", "B. Discarded fishing gear", "C. Household waste", "D. Industrial runoff"], "answer": "B"},
+        {"id": "ielts-r-mc-02-q2-1a5c", "question": "According to the passage, what do marine animals often mistake plastic for?", "options": ["A. Toys", "B. Food", "C. Shelter", "D. Water"], "answer": "B"},
+        {"id": "ielts-r-mc-02-q3-0033", "question": "What do scientists recommend to address plastic pollution?", "options": ["A. Increasing plastic production", "B. Promoting ocean tourism", "C. Reducing plastic usage and improving waste management", "D. Enhancing fishing regulations"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ielts-r-mc-03",
+      "title": "The Evolution of Renewable Energy Sources",
+      "passage": "As the world grapples with climate change, the evolution of renewable energy sources has gained significance. Solar, wind, and hydroelectric power have emerged as viable alternatives to fossil fuels, leading to a decrease in greenhouse gas emissions. Technology has facilitated the expansion of these energy sources, making them more efficient and accessible. For instance, advances in solar panel technology have resulted in lower production costs, allowing for wider adoption in both residential and commercial settings. Nonetheless, challenges such as storage and initial investment costs remain hurdles for many regions.",
+      "questions": [
+        {"id": "ielts-r-mc-03-q1", "question": "Which renewable energy source has seen significant technological advancements according to the passage?", "options": ["A. Geothermal energy", "B. Wind energy", "C. Solar energy", "D. Biomass energy"], "answer": "C"},
+        {"id": "ielts-r-mc-03-q2", "question": "What is one challenge mentioned regarding renewable energy?", "options": ["A. Lack of public interest", "B. Storage of energy", "C. Excessive production capabilities", "D. Legislative barriers"], "answer": "B"},
+        {"id": "ielts-r-mc-03-q3", "question": "What is a benefit of renewable energy sources highlighted in the passage?", "options": ["A. They are always available worldwide", "B. They lower greenhouse gas emissions", "C. They require no technology to harness", "D. They are cheaper than all fossil fuels"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-r-mc-04",
+      "title": "The Role of Art in Cultural Identity",
+      "passage": "Art has long played a critical role in shaping cultural identity and expression. Throughout history, various art forms, from traditional crafts to contemporary installations, have been used to convey individual and collective experiences. Many communities use art to tell their stories, celebrate their heritage, and critique social issues. Moreover, as cultures converge in an increasingly globalized world, the fusion of art styles reflects the evolving identities of people. However, some argue that this blending may dilute traditional practices, leading to concerns over cultural authenticity.",
+      "questions": [
+        {"id": "ielts-r-mc-04-q1", "question": "How does art contribute to cultural identity according to the passage?", "options": ["A. By reflecting modern technology", "B. By preserving ancient rituals", "C. By portraying shared experiences", "D. By eliminating cultural differences"], "answer": "C"},
+        {"id": "ielts-r-mc-04-q2", "question": "What concern is raised regarding the convergence of art styles?", "options": ["A. It restricts artistic creativity", "B. It may dilute traditional practices", "C. It promotes global uniformity", "D. It creates more competition among artists"], "answer": "B"},
+        {"id": "ielts-r-mc-04-q3", "question": "What is a function of art mentioned in the passage?", "options": ["A. To educate the masses", "B. To critique social issues", "C. To generate profit", "D. To promote tourism"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-r-mc-05",
+      "title": "The Benefits of Bilingual Education",
+      "passage": "Bilingual education has gained traction as a valuable approach in schools worldwide. Research has shown that students who learn in two languages tend to perform better academically, enhancing cognitive skills such as problem-solving and critical thinking. Additionally, bilingual programs can improve cultural awareness and sensitivity among students as they learn about different perspectives. Despite these benefits, some critics argue that bilingual education may hinder fluency in the dominant language, leading to academic challenges. Proponents contend that the cognitive advantages outweigh the potential drawbacks.",
+      "questions": [
+        {"id": "ielts-r-mc-05-q1", "question": "What is one benefit of bilingual education highlighted in the passage?", "options": ["A. It improves athletic performance", "B. It enhances cognitive skills", "C. It guarantees job placement", "D. It limits cultural exposure"], "answer": "B"},
+        {"id": "ielts-r-mc-05-q2", "question": "What concern do critics have about bilingual education?", "options": ["A. It promotes fluency in multiple languages", "B. It may hinder fluency in the dominant language", "C. It is too costly to implement", "D. It decreases social interactions"], "answer": "B"},
+        {"id": "ielts-r-mc-05-q3", "question": "According to proponents, what outweighs the drawbacks of bilingual education?", "options": ["A. Cultural diversity", "B. Cognitive advantages", "C. Financial support", "D. Social networks"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-r-mc-06",
+      "title": "The Significance of Wildlife Conservation",
+      "passage": "Wildlife conservation is an essential aspect of environmental protection and biodiversity. As habitats are destroyed and species face extinction, conservation efforts have become crucial for maintaining ecological balance. Protected areas, such as national parks and reserves, provide safe havens for threatened species while also allowing for educational and recreational opportunities for the public. Furthermore, community involvement in conservation projects often leads to successful and sustainable outcomes. However, funding and political will remain significant challenges in advancing conservation initiatives.",
+      "questions": [
+        {"id": "ielts-r-mc-06-q1", "question": "What is a primary goal of wildlife conservation mentioned in the passage?", "options": ["A. To increase tourism revenues", "B. To maintain ecological balance", "C. To develop urban areas", "D. To promote hunting activities"], "answer": "B"},
+        {"id": "ielts-r-mc-06-q2", "question": "Why are protected areas important in wildlife conservation?", "options": ["A. They offer job opportunities", "B. They serve as safe havens for species", "C. They are sources of renewable energy", "D. They reduce agricultural land use"], "answer": "B"},
+        {"id": "ielts-r-mc-06-q3", "question": "What challenge do conservation initiatives face according to the passage?", "options": ["A. Lack of technological advancement", "B. Funding and political will", "C. Decrease in tourism", "D. Overabundance of species"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-the-future-of-telecommuting",
+      "title": "The Future of Telecommuting",
+      "passage": "In recent years, telecommuting has gained significant traction, particularly accelerated by the global pandemic. Many companies have recognized the benefits, including reduced overhead costs and increased employee satisfaction. Studies show that remote workers often report greater productivity without the distractions of an office environment. However, the shift raises concerns about company culture and collaboration. Critics argue that in-person interactions are essential for creativity and team bonding. As businesses contemplate hybrid models, they must find a balance between flexibility for employees and maintaining a cohesive work environment.",
+      "questions": [
+        {"id": "ai-the-future-of-telecommuting-q1", "question": "What is one advantage of telecommuting mentioned in the passage?", "options": ["A. Lower employee productivity", "B. Increased operational expenses", "C. Higher employee satisfaction", "D. Need for more office space"], "answer": "C"},
+        {"id": "ai-the-future-of-telecommuting-q2", "question": "What is a major concern about telecommuting according to critics?", "options": ["A. It decreases employee morale", "B. It limits remote workers' access to technology", "C. It affects creativity and team bonding", "D. It results in longer working hours"], "answer": "C"},
+        {"id": "ai-the-future-of-telecommuting-q3", "question": "What are businesses considering for the future?", "options": ["A. Completely remote work", "B. A return to only in-person offices", "C. Hybrid work models", "D. Restricting telecommuting options"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ai-the-history-of-product-packaging",
+      "title": "The History of Product Packaging",
+      "passage": "Product packaging has evolved dramatically over the centuries. Initially, items were sold in simple containers made from natural materials, which emphasized the product's integrity and freshness. With the advent of industrialization, packaging became more standardized, allowing for mass production and distribution efficiencies. However, as environmental concerns grew, the 21st century saw a resurgence of interest in sustainable packaging solutions. Brands now strive for eco-friendly materials and designs that minimize waste, reflecting consumer preferences for sustainability. This shift challenges companies to innovate while balancing cost efficiency and environmental responsibility.",
+      "questions": [
+        {"id": "ai-the-history-of-product-packaging-q1", "question": "What is one characteristic of early packaging mentioned in the passage?", "options": ["A. It used synthetic materials", "B. It prioritized cost efficiency", "C. It emphasized product integrity", "D. It was uniform across brands"], "answer": "C"},
+        {"id": "ai-the-history-of-product-packaging-q2", "question": "What major challenge do companies face today regarding packaging?", "options": ["A. Meeting consumer demand for faster shipping", "B. Balancing cost efficiency with sustainability", "C. Increasing the weight of their packaging materials", "D. Standardizing packaging across all products"], "answer": "B"},
+        {"id": "ai-the-history-of-product-packaging-q3", "question": "What trend has emerged in product packaging in the 21st century?", "options": ["A. Decreased use of natural materials", "B. An emphasis on luxurious designs", "C. A focus on eco-friendly materials", "D. Standardization in global markets"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ai-advancements-in-virtual-reality",
+      "title": "Advancements in Virtual Reality",
+      "passage": "Virtual reality (VR) technology has made significant strides over the last decade, moving far beyond gaming applications. Today, VR is being utilized in various sectors, including education, healthcare, and training simulations. For instance, medical students can practice surgical techniques in a safe, immersive environment, enhancing their learning experience. In corporate settings, VR training modules can reduce costs and risks associated with traditional methods. However, some experts warn about the potential for over-reliance on technology and the need for balance between virtual experiences and real-world interactions.",
+      "questions": [
+        {"id": "ai-advancements-in-virtual-reality-q1", "question": "In which field is VR NOT mentioned as being used?", "options": ["A. Education", "B. Sports", "C. Healthcare", "D. Corporate training"], "answer": "B"},
+        {"id": "ai-advancements-in-virtual-reality-q2", "question": "What benefit does VR provide to medical students?", "options": ["A. It costs less than real-life training", "B. It allows them to perform complex surgeries", "C. It offers a risk-free learning environment", "D. It guarantees better job placements"], "answer": "C"},
+        {"id": "ai-advancements-in-virtual-reality-q3", "question": "What concern do experts have regarding VR technology?", "options": ["A. It is too expensive for practical use", "B. It may lead to decreased interpersonal skills", "C. It does not provide adequate training", "D. It can only be used in gaming"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-the-role-of-art-in-society",
+      "title": "The Role of Art in Society",
+      "passage": "Art has long played a vital role in human society, serving as a means of expression, communication, and cultural identity. Throughout history, art has captured societal changes, often reflecting the aspirations and struggles of the people. The rise of digital art has further expanded the reach and influence of artists, making it accessible to a broader audience. However, some critics argue that commercialization and mass production threaten the integrity and originality of artistic expression. Despite these challenges, art continues to inspire communities and provoke thought in ways that can drive social change.",
+      "questions": [
+        {"id": "ai-the-role-of-art-in-society-q1", "question": "What historical function of art is highlighted in the passage?", "options": ["A. To entertain only", "B. To document societal changes", "C. To promote commercial interests", "D. To discourage personal expression"], "answer": "B"},
+        {"id": "ai-the-role-of-art-in-society-q2", "question": "What is a concern related to the rise of digital art?", "options": ["A. It is less accessible than traditional art", "B. It may dilute artistic integrity and originality", "C. It has no impact on social issues", "D. It enhances the quality of physical art"], "answer": "B"},
+        {"id": "ai-the-role-of-art-in-society-q3", "question": "How can art influence communities according to the passage?", "options": ["A. By following strict guidelines", "B. By generating financial profit", "C. By inspiring change and provoking thought", "D. By limiting personal expression"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ai-the-science-of-sleep",
+      "title": "The Science of Sleep",
+      "passage": "Sleep is an essential biological process that plays a vital role in physical and mental health. Recent studies have shown that insufficient sleep can lead to a range of health problems, including weakened immunity, weight gain, and cognitive decline. Understanding the sleep cycle is crucial; the stages of rapid eye movement (REM) and non-REM sleep each serve important functions in rejuvenating the body and mind. Despite this knowledge, many people struggle to achieve adequate rest due to lifestyle choices and stress. Experts emphasize the importance of establishing a regular sleep routine as a foundation for overall well-being.",
+      "questions": [
+        {"id": "ai-the-science-of-sleep-q1", "question": "What can inadequate sleep lead to?", "options": ["A. Improved immunity", "B. Better cognitive performance", "C. Weakened immunity", "D. Increased energy levels"], "answer": "C"},
+        {"id": "ai-the-science-of-sleep-q2", "question": "What are the two main stages of sleep identified in the passage?", "options": ["A. Light and deep sleep", "B. Non-REM and REM sleep", "C. Active and passive sleep", "D. Restorative and restless sleep"], "answer": "B"},
+        {"id": "ai-the-science-of-sleep-q3", "question": "What do experts recommend for better sleep quality?", "options": ["A. Avoiding all naps during the day", "B. Establishing a regular sleep routine", "C. Consuming caffeine before bed", "D. Sleeping in multiple short segments"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-sustainable-fashion",
+      "title": "The Evolution of Sustainable Fashion",
+      "passage": "In recent years, the fashion industry has witnessed a significant shift towards sustainability. Many brands are now prioritizing eco-friendly materials, ethical production practices, and transparency in their supply chains. This change has largely been driven by increasing consumer awareness and demands for environmentally responsible practices. However, skeptics argue that the movement is largely driven by marketing and that many brands are merely 'greenwashing' their products without making substantial changes. Advocates for sustainable fashion believe that even small changes in consumer purchasing habits can lead to a larger impact on environmental degradation and resource depletion.",
+      "questions": [
+        {"id": "ai-sustainable-fashion-q1", "question": "What has contributed to the shift towards sustainable fashion?", "options": ["A. Decreased materials availability", "B. Increased consumer awareness", "C. Government regulations", "D. Economic downturns"], "answer": "B"},
+        {"id": "ai-sustainable-fashion-q2", "question": "What do skeptics claim about some brands' sustainability efforts?", "options": ["A. They are not profitable.", "B. They are engaging in greenwashing.", "C. They require more time to implement.", "D. They benefit only consumers."], "answer": "B"},
+        {"id": "ai-sustainable-fashion-q3", "question": "What is a key belief among advocates of sustainable fashion?", "options": ["A. Large-scale changes are necessary.", "B. Consumer habits play a significant role.", "C. Sustainability will drive prices higher.", "D. Only luxury brands can make an impact."], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-ancient-languages",
+      "title": "The Study of Ancient Languages",
+      "passage": "The study of ancient languages can provide insights into the cultures and societies that spoke them. Languages such as Latin, Ancient Greek, and Sanskrit form a foundation for many modern languages and significantly influence literature, law, and philosophy today. Despite their historical importance, many ancient languages are at risk of being forgotten as fewer people learn them. Linguists argue that preserving these languages is essential for understanding the evolution of human communication. Additionally, revitalization efforts may contribute to fostering cultural identity among communities that descend from these ancient civilizations.",
+      "questions": [
+        {"id": "ai-ancient-languages-q1", "question": "Why is studying ancient languages important?", "options": ["A. They have no current relevance.", "B. They help understand modern technology.", "C. They provide insights into past cultures.", "D. They are easy to learn."], "answer": "C"},
+        {"id": "ai-ancient-languages-q2", "question": "What risk do ancient languages currently face?", "options": ["A. They are undergoing rapid change.", "B. They are becoming unreadable.", "C. They are at risk of being forgotten.", "D. They are being replaced by new languages."], "answer": "C"},
+        {"id": "ai-ancient-languages-q3", "question": "What do proponents of language preservation believe?", "options": ["A. It is unnecessary in today's world.", "B. It can help maintain cultural identity.", "C. Only linguists should focus on preservation.", "D. It will hinder modern communication."], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-space-exploration",
+      "title": "The Future of Space Exploration",
+      "passage": "As technology continues to advance, space exploration is entering a new phase characterized by increased collaboration between government agencies and private companies. SpaceX, for instance, has revolutionized access to space by reducing launch costs and improving reusability of rockets. Many experts believe that the future of exploration will involve missions to Mars and beyond, potentially leading to human colonization of other planets. However, challenges such as funding, ethics of colonization, and environmental impacts remain points of contention among scientists and policymakers alike.",
+      "questions": [
+        {"id": "ai-space-exploration-q1", "question": "What has SpaceX accomplished in the field of space exploration?", "options": ["A. Made space travel cheaper and more efficient.", "B. Disqualified governmental agencies from missions.", "C. Focused solely on lunar exploration.", "D. Ceased collaborative efforts with other companies."], "answer": "A"},
+        {"id": "ai-space-exploration-q2", "question": "What potential future mission is mentioned in the passage?", "options": ["A. Mining asteroids for resources.", "B. Human colonization of Mars.", "C. Launching new satellites.", "D. Returning to the Moon."], "answer": "B"},
+        {"id": "ai-space-exploration-q3", "question": "What are some challenges associated with space exploration?", "options": ["A. Lack of interest in space.", "B. Issues with weather prediction.", "C. Funding and ethical considerations.", "D. Overabundance of technology."], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ai-urban-transport",
+      "title": "Innovations in Urban Transportation",
+      "passage": "Urban areas are increasingly turning to innovative transportation solutions to address growing issues like congestion and pollution. Electric scooters, bike-sharing programs, and autonomous vehicles are becoming common sights in cities around the world. These options not only aim to reduce carbon emissions but also promote healthier commuting habits among residents. Nevertheless, the rise of these alternatives has led to regulatory challenges, as cities strive to balance innovation with safety concerns. City planners are exploring ways to create comprehensive transport frameworks that can accommodate both traditional and new modes of transport.",
+      "questions": [
+        {"id": "ai-urban-transport-q1", "question": "What is one benefit of new urban transportation options?", "options": ["A. They are inherently safer than traditional methods.", "B. They help reduce carbon emissions.", "C. They eliminate the need for public transportation.", "D. They require more space for vehicles."], "answer": "B"},
+        {"id": "ai-urban-transport-q2", "question": "What challenge do cities face with new transportation solutions?", "options": ["A. Lack of interest from users.", "B. Balancing innovation with safety regulations.", "C. High costs of implementation.", "D. Insufficient infrastructure development."], "answer": "B"},
+        {"id": "ai-urban-transport-q3", "question": "What are city planners focusing on for the future?", "options": ["A. Eliminating traditional transport.", "B. Developing comprehensive transport frameworks.", "C. Increasing parking spaces.", "D. Reducing the number of vehicle types."], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-virtual-reality",
+      "title": "The Impact of Virtual Reality on Education",
+      "passage": "Virtual reality (VR) has begun to revolutionize the education sector by providing immersive experiences that can enhance learning. Students can interact with 3D models, simulate historical events, or explore far-off places immediately from their classrooms. This technology fosters engagement and helps to accommodate various learning styles, enabling personalized education. However, there are challenges, including the high cost of VR equipment and the need for effective training for educators. Critics question whether VR can replace traditional methods or if it merely serves as a supplementary tool.",
+      "questions": [
+        {"id": "ai-virtual-reality-q1", "question": "What advantage does VR offer to students?", "options": ["A. It is inexpensive to implement.", "B. It provides immersive learning experiences.", "C. It has no need for teacher involvement.", "D. It standardizes the learning process."], "answer": "B"},
+        {"id": "ai-virtual-reality-q2", "question": "What is one challenge associated with VR in education?", "options": ["A. The popularity of traditional teaching methods.", "B. The availability of content for practical use.", "C. The high cost of VR equipment.", "D. The lack of interest from students."], "answer": "C"},
+        {"id": "ai-virtual-reality-q3", "question": "What do critics doubt about VR's role in education?", "options": ["A. Its effectiveness for all subjects.", "B. Its ability to engage students.", "C. Whether it can replace traditional methods.", "D. Its cost-effectiveness over time."], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ai-urban-transportation-01",
+      "title": "Innovations in Public Transportation",
+      "passage": "In recent years, cities around the globe have embraced innovative public transportation systems to address growing urban congestion and pollution. Electric buses, for instance, have become increasingly common, offering a cleaner alternative to conventional diesel vehicles. Additionally, many cities are investing in bicycle-sharing programs and pedestrian-friendly infrastructure, encouraging residents to opt for greener modes of transport. Despite these advancements, critics argue that not all innovations are successful; some electric bus routes are underutilized, while the promotion of cycling has faced challenges due to safety concerns. Nonetheless, proponents believe that with proper investment and planning, public transportation can significantly reduce traffic congestion and improve air quality.",
+      "questions": [
+        {"id": "ai-urban-transportation-01-q1", "question": "What type of public transportation technology is highlighted as being cleaner?", "options": ["A. Diesel buses", "B. Electric buses", "C. Trains", "D. Subways"], "answer": "B"},
+        {"id": "ai-urban-transportation-01-q2", "question": "What is one challenge mentioned regarding bicycle-sharing programs?", "options": ["A. High operational costs", "B. Limited user interest", "C. Safety concerns", "D. Inadequate funding"], "answer": "C"},
+        {"id": "ai-urban-transportation-01-q3", "question": "What do proponents believe about public transportation innovations?", "options": ["A. They will increase road traffic.", "B. They can alleviate traffic congestion and enhance air quality.", "C. They will ultimately lead to job losses in the transport sector.", "D. They should be avoided due to their costs."], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-global-warming-02",
+      "title": "Understanding Global Warming",
+      "passage": "Global warming, a critical issue affecting the planet, is attributed largely to the increase of greenhouse gases in the atmosphere. Carbon dioxide and methane, produced by human activities such as burning fossil fuels and deforestation, trap heat from the sun, resulting in rising global temperatures. The consequences of global warming are extensive, contributing to extreme weather events, rising sea levels, and altering ecosystems. Some climate scientists advocate for urgent measures to reduce emissions, while skeptics argue that climate models are often unreliable, leading to inconsistent predictions. Despite the debate surrounding the accuracy of models, many agree that immediate action is essential to mitigate the impacts of global warming.",
+      "questions": [
+        {"id": "ai-global-warming-02-q1", "question": "What is primarily responsible for global warming according to the passage?", "options": ["A. Increased solar radiation", "B. Human activities generating greenhouse gases", "C. Natural climate cycles", "D. Ozone layer depletion"], "answer": "B"},
+        {"id": "ai-global-warming-02-q2", "question": "What do some climate scientists suggest is necessary to tackle global warming?", "options": ["A. Increased fossil fuel use", "B. Ceasing all industrial activity", "C. Urgent measures to reduce greenhouse gas emissions", "D. Continued funding for climate skepticism research"], "answer": "C"},
+        {"id": "ai-global-warming-02-q3", "question": "What do skeptics of climate change argue?", "options": ["A. Climate models are often unreliable.", "B. Global temperatures are stabilizing.", "C. Emissions should be increased.", "D. Immediate action is unnecessary."], "answer": "A"}
+      ]
+    },
+    {
+      "id": "ai-ancient-civilizations-03",
+      "title": "The Legacy of Ancient Civilizations",
+      "passage": "The achievements of ancient civilizations such as the Egyptians, Greeks, and Romans have profoundly influenced modern society. The Egyptians are renowned for their advances in mathematics and architecture, exemplified by structures like the Pyramids. The Greeks made significant contributions to philosophy and governance, establishing concepts of democracy that persist today. Meanwhile, the Romans excelled in engineering and law, creating extensive road systems and legal frameworks that laid the foundation for many modern systems. Despite their differences, these civilizations shared a commitment to innovation and knowledge, shaping the world in which we live today.",
+      "questions": [
+        {"id": "ai-ancient-civilizations-03-q1", "question": "Which ancient civilization is known for its architectural achievements?", "options": ["A. Greeks", "B. Romans", "C. Egyptians", "D. Persians"], "answer": "C"},
+        {"id": "ai-ancient-civilizations-03-q2", "question": "What concept did the Greeks establish that is still relevant today?", "options": ["A. Monarchy", "B. Republic", "C. Democracy", "D. Feudalism"], "answer": "C"},
+        {"id": "ai-ancient-civilizations-03-q3", "question": "What did the Romans excel in, according to the passage?", "options": ["A. Literature", "B. Mathematics", "C. Law and engineering", "D. Astronomy"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ai-food-sustainability-04",
+      "title": "Food Sustainability Challenges",
+      "passage": "As the global population continues to rise, the pressure on food systems is becoming increasingly evident. The challenges of maintaining food sustainability are numerous, with issues such as soil degradation, water scarcity, and the impacts of climate change taking center stage. Innovative farming practices, such as permaculture and vertical farming, are being explored as solutions to these pressing issues. However, skeptics argue that the scalability and economic viability of such practices remain uncertain. Proponents defend that with adequate investment and research, these methods could revolutionize food production and significantly reduce ecological footprints.",
+      "questions": [
+        {"id": "ai-food-sustainability-04-q1", "question": "What is a significant challenge to food sustainability mentioned in the passage?", "options": ["A. Excessive food waste", "B. Soil degradation and water scarcity", "C. Overpopulation", "D. Increased agricultural labor costs"], "answer": "B"},
+        {"id": "ai-food-sustainability-04-q2", "question": "What type of innovative farming practice is discussed as a potential solution?", "options": ["A. Conventional tillage", "B. Monoculture farming", "C. Vertical farming", "D. Extensive livestock farming"], "answer": "C"},
+        {"id": "ai-food-sustainability-04-q3", "question": "What do skeptics question about new farming practices?", "options": ["A. Their environmental impact", "B. Their philosophical foundations", "C. Their scalability and economic viability", "D. Their popularity among consumers"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ai-digital-learning-05",
+      "title": "The Evolution of Digital Learning",
+      "passage": "Digital learning has transformed the educational landscape, particularly in the wake of the COVID-19 pandemic. Online platforms have made it possible for students to access resources and attend classes from anywhere, blurring the lines between traditional and remote education. Tools such as virtual reality and interactive software have further enriched learning experiences by providing immersive educational environments. However, some educators express concerns about the digital divide affecting students from disadvantaged backgrounds who may lack access to technology. While digital learning offers significant benefits, it is essential to address inequality to ensure equal educational opportunities for all.",
+      "questions": [
+        {"id": "ai-digital-learning-05-q1", "question": "What has facilitated access to education during the COVID-19 pandemic?", "options": ["A. Traditional classroom settings", "B. Online platforms", "C. Textbooks", "D. Increased school funding"], "answer": "B"},
+        {"id": "ai-digital-learning-05-q2", "question": "What technology is mentioned as enhancing the learning experience?", "options": ["A. E-books", "B. Virtual reality", "C. Printed materials", "D. Audio recordings"], "answer": "B"},
+        {"id": "ai-digital-learning-05-q3", "question": "What concern do some educators have regarding digital learning?", "options": ["A. It leads to too much student engagement.", "B. It contributes to educational inequality.", "C. It has outdated resources.", "D. It is too time-consuming for teachers."], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-arctic-conservation-01",
+      "title": "The Importance of Arctic Conservation",
+      "passage": "The Arctic region, often viewed as a far-off wilderness, plays a crucial role in regulating the Earth’s climate. Its vast ice sheets reflect sunlight, helping to keep global temperatures stable. However, climate change is causing these ice masses to melt at an alarming rate, threatening not only local wildlife but also global weather patterns. Conservation efforts in this fragile ecosystem are essential to mitigate the effects of rising temperatures. Strategies include protecting critical habitats for polar bears and seals, and implementing sustainable tourism practices to reduce human impact. Scientists argue that without significant intervention, the Arctic could become a harbinger for the rest of the planet’s environmental challenges.",
+      "questions": [
+        {"id": "ai-arctic-conservation-01-q1", "question": "Why is the Arctic important for the Earth’s climate?", "options": ["A. It produces a significant amount of the world's oxygen", "B. Its ice sheets help regulate global temperatures", "C. It contains the majority of Earth's freshwater resources", "D. It is home to the largest populations of migratory birds"], "answer": "B"},
+        {"id": "ai-arctic-conservation-01-q2", "question": "What is one major impact of climate change on the Arctic?", "options": ["A. Increased human habitation", "B. Melting ice sheets", "C. Decreased animal populations", "D. Expansion of tropical ecosystems"], "answer": "B"},
+        {"id": "ai-arctic-conservation-01-q3", "question": "What do scientists recommend to protect the Arctic?", "options": ["A. Increased oil drilling", "B. Sustainable tourism practices", "C. Relocation of wildlife to warmer climates", "D. Banning all human activities in the region"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-digital-nomad-02",
+      "title": "The Rise of Digital Nomadism",
+      "passage": "The concept of the digital nomad has gained popularity as advancements in technology allow individuals to work remotely from anywhere in the world. Many people are choosing to travel while holding jobs that require little more than a laptop and an internet connection. This lifestyle provides flexibility and a chance to explore new cultures. However, it is not without challenges; issues such as time management and maintaining work-life balance can arise. Moreover, some destination countries are beginning to create visa options specifically designed for digital nomads, promoting this trend further as a means to boost local economies.",
+      "questions": [
+        {"id": "ai-digital-nomad-02-q1", "question": "What primarily enables people to become digital nomads?", "options": ["A. Increased student loans", "B. Advances in technology and remote work", "C. Changes in global immigration policies", "D. The rise of coworking spaces"], "answer": "B"},
+        {"id": "ai-digital-nomad-02-q2", "question": "What is one challenge faced by digital nomads?", "options": ["A. Lack of travel options", "B. Making friends while traveling", "C. Time management and work-life balance", "D. High costs of living in destination cities"], "answer": "C"},
+        {"id": "ai-digital-nomad-02-q3", "question": "How are some countries responding to the digital nomad trend?", "options": ["A. Creating regulations against digital work", "B. Offering specific visas for remote workers", "C. Increasing tax on foreign incomes", "D. Closing borders to discourage migration"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-historical-architecture-03",
+      "title": "Preserving Historical Architecture",
+      "passage": "Historical buildings are not only reflections of a culture’s history but also serve as vital landmarks in modern cities. As urbanization increases, the preservation of these structures faces significant challenges, including development pressures and the need for modern amenities. Advocates for architectural preservation argue that these sites offer educational opportunities and foster community pride. However, opponents argue that maintaining old buildings can hinder economic growth and urban regeneration. Balancing the preservation of history with the need for modern development is proving to be a complex issue for many cities worldwide.",
+      "questions": [
+        {"id": "ai-historical-architecture-03-q1", "question": "Why are historical buildings important?", "options": ["A. They provide low-cost housing", "B. They reflect cultural history and serve as landmarks", "C. They are generally more energy-efficient", "D. They often require less maintenance than modern buildings"], "answer": "B"},
+        {"id": "ai-historical-architecture-03-q2", "question": "What challenge is mentioned regarding the preservation of historical buildings?", "options": ["A. High costs associated with renovations", "B. Lack of public interest", "C. Pressure from urban development", "D. Absence of skilled artisans to perform the work"], "answer": "C"},
+        {"id": "ai-historical-architecture-03-q3", "question": "What do advocates of preservation argue?", "options": ["A. It can lead to increased tourism", "B. It slows down urban development", "C. It is unnecessary for the education of citizens", "D. It leads to a decrease in property values"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "ai-plastic-pollution-04",
+      "title": "Addressing Plastic Pollution",
+      "passage": "Plastic pollution has emerged as a significant threat to marine ecosystems around the world. With millions of tons of plastic entering oceans each year, marine life is suffering from ingestion and entanglement in plastic debris. Various initiatives, including cleanup drives and bans on single-use plastics, are being implemented to curb this growing issue. Awareness campaigns are also aiming to educate the public about the impacts of plastic on ocean health. However, critics contend that while individual actions are important, systemic change is crucial for a long-lasting solution. Without comprehensive policies addressing the production and disposal of plastics, the problem may persist.",
+      "questions": [
+        {"id": "ai-plastic-pollution-04-q1", "question": "What is the primary threat posed by plastic pollution to marine life?", "options": ["A. Altered water temperatures", "B. Ingestion and entanglement in debris", "C. Increased competition for food", "D. Decreased biodiversity"], "answer": "B"},
+        {"id": "ai-plastic-pollution-04-q2", "question": "What kind of initiatives are being implemented to address plastic pollution?", "options": ["A. Increase in plastic production", "B. Sanctioning countries that produce plastic", "C. Cleanup drives and bans on single-use plastics", "D. Encouraging the use of plastic in construction"], "answer": "C"},
+        {"id": "ai-plastic-pollution-04-q3", "question": "What do critics believe is necessary for a lasting solution to plastic pollution?", "options": ["A. Increased public awareness", "B. Systemic change through comprehensive policies", "C. More recycling programs", "D. Development of biodegradable plastics"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-sustainable-fashion-05",
+      "title": "The Movement Towards Sustainable Fashion",
+      "passage": "In recent years, the fashion industry has seen a growing movement towards sustainability. This shift is a response to increased awareness of the environmental and social impacts of fast fashion. Many designers are now adopting practices that minimize waste, such as using recycled materials or creating clothes that are made to last. Consumers are also becoming more conscious of their purchasing habits, favoring brands that prioritize ethical practices. However, this transition is not seamless; challenges include the need for transparency in supply chains and the pressure for lower prices from consumers. The future of sustainable fashion hinges on the ability of the industry to balance ethical principles with economic viability.",
+      "questions": [
+        {"id": "ai-sustainable-fashion-05-q1", "question": "What is a primary driver for the shift towards sustainable fashion?", "options": ["A. Increased availability of luxury brands", "B. Awareness of the impacts of fast fashion", "C. Government regulations on textiles", "D. Demand for global fashion trends"], "answer": "B"},
+        {"id": "ai-sustainable-fashion-05-q2", "question": "What practices are some designers adopting to promote sustainability?", "options": ["A. Using cheaper synthetic materials", "B. Designing for fast production", "C. Using recycled materials and creating durable clothes", "D. Emphasizing brand exclusivity"], "answer": "C"},
+        {"id": "ai-sustainable-fashion-05-q3", "question": "What challenge does the sustainable fashion movement face?", "options": ["A. Strong customer loyalty to fast fashion", "B. Inconsistency in fashion trends", "C. Transparency in supply chains and price pressures", "D. Overproduction of sustainable fabrics"], "answer": "C"}
+      ]
+    }
+  ]
+}

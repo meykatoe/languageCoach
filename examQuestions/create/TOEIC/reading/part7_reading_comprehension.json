@@ -1,0 +1,420 @@
+{
+  "exam": "TOEIC",
+  "section": "Reading",
+  "part": "Part 7: Reading Comprehension",
+  "instructions": "Read the passage(s) and answer the questions that follow.",
+  "singlePassages": [
+    {
+      "id": "toeic-r7-single-01",
+      "passage": "NOTICE: Office Closure for Renovation\n\nWestbrook Consulting will be closed from July 14 to July 18 for scheduled office renovations, including new flooring and updated lighting fixtures. During this period, all staff will work remotely, and client meetings will be conducted via video call. Employees needing to retrieve items from the office should contact building security in advance to arrange access. The office will reopen for normal business on July 21. We apologize for any disruption this may cause and appreciate your understanding as we improve our workspace.",
+      "questions": [
+        {"id": "toeic-r7-single-01-q1", "question": "Why is the office closing?", "options": ["A. For a company holiday", "B. For scheduled renovations", "C. Due to a power outage", "D. For an employee retreat"], "answer": "B"},
+        {"id": "toeic-r7-single-01-q2", "question": "What will employees do during the closure?", "options": ["A. Take unpaid leave", "B. Work remotely", "C. Relocate to a new office", "D. Attend a conference"], "answer": "B"},
+        {"id": "toeic-r7-single-01-q3", "question": "What should an employee do to retrieve items from the office?", "options": ["A. Wait until July 21", "B. Contact building security in advance", "C. Ask a coworker to bring them", "D. Email the renovation team"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-02",
+      "passage": "Job Posting: Marketing Coordinator\n\nBrightPath Media is seeking a detail-oriented Marketing Coordinator to join our growing team. Responsibilities include managing social media accounts, coordinating with the design team on promotional materials, and analyzing campaign performance metrics. The ideal candidate has at least two years of marketing experience and is proficient in major social media platforms. This is a full-time, hybrid position based in our downtown office, with two remote days per week. Interested applicants should submit a resume and cover letter to careers@brightpathmedia.com by August 5.",
+      "questions": [
+        {"id": "toeic-r7-single-02-q1", "question": "What is one responsibility of the position?", "options": ["A. Hiring new staff", "B. Managing social media accounts", "C. Preparing financial reports", "D. Training new employees"], "answer": "B"},
+        {"id": "toeic-r7-single-02-q2", "question": "What kind of work arrangement is offered?", "options": ["A. Fully remote", "B. Fully in-office", "C. Hybrid", "D. Freelance"], "answer": "C"},
+        {"id": "toeic-r7-single-02-q3", "question": "How should applicants apply?", "options": ["A. By calling the office", "B. By visiting in person", "C. By emailing a resume and cover letter", "D. By completing an online form"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-03",
+      "passage": "Product Review: SoundWave Pro Headphones\n\nI purchased the SoundWave Pro headphones two months ago, and overall, I'm impressed. The sound quality is excellent, especially the bass response, and the battery lasts nearly 30 hours on a single charge. My only complaint is that the carrying case feels flimsy and started to tear after just a few weeks of use. Customer service was helpful when I reached out, and they offered to send a replacement case free of charge. I would recommend these headphones to anyone looking for great audio quality at a mid-range price.",
+      "questions": [
+        {"id": "toeic-r7-single-03-q1", "question": "What does the reviewer praise about the headphones?", "options": ["A. The price", "B. The sound quality and battery life", "C. The carrying case", "D. The warranty length"], "answer": "B"},
+        {"id": "toeic-r7-single-03-q2", "question": "What problem did the reviewer experience?", "options": ["A. The headphones stopped working", "B. The battery drained quickly", "C. The carrying case tore", "D. The sound quality was poor"], "answer": "C"},
+        {"id": "toeic-r7-single-03-q3", "question": "How did the company respond to the complaint?", "options": ["A. They ignored it", "B. They offered a full refund", "C. They offered a free replacement case", "D. They offered a discount on a future purchase"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-04",
+      "passage": "Memo\n\nTo: Sales Team\nFrom: Regional Director\nRe: New Commission Structure\n\nStarting next month, we will be implementing a revised commission structure to better reward top performers. Under the new plan, representatives who exceed 120% of their sales quota will receive an additional 5% commission on all sales above that threshold. This change is intended to motivate continued growth as we head into the busy season. A detailed breakdown of the new structure will be presented at Friday's team meeting, and the updated commission calculator will be available on the shared drive by the end of the week.",
+      "questions": [
+        {"id": "toeic-r7-single-04-q1", "question": "What is the purpose of the memo?", "options": ["A. To announce a new hire", "B. To explain a new commission structure", "C. To cancel the sales meeting", "D. To report quarterly earnings"], "answer": "B"},
+        {"id": "toeic-r7-single-04-q2", "question": "Who benefits most from the change?", "options": ["A. New employees", "B. Representatives who exceed 120% of quota", "C. Part-time staff", "D. Managers only"], "answer": "B"},
+        {"id": "toeic-r7-single-04-q3", "question": "Where can employees find the new calculator?", "options": ["A. In their email inbox", "B. On the shared drive", "C. In the employee handbook", "D. On the company website"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-05",
+      "passage": "Advertisement: Riverside Fitness Center\n\nJoin Riverside Fitness Center this spring and take advantage of our limited-time offer! Sign up for an annual membership before April 30 and receive your first month free, plus a complimentary personal training session. Our facility includes a full range of cardio and weight equipment, a heated pool, and over twenty group classes per week, including yoga, spin, and boxing. Members also enjoy free parking and access to our on-site smoothie bar. Visit us today or call (555) 019-2837 to schedule a tour.",
+      "questions": [
+        {"id": "toeic-r7-single-05-q1", "question": "What is included in the spring promotion?", "options": ["A. A free gym bag", "B. A free month and a training session", "C. Discounted parking", "D. A free smoothie every day"], "answer": "B"},
+        {"id": "toeic-r7-single-05-q2", "question": "By when must customers sign up to get the offer?", "options": ["A. March 1", "B. April 30", "C. May 15", "D. June 1"], "answer": "B"},
+        {"id": "toeic-r7-single-05-q3", "question": "What can members do at the facility?", "options": ["A. Only use cardio equipment", "B. Take group classes such as yoga and spin", "C. Rent workout clothes", "D. Book hotel rooms"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-01-9961",
+      "passage": "MEMO: Team Meeting Schedule\n\nAll team members are requested to attend the weekly meeting on Thursday, September 9, at 10:00 AM in the main conference room. The agenda will cover project updates, departmental goals, and open discussion time for any concerns. Please prepare your updates in advance and be ready to share. If anyone is unable to attend, kindly inform your direct supervisor beforehand. Thank you for your cooperation, and I look forward to seeing everyone there.",
+      "questions": [
+        {"id": "toeic-r7-single-01-q1-1c50", "question": "When is the team meeting scheduled?", "options": ["A. Wednesday, September 8", "B. Thursday, September 9", "C. Friday, September 10", "D. Monday, September 11"], "answer": "B"},
+        {"id": "toeic-r7-single-01-q2-5f8a", "question": "What should team members prepare before the meeting?", "options": ["A. Questions for management", "B. Project updates", "C. Financial reports", "D. Client feedback"], "answer": "B"},
+        {"id": "toeic-r7-single-01-q3-547b", "question": "What action should be taken if someone cannot attend?", "options": ["A. Send an email to all team members", "B. Inform your direct supervisor", "C. Skip the meeting without notice", "D. Arrange for a proxy to attend"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-02-aac7",
+      "passage": "ANNOUNCEMENT: New Employee Orientation\n\nAttention all staff, we are pleased to announce a new employee orientation session scheduled for Monday, October 3, at 9:00 AM. This orientation will cover company policies, benefits, and workplace culture to ensure a smooth transition for new hires. All current employees are encouraged to attend and welcome our new colleagues. The session will be held in the Oak Room. Refreshments will be provided.",
+      "questions": [
+        {"id": "toeic-r7-single-02-q1-0e5f", "question": "What is the main purpose of the orientation?", "options": ["A. To assess new employees' skills", "B. To introduce company policies and culture", "C. To assign work tasks to new hires", "D. To conduct performance evaluations"], "answer": "B"},
+        {"id": "toeic-r7-single-02-q2-b629", "question": "Where will the orientation take place?", "options": ["A. In the main office", "B. In the Oak Room", "C. At an off-site location", "D. In the break room"], "answer": "B"},
+        {"id": "toeic-r7-single-02-q3-b009", "question": "What will be provided during the session?", "options": ["A. Transportation to the meeting", "B. Lunch vouchers", "C. Refreshments", "D. Company merchandise"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-03-aac4",
+      "passage": "REMINDER: Quarterly Report Submission\n\nThis is a reminder that the quarterly financial report is due on Monday, November 15. All department heads are required to submit their reports to the finance team no later than the close of business on that date. Reports should include a summary of expenditures, revenues, and any significant developments. Please ensure all submissions are accurate and complete to avoid any delays in processing.",
+      "questions": [
+        {"id": "toeic-r7-single-03-q1-35bc", "question": "When is the quarterly financial report due?", "options": ["A. November 1", "B. November 15", "C. October 31", "D. December 1"], "answer": "B"},
+        {"id": "toeic-r7-single-03-q2-693a", "question": "Who needs to submit reports?", "options": ["A. All employees", "B. Only the finance team", "C. Department heads", "D. Senior management"], "answer": "C"},
+        {"id": "toeic-r7-single-03-q3-3d7e", "question": "What should reports include?", "options": ["A. Employee feedback", "B. Marketing strategies", "C. Summary of expenditures and revenues", "D. New project initiatives"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-04-1690",
+      "passage": "UPDATE: Product Launch Date Change\n\nWe would like to inform all staff that the launch date for the new software product has been postponed to Friday, December 10. This decision has been made to allow additional time for testing and quality assurance to ensure the best possible user experience. Marketing and sales teams are advised to adjust their plans accordingly. We appreciate your understanding and support in this matter.",
+      "questions": [
+        {"id": "toeic-r7-single-04-q1-56f7", "question": "What is the new launch date for the software product?", "options": ["A. December 5", "B. December 10", "C. January 1", "D. November 30"], "answer": "B"},
+        {"id": "toeic-r7-single-04-q2-ab9c", "question": "Why was the launch date changed?", "options": ["A. Due to a marketing strategy", "B. To allow more testing and quality assurance", "C. Because of a delay in production", "D. To accommodate staff schedules"], "answer": "B"},
+        {"id": "toeic-r7-single-04-q3-a9e5", "question": "Who needs to adjust their plans due to the date change?", "options": ["A. The IT department", "B. The marketing and sales teams", "C. All employees", "D. External stakeholders"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-05-4d1a",
+      "passage": "INVITATION: Annual Company Retreat\n\nYou are cordially invited to the annual company retreat taking place from January 15 to January 17 at Lakeview Resort. This year's theme is teamwork and collaboration, with various workshops and team-building activities scheduled throughout the event. Participants will also have opportunities to network and share ideas in a relaxed atmosphere. Please RSVP by December 1 to ensure your spot. Lodging and meals will be provided.",
+      "questions": [
+        {"id": "toeic-r7-single-05-q1-a6a6", "question": "What is the theme of this year's company retreat?", "options": ["A. Leadership and innovation", "B. Personal development", "C. Teamwork and collaboration", "D. Health and wellness"], "answer": "C"},
+        {"id": "toeic-r7-single-05-q2-d265", "question": "When should participants RSVP by?", "options": ["A. November 30", "B. January 1", "C. December 1", "D. January 15"], "answer": "C"},
+        {"id": "toeic-r7-single-05-q3-bcaf", "question": "What will be provided during the retreat?", "options": ["A. Transportation to the venue", "B. Lodging and meals", "C. Company merchandise", "D. Personal development sessions"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-01-b9c4",
+      "passage": "MEMO: Upcoming Marketing Seminar\n\nDear Team,\n\nWe are pleased to announce an internal seminar on the latest trends in digital marketing, scheduled for August 10 at 2 PM in the main conference room. The session will feature guest speaker Sarah Greene, a renowned expert in social media strategy. Attendance is mandatory for all marketing department employees, and refreshments will be provided. Please confirm your attendance by August 3. For further inquiries, reach out to the HR department.\n\nBest regards,\nMark Thompson\nMarketing Director",
+      "questions": [
+        {"id": "toeic-r7-single-01-q1-66bf", "question": "Who is the guest speaker at the seminar?", "options": ["A. Mark Thompson", "B. Sarah Greene", "C. A member of HR", "D. A social media intern"], "answer": "B"},
+        {"id": "toeic-r7-single-01-q2-cd7b", "question": "What is required for attendance?", "options": ["A. RSVP by August 3", "B. Bring a guest", "C. Prior approval from the manager", "D. Completion of a digital marketing course"], "answer": "A"},
+        {"id": "toeic-r7-single-01-q3-0378", "question": "What will be provided during the seminar?", "options": ["A. Transportation services", "B. Printed materials", "C. Refreshments", "D. Ce certificate of completion"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-02-77cd",
+      "passage": "EMAIL: Customer Service Update\n\nDear Valued Customers,\n\nWe want to inform you that our customer service team has updated its hours of operation. Starting from this week, we will be available from 9 AM to 7 PM on weekdays and 10 AM to 4 PM on weekends. This change is aimed at better serving your needs. Thank you for your continued support!\n\nSincerely,\nThe Customer Service Team",
+      "questions": [
+        {"id": "toeic-r7-single-02-q1-c006", "question": "What are the new weekdays hours for customer service?", "options": ["A. 8 AM to 6 PM", "B. 9 AM to 7 PM", "C. 10 AM to 5 PM", "D. 11 AM to 8 PM"], "answer": "B"},
+        {"id": "toeic-r7-single-02-q2-328e", "question": "On which day are customer service hours 10 AM to 4 PM?", "options": ["A. Tuesday", "B. Saturday", "C. Thursday", "D. Monday"], "answer": "B"},
+        {"id": "toeic-r7-single-02-q3-2cc8", "question": "What is the purpose of the email?", "options": ["A. To promote a sale", "B. To announce updated hours", "C. To request customer feedback", "D. To announce a new product"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-03-1c7e",
+      "passage": "NOTICE: Company Picnic\n\nAll employees are invited to our annual company picnic on September 15 at Riverside Park. The event will start at noon and include games, food, and fun activities for everyone. Please bring your families along! To help us plan better, kindly RSVP to the HR department by September 1. We look forward to a great day together!",
+      "questions": [
+        {"id": "toeic-r7-single-03-q1-7dac", "question": "Where will the company picnic take place?", "options": ["A. Central Park", "B. Riverside Park", "C. At the office", "D. Oceanview Beach"], "answer": "B"},
+        {"id": "toeic-r7-single-03-q2-e2c7", "question": "What should employees do to help plan for the picnic?", "options": ["A. Bring their own food", "B. RSVP by September 1", "C. Donate games and activities", "D. Volunteer for set up"], "answer": "B"},
+        {"id": "toeic-r7-single-03-q3-d486", "question": "What activities are mentioned for the picnic?", "options": ["A. Workshops and seminars", "B. Games and fun activities", "C. Employee training sessions", "D. Job interview practice"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-04-3730",
+      "passage": "ADVERTISEMENT: Local Coffee Shop Opening\n\nExciting news! Brewed Awakenings will open its doors on August 20 at the corner of Maple and 5th. Join us for our grand opening where the first 100 customers will receive a free coffee of their choice. We will also feature live music, giveaways, and special discounts throughout the day. Don’t miss out on the chance to enjoy the best coffee in town and have a great time!",
+      "questions": [
+        {"id": "toeic-r7-single-04-q1-7a93", "question": "What is the opening date of Brewed Awakenings?", "options": ["A. August 15", "B. August 20", "C. September 1", "D. July 28"], "answer": "B"},
+        {"id": "toeic-r7-single-04-q2-237f", "question": "What will the first 100 customers receive?", "options": ["A. Discount coupons", "B. A gift card", "C. A free coffee", "D. A pastry basket"], "answer": "C"},
+        {"id": "toeic-r7-single-04-q3-142a", "question": "Which of the following is NOT mentioned as part of the grand opening?", "options": ["A. Live music", "B. Giveaways", "C. Coffee classes", "D. Special discounts"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-05-6900",
+      "passage": "INFORMATION: Health Insurance Enrollment\n\nAs a reminder, the open enrollment period for health insurance will begin on October 1 and end on October 30. During this time, employees can enroll in new plans or make changes to existing plans. To assist you in making informed decisions, informational sessions will be held on October 2 and October 16 at 3 PM in the employee lounge. Please ensure that you review the available options before the enrollment period begins, and feel free to contact the HR department with any questions.",
+      "questions": [
+        {"id": "toeic-r7-single-05-q1-0db5", "question": "When does the open enrollment period start?", "options": ["A. September 1", "B. October 1", "C. November 1", "D. August 30"], "answer": "B"},
+        {"id": "toeic-r7-single-05-q2-7587", "question": "What can employees do during the open enrollment period?", "options": ["A. Attend mandatory training", "B. Change their address", "C. Enroll or change health plans", "D. Submit vacation requests"], "answer": "C"},
+        {"id": "toeic-r7-single-05-q3-a1b4", "question": "Where will the informational sessions be held?", "options": ["A. In the main conference room", "B. In the HR office", "C. In the employee lounge", "D. In the company cafeteria"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-02-959e",
+      "passage": "EVENT NOTICE: Annual Charity Run\n\nJoin us for the Annual Charity Run on September 15 at Riverside Park. Registration begins at 8:00 AM, followed by a warm-up session at 8:30 AM. The run will kick off at 9:00 AM, with distances of 5K and 10K available. All proceeds will go to the local animal shelter. Participants are encouraged to wear comfortable athletic gear and bring water bottles. An awards ceremony will take place after the race, with prizes for top finishers. We look forward to seeing you there for a great cause!",
+      "questions": [
+        {"id": "toeic-r7-single-02-q1-40f7", "question": "What is the purpose of the event?", "options": ["A. To celebrate a holiday", "B. To raise funds for charity", "C. To promote health and fitness", "D. To introduce new running shoes"], "answer": "B"},
+        {"id": "toeic-r7-single-02-q2-bdb6", "question": "What should participants bring?", "options": ["A. Sports drinks", "B. Water bottles", "C. Energy bars", "D. Extra clothing"], "answer": "B"},
+        {"id": "toeic-r7-single-02-q3-56fe", "question": "What time does registration start?", "options": ["A. 8:00 AM", "B. 8:30 AM", "C. 9:00 AM", "D. 9:30 AM"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-03-95ee",
+      "passage": "MEMO: Team Building Retreat\n\nTo All Employees,\nWe are excited to announce a team building retreat scheduled for October 5-7 at Pine Mountain Lodge. This event aims to enhance teamwork and collaboration among staff. Transportation will be provided from the office, leaving at 8:00 AM on October 5. Please confirm your attendance by September 20 to ensure your spot. Activities include hiking, group exercises, and workshops led by professionals. We hope everyone will participate to foster stronger team bonds.",
+      "questions": [
+        {"id": "toeic-r7-single-03-q1-048d", "question": "What is the primary goal of the retreat?", "options": ["A. To relax in nature", "B. To enhance teamwork", "C. To conduct training sessions", "D. To celebrate company success"], "answer": "B"},
+        {"id": "toeic-r7-single-03-q2-5f5c", "question": "When is the retreat scheduled?", "options": ["A. September 5-7", "B. October 5-7", "C. October 1-3", "D. November 5-7"], "answer": "B"},
+        {"id": "toeic-r7-single-03-q3-1f48", "question": "What should employees do by September 20?", "options": ["A. Arrange their own transportation", "B. Confirm their attendance", "C. Choose their activities", "D. Prepare a workshop"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-04-8d63",
+      "passage": "PRODUCT LAUNCH: New Eco-Friendly Shoes\n\nWe are thrilled to announce the launch of our new line of eco-friendly shoes on October 12. The shoes are made from recycled materials and are designed to reduce our environmental footprint. A launch event will be held at our main store, starting at 6:00 PM. Customers will have the opportunity to test the shoes and enjoy refreshments. Special discounts will be available for early purchasers. Join us in celebrating this step towards sustainability!",
+      "questions": [
+        {"id": "toeic-r7-single-04-q1-9dd3", "question": "What is special about the new shoes?", "options": ["A. They are very expensive", "B. They are made from recycled materials", "C. They are designed for athletes", "D. They come in multiple colors"], "answer": "B"},
+        {"id": "toeic-r7-single-04-q2-1631", "question": "When will the launch event take place?", "options": ["A. September 12", "B. October 12", "C. November 12", "D. October 1"], "answer": "B"},
+        {"id": "toeic-r7-single-04-q3-3117", "question": "What will customers enjoy at the launch event?", "options": ["A. Free gifts", "B. Refunds", "C. Refreshments", "D. Travel vouchers"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-05-1c16",
+      "passage": "INFORMATION: Updated Company Policy\n\nDear Team,\nWe have updated our company policy regarding remote work. Effective November 1, employees can work remotely up to three days a week. This policy aims to provide more flexibility in work arrangements while maintaining productivity. Employees should inform their managers in advance of any remote work days. A virtual Q&A session will be held on October 15 to address any questions or concerns about this new policy. Thank you for your cooperation.",
+      "questions": [
+        {"id": "toeic-r7-single-05-q1-b3bf", "question": "What is the maximum number of remote work days allowed per week?", "options": ["A. One day", "B. Two days", "C. Three days", "D. Four days"], "answer": "C"},
+        {"id": "toeic-r7-single-05-q2-4b5e", "question": "When will the new policy take effect?", "options": ["A. October 1", "B. November 1", "C. December 1", "D. September 1"], "answer": "B"},
+        {"id": "toeic-r7-single-05-q3-9c9c", "question": "What should employees do before working remotely?", "options": ["A. Complete a form", "B. Inform their managers", "C. Attend a training session", "D. Send a personal email"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-06",
+      "passage": "SERVICE ANNOUNCEMENT: Internet Outage\n\nAttention Valued Customers,\nWe regret to inform you that there will be an internet outage on August 30 from 1:00 PM to 5:00 PM due to necessary maintenance work. During this time, all online services, including customer support and order processing, will be unavailable. We apologize for any inconvenience this may cause. Please plan accordingly, and we appreciate your patience as we strive to enhance our service reliability.",
+      "questions": [
+        {"id": "toeic-r7-single-06-q1", "question": "When is the internet outage scheduled?", "options": ["A. August 29", "B. August 30", "C. September 1", "D. September 30"], "answer": "B"},
+        {"id": "toeic-r7-single-06-q2", "question": "What services will be unavailable during the outage?", "options": ["A. Customer support and online ordering", "B. Email services", "C. Technical support", "D. Social media updates"], "answer": "A"},
+        {"id": "toeic-r7-single-06-q3", "question": "What time will the outage end?", "options": ["A. 3:00 PM", "B. 4:00 PM", "C. 5:00 PM", "D. 6:00 PM"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-02-2a35",
+      "passage": "ANNOUNCEMENT: New Office Policies\n\nEffective September 1, all employees of Silvertech Solutions are required to follow updated office policies aimed at promoting a more productive work environment. These include a flexible work schedule, mandatory weekly team meetings, and a well-being initiative encouraging regular breaks. Additionally, employees must now submit their requests for remote work at least 48 hours in advance. The complete policy document is available on the company intranet. For any questions, please reach out to the HR department.",
+      "questions": [
+        {"id": "toeic-r7-single-02-q1-e34e", "question": "When do the new office policies take effect?", "options": ["A. August 15", "B. September 1", "C. October 1", "D. Immediately"], "answer": "B"},
+        {"id": "toeic-r7-single-02-q2-e22c", "question": "What is one of the new requirements for remote work?", "options": ["A. Submitting a request at least 48 hours in advance", "B. Completing a training course", "C. Attending a conference", "D. Asking a manager directly"], "answer": "A"},
+        {"id": "toeic-r7-single-02-q3-34f6", "question": "Where can employees find the complete policy document?", "options": ["A. In the staff lounge", "B. On the company intranet", "C. Through their email", "D. On bulletin boards"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-03-7441",
+      "passage": "SERVICE UPDATE: Internet Connectivity Issues\n\nDear Valued Customers,\nWe are experiencing temporary internet connectivity issues affecting some of our services. Our technical team is working diligently to resolve the problem and ensure that services are restored as quickly as possible. We anticipate repairs to be completed by 5 PM today. In the meantime, we appreciate your patience and understanding. If you have any urgent concerns, please contact our support team via phone or email. Thank you for your continued support.\n\nBest regards,\nThe Customer Support Team",
+      "questions": [
+        {"id": "toeic-r7-single-03-q1-a4aa", "question": "What is the reason for the service update?", "options": ["A. Scheduled maintenance", "B. Temporary internet connectivity issues", "C. New service launch", "D. Customer feedback"], "answer": "B"},
+        {"id": "toeic-r7-single-03-q2-5854", "question": "When do they expect to resolve the issues?", "options": ["A. By noon today", "B. By 5 PM today", "C. By tomorrow morning", "D. By the end of the week"], "answer": "B"},
+        {"id": "toeic-r7-single-03-q3-2ac4", "question": "How can customers address urgent concerns?", "options": ["A. By visiting in person", "B. Via phone or email", "C. Through social media", "D. By filing a complaint form"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-single-04-520c",
+      "passage": "EVENT INVITATION: Annual Charity Gala\n\nYou are cordially invited to attend the 10th Annual Charity Gala organized by Helping Hands Foundation. The event will take place on October 15 at 7 PM at the Grand Ballroom, City Center Hotel. Enjoy an evening of fine dining, live entertainment, and guest speakers. All proceeds will go towards supporting local children’s programs. Tickets are $100 per person and can be purchased through our website or at the door. For further inquiries, please contact our office at the number provided below. We look forward to your participation in this worthy cause!",
+      "questions": [
+        {"id": "toeic-r7-single-04-q1-0bea", "question": "What is the purpose of the Annual Charity Gala?", "options": ["A. To celebrate a company anniversary", "B. To raise funds for local children’s programs", "C. To launch a new product", "D. To network with business professionals"], "answer": "B"},
+        {"id": "toeic-r7-single-04-q2-680b", "question": "When is the event scheduled to take place?", "options": ["A. October 10", "B. October 15", "C. November 5", "D. December 1"], "answer": "B"},
+        {"id": "toeic-r7-single-04-q3-2857", "question": "How much do tickets cost?", "options": ["A. $50", "B. $75", "C. $100", "D. $150"], "answer": "C"}
+      ]
+    }
+  ],
+  "doublePassages": [
+    {
+      "id": "toeic-r7-double-01",
+      "passages": [
+        {"label": "Email 1", "text": "From: Priya Nair\nTo: Devon Marsh\nSubject: Venue for Team Retreat\n\nHi Devon,\n\nI've narrowed down our team retreat venue options to two places: Lakeside Lodge and Pinecrest Hall. Lakeside Lodge costs $2,200 for the weekend and includes meals, while Pinecrest Hall is $1,800 but does not include meals. Both can accommodate our group of 25. Let me know which you prefer so I can finalize the booking by Friday.\n\nBest,\nPriya"},
+        {"label": "Email 2", "text": "From: Devon Marsh\nTo: Priya Nair\nSubject: RE: Venue for Team Retreat\n\nHi Priya,\n\nThanks for putting this together. Given that we'd need to arrange outside catering for Pinecrest Hall, which could add at least $500, I think Lakeside Lodge is actually the better value. Please go ahead and book Lakeside Lodge for the weekend of June 14.\n\nDevon"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-double-01-q1", "question": "What is the main topic of the emails?", "options": ["A. Choosing a retreat venue", "B. Planning a client dinner", "C. Booking a conference room", "D. Hiring a caterer"], "answer": "A"},
+        {"id": "toeic-r7-double-01-q2", "question": "What is a difference between the two venues mentioned in the first email?", "options": ["A. Their locations", "B. Whether meals are included", "C. Their maximum capacity", "D. Their available dates"], "answer": "B"},
+        {"id": "toeic-r7-double-01-q3", "question": "Why does Devon prefer Lakeside Lodge?", "options": ["A. It has a better view", "B. It is closer to the office", "C. Pinecrest would cost more once catering is added", "D. It offers a larger meeting room"], "answer": "C"},
+        {"id": "toeic-r7-double-01-q4", "question": "What does Devon ask Priya to do?", "options": ["A. Cancel the retreat", "B. Book Lakeside Lodge", "C. Contact a caterer", "D. Compare more venues"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-double-02",
+      "passages": [
+        {"label": "Advertisement", "text": "Now Hiring: Warehouse Associate\nClearline Logistics\n\nWe are looking for a full-time Warehouse Associate to join our distribution center. Duties include receiving shipments, organizing inventory, and operating a forklift (certification provided). Shifts are Monday through Friday, 7 a.m. to 3 p.m. Starting pay is $19 per hour, with a $1 raise after a successful 90-day review. Apply online at clearlinelogistics.com/careers."},
+        {"label": "Email", "text": "From: HR Department\nTo: Marcus Webb\nSubject: Your Application - Warehouse Associate\n\nDear Mr. Webb,\n\nThank you for applying for the Warehouse Associate position. We were impressed by your prior forklift experience and would like to invite you for an interview on Tuesday at 10 a.m. Please note that the position's shift has recently changed to 6 a.m. to 2 p.m. to align with our new delivery schedule. Let us know if this works for you.\n\nRegards,\nHR Department"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-double-02-q1", "question": "What is one duty of the Warehouse Associate position?", "options": ["A. Managing payroll", "B. Operating a forklift", "C. Designing marketing materials", "D. Answering customer calls"], "answer": "B"},
+        {"id": "toeic-r7-double-02-q2", "question": "According to the advertisement, when does pay increase?", "options": ["A. After one year", "B. After a successful 90-day review", "C. Immediately upon hire", "D. After certification training"], "answer": "B"},
+        {"id": "toeic-r7-double-02-q3", "question": "Why was Marcus Webb invited to interview?", "options": ["A. His availability matched the schedule", "B. His prior forklift experience impressed HR", "C. He was referred by a current employee", "D. He lives near the warehouse"], "answer": "B"},
+        {"id": "toeic-r7-double-02-q4", "question": "What has changed since the advertisement was posted?", "options": ["A. The hourly pay rate", "B. The interview format", "C. The shift hours", "D. The job location"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-double-02-1fb1",
+      "passages": [
+        {"label": "Email 1", "text": "From: Marcus Lee\nTo: Jenna Smith\nSubject: Update on Project X\n\nHi Jenna,\n\nI wanted to keep you in the loop about Project X. We have received the initial draft from the design team, and I think it looks promising. However, there are a few areas that need revision, particularly in the marketing strategy section. Let me know if you have some time to go over it together this week.\n\nBest,\nMarcus"},
+        {"label": "Email 2", "text": "From: Jenna Smith\nTo: Marcus Lee\nSubject: RE: Update on Project X\n\nHi Marcus,\n\nThanks for the update. I agree that the design is strong overall, but I also noticed that the timeline might be too aggressive. I can meet you to discuss the revisions on Thursday after 3 PM. Let me know if that works for you.\n\nRegards,\nJenna"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-double-02-q1-e25b", "question": "What is the main purpose of the emails?", "options": ["A. Discuss budget issues", "B. Review a project draft", "C. Schedule a meeting", "D. Plan a product launch"], "answer": "B"},
+        {"id": "toeic-r7-double-02-q2-e902", "question": "What specific section of the project draft needs revisions according to Marcus?", "options": ["A. The budget allocation", "B. The marketing strategy", "C. The client feedback", "D. The team roles"], "answer": "B"},
+        {"id": "toeic-r7-double-02-q3-5658", "question": "What concern does Jenna express about the project timeline?", "options": ["A. It is too short", "B. It is too long", "C. It lacks clarity", "D. It is redundant"], "answer": "A"},
+        {"id": "toeic-r7-double-02-q4-5970", "question": "When does Jenna propose to meet with Marcus?", "options": ["A. Wednesday morning", "B. Thursday after 3 PM", "C. Friday at noon", "D. Monday next week"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-double-03",
+      "passages": [
+        {"label": "Email 1", "text": "From: Linda Brown\nTo: David White\nSubject: Upcoming Workshop Details\n\nHi David,\n\nI want to remind you about the workshop scheduled for April 15. It will take place at the Downtown Conference Center from 9 AM to 4 PM. Please review the attached agenda and let me know if you need any additional information. I'm looking forward to a productive day!\n\nBest,\nLinda"},
+        {"label": "Email 2", "text": "From: David White\nTo: Linda Brown\nSubject: RE: Upcoming Workshop Details\n\nHi Linda,\n\nThank you for the reminder. I’ve looked over the agenda, and I believe it covers all the topics we need to address. I’ll be there by 8:30 AM to help set up. Let me know if there are specific items you want me to bring along.\n\nRegards,\nDavid"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-double-03-q1", "question": "What event is being discussed in the emails?", "options": ["A. A team meeting", "B. A social gathering", "C. A workshop", "D. A conference"], "answer": "C"},
+        {"id": "toeic-r7-double-03-q2", "question": "What time does the workshop start?", "options": ["A. 8 AM", "B. 9 AM", "C. 10 AM", "D. 4 PM"], "answer": "B"},
+        {"id": "toeic-r7-double-03-q3", "question": "Where is the workshop taking place?", "options": ["A. Downtown Library", "B. Main Office", "C. Downtown Conference Center", "D. City Hall"], "answer": "C"},
+        {"id": "toeic-r7-double-03-q4", "question": "What does David offer to do before the workshop starts?", "options": ["A. Arrange the seating", "B. Bring refreshments", "C. Help set up", "D. Lead an opening session"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-double-04",
+      "passages": [
+        {"label": "Email 1", "text": "From: Sarah Johnson\nTo: Michael Davis\nSubject: Feedback on Presentation\n\nHi Michael,\n\nI wanted to share my thoughts on your presentation from last week. Your insights on market trends were particularly engaging, but I think you could strengthen your argument by including more data. Overall, I enjoyed it, and I look forward to your next one!\n\nBest,\nSarah"},
+        {"label": "Email 2", "text": "From: Michael Davis\nTo: Sarah Johnson\nSubject: RE: Feedback on Presentation\n\nHi Sarah,\n\nThank you for your feedback! I appreciate your comments and will make sure to incorporate additional data in my future presentations. I’m glad you found the market trends interesting. Let’s discuss over coffee next week? \n\nCheers,\nMichael"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-double-04-q1", "question": "What does Sarah think about Michael's presentation?", "options": ["A. It was too long", "B. It was well-prepared", "C. It lacked engagement", "D. It was challenging to understand"], "answer": "B"},
+        {"id": "toeic-r7-double-04-q2", "question": "What does Sarah suggest Michael improve in his presentation?", "options": ["A. Visual aids", "B. Presentation software", "C. Data support", "D. Delivery style"], "answer": "C"},
+        {"id": "toeic-r7-double-04-q3", "question": "What does Michael propose to do with Sarah next week?", "options": ["A. Attend another presentation", "B. Review a report together", "C. Discuss feedback over coffee", "D. Prepare for a meeting"], "answer": "C"},
+        {"id": "toeic-r7-double-04-q4", "question": "What topic did Michael's presentation mainly cover?", "options": ["A. Financial projections", "B. Market trends", "C. Sales performance", "D. Customer feedback"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-double-05",
+      "passages": [
+        {"label": "Email 1", "text": "From: Tom Robinson\nTo: Emily Carter\nSubject: Job Application Status\n\nHi Emily,\n\nI hope you are doing well. I wanted to follow up on my job application for the Marketing Associate position I submitted last month. If possible, could you provide me with an update on the status? I appreciate your help!\n\nBest regards,\nTom"},
+        {"label": "Email 2", "text": "From: Emily Carter\nTo: Tom Robinson\nSubject: RE: Job Application Status\n\nHi Tom,\n\nThanks for reaching out. We are still in the process of reviewing applications, and we hope to make a decision by the end of next week. I appreciate your patience as we finalize our review. I'll be sure to keep you updated.\n\nBest,\nEmily"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-double-05-q1", "question": "What is the purpose of Tom's email to Emily?", "options": ["A. To confirm an interview date", "B. To inquire about his application status", "C. To submit additional documents", "D. To express his interest in the job"], "answer": "B"},
+        {"id": "toeic-r7-double-05-q2", "question": "What position is Tom applying for?", "options": ["A. Sales Manager", "B. Marketing Associate", "C. HR Specialist", "D. Project Coordinator"], "answer": "B"},
+        {"id": "toeic-r7-double-05-q3", "question": "When does Emily expect to make a decision regarding the applications?", "options": ["A. By tomorrow", "B. By the end of the week", "C. By the end of next week", "D. In two weeks"], "answer": "C"},
+        {"id": "toeic-r7-double-05-q4", "question": "How does Emily describe the application review process?", "options": ["A. Completed", "B. Ongoing", "C. Quick", "D. Complicated"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-double-02-dfb9",
+      "passages": [
+        {"label": "Newsletter 1", "text": "Subject: Upcoming Webinars for Professionals\n\nDear Team,\n\nWe are excited to announce a series of webinars designed for professionals in our industry. The first session, 'Innovative Marketing Strategies', will take place on March 10 at 10 AM. The second session, 'Effective Team Leadership', is scheduled for March 15 at 2 PM. Both webinars are free of charge. Please register early as space is limited!\n\nBest regards,\nThe Training Team"},
+        {"label": "Newsletter 2", "text": "Subject: Register Now for Our Webinars!\n\nHello Everyone,\n\nJust a reminder to register for our upcoming webinars! 'Innovative Marketing Strategies' and 'Effective Team Leadership' promise to provide valuable insights. If you haven’t signed up yet, please ensure you do so by March 5 to secure your attendance. We look forward to seeing you there!\n\nCheers,\nThe Training Team"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-double-02-q1-49f4", "question": "What is the main purpose of the newsletters?", "options": ["A. To announce new hires", "B. To promote upcoming webinars", "C. To invite feedback on past events", "D. To change company policies"], "answer": "B"},
+        {"id": "toeic-r7-double-02-q2-cb24", "question": "When is the webinar on 'Innovative Marketing Strategies' scheduled?", "options": ["A. March 5", "B. March 10", "C. March 15", "D. March 20"], "answer": "B"},
+        {"id": "toeic-r7-double-02-q3-8f1b", "question": "What should participants do by March 5?", "options": ["A. Attend the first webinar", "B. Register for the webinars", "C. Provide feedback on previous sessions", "D. Read related articles"], "answer": "B"},
+        {"id": "toeic-r7-double-02-q4-f183", "question": "How much do the webinars cost?", "options": ["A. $50", "B. $100", "C. Free", "D. It depends on the session"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-double-03-acc7",
+      "passages": [
+        {"label": "Report", "text": "To: Marketing Department\nFrom: Lisa Chen\nDate: January 25\nSubject: Q1 Marketing Campaign Overview\n\nDear Team,\n\nAs we begin planning for the first quarter, here’s an overview of our marketing campaign objectives. We aim to increase brand awareness by 30% and generate 15% more leads than last year. Key activities will include social media promotions, email marketing, and community events. I will share the detailed plan in our next meeting.\n\nRegards,\nLisa"},
+        {"label": "Follow-up Email", "text": "Subject: Q1 Marketing Campaign Meeting\n\nHello Everyone,\n\nI would like to remind you of the upcoming meeting on February 1 to discuss our Q1 marketing campaign. Please come prepared to brainstorm ideas and strategies to achieve our objectives laid out in Lisa’s report. Your input is highly valued. Let's collaborate to maximize our impact this quarter!\n\nBest,\nTom"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-double-03-q1-59ca", "question": "What is the main goal of the Q1 marketing campaign?", "options": ["A. To decrease marketing costs", "B. To launch a new product", "C. To increase brand awareness", "D. To hire more staff"], "answer": "C"},
+        {"id": "toeic-r7-double-03-q2-b086", "question": "What types of activities are planned for the campaign?", "options": ["A. Training sessions and webinars", "B. Community events and product launches", "C. Social media promotions and email marketing", "D. Competitor analysis and reporting"], "answer": "C"},
+        {"id": "toeic-r7-double-03-q3-3ef2", "question": "When is the campaign meeting scheduled?", "options": ["A. January 25", "B. February 1", "C. February 15", "D. March 1"], "answer": "B"},
+        {"id": "toeic-r7-double-03-q4-2438", "question": "Who is leading the marketing campaign initiative?", "options": ["A. Tom", "B. Lisa", "C. The entire department", "D. Senior management"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-double-04-0468",
+      "passages": [
+        {"label": "Announcement", "text": "Subject: Changes to Health Insurance Plans\n\nDear Employees,\n\nStarting April 1, we will be updating our health insurance plans to better meet your needs. There will be additional coverage options and a new wellness program. Details will be sent to your email by March 15. If you have any questions, please contact the HR department.\n\nThank you,\nHR Team"},
+        {"label": "FAQ Document", "text": "Subject: Health Insurance Plan Updates\n\nHello Team,\n\nWe understand that changes to health insurance can be concerning. Please review the FAQ document attached for answers to common questions regarding the new plans, coverage details, and the enrollment process. Don’t hesitate to reach out if you need further assistance.\n\nBest regards,\nHR Team"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-double-04-q1-d253", "question": "What is being changed on April 1?", "options": ["A. Work hours", "B. Health insurance plans", "C. Employee parking policies", "D. Vacation days"], "answer": "B"},
+        {"id": "toeic-r7-double-04-q2-a78d", "question": "When will details about the new plans be sent out?", "options": ["A. Immediately", "B. March 1", "C. March 15", "D. April 1"], "answer": "C"},
+        {"id": "toeic-r7-double-04-q3-609f", "question": "Who should employees contact for questions about the updates?", "options": ["A. Their direct manager", "B. The IT department", "C. The HR department", "D. Their colleagues"], "answer": "C"},
+        {"id": "toeic-r7-double-04-q4-6be2", "question": "What document is provided for additional information?", "options": ["A. Employee handbook", "B. FAQ document", "C. Survey form", "D. Meeting agenda"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-double-05-984b",
+      "passages": [
+        {"label": "Notice", "text": "Subject: Office Renovation Notification\n\nDear All,\n\nPlease be informed that our office will undergo renovations starting February 10. The project is expected to last about four weeks, and there may be some noise and dust. We appreciate your understanding during this time and recommend using the back entrance for access to the building. Thank you for your cooperation.\n\nSincerely,\nFacilities Management"},
+        {"label": "Reminder Email", "text": "Subject: Reminder About Office Renovation\n\nHi Team,\n\nJust a quick reminder that the office renovations will begin soon. To avoid any inconvenience, please make sure to follow the instructions shared in the previous notice regarding access to the building. We hope to have everything completed by March 10. Thank you for your patience!\n\nBest,\nFacilities Management"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-double-05-q1-339d", "question": "When will the office renovations start?", "options": ["A. January 10", "B. February 10", "C. March 10", "D. April 10"], "answer": "B"},
+        {"id": "toeic-r7-double-05-q2-f3a9", "question": "How long is the renovation project expected to last?", "options": ["A. Two weeks", "B. Three weeks", "C. Four weeks", "D. Six weeks"], "answer": "C"},
+        {"id": "toeic-r7-double-05-q3-1209", "question": "What should employees do to access the building during renovations?", "options": ["A. Use the front entrance", "B. Contact security", "C. Use the back entrance", "D. Avoid the office"], "answer": "C"},
+        {"id": "toeic-r7-double-05-q4-a7be", "question": "What type of inconvenience is mentioned in the notices?", "options": ["A. Transportation issues", "B. Noise and dust", "C. Office hours changes", "D. Internet connectivity problems"], "answer": "B"}
+      ]
+    }
+  ],
+  "triplePassages": [
+    {
+      "id": "toeic-r7-triple-01",
+      "passages": [
+        {"label": "Schedule", "text": "Riverton Business Expo - Workshop Schedule\n\n9:00 - 10:00: 'Digital Marketing Trends' - Hall A\n10:15 - 11:15: 'Small Business Financing' - Hall B\n11:30 - 12:30: 'Effective Team Leadership' - Hall A\n1:30 - 2:30: 'Sustainable Business Practices' - Hall C\n\nSeating is limited to 50 attendees per workshop. Registration is required at the information desk."},
+        {"label": "Email", "text": "From: Tasha Reeves\nTo: Info Desk, Riverton Business Expo\nSubject: Workshop Registration\n\nHello,\n\nI'd like to register for the 'Small Business Financing' and 'Sustainable Business Practices' workshops. Could you confirm there is still space available? I'll be arriving at the expo around 10 a.m.\n\nThank you,\nTasha Reeves"},
+        {"label": "Reply Email", "text": "From: Info Desk, Riverton Business Expo\nTo: Tasha Reeves\nSubject: RE: Workshop Registration\n\nDear Ms. Reeves,\n\nThank you for your message. The 'Small Business Financing' workshop is now full, but we have added your name to the waitlist. We do have space in 'Sustainable Business Practices,' and you're confirmed for that session. We recommend arriving 15 minutes early to secure a seat.\n\nBest regards,\nInfo Desk Team"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-triple-01-q1", "question": "How many attendees can each workshop hold?", "options": ["A. 20", "B. 30", "C. 50", "D. 100"], "answer": "C"},
+        {"id": "toeic-r7-triple-01-q2", "question": "What time does Tasha Reeves plan to arrive at the expo?", "options": ["A. 9:00 a.m.", "B. 10:00 a.m.", "C. 11:30 a.m.", "D. 1:30 p.m."], "answer": "B"},
+        {"id": "toeic-r7-triple-01-q3", "question": "What is true about the 'Small Business Financing' workshop?", "options": ["A. It has been canceled", "B. It is full, and Tasha is on the waitlist", "C. It has been moved to Hall C", "D. Tasha is confirmed to attend"], "answer": "B"},
+        {"id": "toeic-r7-triple-01-q4", "question": "Which workshop is Tasha confirmed for?", "options": ["A. Digital Marketing Trends", "B. Small Business Financing", "C. Effective Team Leadership", "D. Sustainable Business Practices"], "answer": "D"},
+        {"id": "toeic-r7-triple-01-q5", "question": "What does the Info Desk recommend Tasha do?", "options": ["A. Bring a printed ticket", "B. Arrive 15 minutes early", "C. Contact the speaker directly", "D. Pay an additional fee"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r7-triple-02",
+      "passages": [
+        {"label": "Travel Itinerary", "text": "Lakeside Vacation - Itinerary\n\nDay 1: Arrival at Lakeside Resort - 3:00 PM\nDay 2: Morning Yoga Session - 7:00 AM; Guided Hiking Tour - 10:00 AM\nDay 3: Spa Treatment - 2:00 PM; Evening Bonfire - 7:30 PM\n\nMeals are included. Check-out is at 11:00 AM on Day 4."},
+        {"label": "Email", "text": "From: Kevin Bright\nTo: Reservations, Lakeside Resort\nSubject: Trip Confirmation\n\nDear Reservations Team,\n\nPlease confirm my booking for the Lakeside Vacation package. I will be arriving on the afternoon of Day 1 and looking forward to the activities planned.\n\nBest,\nKevin Bright"},
+        {"label": "Reply Email", "text": "From: Reservations, Lakeside Resort\nTo: Kevin Bright\nSubject: RE: Trip Confirmation\n\nDear Mr. Bright,\n\nThank you for your email. Your booking for the Lakeside Vacation package is confirmed. We look forward to welcoming you on Day 1. If you have any special requests, please let us know in advance.\n\nWarm regards,\nReservations Team"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-triple-02-q1", "question": "What time does check-out occur on Day 4?", "options": ["A. 9:00 AM", "B. 10:00 AM", "C. 11:00 AM", "D. 12:00 PM"], "answer": "C"},
+        {"id": "toeic-r7-triple-02-q2", "question": "What is the first scheduled activity on Day 2?", "options": ["A. Guided Hiking Tour", "B. Spa Treatment", "C. Evening Bonfire", "D. Morning Yoga Session"], "answer": "D"},
+        {"id": "toeic-r7-triple-02-q3", "question": "Which team confirmed Kevin's booking?", "options": ["A. Activities Team", "B. Reservations Team", "C. Customer Service Team", "D. Welcome Team"], "answer": "B"},
+        {"id": "toeic-r7-triple-02-q4", "question": "What does Kevin expect to receive before his trip?", "options": ["A. A detailed itinerary", "B. Directions to the resort", "C. Confirmation of booking", "D. An invitation to a special dinner"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-triple-03",
+      "passages": [
+        {"label": "Job Posting", "text": "Company: Bright Tech Solutions\nPosition: Marketing Coordinator\n\nResponsibilities include:\n- Developing marketing strategies\n- Coordinating promotional events\n- Analyzing market trends\n\nQualifications:\n- Bachelor’s degree in Marketing or related field\n- 2 years of experience in a marketing role\n- Excellent communication skills\n\nInterested candidates should send their resume to careers@brighttech.com."},
+        {"label": "Application Email", "text": "From: Maria Lopez\nTo: Careers, Bright Tech Solutions\nSubject: Application for Marketing Coordinator Position\n\nDear Hiring Team,\n\nI am writing to apply for the Marketing Coordinator position. I have a background in marketing with over three years of experience and I believe my skills align well with your needs. Enclosed is my resume for your review.\n\nSincerely,\nMaria Lopez"},
+        {"label": "Reply Email", "text": "From: Careers, Bright Tech Solutions\nTo: Maria Lopez\nSubject: RE: Application for Marketing Coordinator Position\n\nDear Ms. Lopez,\n\nThank you for your application. We appreciate your interest in the Marketing Coordinator position. Our team will review your resume and contact you soon regarding the next steps.\n\nBest regards,\nHiring Manager"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-triple-03-q1", "question": "What is the role that Bright Tech Solutions is hiring for?", "options": ["A. Marketing Analyst", "B. Sales Manager", "C. Marketing Coordinator", "D. Event Planner"], "answer": "C"},
+        {"id": "toeic-r7-triple-03-q2", "question": "How many years of experience is required for the position?", "options": ["A. 1 year", "B. 2 years", "C. 3 years", "D. 4 years"], "answer": "B"},
+        {"id": "toeic-r7-triple-03-q3", "question": "What is a key qualification for applicants?", "options": ["A. Bachelor's degree in Marketing", "B. Proficiency in web design", "C. Experience in sales", "D. Multilingual abilities"], "answer": "A"},
+        {"id": "toeic-r7-triple-03-q4", "question": "What will happen after Maria submits her application?", "options": ["A. She will be interviewed immediately", "B. She will receive feedback on her resume", "C. The team will review her application", "D. She will be hired on the spot"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-triple-04",
+      "passages": [
+        {"label": "Product Launch Announcement", "text": "Company: Green Innovations\nEvent: Launch of Eco-Friendly Kitchenware\nDate: March 15, 2023\n\nJoin us for the official launch event at our headquarters from 2:00 PM to 4:00 PM. Enjoy product demonstrations, special discounts, and refreshments. RSVP by March 8, 2023."},
+        {"label": "RSVP Email", "text": "From: Jason Lee\nTo: Marketing, Green Innovations\nSubject: RSVP for Product Launch Event\n\nHello,\n\nI would like to confirm my attendance at the Product Launch event on March 15. I am excited to see the new eco-friendly products!\n\nBest,\nJason Lee"},
+        {"label": "Confirmation Email", "text": "From: Marketing, Green Innovations\nTo: Jason Lee\nSubject: RE: RSVP for Product Launch Event\n\nDear Jason,\n\nThank you for your RSVP. We are pleased to confirm your attendance at the Eco-Friendly Kitchenware launch. We look forward to seeing you there!\n\nBest wishes,\nMarketing Team"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-triple-04-q1", "question": "What type of event is being announced?", "options": ["A. A company meeting", "B. A product launch", "C. A customer feedback session", "D. A training workshop"], "answer": "B"},
+        {"id": "toeic-r7-triple-04-q2", "question": "When is the launch event scheduled to take place?", "options": ["A. March 8, 2023", "B. March 15, 2023", "C. April 1, 2023", "D. April 15, 2023"], "answer": "B"},
+        {"id": "toeic-r7-triple-04-q3", "question": "What can attendees expect at the launch event?", "options": ["A. Exclusive sales", "B. Tours of the factory", "C. Job interviews", "D. Product demonstrations"], "answer": "D"},
+        {"id": "toeic-r7-triple-04-q4", "question": "What is the deadline for RSVPs?", "options": ["A. March 1, 2023", "B. March 5, 2023", "C. March 8, 2023", "D. March 15, 2023"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r7-triple-05",
+      "passages": [
+        {"label": "Conference Agenda", "text": "Annual Tech Conference - Agenda\n\n9:00 - 10:00: Opening Keynote - Main Hall\n10:15 - 11:15: Session 1: AI Innovations - Room 101\n11:30 - 12:30: Session 2: Cybersecurity Trends - Room 102\n1:30 - 2:30: Networking Lunch - Cafeteria\n\nAll participants are encouraged to attend the networking lunch for collaboration opportunities."},
+        {"label": "Registration Email", "text": "From: Sarah Kim\nTo: Conference Organizers\nSubject: Conference Registration\n\nDear Organizers,\n\nI am interested in attending the Annual Tech Conference. Please let me know how to proceed with the registration.\n\nThank you,\nSarah Kim"},
+        {"label": "Response Email", "text": "From: Conference Organizers\nTo: Sarah Kim\nSubject: RE: Conference Registration\n\nDear Ms. Kim,\n\nThank you for your interest in the Annual Tech Conference. You can register online at our website. We hope to see you there!\n\nBest regards,\nConference Team"}
+      ],
+      "questions": [
+        {"id": "toeic-r7-triple-05-q1", "question": "What is the time of the opening keynote?", "options": ["A. 9:00 AM", "B. 10:15 AM", "C. 11:30 AM", "D. 1:30 PM"], "answer": "A"},
+        {"id": "toeic-r7-triple-05-q2", "question": "What session focuses on AI innovations?", "options": ["A. Session 1", "B. Session 2", "C. Opening Keynote", "D. Networking Lunch"], "answer": "A"},
+        {"id": "toeic-r7-triple-05-q3", "question": "What is recommended for all participants during the conference?", "options": ["A. Attending the opening keynote", "B. Participating in the networking lunch", "C. Attending session 1 only", "D. Visiting exhibitors only"], "answer": "B"},
+        {"id": "toeic-r7-triple-05-q4", "question": "How can Sarah Kim register for the conference?", "options": ["A. By contacting the organizers by phone", "B. By registering online", "C. By arriving early at the conference", "D. By sending a mail-in form"], "answer": "B"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "exam": "IELTS",
+  "section": "Listening",
+  "part": "Section 3: Matching / Discussion between two or more speakers in an educational context",
+  "instructions": "Listen to the discussion and match each topic to the correct speaker's opinion, or choose the correct option.",
+  "tasks": [
+    {
+      "id": "ielts-l3-01",
+      "transcript": "Tutor: So, Maya and Josh, let's discuss your group project on urban green spaces. Maya, what did you find in your research?\nMaya: I found that community gardens significantly improve residents' mental well-being, based on three separate studies from European cities.\nTutor: Interesting. Josh, what about you?\nJosh: My focus was more on the economic side. I found that green spaces can actually raise nearby property values by up to ten percent.\nTutor: And did you both agree on the biggest challenge cities face in creating more green space?\nMaya: I'd say it's a lack of available land in dense urban centers.\nJosh: I actually think funding is the bigger obstacle, more than land availability. Even where land exists, councils often can't afford the upkeep.",
+      "questions": [
+        {"id": "ielts-l3-01-q1", "question": "What was Maya's research focus?", "options": ["A. Property values", "B. Mental well-being benefits", "C. Funding challenges"], "answer": "B"},
+        {"id": "ielts-l3-01-q2", "question": "What did Josh find regarding property values?", "options": ["A. They decrease near green spaces", "B. They can rise by up to 10%", "C. They remain unaffected"], "answer": "B"},
+        {"id": "ielts-l3-01-q3", "question": "According to Josh, what is the biggest challenge?", "options": ["A. Lack of land", "B. Public opposition", "C. Lack of funding"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ielts-l3-02",
+      "transcript": "Tutor: Let's go over your presentation plans for the renewable energy seminar. Priya, how are you approaching the topic of solar power?\nPriya: I want to focus on residential adoption rates and the barriers homeowners face, like upfront installation costs.\nTutor: And Tom, you're covering wind energy?\nTom: Yes, but I'm shifting my focus slightly. Instead of just technical aspects, I want to look at the public perception issues, since noise complaints have slowed several projects.\nTutor: Good idea. Will either of you address government subsidies?\nPriya: I'll mention them briefly, but Tom's actually going to cover that in more depth since it's more relevant to his section on policy barriers.",
+      "questions": [
+        {"id": "ielts-l3-02-q1", "question": "What barrier does Priya focus on for solar power?", "options": ["A. Government regulations", "B. Upfront installation costs", "C. Lack of sunlight"], "answer": "B"},
+        {"id": "ielts-l3-02-q2", "question": "What has slowed wind energy projects, according to Tom?", "options": ["A. High costs", "B. Noise complaints", "C. Technical failures"], "answer": "B"},
+        {"id": "ielts-l3-02-q3", "question": "Who will cover government subsidies in more depth?", "options": ["A. Priya", "B. Tom", "C. Neither of them"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-02-19cc",
+      "transcript": "Tutor: Emily and Tom, let's go over your presentation regarding renewable energy sources. Emily, what was the main point of your section?\nEmily: I emphasized the importance of solar energy as a sustainable option that can significantly reduce carbon footprints.\nTutor: That’s a great angle. Tom, what did you focus on?\nTom: I looked into wind energy and how advancements in technology have made it much more cost-effective in recent years.\nTutor: Did you both encounter any challenges regarding public perception of renewable energy?\nEmily: Yes, many people underestimate the benefits of solar power.\nTom: I agree, but I think there's also a lot of skepticism about the reliability of wind energy in different climates.",
+      "questions": [
+        {"id": "ielts-l3-02-q1-afb0", "question": "What was Emily's focus in her research?", "options": ["A. Wind energy technology", "B. Benefits of solar energy", "C. Public perception of energy sources"], "answer": "B"},
+        {"id": "ielts-l3-02-q2-09d1", "question": "What did Tom find about wind energy?", "options": ["A. It is becoming more expensive", "B. It is less reliable in certain climates", "C. It has become more cost-effective"], "answer": "C"},
+        {"id": "ielts-l3-02-q3-01b2", "question": "According to Tom, what is a major challenge for public perception?", "options": ["A. Benefits of solar energy", "B. Skepticism about reliability", "C. Understanding technology advancements"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-03",
+      "transcript": "Tutor: Let’s talk about your findings on historical monuments. Sarah, what aspect did you concentrate on?\nSarah: I explored how preservation efforts can sometimes hinder urban development projects.\nTutor: That’s an interesting perspective. And Dan, what did your research reveal?\nDan: I focused on the economic impact that heritage tourism can have on local communities.\nTutor: Did you agree on any common concerns regarding historical sites?\nSarah: Yes, I think the conflict between preservation and progress is a major issue.\nDan: Right, and I also believe that insufficient funding for proper maintenance affects tourism.",
+      "questions": [
+        {"id": "ielts-l3-03-q1", "question": "What did Sarah's research focus on?", "options": ["A. Economics of tourism", "B. Preservation and urban development", "C. Historical significance"], "answer": "B"},
+        {"id": "ielts-l3-03-q2", "question": "What economic aspect did Dan study?", "options": ["A. Local tax impacts", "B. Heritage tourism benefits", "C. Job creation from heritage sites"], "answer": "B"},
+        {"id": "ielts-l3-03-q3", "question": "What concern did both Sarah and Dan share?", "options": ["A. Conflict between preservation and urbanization", "B. Limited public interest in history", "C. Government intervention in maintenance"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "ielts-l3-04",
+      "transcript": "Tutor: Jake and Mia, let’s discuss your analysis of social media's impact on education. Jake, what was your key finding?\nJake: I found that social media can enhance collaborative learning among students.\nTutor: That’s a valuable insight. Mia, how did you approach the topic?\nMia: I examined the potential distractions social media poses during study time.\nTutor: What challenges did you identify regarding these distractions?\nJake: I noticed that many students struggle to balance social media use and their study time.\nMia: Exactly, and I believe setting boundaries is essential for effective learning.",
+      "questions": [
+        {"id": "ielts-l3-04-q1", "question": "What aspect did Jake focus on in his research?", "options": ["A. Distractions caused by social media", "B. Collaborative learning enhancement", "C. Teachers' opinions on technology"], "answer": "B"},
+        {"id": "ielts-l3-04-q2", "question": "What did Mia highlight about social media?", "options": ["A. Its role in educational content", "B. Its distraction potential", "C. Its effect on teachers"], "answer": "B"},
+        {"id": "ielts-l3-04-q3", "question": "According to Jake, what is a challenge students face?", "options": ["A. Too much content on social media", "B. Balancing study with social media", "C. Lack of access to information"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-05",
+      "transcript": "Tutor: Let's examine your research findings on urban transportation. Laura, what area did you focus on?\nLaura: I investigated the effects of bike-sharing programs on reducing traffic congestion.\nTutor: That sounds impactful. And Kevin, what did you discover in your study?\nKevin: I looked into how public transport accessibility affects urban mobility and equality.\nTutor: Did you find any common themes in your research?\nLaura: Yes, I believe promoting sustainable transport options is crucial for city planning.\nKevin: Agreed, and I think ensuring equitable access to public transport is equally important.",
+      "questions": [
+        {"id": "ielts-l3-05-q1", "question": "What was Laura's research focus?", "options": ["A. Public transport accessibility", "B. Traffic congestion from cars", "C. Bike-sharing program effects"], "answer": "C"},
+        {"id": "ielts-l3-05-q2", "question": "What did Kevin’s research examine?", "options": ["A. Sustainability of bike-sharing", "B. Mobility and equality in transport", "C. Traffic management strategies"], "answer": "B"},
+        {"id": "ielts-l3-05-q3", "question": "What common theme did both Laura and Kevin identify?", "options": ["A. Need for bike-sharing programs", "B. Importance of sustainable transport", "C. Challenges in urban planning"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-06",
+      "transcript": "Tutor: Brian and Sophie, let’s analyze your project on climate change adaptation strategies. Brian, what was your primary focus?\nBrian: I looked at how cities can implement green roofs to counteract urban heat.\nTutor: That’s a great approach. Sophie, what was your perspective?\nSophie: I analyzed the role of community engagement in promoting climate resilience.\nTutor: Did you both encounter any shared concerns regarding adaptation strategies?\nBrian: Yes, I think lack of funding for green initiatives is a significant barrier.\nSophie: I agree; however, I also feel that educating the public is crucial to gain support.",
+      "questions": [
+        {"id": "ielts-l3-06-q1", "question": "What aspect of climate change did Brian focus on?", "options": ["A. Community engagement", "B. Green roofs for heat mitigation", "C. Climate education programs"], "answer": "B"},
+        {"id": "ielts-l3-06-q2", "question": "What did Sophie analyze concerning climate resilience?", "options": ["A. The role of media", "B. Community engagement", "C. Government policies"], "answer": "B"},
+        {"id": "ielts-l3-06-q3", "question": "What common barrier did they both identify?", "options": ["A. Public indifference", "B. Funding for initiatives", "C. Lack of research data"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-02-a610",
+      "transcript": "Professor: Today, we have Ella and Sam to discuss their findings on renewable energy sources. Ella, can you share your insights from your research?\nElla: Sure! I researched solar energy, particularly its efficiency improvements over the last decade.\nProfessor: That's fascinating. And Sam, what did you focus on?\nSam: I looked into wind energy, and I found that offshore wind farms can produce much more energy than land-based ones.\nProfessor: Good points. Did you both identify any significant barriers to the adoption of these technologies?\nElla: Yes, I think initial investment costs are prohibitive for many.\nSam: I disagree; I believe regulatory hurdles are a bigger issue than cost.",
+      "questions": [
+        {"id": "ielts-l3-02-q1-7c67", "question": "What does Ella's research emphasize?", "options": ["A. Efficiency of solar panels", "B. Wind energy production", "C. Regulatory challenges"], "answer": "A"},
+        {"id": "ielts-l3-02-q2-6fa0", "question": "What did Sam find about offshore wind farms?", "options": ["A. They are less efficient than land-based ones", "B. They can generate more energy", "C. They are more expensive to build"], "answer": "B"},
+        {"id": "ielts-l3-02-q3-dfc7", "question": "According to Ella, what is a significant barrier?", "options": ["A. Regulatory hurdles", "B. Initial investment costs", "C. Public awareness"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-03-8e19",
+      "transcript": "Lecturer: Let’s hear from Alex and Jamie about their project on effective teaching methods. Alex, what have you discovered?\nAlex: I found that interactive learning significantly enhances student engagement in the classroom.\nLecturer: Interesting. Jamie, what’s your perspective?\nJamie: My research highlighted the importance of feedback. Timely feedback helps students understand their mistakes better.\nLecturer: Great insights! Did you both come across any issues related to the use of technology in education?\nAlex: Absolutely, accessibility is a major concern for many students.\nJamie: I would argue that teacher training is a vital factor as well.",
+      "questions": [
+        {"id": "ielts-l3-03-q1-58fc", "question": "What does Alex's research focus on?", "options": ["A. Teacher training", "B. Interactive learning", "C. Accessibility issues"], "answer": "B"},
+        {"id": "ielts-l3-03-q2-bb53", "question": "What does Jamie emphasize as important?", "options": ["A. Interactive tools", "B. Timely feedback", "C. Standardized testing"], "answer": "B"},
+        {"id": "ielts-l3-03-q3-a4fb", "question": "According to Alex, what is a major concern?", "options": ["A. Technology costs", "B. Accessibility", "C. Curriculum design"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-04-0798",
+      "transcript": "Instructor: I’d like to hear about your individual studies on climate change effects. Sophie, please go first.\nSophie: My study focuses on the impact of climate change on agriculture and how it leads to crop failures.\nInstructor: That’s an important issue. And what about you, Tom?\nTom: I looked at the effect of climate change on sea levels, finding that coastal areas are at risk of flooding.\nInstructor: Were there common challenges you both identified regarding climate change adaptations?\nSophie: I think public awareness is crucial for effective change.\nTom: I feel that political will is often lacking, which hinders adaptation efforts.",
+      "questions": [
+        {"id": "ielts-l3-04-q1-e215", "question": "What is Sophie's research about?", "options": ["A. Sea level rise", "B. Crop failures", "C. Public awareness"], "answer": "B"},
+        {"id": "ielts-l3-04-q2-c124", "question": "What was Tom’s primary focus?", "options": ["A. Agriculture", "B. Sea level rise", "C. Deforestation"], "answer": "B"},
+        {"id": "ielts-l3-04-q3-13c6", "question": "According to Sophie, what is vital for addressing climate change?", "options": ["A. Funding", "B. Public awareness", "C. Technology"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-05-0fdf",
+      "transcript": "Facilitator: Let’s discuss your group assignment on biodiversity. Jake, what did your research reveal?\nJake: I found that habitat loss poses a significant threat to many species globally.\nFacilitator: Interesting point. What about you, Lisa?\nLisa: My focus was on the impact of pollution, specifically on marine life and ecosystems.\nFacilitator: Did you identify any common challenges affecting biodiversity?\nJake: One challenge is definitely climate change, which exacerbates existing issues.\nLisa: I also think public policy is a major hurdle in conservation efforts.",
+      "questions": [
+        {"id": "ielts-l3-05-q1-ee8e", "question": "What was Jake’s research about?", "options": ["A. Pollution", "B. Habitat loss", "C. Climate change"], "answer": "B"},
+        {"id": "ielts-l3-05-q2-773c", "question": "What did Lisa focus on in her research?", "options": ["A. Marine life", "B. Habitat destruction", "C. Climate change"], "answer": "A"},
+        {"id": "ielts-l3-05-q3-b815", "question": "According to Jake, what exacerbates biodiversity issues?", "options": ["A. Climate change", "B. Pollution", "C. Overfishing"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "ielts-l3-06-2f28",
+      "transcript": "Tutor: Welcome, Emma and Ron. Let’s talk about your recent case studies on urban transportation. Emma, what were your main findings?\nEmma: I discovered that implementing bike lanes improves city traffic flow and reduces accidents.\nTutor: That’s significant. Ron, what did your research focus on?\nRon: I looked into public transport systems and found that better frequency leads to higher usage among commuters.\nTutor: Excellent! Did you both note any challenges regarding urban transport improvements?\nEmma: Yes, I think public resistance is a key issue.\nRon: I believe funding is the primary limitation many cities face when trying to improve transport systems.",
+      "questions": [
+        {"id": "ielts-l3-06-q1-bbdf", "question": "What did Emma's research address?", "options": ["A. Traffic flow improvements", "B. Public transport frequency", "C. Funding challenges"], "answer": "A"},
+        {"id": "ielts-l3-06-q2-a70f", "question": "What aspect of transport did Ron find important?", "options": ["A. Bicycle lanes", "B. Public transport frequency", "C. Traffic congestion"], "answer": "B"},
+        {"id": "ielts-l3-06-q3-0dfb", "question": "According to Emma, what is a challenge in improving urban transport?", "options": ["A. Funding", "B. Public resistance", "C. Land acquisition"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-02-8991",
+      "transcript": "Tutor: Alright, Emma and Liam, let's talk about your presentations on renewable energy sources. Emma, what did you discover?\nEmma: I analyzed how solar energy usage has increased over the past decade, particularly in rural areas due to lower installation costs.\nTutor: That's a great point. Liam, what was your approach?\nLiam: I reviewed the impact of wind energy on local economies. The data shows it creates a significant number of jobs in maintenance and manufacturing.\nTutor: Did either of you encounter any obstacles in your research?\nEmma: Definitely, I found that regulatory hurdles can slow down solar energy projects significantly.\nLiam: I would agree with Emma; however, I think public perception is also a major issue that needs addressing.",
+      "questions": [
+        {"id": "ielts-l3-02-q1-8b4e", "question": "What aspect of solar energy did Emma focus on?", "options": ["A. Installation costs", "B. Job creation", "C. Regulatory hurdles"], "answer": "A"},
+        {"id": "ielts-l3-02-q2-d474", "question": "What did Liam find about wind energy?", "options": ["A. It has no economic impact", "B. It creates jobs", "C. It negatively affects local wildlife"], "answer": "B"},
+        {"id": "ielts-l3-02-q3-1aad", "question": "According to Emma, what is a challenge in solar energy projects?", "options": ["A. Public perception", "B. Regulatory hurdles", "C. High installation costs"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-03-e54a",
+      "transcript": "Tutor: Now, Sophie and Mark, let’s move on to your research on the effects of social media on teenagers. Sophie, what were your findings?\nSophie: I found that teenagers often feel isolated despite being more connected online, which can lead to anxiety.\nTutor: That's fascinating. Mark, what did you discover?\nMark: I focused on the positive aspects, specifically how social media can foster friendships and communities among teenagers.\nTutor: Were there any common themes in your research?\nSophie: Yes, we both noted that it plays a dual role in their lives, both connecting and disconnecting them from reality.\nMark: Exactly. It's a complex relationship for sure.",
+      "questions": [
+        {"id": "ielts-l3-03-q1-1d02", "question": "What did Sophie find about teenagers and social media?", "options": ["A. They feel less connected", "B. They often feel isolated", "C. They prefer face-to-face interaction"], "answer": "B"},
+        {"id": "ielts-l3-03-q2-a46e", "question": "What positive aspect did Mark mention?", "options": ["A. Increased anxiety", "B. Fostered friendships", "C. Decreased social skills"], "answer": "B"},
+        {"id": "ielts-l3-03-q3-7d75", "question": "How did both students view the role of social media?", "options": ["A. Solely negative", "B. A complex relationship", "C. Only beneficial"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-04-17be",
+      "transcript": "Tutor: Next, let's discuss your projects on climate change, Rachel and Tom. Rachel, what did you focus on?\nRachel: I researched the impact of deforestation on carbon emissions, finding it contributes significantly to global warming.\nTutor: That's critical. Tom, what were your findings?\nTom: I examined how climate change affects weather patterns, leading to more extreme storms and droughts.\nTutor: Did you both see any links between your findings?\nRachel: Yes, definitely. Deforestation exacerbates climate change, impacting weather patterns as well.\nTom: Right, they are interconnected issues that require urgent attention.",
+      "questions": [
+        {"id": "ielts-l3-04-q1-3574", "question": "What did Rachel's research focus on?", "options": ["A. Weather patterns", "B. Deforestation and carbon emissions", "C. Renewable energy solutions"], "answer": "B"},
+        {"id": "ielts-l3-04-q2-ac47", "question": "What did Tom find regarding weather patterns?", "options": ["A. They are becoming more stable", "B. They lead to more extreme events", "C. They have no connection to climate change"], "answer": "B"},
+        {"id": "ielts-l3-04-q3-3a41", "question": "How did Rachel and Tom relate their findings?", "options": ["A. They are unrelated", "B. Deforestation worsens climate change", "C. Only urban areas are affected"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-05-501d",
+      "transcript": "Tutor: Let’s wrap up with your discussions on cultural diversity, Anna and Ben. Anna, what insights did you gather?\nAnna: I explored how cultural diversity enhances creativity and innovation in workplaces.\nTutor: Interesting angle. Ben, what was your focus?\nBen: I examined challenges that arise from cultural diversity, such as communication barriers and misunderstandings.\nTutor: Did you find any overlap in your research?\nAnna: Absolutely. Navigating these challenges can sometimes spark creativity if managed well.\nBen: Yes, and proper management can lead to better collaboration.",
+      "questions": [
+        {"id": "ielts-l3-05-q1-612a", "question": "What did Anna focus on regarding cultural diversity?", "options": ["A. Communication barriers", "B. Enhancing creativity", "C. Historical perspectives"], "answer": "B"},
+        {"id": "ielts-l3-05-q2-a03a", "question": "What challenges did Ben identify?", "options": ["A. Increased productivity", "B. Communication barriers", "C. Enhanced creativity"], "answer": "B"},
+        {"id": "ielts-l3-05-q3-55df", "question": "How did Anna and Ben relate their findings?", "options": ["A. They were completely opposite", "B. Proper management can spark creativity", "C. Cultural diversity is only a challenge"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-urban-transportation",
+      "transcript": "Instructor: Alright, Sophie and Liam, let's talk about your presentation on sustainable transportation solutions. Sophie, what insights did you gather?\nSophie: I focused on the effectiveness of cycling infrastructure. Cities with dedicated bike lanes have seen a 30% increase in cycling rates.\nInstructor: That’s quite impressive! And Liam, what aspect did you explore?\nLiam: My research was geared towards electric public transport. I found that electric buses reduce air pollution significantly compared to diesel ones.\nInstructor: Did you both identify any similar challenges for implementing these solutions?\nSophie: Yes, maintenance of the bike lanes can become costly.\nLiam: I believe public perception of electric buses is a barrier, as many people still prefer traditional buses.",
+      "questions": [
+        {"id": "ai-urban-transportation-q1", "question": "What did Sophie find about cycling infrastructure?", "options": ["A. It decreases traffic accidents", "B. It leads to increased cycling rates", "C. It requires less space than cars"], "answer": "B"},
+        {"id": "ai-urban-transportation-q2", "question": "What advantage of electric buses did Liam mention?", "options": ["A. They are cheaper to manufacture", "B. They reduce air pollution", "C. They have faster service times"], "answer": "B"},
+        {"id": "ai-urban-transportation-q3", "question": "What challenge did Sophie mention related to bike lanes?", "options": ["A. They require too much land", "B. Maintenance costs can be high", "C. They lead to increased traffic congestion"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-historical-architecture",
+      "transcript": "Professor: Welcome, David and Emma, to our discussion about historical architecture. David, what are some findings from your analysis?\nDavid: I looked at how restoration can keep a city's heritage alive, especially in areas impacted by modern development.\nProfessor: That sounds important. Emma, what was your focus?\nEmma: I explored the role of public spaces in historical districts. They often foster community interaction and tourism.\nProfessor: Did you both encounter any obstacles in preserving these sites?\nDavid: Yes, funding for restoration work is often limited.\nEmma: I think another issue is balancing modern needs with preservation.",
+      "questions": [
+        {"id": "ai-historical-architecture-q1", "question": "What did David analyze?", "options": ["A. Modern architecture trends", "B. The impact of restoration on heritage", "C. Public opinion on historical buildings"], "answer": "B"},
+        {"id": "ai-historical-architecture-q2", "question": "What benefit of public spaces did Emma highlight?", "options": ["A. They require less maintenance", "B. They encourage tourism and community interaction", "C. They reduce crime rates"], "answer": "B"},
+        {"id": "ai-historical-architecture-q3", "question": "What limitation did David mention regarding preservation?", "options": ["A. Difficulty in attracting tourists", "B. Limited funding for restoration", "C. Lack of public interest"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-innovative-education",
+      "transcript": "Facilitator: Let's dive into your project on innovative education methods. What did you discover, Ava?\nAva: I found that flipped classrooms improve student engagement significantly by allowing students to learn at their own pace.\nFacilitator: Interesting approach! What did you find, Ethan?\nEthan: My focus was on using technology to enhance learning experiences, specifically through gamification. It can make learning more interactive.\nFacilitator: Did you come across any common challenges?\nAva: Integrating technology into traditional teaching methods often meets resistance.\nEthan: Yes, and teacher training on these new methods is essential for success.",
+      "questions": [
+        {"id": "ai-innovative-education-q1", "question": "What method did Ava find improves student engagement?", "options": ["A. Traditional lectures", "B. Flipped classrooms", "C. Group projects"], "answer": "B"},
+        {"id": "ai-innovative-education-q2", "question": "What advantage of gamification did Ethan point out?", "options": ["A. It simplifies complex subjects", "B. It makes learning interactive", "C. It reduces the need for assessments"], "answer": "B"},
+        {"id": "ai-innovative-education-q3", "question": "What challenge did both Ava and Ethan identify?", "options": ["A. High costs of technology", "B. Resistance to technology integration", "C. Lack of student interest"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-global-food-systems",
+      "transcript": "Moderator: I'm glad you're both here for the discussion on global food systems. Sara, what were your key findings?\nSara: I focused on the impact of climate change on crop yields. Droughts and flooding are becoming more frequent and damaging.\nModerator: That’s critical information. And Mark, what did you discover?\nMark: I examined the role of local farming in sustainable food systems. Local markets can reduce carbon footprints substantially.\nModerator: Did both of you find any shared obstacles?\nSara: Definitely, accessing consistent water supply is a major issue.\nMark: I agree, plus many small farmers lack resources for new technology.",
+      "questions": [
+        {"id": "ai-global-food-systems-q1", "question": "What impact did Sara focus on regarding climate change?", "options": ["A. Increase in crop diversity", "B. Decreased crop yields", "C. Improved food security"], "answer": "B"},
+        {"id": "ai-global-food-systems-q2", "question": "What role did Mark research within food systems?", "options": ["A. Urban agriculture", "B. Local farming's sustainability", "C. Industrial farming efficiency"], "answer": "B"},
+        {"id": "ai-global-food-systems-q3", "question": "What challenge did both Sara and Mark mention?", "options": ["A. High market competition", "B. Limited access to water supply", "C. Excessive regulation"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ai-mental-health-studies",
+      "transcript": "Counselor: Thank you both for joining this discussion about recent studies in mental health. Mia, what did your research reveal?\nMia: I found that mindfulness practices can enhance emotional regulation in adolescents, based on several clinical trials.\nCounselor: That’s a valuable finding. What about you, Jake?\nJake: My focus was on the accessibility of mental health services. I uncovered that a significant number of teens don’t seek help due to stigma.\nCounselor: Were there any shared barriers that you both discovered?\nMia: Yes, I'm aware that there’s often a lack of trained professionals in schools.\nJake: Additionally, geographical barriers can limit access to mental health resources.",
+      "questions": [
+        {"id": "ai-mental-health-studies-q1", "question": "What did Mia find about mindfulness practices?", "options": ["A. They increase anxiety levels", "B. They can enhance emotional regulation", "C. They are ineffective for adolescents"], "answer": "B"},
+        {"id": "ai-mental-health-studies-q2", "question": "What challenge did Jake identify related to seeking help?", "options": ["A. High costs of therapy", "B. Stigma surrounding mental health", "C. Limited therapist availability"], "answer": "B"},
+        {"id": "ai-mental-health-studies-q3", "question": "What barrier did both Mia and Jake address?", "options": ["A. Lack of trained professionals", "B. Insufficient funding for programs", "C. Parental opposition"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "ielts-l3-02-0057",
+      "transcript": "Professor: Alright, Sarah and Liam, how did you approach your analysis of renewable energy sources? Sarah, let's start with your findings.\nSarah: I concentrated on solar energy, discovering it can reduce energy bills significantly for homeowners in sunny regions.\nProfessor: Very useful insight. Liam, what did your research cover?\nLiam: I looked into wind energy and found that it can produce enough electricity to power entire small towns.\nProfessor: Did both of you identify any common advantages of these energy sources?\nSarah: Definitely, both solar and wind contribute to lower carbon emissions.\nLiam: I agree, but I also think they bring job opportunities in new technology sectors.",
+      "questions": [
+        {"id": "ielts-l3-02-q1-e3da", "question": "What was Sarah's main focus in her research?", "options": ["A. Wind energy", "B. Solar energy", "C. Energy technology"], "answer": "B"},
+        {"id": "ielts-l3-02-q2-f366", "question": "What did Liam find out about wind energy?", "options": ["A. It is ineffective for small towns", "B. It can supply power to small communities", "C. It has high operational costs"], "answer": "B"},
+        {"id": "ielts-l3-02-q3-c9b7", "question": "According to both researchers, what is a common benefit of renewable energy?", "options": ["A. Increased energy prices", "B. Advanced technology development", "C. Reduced carbon emissions"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "ielts-l3-03-b754",
+      "transcript": "Instructor: Welcome, Emily and Oliver, to our discussion on global food security. Emily, what aspects did you explore?\nEmily: My research focused on agricultural practices and their impact on crop yields in developing nations.\nInstructor: Interesting. And Oliver, what about your findings?\nOliver: I delved into the effects of climate change on food production, where I found some regions are quickly losing their viability for farming.\nInstructor: Did you both discuss any potential solutions?\nEmily: Yes, we talked about the importance of sustainable farming techniques.\nOliver: We also emphasized the role of policy changes supporting smallholder farmers.",
+      "questions": [
+        {"id": "ielts-l3-03-q1-3308", "question": "What did Emily's research concentrate on?", "options": ["A. Sustainable practices", "B. Crop yields in developing countries", "C. Climate change effects"], "answer": "B"},
+        {"id": "ielts-l3-03-q2-5b57", "question": "What did Oliver find regarding climate change?", "options": ["A. It helps improve crops", "B. It renders some farming regions unviable", "C. It has no impact on food production"], "answer": "B"},
+        {"id": "ielts-l3-03-q3-8bd6", "question": "What common solution did they identify for food security?", "options": ["A. Increasing food imports", "B. Sustainable farming methods", "C. Reducing the number of farmers"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-04-6336",
+      "transcript": "Tutor: Good afternoon, Jenna and Mark. Let's dive into your research about educational technologies. Jenna, what did you focus on?\nJenna: I concentrated on the effectiveness of online learning platforms and how they can enhance student engagement.\nTutor: That sounds relevant. And Mark, what were your findings?\nMark: I explored how artificial intelligence can personalize learning experiences for students, which has shown promising results.\nTutor: Did you both agree on any drawbacks?\nJenna: Yes, we mentioned the lack of social interaction as a potential downside.\nMark: I also noted that access to technology can be an issue for some students.",
+      "questions": [
+        {"id": "ielts-l3-04-q1-494e", "question": "What did Jenna's research focus on?", "options": ["A. AI in education", "B. Online learning engagement", "C. Classroom technologies"], "answer": "B"},
+        {"id": "ielts-l3-04-q2-f310", "question": "What aspect did Mark's research cover?", "options": ["A. Student performance tracking", "B. AI for personalized learning", "C. Evaluation of educational software"], "answer": "B"},
+        {"id": "ielts-l3-04-q3-7d8c", "question": "According to the discussion, what is a drawback of online learning?", "options": ["A. High costs", "B. Lack of social interaction", "C. Over-reliance on technology"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-05-e898",
+      "transcript": "Mentor: Let's review your projects, Kevin and Laura, on urban transportation. Kevin, tell us about your findings.\nKevin: I examined the impact of bike lanes on reducing traffic congestion in cities.\nMentor: Very interesting! And Laura, what was your area of research?\nLaura: I focused on the integration of public transport and ride-sharing services to enhance efficiency.\nMentor: Did you identify any common challenges?\nKevin: We both found that public awareness and acceptance are critical for the success of these initiatives.\nLaura: Absolutely, without public support, these projects will struggle to gain traction.",
+      "questions": [
+        {"id": "ielts-l3-05-q1-c6d4", "question": "What did Kevin's research examine?", "options": ["A. Ride-sharing services", "B. Traffic congestion and bike lanes", "C. Public transport integration"], "answer": "B"},
+        {"id": "ielts-l3-05-q2-a82d", "question": "What did Laura focus on in her research?", "options": ["A. Bike lane implementation", "B. Public transport and ride-sharing integration", "C. Traffic accidents"], "answer": "B"},
+        {"id": "ielts-l3-05-q3-ff71", "question": "What common challenge did they both highlight?", "options": ["A. Lack of funding", "B. Public awareness and acceptance", "C. Government regulations"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-06-18e9",
+      "transcript": "Facilitator: Welcome, Rachel and Tom, to our workshop on mental health initiatives. Rachel, what findings did you uncover?\nRachel: I researched the effects of mindfulness practices on student stress levels, showing a considerable reduction in anxiety.\nFacilitator: That’s great information. Tom, what about your research?\nTom: I looked into the role of peer support programs, which can significantly improve students' mental health.\nFacilitator: Did you both find any similar patterns in your studies?\nRachel: Yes, both methods promote resilience among students.\nTom: I agree, and we also noted the importance of accessibility to these programs for all students.",
+      "questions": [
+        {"id": "ielts-l3-06-q1-fc28", "question": "What was Rachel's area of focus in her research?", "options": ["A. Peer support programs", "B. Effectiveness of mindfulness practices", "C. Access to mental health resources"], "answer": "B"},
+        {"id": "ielts-l3-06-q2-6683", "question": "What did Tom's research emphasize?", "options": ["A. Counseling services", "B. Role of peer support", "C. Stress management workshops"], "answer": "B"},
+        {"id": "ielts-l3-06-q3-e23b", "question": "What common finding did both researchers discover?", "options": ["A. Increase in exam scores", "B. Promotion of resilience in students", "C. Decrease in enrollment rates"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-02-de2c",
+      "transcript": "Professor: Alright, Emma and Liam, let’s dive into your findings on renewable energy sources. Emma, can you summarize your key points?\nEmma: Sure! My research focused on solar energy's potential to reduce carbon emissions, particularly in residential areas.\nProfessor: That sounds promising. Liam, what did your research reveal?\nLiam: I concentrated on wind energy. I found that it’s one of the fastest-growing energy sources globally, especially in offshore installations.\nProfessor: Did both of you encounter any obstacles related to these renewable sources?\nEmma: I found that a major issue is the initial setup costs for solar panels.\nLiam: I would agree, but I think the unpredictability of wind patterns poses a bigger challenge for wind farms.",
+      "questions": [
+        {"id": "ielts-l3-02-q1-1836", "question": "What was Emma's main focus in her research?", "options": ["A. Wind energy growth", "B. Solar energy's impact on emissions", "C. Renewable energy costs"], "answer": "B"},
+        {"id": "ielts-l3-02-q2-f4e4", "question": "What did Liam find about wind energy?", "options": ["A. It is declining in use", "B. It is growing rapidly, especially offshore", "C. It has high carbon emissions"], "answer": "B"},
+        {"id": "ielts-l3-02-q3-8831", "question": "According to Emma, what is a significant barrier to solar energy?", "options": ["A. Lack of public awareness", "B. The initial installation cost", "C. Limited sunlight availability"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-03-33a6",
+      "transcript": "Instructor: Good afternoon, Sarah and Mark, let’s talk about your research on wildlife conservation. Sarah, what did you discover?\nSarah: I explored the impact of habitat destruction on endangered species. My findings were alarming.\nInstructor: Interesting. Mark, what was your area of focus?\nMark: My research dealt with conservation methods like wildlife corridors and their effectiveness in increasing animal populations.\nInstructor: Did you both identify major challenges in conservation efforts?\nSarah: Yes, funding is a persistent issue, as many projects lack adequate financial support.\nMark: I think public awareness campaigns are crucial. Many people don’t realize the importance of conservation work.",
+      "questions": [
+        {"id": "ielts-l3-03-q1-6667", "question": "What did Sarah focus on in her research?", "options": ["A. Conservation effectiveness", "B. Habitat destruction impact", "C. Public awareness"], "answer": "B"},
+        {"id": "ielts-l3-03-q2-8ecb", "question": "What was Mark's research focus?", "options": ["A. Public conservation awareness", "B. Wildlife corridors", "C. Endangered species populations"], "answer": "B"},
+        {"id": "ielts-l3-03-q3-153d", "question": "According to Sarah, what is a major challenge in conservation?", "options": ["A. Limited research data", "B. Inadequate funding", "C. Too much public interest"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-04-6a53",
+      "transcript": "Tutor: Welcome back, Grace and Adam. Let's evaluate your project on sustainable agriculture practices. Grace, what were your findings?\nGrace: I looked into crop rotation and its benefits for soil health. It’s quite effective in maintaining nutrients.\nTutor: Good. Adam, what about you?\nAdam: My research was on organic farming methods. They lead to higher biodiversity and help reduce pesticide use.\nTutor: Did you encounter some obstacles in your findings?\nGrace: Yes, I think many farmers are resistant to changing traditional practices.\nAdam: I agree, but I feel that the higher costs of organic produce deter many from transitioning.",
+      "questions": [
+        {"id": "ielts-l3-04-q1-5a89", "question": "What was Grace's focus in her research?", "options": ["A. Organic farming methods", "B. Crop rotation benefits", "C. Farmer resistance"], "answer": "B"},
+        {"id": "ielts-l3-04-q2-ec47", "question": "What aspect of farming did Adam study?", "options": ["A. Crop diseases", "B. Organic farming", "C. Soil health"], "answer": "B"},
+        {"id": "ielts-l3-04-q3-7204", "question": "What challenge did Grace highlight?", "options": ["A. Higher costs for farmers", "B. Resistance to change", "C. Lack of knowledge"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-05-ad82",
+      "transcript": "Professor: Hello, David and Lucy. Today, let’s discuss your analysis on mental health services. David, what were your main findings?\nDavid: I analyzed the accessibility of mental health care in urban areas and found significant barriers.\nProfessor: That’s important work. Lucy, what did you focus on?\nLucy: I investigated the stigma surrounding mental health and its effect on individuals seeking help.\nProfessor: Did you both find challenges within your topics?\nDavid: Yes, funding for mental health programs is critically low.\nLucy: I think cultural perceptions that discourage people from talking about mental health are crucial obstacles.",
+      "questions": [
+        {"id": "ielts-l3-05-q1-ded2", "question": "What was David’s research focus?", "options": ["A. Stigma surrounding mental health", "B. Mental health care accessibility", "C. Funding of programs"], "answer": "B"},
+        {"id": "ielts-l3-05-q2-6a46", "question": "What aspect did Lucy investigate?", "options": ["A. Mental health in urban settings", "B. Accessibility of services", "C. Stigma and its effects"], "answer": "C"},
+        {"id": "ielts-l3-05-q3-5a2a", "question": "According to David, what is a significant challenge in mental health care?", "options": ["A. Lack of professionals", "B. Insufficient funding", "C. Cultural barriers"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-06-dc8e",
+      "transcript": "Instructor: Good afternoon, Rachel and James. Let’s explore your findings on digital learning tools. Rachel, can you share your key insights?\nRachel: I focused on online learning platforms and their effectiveness in remote education for students.\nInstructor: Interesting. James, what about your research?\nJames: My study was on educational apps and their role in enhancing student engagement and retention rates.\nInstructor: Did you both identify challenges with these tools?\nRachel: Yes, access to technology remains a significant barrier for many learners.\nJames: Additionally, I found that not all apps are user-friendly, which can hinder learning.",
+      "questions": [
+        {"id": "ielts-l3-06-q1-abe6", "question": "What did Rachel's research focus on?", "options": ["A. Educational apps", "B. Online learning platforms", "C. Student retention"], "answer": "B"},
+        {"id": "ielts-l3-06-q2-db90", "question": "What aspect of digital learning did James investigate?", "options": ["A. Online courses", "B. Educational app effectiveness", "C. Remote access"], "answer": "B"},
+        {"id": "ielts-l3-06-q3-62e8", "question": "According to Rachel, what is a challenge in digital learning?", "options": ["A. Content quality", "B. Access to technology", "C. Instructor support"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "ielts-l3-02-a00d",
+      "transcript": "Instructor: Alright, Sophie and Liam, let's review your findings on renewable energy sources. Sophie, can you share what you discovered?\nSophie: Sure! My research indicates that solar energy usage has doubled in the last five years due to technological advancements.\nInstructor: That’s promising! Liam, what was your angle?\nLiam: I concentrated on wind power. I learned that onshore wind farms can provide electricity at a lower cost than natural gas.\nInstructor: Interesting points. Did you both address any main concerns related to renewable energy?\nSophie: Yes, I think public misinformation about renewable technologies is a significant issue.\nLiam: I agree, but I believe the intermittency of supply is a more pressing challenge, especially for wind energy.",
+      "questions": [
+        {"id": "ielts-l3-02-q1-de3a", "question": "What did Sophie find regarding solar energy?", "options": ["A. It has decreased in usage.", "B. Its usage has doubled in five years.", "C. It is more costly than fossil fuels."], "answer": "B"},
+        {"id": "ielts-l3-02-q2-f737", "question": "What is Liam's focus in his research?", "options": ["A. Solar energy costs", "B. Wind power advantages", "C. Renewable energy policies"], "answer": "B"},
+        {"id": "ielts-l3-02-q3-c750", "question": "According to Liam, what is a significant challenge for wind energy?", "options": ["A. Public misinformation", "B. The intermittency of supply", "C. High installation costs"], "answer": "B"}
+      ]
+    }
+  ]
+}

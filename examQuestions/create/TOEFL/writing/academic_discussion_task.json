@@ -1,0 +1,296 @@
+{
+  "exam": "TOEFL",
+  "section": "Writing",
+  "part": "Academic Discussion Task (Writing for an Academic Discussion)",
+  "instructions": "Read the online discussion post from a professor and two students' responses. Write a response that contributes to the discussion. A minimum of 100 words is recommended.",
+  "tasks": [
+    {
+      "id": "toefl-w2-01",
+      "professorPrompt": "Professor Nakamura: This week we're discussing whether universities should require students to take courses outside their major field of study. Some argue that a broad general education produces more well-rounded graduates, while others believe students should focus entirely on their chosen field to be competitive in the job market. What do you think?",
+      "studentResponses": [
+        {"name": "Elena", "response": "I think required general education courses are valuable because they expose students to ways of thinking they wouldn't otherwise encounter. A computer science major who takes a philosophy course might develop stronger ethical reasoning skills that are directly useful in their career."},
+        {"name": "Marcus", "response": "I disagree. University is expensive and time is limited, so students should be able to focus on courses directly relevant to their career goals instead of being required to spend time and money on unrelated subjects."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-02",
+      "professorPrompt": "Professor Diallo: There is ongoing debate about whether artificial intelligence tools should be permitted for use in student writing assignments. Some believe these tools can be valuable aids for brainstorming and editing, while others worry they undermine the development of independent writing and critical thinking skills. What is your view?",
+      "studentResponses": [
+        {"name": "Priya", "response": "I think AI tools can be helpful for early brainstorming or checking grammar, as long as students still do the actual thinking and writing themselves. It's similar to using a calculator in math after you've already learned the underlying concepts."},
+        {"name": "Jonas", "response": "I'm more skeptical. Even using AI just for brainstorming can shortcut the difficult process of generating your own ideas, which I think is actually the most important skill students are supposed to be developing in writing courses."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-02-08e9",
+      "professorPrompt": "Professor Smith: Today we are examining the impact of social media on interpersonal communication. Some researchers claim that social media enhances communication by enabling connections across distances, while others argue that it diminishes the quality of face-to-face interactions. What's your perspective on this issue?",
+      "studentResponses": [
+        {"name": "Liam", "response": "I believe social media enhances communication. It allows us to stay connected with friends and family who live far away, fostering relationships that might otherwise diminish over time."},
+        {"name": "Sophia", "response": "I respectfully disagree. While social media can maintain connections, it often replaces deeper interactions, leading to a decline in meaningful conversations and personal connections."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-03",
+      "professorPrompt": "Professor Lee: This week we are discussing renewable energy sources. Some argue that investments should be prioritized for solar and wind energy, while others think that nuclear power should be the focus due to its efficiency and low carbon emissions. What is your view on this topic?",
+      "studentResponses": [
+        {"name": "Ava", "response": "I support investing in solar and wind energy. They are sustainable and harness natural resources without the risk of radioactive waste, which is a major concern with nuclear energy."},
+        {"name": "Noah", "response": "I disagree with that perspective. Nuclear power is a proven technology that can produce substantial energy with minimal carbon emissions and should be invested in to reduce our reliance on fossil fuels."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-04",
+      "professorPrompt": "Professor Johnson: Today we are reflective about the role of technology in education. Some educators argue that the increasing use of technology enhances learning experiences, while others warn that it can lead to distractions and reduced attention spans. What do you think?",
+      "studentResponses": [
+        {"name": "Mia", "response": "I think the integration of technology in education is beneficial. It provides diverse resources and learning tools that can make lessons more engaging and accessible for students."},
+        {"name": "Ethan", "response": "I have a different viewpoint. Technology can be a double-edged sword; students often find themselves distracted by social media or gaming during study time, which can hinder their educational progress."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-05",
+      "professorPrompt": "Professor Garcia: This week, we are evaluating the significance of art in society. Some believe that art is a vital component of cultural expression and identity, while others view it as a frivolous expenditure that diverts attention from more pressing societal issues. What is your perspective?",
+      "studentResponses": [
+        {"name": "Oliver", "response": "I strongly believe art is essential for cultural expression. It captures the perspectives and emotions of society, providing insights into our collective identity and history."},
+        {"name": "Isabella", "response": "I disagree with that view. While art can be meaningful, I think it is often prioritized over urgent matters such as poverty and healthcare, which need more funding and attention."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-06",
+      "professorPrompt": "Professor Chen: In our lecture today, we're discussing the effects of globalization. Some argue that globalization fosters economic growth and cultural exchange, while others contend that it can lead to the loss of local cultures and jobs. What are your thoughts on this topic?",
+      "studentResponses": [
+        {"name": "Charlotte", "response": "I think globalization is largely positive. It promotes economic development and allows for the sharing of ideas and cultures, which can enrich societies and lead to greater understanding."},
+        {"name": "James", "response": "I disagree. Globalization often benefits large corporations at the expense of local businesses and cultures, leading to homogenization and a loss of diversity in our world."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-02-e01b",
+      "professorPrompt": "Professor Smith: Today we are exploring whether technology enhances the learning experience in higher education. Some educators argue that incorporating technology leads to increased student engagement, while others insist it can be a distraction. What is your perspective?",
+      "studentResponses": [
+        {"name": "Aisha", "response": "In my opinion, technology significantly enhances learning. It offers interactive resources and materials that can make complex subjects easier to understand. For instance, using simulations in science courses can provide practical experience that lectures alone cannot."},
+        {"name": "Liam", "response": "I disagree. While technology can be helpful, it often distracts students from the material. Social media and gaming can interrupt study time and reduce attention spans, which ultimately undermines the educational experience."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-03-c069",
+      "professorPrompt": "Professor Johnson: This session we are debating if the college admissions process should focus more on standardized test scores or on holistic evaluations like interviews and extracurricular activities. What is your viewpoint?",
+      "studentResponses": [
+        {"name": "Sophia", "response": "I believe that holistic evaluations should play a larger role in college admissions. Standardized tests often fail to accurately represent a student's potential and capabilities. Personal interviews and experiences provide deeper insights into a student's character and resilience."},
+        {"name": "Noah", "response": "I strongly feel that standardized test scores are crucial in the admissions process. They provide a measurable and objective standard that can be compared across applicants, ensuring fairness and merit-based evaluation."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-04-347a",
+      "professorPrompt": "Professor Lee: This week we are addressing the importance of internships in preparing students for the workforce. Some claim they are essential for career readiness, while others think they may not significantly impact future job success. What are your thoughts?",
+      "studentResponses": [
+        {"name": "Oliver", "response": "Internships are vital for career preparation. They provide students with real-world experience and help them build professional networks, which can be crucial in finding jobs after graduation."},
+        {"name": "Emily", "response": "I think internships are overrated. They can be valuable, but not everyone has access to quality internship opportunities. Many successful professionals never had internships and still thrived in their careers."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-05-c6a6",
+      "professorPrompt": "Professor Kim: Our discussion focuses on whether universities should provide mental health resources to students. Some argue that it is essential for supporting student success, while others believe it is the responsibility of students to manage their own well-being. How do you feel about this issue?",
+      "studentResponses": [
+        {"name": "Jacob", "response": "I think universities must offer mental health resources. Students face immense pressures, and having professional support can make a significant difference in their academic and personal lives."},
+        {"name": "Mia", "response": "I respectfully disagree. While support can be helpful, students should learn to seek and manage their own mental health. Over-reliance on institutional support may foster dependency rather than self-sufficiency."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-06-1f9c",
+      "professorPrompt": "Professor Carter: This week, we’re examining the role of cultural studies in education. Some believe that cultural studies are essential for fostering global awareness, while others argue they detract from more traditional academic subjects. What is your perspective?",
+      "studentResponses": [
+        {"name": "Ava", "response": "I believe cultural studies are extremely important. In our increasingly globalized world, understanding diverse cultures can enhance empathy and improve communication skills, which are vital in any field."},
+        {"name": "William", "response": "I disagree. Focusing too much on cultural studies might dilute essential learning in disciplines like math or science that are foundational for many career paths."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-02-794d",
+      "professorPrompt": "Professor Lee: Today, we're evaluating the impact of technology on education. Some believe that digital tools enhance learning experiences and provide greater access to information, while others worry that they may hinder critical thinking and interpersonal skills. What is your perspective on this issue?",
+      "studentResponses": [
+        {"name": "Sofia", "response": "I believe that technology greatly enhances the learning process. Online resources and interactive platforms can cater to different learning styles, making education more accessible and engaging for students."},
+        {"name": "Daniel", "response": "I respectfully disagree. Relying too heavily on technology can reduce face-to-face interactions and promote shallow learning. Students might miss out on developing critical thinking skills if they don’t learn to engage deeply with their subjects."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-03-f95d",
+      "professorPrompt": "Professor Chen: This week, we are debating whether climate change priorities should focus primarily on technological innovations or policy reforms. Some argue that technology is the key to solving climate issues, while others insist that substantial policy changes are necessary. What do you think?",
+      "studentResponses": [
+        {"name": "Ava", "response": "I think both technology and policy reforms are crucial, but emphasizing policy changes is more immediate. Without strong regulations, even the best technologies may not be adopted widely enough to make a significant difference."},
+        {"name": "Liam", "response": "I disagree. Technological innovations can drive change by creating efficient solutions to reduce emissions. Investing in new technologies could lead to both economic and environmental improvements, potentially making policy changes easier to implement."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-04-b64d",
+      "professorPrompt": "Professor Patel: This week, we are discussing the role of social media in shaping public opinion. Some argue that it facilitates democratic engagement, while others believe it leads to misinformation and polarization. Where do you stand on this issue?",
+      "studentResponses": [
+        {"name": "Isabella", "response": "I believe social media can promote democratic engagement. It provides platforms for voices that are often marginalized, allowing for a broader representation of opinions in the public discourse."},
+        {"name": "Noah", "response": "I have a different perspective. The spread of misinformation on social media can distort facts and lead to polarized views. This could undermine critical discussions and the foundation of a healthy democracy."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-05-0c5a",
+      "professorPrompt": "Professor Johnson: This week, we’re evaluating the significance of arts education in schools. Some advocate for arts programs as essential to developing creativity and emotional intelligence, while others argue that the focus should be on STEM subjects to prepare students for future careers. What are your thoughts?",
+      "studentResponses": [
+        {"name": "Mia", "response": "I strongly believe that arts education is crucial. Creativity is vital in all fields, including STEM, and engagement in the arts fosters emotional intelligence, which is increasingly recognized as an important skill in the workplace."},
+        {"name": "Ethan", "response": "I disagree with prioritizing arts education. Given the competitive job market, students should focus primarily on STEM subjects, which are more likely to provide stable career opportunities."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-06-4af4",
+      "professorPrompt": "Professor Smith: This week, we’re discussing whether standardized testing is an effective measure of student learning and potential. Advocates claim they provide objective data for assessment, while critics argue they do not account for individual learning styles and backgrounds. What is your view?",
+      "studentResponses": [
+        {"name": "Zoe", "response": "I think standardized testing has its merits in providing a baseline for achievement, but it often fails to capture a student's full potential. Alternative assessments, such as portfolios or project-based evaluations, could offer a more comprehensive view of a student's capabilities."},
+        {"name": "Lucas", "response": "I disagree. Standardized tests ensure a level playing field and provide a consistent metric for evaluating student performance. They can highlight gaps in knowledge and are essential for accountability in education."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-02-9f20",
+      "professorPrompt": "Professor Johnson: This week we are exploring the impact of social media on communication skills. Some scholars argue that social media enhances our ability to communicate by providing more platforms for interaction, while others believe it weakens face-to-face skills. What is your perspective?",
+      "studentResponses": [
+        {"name": "Aisha", "response": "I believe social media enhances communication skills by allowing people to express themselves in diverse formats, such as text, images, and videos. These platforms encourage creativity and can improve written communication through the necessity of clarity in brief formats."},
+        {"name": "Daniel", "response": "I respectfully disagree. While social media offers new ways to communicate, it often leads to superficial interactions that lack the depth and understanding found in face-to-face conversations. This trend can diminish our ability to communicate effectively in real life."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-03-9b34",
+      "professorPrompt": "Professor Lee: This week’s topic concerns the role of technology in education. Some believe that technological tools enhance learning experiences, while others argue they can be distracting and inhibit critical thinking. What are your thoughts on this matter?",
+      "studentResponses": [
+        {"name": "Carlos", "response": "In my opinion, technology plays a vital role in enhancing education. Online resources and interactive tools foster engagement and can tailor learning experiences to individual needs, making lessons more effective and enjoyable."},
+        {"name": "Sofia", "response": "I disagree with that perspective. While technology can provide benefits, it often distracts students from critical thinking and deep learning. The constant notifications and online distractions can lead to a lack of focus on the material being taught."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-04-8f5e",
+      "professorPrompt": "Professor Martinez: This week we are discussing the benefits and drawbacks of globalization. Some argue that globalization leads to greater economic opportunities and cultural exchange, while others claim it can harm local economies and traditions. What is your take on this issue?",
+      "studentResponses": [
+        {"name": "Isabella", "response": "I believe globalization offers significant benefits, such as access to international markets and cultural exchange that enrich our lives. It promotes innovation and allows consumers to enjoy a wider variety of goods and services."},
+        {"name": "Liam", "response": "I think globalization can be detrimental. It often results in the exploitation of local labor and can overshadow traditional practices and local businesses, leading to economic and cultural homogenization."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-05-221e",
+      "professorPrompt": "Professor Hsu: This week we explore the value of studying the arts. Some argue that arts education fosters creativity and emotional intelligence, while others view it as a luxury that detracts from more practical subjects. What is your opinion on this matter?",
+      "studentResponses": [
+        {"name": "Zoe", "response": "I firmly believe that studying the arts is essential. It nurtures creativity, which is important across all fields, including science and technology. Arts education encourages innovative thinking and helps students develop their emotional intelligence."},
+        {"name": "Ethan", "response": "I disagree with this notion. While arts education has its place, I think students should prioritize subjects that prepare them for the workforce, such as STEM fields, which have a more direct impact on career prospects."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-06-7bda",
+      "professorPrompt": "Professor Chang: This week we are discussing renewable energy sources. Some experts advocate for a swift transition to renewable energy, while others caution that it may lead to job losses in traditional energy sectors. What is your perspective on pursuing renewable energy initiatives?",
+      "studentResponses": [
+        {"name": "Nora", "response": "I support the transition to renewable energy. It's crucial for combating climate change and ensuring a sustainable future. While there may be job losses initially, we can create new jobs in the renewable energy sector that will ultimately benefit the economy."},
+        {"name": "Michael", "response": "I have reservations about this rapid transition. If we prioritize renewable energy too hastily, we risk economic instability and job losses for those who depend on traditional energy sectors without providing them sufficient support for retraining."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-01-a2dc",
+      "professorPrompt": "Professor Johnson: Today we are examining the impact of technology on traditional education. Some educators believe that incorporating technology enhances learning and accessibility, while others argue that it can distract students and weaken their understanding of core subjects. What are your thoughts?",
+      "studentResponses": [
+        {"name": "Sophia", "response": "I believe technology greatly enhances education by providing diverse resources and interactive learning experiences. Students can access a wealth of information online and collaborate in ways that were previously impossible, leading to a deeper understanding of the subjects."},
+        {"name": "Liam", "response": "I disagree. While technology has its benefits, it can also lead to distractions like social media and gaming. I think students benefit more from traditional methods of teaching that require direct engagement with the material."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-02-5c2b",
+      "professorPrompt": "Professor Lee: This week we're discussing whether students should participate in extracurricular activities while attending university. Some argue that these activities enhance personal development and networking opportunities, while others believe they distract from academic responsibilities. What's your perspective on this?",
+      "studentResponses": [
+        {"name": "Ava", "response": "I feel that extracurricular activities are essential for personal growth. They provide a chance to build important skills such as teamwork and leadership, which are invaluable in the workforce, while also allowing students to explore their interests."},
+        {"name": "Noah", "response": "I respectfully disagree. University is primarily about academics, and students should prioritize their studies over extracurricular commitments. Many students struggle to maintain their GPA while being involved in numerous activities."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-03-31e7",
+      "professorPrompt": "Professor Smith: Today's discussion focuses on the relevance of internships during university studies. Some students argue that internships provide vital experience and help with job placement, while others contend that they often exploit students as free labor. What are your views on this matter?",
+      "studentResponses": [
+        {"name": "Ethan", "response": "I believe internships are crucial because they offer real-world experience that enhances learning beyond the classroom. They prepare students for the workforce and often lead to full-time positions after graduation."},
+        {"name": "Mia", "response": "I see it differently. Many internships do not provide fair compensation, and students end up doing menial tasks rather than gaining valuable experience. The focus should be on ensuring that these opportunities are truly beneficial and not just an exploitation of labor."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-04-acf5",
+      "professorPrompt": "Professor Brown: This week we are analyzing whether universities should implement open book exams. Proponents claim they promote critical thinking, while opponents argue that they lead to a lack of preparation. What do you think?",
+      "studentResponses": [
+        {"name": "Isabella", "response": "I support the idea of open book exams because they encourage students to understand the material deeply instead of just memorizing facts. This approach is more reflective of real-world situations where resources are available."},
+        {"name": "Jacob", "response": "I disagree. Open book exams can lead students to rely too heavily on their materials instead of studying. They might not learn the material as thoroughly, thinking they can just look up answers during the exam."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-05-5e29",
+      "professorPrompt": "Professor Taylor: This week, our topic is the importance of mental health resources in universities. Some argue that universities should prioritize mental health services as a critical support for student success, while others claim that academic performance should take precedence. What is your stance?",
+      "studentResponses": [
+        {"name": "Oliver", "response": "I strongly believe that mental health resources are vital for student success. Students facing mental health challenges can't perform to their best ability academically, so supporting their well-being is essential."},
+        {"name": "Emma", "response": "While I value mental health resources, I think that academic performance is the primary goal of universities. Students should learn to manage their time and stress independently to maintain their academic responsibilities."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-02-8bb9",
+      "professorPrompt": "Professor Lopez: Today we're addressing the impact of technology on education. Some educators believe that online learning platforms can enhance the educational experience, while others argue they undermine personal interaction. What are your thoughts on this issue?",
+      "studentResponses": [
+        {"name": "Jasmine", "response": "I believe online learning platforms significantly enhance education by providing access to diverse resources and allowing students to learn at their own pace. This technology can make education more inclusive, especially for those with different learning styles."},
+        {"name": "Tom", "response": "I hold a different view. While technology offers flexibility, it can also lead to isolation. Personal interaction between students and teachers is crucial for engagement and understanding, which online platforms often lack."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-03-c656",
+      "professorPrompt": "Professor Kim: This week, we are examining the role of extracurricular activities in student development. Some argue they are essential for fostering teamwork and leadership skills, while others think they distract from academic priorities. What is your perspective?",
+      "studentResponses": [
+        {"name": "Lucas", "response": "I argue that extracurricular activities are crucial for student growth. They provide opportunities to develop soft skills, such as teamwork and leadership, which are highly valued in the workplace, complementing academic achievements."},
+        {"name": "Sofia", "response": "I disagree with that assessment. While extracurriculars can be beneficial, they often take time away from studies. Students need to prioritize their academic performance to secure a good job after graduation."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-04-1ecc",
+      "professorPrompt": "Professor Chen: This week, we’re discussing the relevance of art education in schools. Some believe that it is essential for fostering creativity, while others argue that it should be minimal to focus resources on core subjects like math and science. What is your opinion on this matter?",
+      "studentResponses": [
+        {"name": "Nina", "response": "I believe art education is vital for developing creativity and critical thinking skills in students. These skills are increasingly important in a rapidly changing job market, where innovative problem-solving is essential."},
+        {"name": "Jake", "response": "I have a differing opinion. Given the limited funding in education, schools should prioritize subjects that directly impact students' future careers, like math and science, over art programs that may not lead to tangible job opportunities."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-05-98bf",
+      "professorPrompt": "Professor Patel: This week’s topic is the environmental responsibility of corporations. Some argue that businesses should be held accountable for their environmental impact, while others claim the primary goal of corporations is to maximize profit. What is your stance?",
+      "studentResponses": [
+        {"name": "Ethan", "response": "I strongly advocate that corporations have a social responsibility to the environment. Sustainable practices not only benefit the planet but can enhance a company's reputation and customer loyalty, ultimately leading to long-term success."},
+        {"name": "Isabella", "response": "I disagree. While environmental concerns are important, businesses exist to generate profit for their shareholders. An excessive focus on social responsibility can hinder competitiveness and overall growth."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    },
+    {
+      "id": "toefl-w2-06-80d6",
+      "professorPrompt": "Professor Reyes: This week, we’re exploring the effects of social media on interpersonal communication. Some experts argue that social media weakens real-life relationships, while others believe it enhances connectivity. What is your viewpoint?",
+      "studentResponses": [
+        {"name": "Maya", "response": "I believe social media enhances communication by allowing people to stay connected regardless of distance. It can help maintain relationships that might otherwise fade due to geographical separation, provided users engage wisely."},
+        {"name": "David", "response": "I have a different view. The rise of social media often leads to superficial interactions, causing people to neglect meaningful, face-to-face communication. This can ultimately harm personal relationships and social skills."}
+      ],
+      "prompt": "Write a response to the professor's question that contributes to the discussion, expressing and supporting your own opinion."
+    }
+  ]
+}

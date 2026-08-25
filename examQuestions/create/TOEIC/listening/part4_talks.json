@@ -1,0 +1,323 @@
+{
+  "exam": "TOEIC",
+  "section": "Listening",
+  "part": "Part 4: Talks",
+  "instructions": "Listen to each talk given by a single speaker and answer the three questions that follow.",
+  "talks": [
+    {
+      "id": "toeic-l4-talk-01",
+      "transcript": "Attention all passengers waiting for Flight 208 to Chicago. We regret to announce that boarding has been delayed by approximately forty-five minutes due to a late-arriving aircraft. We apologize for the inconvenience. Complimentary beverages are available at Gate 12 while you wait. We will announce boarding as soon as the aircraft is ready, and we appreciate your patience.",
+      "questions": [
+        {"id": "toeic-l4-talk-01-q1", "question": "What is the announcement about?", "options": ["A. A flight cancellation", "B. A delayed flight", "C. A gate change", "D. A weather warning"], "answer": "B"},
+        {"id": "toeic-l4-talk-01-q2", "question": "Why is the flight delayed?", "options": ["A. Bad weather", "B. A staffing shortage", "C. A late-arriving aircraft", "D. A mechanical inspection"], "answer": "C"},
+        {"id": "toeic-l4-talk-01-q3", "question": "What is offered to passengers?", "options": ["A. A meal voucher", "B. Free beverages", "C. A seat upgrade", "D. A hotel room"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-02",
+      "transcript": "Good morning, everyone, and welcome to your first day at Larkspur Technologies. Before we begin the orientation session, I want to remind you to pick up your employee badges from the front desk. Today's schedule includes an introduction to our company policies, a tour of the building, and a lunch with your department managers. If you have any questions throughout the day, feel free to ask one of the HR staff wearing a blue lanyard.",
+      "questions": [
+        {"id": "toeic-l4-talk-02-q1", "question": "Who is the speaker most likely addressing?", "options": ["A. Job applicants", "B. New employees", "C. Visiting clients", "D. Retiring staff"], "answer": "B"},
+        {"id": "toeic-l4-talk-02-q2", "question": "What should listeners do before the session begins?", "options": ["A. Sign a contract", "B. Pick up employee badges", "C. Submit paperwork", "D. Meet their managers"], "answer": "B"},
+        {"id": "toeic-l4-talk-02-q3", "question": "How can listeners identify HR staff?", "options": ["A. By their name tags", "B. By their office location", "C. By their blue lanyards", "D. By their uniforms"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-03",
+      "transcript": "Thank you for calling Riverside Dental Clinic. Our office hours are Monday through Friday, from eight a.m. to six p.m. If you are calling to schedule a routine cleaning, please press one. If this is a dental emergency, please press two to be connected to our on-call dentist. For all other inquiries, please stay on the line and a receptionist will assist you shortly.",
+      "questions": [
+        {"id": "toeic-l4-talk-03-q1", "question": "What kind of business is this recording for?", "options": ["A. A hospital", "B. A dental clinic", "C. A pharmacy", "D. An insurance company"], "answer": "B"},
+        {"id": "toeic-l4-talk-03-q2", "question": "What should callers do for a routine appointment?", "options": ["A. Press one", "B. Press two", "C. Stay on the line", "D. Visit the website"], "answer": "A"},
+        {"id": "toeic-l4-talk-03-q3", "question": "What happens if a caller presses two?", "options": ["A. They hear the office hours again", "B. They are connected to an on-call dentist", "C. They leave a voicemail", "D. The call ends"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-04",
+      "transcript": "As part of our quarterly update, I'm pleased to report that sales in the northeast region increased by eighteen percent compared to last quarter, largely due to the launch of our new product line. However, we did see a slight decline in the southern region, which we believe is related to increased competition. Moving forward, our team will focus on expanding marketing efforts in the south to address this gap.",
+      "questions": [
+        {"id": "toeic-l4-talk-04-q1", "question": "What is the main topic of the talk?", "options": ["A. Employee performance reviews", "B. Quarterly sales results", "C. A new hiring plan", "D. Customer complaints"], "answer": "B"},
+        {"id": "toeic-l4-talk-04-q2", "question": "What caused the increase in the northeast region?", "options": ["A. Lower prices", "B. A new product line launch", "C. A larger sales team", "D. A holiday promotion"], "answer": "B"},
+        {"id": "toeic-l4-talk-04-q3", "question": "What will the team focus on next?", "options": ["A. Reducing costs", "B. Hiring more staff", "C. Expanding marketing in the south", "D. Closing the southern office"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-05",
+      "transcript": "Welcome to the Grantwood Museum's guided tour. Today we'll be visiting three main exhibits: the Ancient Civilizations wing, the Modern Art gallery, and the Natural History hall. Please remember that flash photography is not permitted in any of the exhibits, and food and drinks must be left at the coat check. The tour will last approximately ninety minutes, with a short break halfway through near the gift shop.",
+      "questions": [
+        {"id": "toeic-l4-talk-05-q1", "question": "Where is this talk most likely taking place?", "options": ["A. At a museum", "B. At a library", "C. At a concert hall", "D. At a university"], "answer": "A"},
+        {"id": "toeic-l4-talk-05-q2", "question": "What is NOT allowed during the tour?", "options": ["A. Taking notes", "B. Flash photography", "C. Asking questions", "D. Wearing headphones"], "answer": "B"},
+        {"id": "toeic-l4-talk-05-q3", "question": "How long will the tour last?", "options": ["A. Thirty minutes", "B. Sixty minutes", "C. Ninety minutes", "D. Two hours"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-02-8768",
+      "transcript": "Good morning, everyone. Thank you for calling the City Library. This is a reminder that we will be holding a special author event this Saturday at 2 PM featuring local writer Samantha Lee. She will be discussing her latest book and answering questions. Seats are limited, so please arrive early to secure your spot. We look forward to seeing you there.",
+      "questions": [
+        {"id": "toeic-l4-talk-02-q1-3587", "question": "What event is being announced?", "options": ["A. A poetry reading", "B. An author event", "C. A book sale", "D. A writing workshop"], "answer": "B"},
+        {"id": "toeic-l4-talk-02-q2-ac74", "question": "Who is the featured guest?", "options": ["A. A journalist", "B. A local writer", "C. A children's author", "D. A librarian"], "answer": "B"},
+        {"id": "toeic-l4-talk-02-q3-f432", "question": "What should attendees do to ensure participation?", "options": ["A. Register online", "B. Bring a book", "C. Arrive early", "D. Prepare questions"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-03-ecd7",
+      "transcript": "Hello, everyone. This is a customer service announcement reminding you about our upcoming sale starting next week. All items in the store will be offered at a 20% discount. Please check our website for details on specific products and promotional offers. We appreciate your continued support and look forward to seeing you take advantage of these savings.",
+      "questions": [
+        {"id": "toeic-l4-talk-03-q1-3806", "question": "What is the announcement about?", "options": ["A. A new store opening", "B. A product recall", "C. An upcoming sale", "D. A customer loyalty program"], "answer": "C"},
+        {"id": "toeic-l4-talk-03-q2-c310", "question": "How much discount will customers receive?", "options": ["A. 10%", "B. 15%", "C. 20%", "D. 25%"], "answer": "C"},
+        {"id": "toeic-l4-talk-03-q3-e875", "question": "Where can customers find more information?", "options": ["A. In the store brochure", "B. On the website", "C. From customer service", "D. Through social media"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-04-a423",
+      "transcript": "Attention, team. This is a reminder that our quarterly meeting will take place next Thursday at 3 PM in the main conference room. Please come prepared with updates on your current projects, and be ready to discuss any challenges you may be facing. Your input is valuable as we plan our next steps.",
+      "questions": [
+        {"id": "toeic-l4-talk-04-q1-ee36", "question": "When is the quarterly meeting scheduled?", "options": ["A. This Friday", "B. Next Thursday", "C. Next Monday", "D. This Wednesday"], "answer": "B"},
+        {"id": "toeic-l4-talk-04-q2-17a7", "question": "What should team members prepare for the meeting?", "options": ["A. Project updates", "B. Budget proposals", "C. Client presentations", "D. Marketing strategies"], "answer": "A"},
+        {"id": "toeic-l4-talk-04-q3-d368", "question": "Where will the meeting be held?", "options": ["A. In the cafeteria", "B. At the client’s office", "C. In the main conference room", "D. Online via video call"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-05-b335",
+      "transcript": "Ladies and gentlemen, we are pleased to inform you that our hotel is offering a special package for this holiday season. Book a room for three nights and receive the fourth night free, including breakfast for two each day. This offer is valid until December 30. Please visit our website or call our reservation desk for more information.",
+      "questions": [
+        {"id": "toeic-l4-talk-05-q1-3eb2", "question": "What is the special offer mentioned?", "options": ["A. Free upgrade", "B. Discount on meals", "C. Fourth night free", "D. Free parking"], "answer": "C"},
+        {"id": "toeic-l4-talk-05-q2-6961", "question": "What is included in the package?", "options": ["A. Free airport transfer", "B. Breakfast for two", "C. Spa access", "D. Late checkout"], "answer": "B"},
+        {"id": "toeic-l4-talk-05-q3-4ed5", "question": "Until when is the offer valid?", "options": ["A. December 15", "B. December 30", "C. January 1", "D. January 15"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-06",
+      "transcript": "Welcome to the Tech Innovation Conference. We are excited to announce that our keynote speaker this year will be Dr. Emily Chen, a leading expert in artificial intelligence. Her presentation on the future of technology will start at 10 AM on the first day of the conference. Please make sure to register in advance to secure your attendance.",
+      "questions": [
+        {"id": "toeic-l4-talk-06-q1", "question": "Who is the keynote speaker?", "options": ["A. A software engineer", "B. A business analyst", "C. Dr. Emily Chen", "D. A data scientist"], "answer": "C"},
+        {"id": "toeic-l4-talk-06-q2", "question": "What topic will the keynote address cover?", "options": ["A. E-commerce", "B. Artificial intelligence", "C. Cybersecurity", "D. Digital marketing"], "answer": "B"},
+        {"id": "toeic-l4-talk-06-q3", "question": "What should attendees do to attend the keynote?", "options": ["A. Pay a fee", "B. Register in advance", "C. Submit a proposal", "D. Join a mailing list"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-01-eb71",
+      "transcript": "Good morning, everyone. This is a reminder for those attending the 2023 Technology Conference. Please remember to check in at the registration desk upon arrival to receive your conference materials. The keynote speech will begin promptly at 9 AM in Hall A, followed by breakout sessions at 10:30 AM. If you have any questions during the event, feel free to approach one of our staff members. We hope you enjoy this year's conference!",
+      "questions": [
+        {"id": "toeic-l4-talk-01-q1-1827", "question": "What is the purpose of the announcement?", "options": ["A. To inform about session cancellations", "B. To provide conference details", "C. To direct attendees to their hotels", "D. To introduce the keynote speaker"], "answer": "B"},
+        {"id": "toeic-l4-talk-01-q2-c187", "question": "Where should attendees check in?", "options": ["A. Hall A", "B. Registration desk", "C. Session rooms", "D. The lobby"], "answer": "B"},
+        {"id": "toeic-l4-talk-01-q3-70b5", "question": "At what time will the keynote speech start?", "options": ["A. 8:30 AM", "B. 9:00 AM", "C. 10:00 AM", "D. 10:30 AM"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-02-8ee3",
+      "transcript": "Hello, everyone. This is an announcement regarding the upcoming maintenance on our website. Starting this Saturday at midnight, the site will be down for approximately six hours for necessary updates. We apologize for any inconvenience this may cause and recommend that you complete any important transactions before the maintenance begins. Thank you for your understanding.",
+      "questions": [
+        {"id": "toeic-l4-talk-02-q1-2bdc", "question": "When will the website maintenance begin?", "options": ["A. Friday at midnight", "B. Saturday at noon", "C. Saturday at midnight", "D. Sunday at midnight"], "answer": "C"},
+        {"id": "toeic-l4-talk-02-q2-294f", "question": "How long is the website expected to be down?", "options": ["A. Three hours", "B. Four hours", "C. Five hours", "D. Six hours"], "answer": "D"},
+        {"id": "toeic-l4-talk-02-q3-ee3b", "question": "What do the speakers recommend?", "options": ["A. Using the mobile app", "B. Completing transactions beforehand", "C. Logging in later", "D. Changing passwords"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-03-ed28",
+      "transcript": "Welcome to the annual company picnic this Saturday! We are excited to have you join us for a day filled with fun activities, including games, a barbecue, and a raffle. Please bring your family along for a great time. The picnic will be held at Riverside Park from 11 AM to 4 PM, and food will be served around noon. Don’t forget to bring a blanket to sit on!",
+      "questions": [
+        {"id": "toeic-l4-talk-03-q1-e4a4", "question": "What event is being announced?", "options": ["A. A company meeting", "B. An annual picnic", "C. A holiday party", "D. A training session"], "answer": "B"},
+        {"id": "toeic-l4-talk-03-q2-d17a", "question": "Where will the picnic take place?", "options": ["A. At the office", "B. At Riverside Park", "C. At the beach", "D. At the community center"], "answer": "B"},
+        {"id": "toeic-l4-talk-03-q3-b797", "question": "What should attendees bring?", "options": ["A. Games", "B. Sports equipment", "C. A blanket", "D. Extra chairs"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-04-e1e1",
+      "transcript": "Attention, shoppers! Starting tomorrow, all electronics will be on sale for 25% off as part of our Anniversary Celebration. This is a great opportunity to save on the latest gadgets and appliances. The sale will last for one week, so be sure to take advantage of this special offer. Discounts apply to in-store purchases only. Thank you for shopping with us!",
+      "questions": [
+        {"id": "toeic-l4-talk-04-q1-a00e", "question": "What is the announcement about?", "options": ["A. A sale on furniture", "B. A new store opening", "C. A 25% discount on electronics", "D. A clearance event"], "answer": "C"},
+        {"id": "toeic-l4-talk-04-q2-6539", "question": "How long will the sale last?", "options": ["A. One day", "B. Two days", "C. One week", "D. One month"], "answer": "C"},
+        {"id": "toeic-l4-talk-04-q3-8643", "question": "Where do the discounts apply?", "options": ["A. Online only", "B. In-store purchases only", "C. Member purchases only", "D. All purchases"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-05-543c",
+      "transcript": "Hello, fitness enthusiasts! We're excited to announce that starting next Monday, our gym will offer a new yoga class every Tuesday and Thursday at 6 PM. All levels are welcome, and mats will be provided. This class aims to improve flexibility and promote relaxation. If you're interested, sign up at the front desk. We hope to see many of you there!",
+      "questions": [
+        {"id": "toeic-l4-talk-05-q1-6bd5", "question": "What is the main topic of the announcement?", "options": ["A. A new fitness program", "B. A gym renovation", "C. Changes to membership fees", "D. A personal training service"], "answer": "A"},
+        {"id": "toeic-l4-talk-05-q2-3e5b", "question": "When will the new yoga class be held?", "options": ["A. Mondays only", "B. Tuesdays and Thursdays", "C. Wednesdays and Fridays", "D. Weekends only"], "answer": "B"},
+        {"id": "toeic-l4-talk-05-q3-4e6f", "question": "What will be provided by the gym?", "options": ["A. Water bottles", "B. Yoga mats", "C. Towels", "D. Snacks"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-02-740d",
+      "transcript": "Welcome to this week’s seminar on financial planning. Today, we’re joined by expert Sarah Bennett, who will discuss effective budgeting strategies for individuals and families. We will cover the importance of tracking expenses, setting financial goals, and tips on saving for the future. Attendees are encouraged to ask questions, and we will have a Q&A session at the end of the presentation. Let’s get started with our first topic.",
+      "questions": [
+        {"id": "toeic-l4-talk-02-q1-cf07", "question": "What is the main topic of the seminar?", "options": ["A. Investment options", "B. Real estate tips", "C. Financial planning", "D. Retirement savings"], "answer": "C"},
+        {"id": "toeic-l4-talk-02-q2-111b", "question": "Who is the speaker?", "options": ["A. A financial analyst", "B. A bank manager", "C. An expert in budgeting", "D. A personal trainer"], "answer": "C"},
+        {"id": "toeic-l4-talk-02-q3-f4b8", "question": "What is one of the topics covered in the seminar?", "options": ["A. Reducing debt", "B. Buying stocks", "C. Filing taxes", "D. Applying for loans"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-03-5d0a",
+      "transcript": "Attention all employees, we are excited to announce the upcoming company retreat scheduled for next month. This year, we will be heading to Green Lake Resort for a weekend of team-building activities and relaxation. Employees are required to register by the end of this week to secure their spot. More details, including transportation options and an activity schedule, will be provided via email. We hope to see everyone there!",
+      "questions": [
+        {"id": "toeic-l4-talk-03-q1-2e22", "question": "Where is the company retreat taking place?", "options": ["A. Downtown office", "B. Green Lake Resort", "C. Local park", "D. Conference center"], "answer": "B"},
+        {"id": "toeic-l4-talk-03-q2-f147", "question": "When is the registration deadline?", "options": ["A. This weekend", "B. Next month", "C. End of this week", "D. Next week"], "answer": "C"},
+        {"id": "toeic-l4-talk-03-q3-16f0", "question": "What type of activities are planned for the retreat?", "options": ["A. Competitive workshops", "B. Team-building activities", "C. Skill enhancement sessions", "D. Solo projects"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-04-98b7",
+      "transcript": "Hello everyone, thank you for joining our community meeting. Today’s agenda includes updates on local development projects and upcoming events. We will also discuss community safety and gather feedback on how to improve our neighborhood. After the formal presentations, there will be an open forum for residents to voice their opinions. Your participation is vital, so we encourage everyone to get involved.",
+      "questions": [
+        {"id": "toeic-l4-talk-04-q1-e04d", "question": "What is the purpose of the community meeting?", "options": ["A. To plan a festival", "B. To discuss local issues", "C. To fundraise for a project", "D. To organize a sports event"], "answer": "B"},
+        {"id": "toeic-l4-talk-04-q2-38c4", "question": "What will be gathered during the meeting?", "options": ["A. Donations", "B. Feedback from residents", "C. Contact information", "D. Volunteer applications"], "answer": "B"},
+        {"id": "toeic-l4-talk-04-q3-a0d4", "question": "What happens after the formal presentations?", "options": ["A. The meeting ends", "B. A voting session", "C. An open forum", "D. A lunch break"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-05-a30d",
+      "transcript": "Good morning everyone, and welcome to our online workshop on stress management techniques. Today, wellness coach John Lee will lead us through various methods to alleviate stress, such as mindfulness, breathing exercises, and time management skills. Participants are encouraged to take notes and engage in practice sessions throughout the workshop. We aim to equip you with practical tools to help manage stress effectively in your daily life.",
+      "questions": [
+        {"id": "toeic-l4-talk-05-q1-7ceb", "question": "Who is leading the workshop?", "options": ["A. A psychologist", "B. A wellness coach", "C. A therapist", "D. A life coach"], "answer": "B"},
+        {"id": "toeic-l4-talk-05-q2-95b0", "question": "What is one technique that will be discussed?", "options": ["A. Nutrition planning", "B. Exercise routines", "C. Breathing exercises", "D. Financial planning"], "answer": "C"},
+        {"id": "toeic-l4-talk-05-q3-b376", "question": "What should participants do during practice sessions?", "options": ["A. Take breaks", "B. Take notes", "C. Avoid distractions", "D. Work quietly"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-06-5c5e",
+      "transcript": "Ladies and gentlemen, we invite you to our annual health fair happening this Saturday at the city hall. The event will feature a variety of health screenings, fitness demonstrations, and informative workshops on nutrition and mental health. Local vendors will also provide healthy snacks and information on wellness products. Don't miss this opportunity to learn more about taking care of your health. We look forward to seeing you there!",
+      "questions": [
+        {"id": "toeic-l4-talk-06-q1-9607", "question": "What is the main attraction of the health fair?", "options": ["A. Healthy snacks", "B. Fitness demonstrations", "C. Workshops on nutrition", "D. Health screenings"], "answer": "D"},
+        {"id": "toeic-l4-talk-06-q2-38cf", "question": "When is the health fair scheduled?", "options": ["A. This Friday", "B. Next Sunday", "C. This Saturday", "D. Next month"], "answer": "C"},
+        {"id": "toeic-l4-talk-06-q3-9bf5", "question": "Where will the health fair be held?", "options": ["A. At a local park", "B. At the city hall", "C. At a community center", "D. At the sports arena"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-01-7d8c",
+      "transcript": "Hello everyone, and welcome to our weekly health seminar. Today, we will be discussing the benefits of a balanced diet and its impact on your overall well-being. Our expert nutritionist will share tips on how to incorporate more fruits and vegetables into your meals. After the presentation, feel free to ask any questions you may have. We're looking forward to a fruitful discussion.",
+      "questions": [
+        {"id": "toeic-l4-talk-01-q1-14c8", "question": "What is the main topic of the seminar?", "options": ["A. Physical fitness", "B. Mental health", "C. Balanced diet", "D. Sleep hygiene"], "answer": "C"},
+        {"id": "toeic-l4-talk-01-q2-405a", "question": "Who will be conducting the presentation?", "options": ["A. A chef", "B. A personal trainer", "C. A nutritionist", "D. A psychologist"], "answer": "C"},
+        {"id": "toeic-l4-talk-01-q3-5682", "question": "What should attendees do after the presentation?", "options": ["A. Leave immediately", "B. Participate in a physical activity", "C. Ask questions", "D. Fill out a feedback form"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-02-9dfa",
+      "transcript": "Good afternoon, employees. As part of our ongoing goal to reduce energy consumption, the company will implement a new policy starting next month. All employees are encouraged to turn off lights and unplug devices when not in use. We will also be providing energy-efficient bulbs for your workspace. This initiative will not only help the environment but also reduce our energy costs. Thank you for your cooperation.",
+      "questions": [
+        {"id": "toeic-l4-talk-02-q1-dec8", "question": "What is the purpose of the new policy?", "options": ["A. To improve employee productivity", "B. To increase office space", "C. To reduce energy consumption", "D. To provide more devices"], "answer": "C"},
+        {"id": "toeic-l4-talk-02-q2-df21", "question": "What support is offered to employees?", "options": ["A. Extra training sessions", "B. Energy-efficient bulbs", "C. Higher salaries", "D. Extended vacations"], "answer": "B"},
+        {"id": "toeic-l4-talk-02-q3-be36", "question": "When will the new policy take effect?", "options": ["A. Next week", "B. Next month", "C. At the end of the year", "D. Immediately"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-03-7755",
+      "transcript": "Greetings, everyone! This is a reminder that the team-building retreat is scheduled for next Saturday at Lakeview Park. Please arrive by 9 AM to ensure we have enough time for all planned activities. Bring comfortable clothing, sunscreen, and a water bottle. Lunch will be provided, but feel free to bring any snacks you might enjoy. We hope to see all of you there.",
+      "questions": [
+        {"id": "toeic-l4-talk-03-q1-1e9e", "question": "What is the event mentioned in the announcement?", "options": ["A. A company meeting", "B. A team-building retreat", "C. A training session", "D. A holiday party"], "answer": "B"},
+        {"id": "toeic-l4-talk-03-q2-dc4e", "question": "What should attendees bring?", "options": ["A. Formal wear", "B. Snacks only", "C. Comfortable clothing", "D. Electronics"], "answer": "C"},
+        {"id": "toeic-l4-talk-03-q3-2878", "question": "What time should participants arrive?", "options": ["A. 8 AM", "B. 9 AM", "C. 10 AM", "D. 11 AM"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-04-b2d1",
+      "transcript": "Dear customers, we appreciate your loyalty and support. To celebrate the opening of our new location, we are offering a special discount of 20% on all purchases made this weekend. This offer applies to both in-store and online purchases. Be sure to use the promo code OPEN20 at checkout. Thank you for being a valued customer, and we look forward to serving you!",
+      "questions": [
+        {"id": "toeic-l4-talk-04-q1-2415", "question": "What is the main announcement about?", "options": ["A. A new product launch", "B. A special discount offer", "C. A membership program", "D. A store closure"], "answer": "B"},
+        {"id": "toeic-l4-talk-04-q2-c84e", "question": "What is the discount percentage offered?", "options": ["A. 10%", "B. 15%", "C. 20%", "D. 25%"], "answer": "C"},
+        {"id": "toeic-l4-talk-04-q3-eb08", "question": "What promo code should customers use?", "options": ["A. OPEN20", "B. DISCOUNT20", "C. NEWSTORE20", "D. SALE20"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-05-70ae",
+      "transcript": "Hello, staff members. This is a reminder about the upcoming evaluation meetings scheduled for next Friday. Each department head will meet with their team individually to review performance and set new objectives for the next quarter. Please prepare any necessary documents and be ready to discuss your goals. Your participation is crucial for our success, and we appreciate your effort in contributing to our progress.",
+      "questions": [
+        {"id": "toeic-l4-talk-05-q1-20de", "question": "What is the purpose of the evaluation meetings?", "options": ["A. To set new team members", "B. To discuss individual performance", "C. To plan office events", "D. To review company policies"], "answer": "B"},
+        {"id": "toeic-l4-talk-05-q2-d720", "question": "When are the evaluation meetings scheduled?", "options": ["A. Next Thursday", "B. Next Saturday", "C. Next Monday", "D. Next Friday"], "answer": "D"},
+        {"id": "toeic-l4-talk-05-q3-ef21", "question": "What should team members prepare?", "options": ["A. Social plans", "B. Reports", "C. Necessary documents", "D. Feedback forms"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-01-8f70",
+      "transcript": "Ladies and gentlemen, welcome to the Expo Center. We are excited to announce that the annual Technology Fair will begin tomorrow at 9 AM. Attendees can expect a variety of interactive exhibits and demonstrations from leading tech companies. Please remember to collect your badges at the registration desk. We look forward to seeing you all there!",
+      "questions": [
+        {"id": "toeic-l4-talk-01-q1-10e7", "question": "What event is being announced?", "options": ["A. A business conference", "B. A technology fair", "C. A product launch", "D. A networking event"], "answer": "B"},
+        {"id": "toeic-l4-talk-01-q2-cdf9", "question": "What time does the event start?", "options": ["A. 8 AM", "B. 9 AM", "C. 10 AM", "D. 11 AM"], "answer": "B"},
+        {"id": "toeic-l4-talk-01-q3-561f", "question": "What should attendees collect at the event?", "options": ["A. Free promotional items", "B. Badges", "C. Information pamphlets", "D. Business cards"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-02-2811",
+      "transcript": "Good afternoon, everyone. This is the City Council speaking. We would like to invite you to a town hall meeting scheduled for next Thursday at 6 PM in the Community Room. This meeting will cover important topics such as local development projects and public safety initiatives. Your input is crucial, so please join us.",
+      "questions": [
+        {"id": "toeic-l4-talk-02-q1-ad00", "question": "What is the purpose of the town hall meeting?", "options": ["A. To discuss local development and safety", "B. To announce a new mayor", "C. To celebrate a holiday", "D. To address community complaints"], "answer": "A"},
+        {"id": "toeic-l4-talk-02-q2-d884", "question": "When is the town hall meeting scheduled?", "options": ["A. Next Monday", "B. Next Thursday", "C. This Saturday", "D. This Wednesday"], "answer": "B"},
+        {"id": "toeic-l4-talk-02-q3-9903", "question": "Where will the meeting take place?", "options": ["A. In the library", "B. At the local park", "C. In the Community Room", "D. At City Hall"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-03-2822",
+      "transcript": "Attention, employees. This is a reminder that our annual performance review meetings will take place next week from Tuesday to Friday. Each department will have a designated time slot, which has been emailed to you. Please make sure to prepare your self-assessments ahead of time. Thank you for your cooperation.",
+      "questions": [
+        {"id": "toeic-l4-talk-03-q1-129f", "question": "What is the main topic of the announcement?", "options": ["A. Salary increases", "B. Performance reviews", "C. Company training sessions", "D. New employee orientations"], "answer": "B"},
+        {"id": "toeic-l4-talk-03-q2-74ac", "question": "When will the performance reviews occur?", "options": ["A. This week", "B. Next week", "C. Next month", "D. This weekend"], "answer": "B"},
+        {"id": "toeic-l4-talk-03-q3-3f13", "question": "What should employees prepare for the meetings?", "options": ["A. A presentation", "B. Financial reports", "C. Self-assessments", "D. Feedback forms"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-04-571e",
+      "transcript": "Hello, esteemed guests. I am delighted to welcome you to our annual gala. This evening, we will enjoy a fantastic dinner followed by a charity auction to support local schools. Please check your tables for the auction catalogs and bid paddles. Thank you for joining us, and let's make a difference together.",
+      "questions": [
+        {"id": "toeic-l4-talk-04-q1-02ea", "question": "What type of event is being held?", "options": ["A. A charity gala", "B. A corporate meeting", "C. A networking dinner", "D. A concert"], "answer": "A"},
+        {"id": "toeic-l4-talk-04-q2-390c", "question": "What will guests do to support local schools?", "options": ["A. Fundraise through donations", "B. Host a silent auction", "C. Attend a lecture", "D. Participate in a trivia contest"], "answer": "B"},
+        {"id": "toeic-l4-talk-04-q3-08ac", "question": "What is provided at each table for the auction?", "options": ["A. Dinner menus", "B. Auction catalogs and paddles", "C. Drink vouchers", "D. Thank you notes"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-05-fe45",
+      "transcript": "Greetings, customers! We are thrilled to announce a special promotion this weekend at our bookstore. All fiction titles will be 20% off, and if you buy two or more books, you'll receive an additional 10% off your total purchase. Don’t miss this chance to pick up some great reads. We look forward to seeing you soon!",
+      "questions": [
+        {"id": "toeic-l4-talk-05-q1-b5b9", "question": "What is the special promotion about?", "options": ["A. Discounts on magazines", "B. Free bookmarks", "C. Sales on fiction books", "D. Buy-one-get-one-free offer"], "answer": "C"},
+        {"id": "toeic-l4-talk-05-q2-f8f2", "question": "What additional discount do customers receive if they buy two or more books?", "options": ["A. 5%", "B. 10%", "C. 15%", "D. 20%"], "answer": "B"},
+        {"id": "toeic-l4-talk-05-q3-8306", "question": "When does the promotion take place?", "options": ["A. On weekdays", "B. This weekend", "C. Next month", "D. During summer"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-01-367b",
+      "transcript": "Welcome to our quarterly company seminar on innovation in technology. Today, we will explore the latest advancements that are shaping our industry, including artificial intelligence and blockchain technology. Please take a moment to review your seminar materials provided at the registration desk. Our keynote speaker will begin shortly, and we encourage everyone to actively participate in the discussion session afterwards.",
+      "questions": [
+        {"id": "toeic-l4-talk-01-q1-5f8e", "question": "What is the main topic of the seminar?", "options": ["A. Financial strategies", "B. Innovations in technology", "C. Marketing techniques", "D. Human resources management"], "answer": "B"},
+        {"id": "toeic-l4-talk-01-q2-b37c", "question": "What materials have been provided to attendees?", "options": ["A. Business cards", "B. Seminar materials", "C. Refreshments", "D. Feedback forms"], "answer": "B"},
+        {"id": "toeic-l4-talk-01-q3-ef7e", "question": "What will happen after the keynote speech?", "options": ["A. A lunch break", "B. A networking session", "C. A discussion session", "D. A product demonstration"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-02-ef1b",
+      "transcript": "Good afternoon, and thank you for attending this workshop on effective communication skills. Throughout the session, we will cover techniques such as active listening, non-verbal communication, and how to give constructive feedback. We encourage you to ask questions and engage in group activities to practice these skills. Let’s get started with our first exercise on listening techniques.",
+      "questions": [
+        {"id": "toeic-l4-talk-02-q1-3f75", "question": "What is the purpose of the workshop?", "options": ["A. To learn about project management", "B. To improve communication skills", "C. To develop leadership abilities", "D. To enhance technical skills"], "answer": "B"},
+        {"id": "toeic-l4-talk-02-q2-0e15", "question": "What activity will the participants engage in?", "options": ["A. Individual presentations", "B. Group activities", "C. Surveys and polls", "D. Role-playing scenarios"], "answer": "B"},
+        {"id": "toeic-l4-talk-02-q3-eb58", "question": "What technique will be discussed first?", "options": ["A. Non-verbal communication", "B. Giving constructive feedback", "C. Active listening", "D. Conflict resolution"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-03-77fd",
+      "transcript": "Hello everyone, and welcome to our annual health and wellness fair. This year, we are focusing on mental health awareness. There will be various booths offering information on stress management, nutrition, and wellness programs. Also, don’t forget to join our yoga session at 2 PM in the main hall. Resources and brochures are available for those who want to learn more, and we encourage you to take part in the activities.",
+      "questions": [
+        {"id": "toeic-l4-talk-03-q1-3657", "question": "What is the main focus of this year's health fair?", "options": ["A. Physical fitness", "B. Mental health awareness", "C. Nutritional diets", "D. Preventive care"], "answer": "B"},
+        {"id": "toeic-l4-talk-03-q2-36a1", "question": "What time is the yoga session scheduled?", "options": ["A. 1 PM", "B. 2 PM", "C. 3 PM", "D. 4 PM"], "answer": "B"},
+        {"id": "toeic-l4-talk-03-q3-421c", "question": "What types of resources are available for participants?", "options": ["A. Free meals", "B. Fitness equipment", "C. Brochures and information", "D. Personal trainers"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-04-6443",
+      "transcript": "Thank you for joining our webinar on sustainable practices in business. Today, we will discuss strategies to reduce waste and conserve energy. Our featured speaker has successfully implemented these practices in their company, leading to significant cost savings and environmental benefits. At the end of the presentation, there will be a Q&A session. We encourage all of you to share your thoughts and questions.",
+      "questions": [
+        {"id": "toeic-l4-talk-04-q1-5342", "question": "What is the main subject of the webinar?", "options": ["A. Marketing strategies", "B. Sustainable business practices", "C. Financial management", "D. Technology innovation"], "answer": "B"},
+        {"id": "toeic-l4-talk-04-q2-93e0", "question": "What will the featured speaker discuss?", "options": ["A. Marketing tactics", "B. Waste reduction strategies", "C. Sales techniques", "D. Customer service improvements"], "answer": "B"},
+        {"id": "toeic-l4-talk-04-q3-d706", "question": "What will happen at the end of the presentation?", "options": ["A. A networking session", "B. A product giveaway", "C. A Q&A session", "D. A group discussion"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-l4-talk-05-c114",
+      "transcript": "Welcome to the city’s annual arts festival. This year, we have an exciting lineup of local artists showcasing their work in various mediums, including painting, sculpture, and photography. Additionally, there will be live performances and workshops throughout the weekend. Don’t miss the opening ceremony, which starts at noon today. We hope to see you at the festival enjoying the arts and culture of our community.",
+      "questions": [
+        {"id": "toeic-l4-talk-05-q1-4fa4", "question": "What is being celebrated at the festival?", "options": ["A. Local artists", "B. Historical architecture", "C. Culinary traditions", "D. Scientific achievements"], "answer": "A"},
+        {"id": "toeic-l4-talk-05-q2-d02e", "question": "What types of artists are featured at the festival?", "options": ["A. Digital artists only", "B. Craft artists only", "C. Local artists in various mediums", "D. International artists exclusively"], "answer": "C"},
+        {"id": "toeic-l4-talk-05-q3-dc0b", "question": "What time does the opening ceremony begin?", "options": ["A. 11 AM", "B. Noon", "C. 1 PM", "D. 2 PM"], "answer": "B"}
+      ]
+    }
+  ]
+}

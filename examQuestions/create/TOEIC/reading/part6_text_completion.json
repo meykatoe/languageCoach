@@ -1,0 +1,333 @@
+{
+  "exam": "TOEIC",
+  "section": "Reading",
+  "part": "Part 6: Text Completion",
+  "instructions": "Read each passage and choose the word, phrase, or sentence that best completes each blank.",
+  "passages": [
+    {
+      "id": "toeic-r6-passage-01",
+      "text": "To: All Staff\nFrom: Facilities Department\nSubject: Elevator Maintenance\n\nPlease be advised that the elevators in Building C will undergo routine maintenance next week. ___(1)___, all elevators will be out of service from Monday to Wednesday. During this period, staff are asked to use the stairwell located near the main lobby. We apologize for any ___(2)___ this may cause. The maintenance team expects the work to be completed ___(3)___ Thursday morning, at which point the elevators will resume normal ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-01-b1", "options": ["A. Consequently", "B. Similarly", "C. For example", "D. Meanwhile"], "answer": "A"},
+        {"id": "toeic-r6-passage-01-b2", "options": ["A. inconvenient", "B. inconvenience", "C. inconveniently", "D. inconvenienced"], "answer": "B"},
+        {"id": "toeic-r6-passage-01-b3", "options": ["A. by", "B. since", "C. during", "D. among"], "answer": "A"},
+        {"id": "toeic-r6-passage-01-b4", "options": ["A. operate", "B. operation", "C. operating", "D. operational"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-02",
+      "text": "Dear Valued Customer,\n\nThank you for your recent purchase from GreenLeaf Home Goods. We noticed that the item you ordered, the Bamboo Storage Shelf, is currently ___(1)___ due to unexpectedly high demand. ___(2)___, we expect new stock to arrive within two weeks. If you would prefer not to wait, you may cancel your order for a full refund. ___(3)___, we can offer you a 15% discount on your next purchase as an apology for the delay. Please let us know how you would ___(4)___ to proceed.",
+      "blanks": [
+        {"id": "toeic-r6-passage-02-b1", "options": ["A. discontinued", "B. out of stock", "C. overpriced", "D. delivered"], "answer": "B"},
+        {"id": "toeic-r6-passage-02-b2", "options": ["A. However", "B. Therefore", "C. In addition", "D. For instance"], "answer": "A"},
+        {"id": "toeic-r6-passage-02-b3", "options": ["A. Alternatively", "B. Consequently", "C. Similarly", "D. Nonetheless"], "answer": "A"},
+        {"id": "toeic-r6-passage-02-b4", "options": ["A. like", "B. prefer", "C. want", "D. love"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-03",
+      "text": "Notice to Tenants\n\nThe building's water supply will be temporarily ___(1)___ on Saturday from 9 a.m. to 1 p.m. for scheduled pipe repairs. Residents are advised to store enough water for drinking and cooking ___(2)___ this period. ___(3)___ the repairs are completed ahead of schedule, service will be restored as soon as possible. We appreciate your patience and understanding ___(4)___ this necessary maintenance.",
+      "blanks": [
+        {"id": "toeic-r6-passage-03-b1", "options": ["A. increased", "B. shut off", "C. improved", "D. installed"], "answer": "B"},
+        {"id": "toeic-r6-passage-03-b2", "options": ["A. during", "B. while", "C. for", "D. since"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b3", "options": ["A. Although", "B. If", "C. Because", "D. Unless"], "answer": "B"},
+        {"id": "toeic-r6-passage-03-b4", "options": ["A. about", "B. regarding", "C. despite", "D. throughout"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-02-791d",
+      "text": "To: Marketing Team\nFrom: Management\nSubject: Q2 Marketing Strategy Review\n\nAs we approach the end of the second quarter, it is essential to evaluate our current marketing strategies. ___(1)___ the recent customer feedback, we must adjust our approach to better resonate with our audience. Marketing materials targeting social media will be prioritized, and ___(2)___ new campaigns will be developed to enhance our online presence. We expect to see measurable results ___(3)___ the next quarter. All team members are encouraged to share their insights in the upcoming meeting scheduled for Thursday at 10 AM, as your contributions are ___(4)___ to the overall success of our initiatives.",
+      "blanks": [
+        {"id": "toeic-r6-passage-02-b1-18d6", "options": ["A. Given", "B. Henceforth", "C. Moreover", "D. Regarding"], "answer": "A"},
+        {"id": "toeic-r6-passage-02-b2-6d43", "options": ["A. permanent", "B. attractive", "C. additional", "D. relevant"], "answer": "C"},
+        {"id": "toeic-r6-passage-02-b3-be93", "options": ["A. throughout", "B. for", "C. during", "D. following"], "answer": "D"},
+        {"id": "toeic-r6-passage-02-b4-47a1", "options": ["A. crucial", "B. trivial", "C. optional", "D. hazardous"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-03-e6c6",
+      "text": "To: Customer Support\nFrom: IT Department\nSubject: System Downtime Notification\n\nWe would like to inform you that the customer support system will be temporarily unavailable this weekend for necessary upgrades. ___(1)___ all activities will be tracked after the system goes live on Monday. Please ensure that you record any critical issues manually and provide updates to your team. ___(2)___, we recommend that you prepare your queries before the upgrade to streamline the transition process. The IT team appreciates your ___(3)___ during this time. We are committed to enhancing our systems to better serve our clients. Thank you for your ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-03-b1-6bae", "options": ["A. As a result", "B. Consequently", "C. Regardless", "D. Meanwhile"], "answer": "B"},
+        {"id": "toeic-r6-passage-03-b2-fb0a", "options": ["A. Alternatively", "B. Therefore", "C. Moreover", "D. However"], "answer": "B"},
+        {"id": "toeic-r6-passage-03-b3-8e4a", "options": ["A. understanding", "B. confusion", "C. hesitation", "D. discontent"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b4-feea", "options": ["A. cooperation", "B. effort", "C. neglect", "D. feedback"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-04",
+      "text": "To: Sales Team\nFrom: Regional Manager\nSubject: Monthly Sales Meeting\n\nThis is a reminder for our monthly sales meeting taking place this Friday at 3 PM in the main conference room. ___(1)___ discuss performance metrics from last month, and we will outline goals for the upcoming period. It is vital that everyone comes prepared with their reports, ___(2)___ can provide a detailed review of each territory. We also plan to recognize top performers, so be sure to bring your ___(3)___. Your input and participation are greatly appreciated, as collaboration is ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-04-b1", "options": ["A. We will", "B. In addition", "C. Alternatively", "D. Likewise"], "answer": "A"},
+        {"id": "toeic-r6-passage-04-b2", "options": ["A. that", "B. which", "C. so", "D. what"], "answer": "B"},
+        {"id": "toeic-r6-passage-04-b3", "options": ["A. incentives", "B. ideas", "C. updates", "D. questions"], "answer": "A"},
+        {"id": "toeic-r6-passage-04-b4", "options": ["A. essential", "B. minimal", "C. superficial", "D. counterproductive"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-05",
+      "text": "To: All Employees\nFrom: Human Resources\nSubject: Employee Wellness Program\n\nWe are excited to announce the launch of our new Employee Wellness Program, designed to ___(1)___ the well-being of all staff members. The program includes various health initiatives, such as fitness classes and mental health resources. It is our goal to ___(2)___ a supportive environment where employees feel valued and motivated. Staff participation is ___(3)___ to the program's success, and we encourage everyone to engage actively. Furthermore, feedback will be collected ___(4)___ the duration of the program to ensure it meets the needs of our team.",
+      "blanks": [
+        {"id": "toeic-r6-passage-05-b1", "options": ["A. enhance", "B. remove", "C. neglect", "D. undermine"], "answer": "A"},
+        {"id": "toeic-r6-passage-05-b2", "options": ["A. foster", "B. disregard", "C. disrupt", "D. challenge"], "answer": "A"},
+        {"id": "toeic-r6-passage-05-b3", "options": ["A. unimportant", "B. irrelevant", "C. critical", "D. optional"], "answer": "C"},
+        {"id": "toeic-r6-passage-05-b4", "options": ["A. throughout", "B. beyond", "C. until", "D. despite"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-06",
+      "text": "To: Product Development Team\nFrom: CEO\nSubject: New Product Launch\n\nI am pleased to announce our upcoming product launch scheduled for next month. This new product represents a significant advancement in our technology. ___(1)___ it is crucial to prepare all marketing materials well in advance. The marketing department should ensure ___(2)___ the launch campaign aligns with our company values and messaging. We are excited about the potential ___(3)___ this product will have in the market. Employees are encouraged to attend the official launch event, which will be held ___(4)___ the main auditorium.",
+      "blanks": [
+        {"id": "toeic-r6-passage-06-b1", "options": ["A. For that reason", "B. Nevertheless", "C. Conversely", "D. However"], "answer": "A"},
+        {"id": "toeic-r6-passage-06-b2", "options": ["A. that", "B. where", "C. what", "D. whether"], "answer": "A"},
+        {"id": "toeic-r6-passage-06-b3", "options": ["A. impact", "B. detriment", "C. challenge", "D. inequality"], "answer": "A"},
+        {"id": "toeic-r6-passage-06-b4", "options": ["A. around", "B. in", "C. on", "D. at"], "answer": "D"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-02-207e",
+      "text": "To: Marketing Team\nFrom: Management\nSubject: Sales Conference\n\nWe are excited to announce that the annual sales conference will be held next month in San Francisco. ___(1)___ the event is scheduled for April 15th, all attendees are encouraged to register by the end of this week. Early registration comes with a ___(2)___ discount on the conference fee. Please ensure that your travel arrangements are made ___(3)___, as accommodations near the venue tend to fill up quickly. We appreciate your enthusiasm and look forward to seeing you all there. Don't forget to bring your ideas for ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-02-b1-a74f", "options": ["A. After", "B. Therefore", "C. Although", "D. Despite"], "answer": "B"},
+        {"id": "toeic-r6-passage-02-b2-b571", "options": ["A. substantial", "B. scarcely", "C. limited", "D. major"], "answer": "A"},
+        {"id": "toeic-r6-passage-02-b3-2068", "options": ["A. beforehand", "B. afterwards", "C. completely", "D. suddenly"], "answer": "A"},
+        {"id": "toeic-r6-passage-02-b4-2f0e", "options": ["A. discussion", "B. discussions", "C. discuss", "D. discussed"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-03-468b",
+      "text": "To: Customer Service Team\nFrom: Operations\nSubject: Customer Feedback Survey\n\nAs part of our commitment to improving customer satisfaction, we will be distributing a feedback survey to our clients next week. ___(1)___, we ask that you promote the survey during your interactions with customers. This will help us gather more ___(2)___ insights into their preferences. The survey will be available online for two weeks, and your support is crucial for its ___(3)___ success. Please inform your teams about this initiative and encourage participation to ensure that we can offer our customers the best possible ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-03-b1-45ea", "options": ["A. Consequently", "B. Therefore", "C. For example", "D. Nevertheless"], "answer": "B"},
+        {"id": "toeic-r6-passage-03-b2-3891", "options": ["A. valuable", "B. value", "C. valuably", "D. valued"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b3-07d0", "options": ["A. overall", "B. clear", "C. ultimate", "D. raw"], "answer": "C"},
+        {"id": "toeic-r6-passage-03-b4-4320", "options": ["A. service", "B. servicing", "C. served", "D. serves"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-04-ff6e",
+      "text": "To: HR Department\nFrom: Finance Department\nSubject: Annual Employee Review\n\nThis is a reminder that the annual employee reviews will take place starting next month. ___(1)___, the evaluation meetings will be held from May 1st to May 15th. Please ensure that all relevant documentation is ___(2)___ submitted to the HR department by the end of this week. The results of these reviews will be used for ___(3)___ decisions and employee development plans. We appreciate your cooperation and support in this matter, as it is essential for maintaining our high standards of ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-04-b1-4209", "options": ["A. Thus", "B. As a result", "C. Meanwhile", "D. Specifically"], "answer": "D"},
+        {"id": "toeic-r6-passage-04-b2-2b33", "options": ["A. properly", "B. except", "C. nearly", "D. shortly"], "answer": "A"},
+        {"id": "toeic-r6-passage-04-b3-8c6b", "options": ["A. budgeting", "B. promotion", "C. evaluating", "D. appraisal"], "answer": "B"},
+        {"id": "toeic-r6-passage-04-b4-9d2c", "options": ["A. quality", "B. qualified", "C. qualify", "D. qualification"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-05-53c9",
+      "text": "To: IT Department\nFrom: Project Management\nSubject: Software Update\n\nAttention all team members: A mandatory software update will be applied on all company devices next weekend. ___(1)___, the update will occur on Saturday at 10 PM and will last for approximately three hours. During this time, access to the company network will be temporarily ___(2)___. We advise all employees to save their work and log out before the update begins. Please ensure that you communicate this information ___(3)___ to your teams. If you have any questions, do not hesitate to reach out for ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-05-b1-7e69", "options": ["A. Specifically", "B. Generally", "C. However", "D. In addition"], "answer": "A"},
+        {"id": "toeic-r6-passage-05-b2-8727", "options": ["A. accessible", "B. disconnected", "C. mismatched", "D. overloaded"], "answer": "B"},
+        {"id": "toeic-r6-passage-05-b3-7652", "options": ["A. shortly", "B. immediately", "C. clearly", "D. hurriedly"], "answer": "C"},
+        {"id": "toeic-r6-passage-05-b4-543d", "options": ["A. assistance", "B. assistance’s", "C. assist", "D. assisted"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-06-c40b",
+      "text": "To: Sales Team\nFrom: Executive Office\nSubject: New Product Launch\n\nWe are thrilled to announce the launch of our new product line next quarter. ___(1)___, we will hold a meeting on March 10th to discuss the marketing strategies to promote the new items. All sales staff are expected to attend, as their input is ___(2)___ for the success of the launch. In the meantime, please familiarize yourself with the product details and prepare any questions you might have. A focused training session will be ___(3)___ later this month to ensure that everyone is prepared. Thank you for your ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-06-b1-7861", "options": ["A. Henceforth", "B. Additionally", "C. Consequently", "D. Since"], "answer": "B"},
+        {"id": "toeic-r6-passage-06-b2-e8a9", "options": ["A. voluntary", "B. critical", "C. slight", "D. conventional"], "answer": "B"},
+        {"id": "toeic-r6-passage-06-b3-8ab4", "options": ["A. scheduled", "B. cancelled", "C. postponed", "D. broken"], "answer": "A"},
+        {"id": "toeic-r6-passage-06-b4-091f", "options": ["A. engagement", "B. engage", "C. engaging", "D. engaged"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-02-f15c",
+      "text": "To: Marketing Team\nFrom: Brand Manager\nSubject: Upcoming Product Launch\n\nI am excited to announce that our new product will officially launch on May 15th. ___(1)___ the launch, we will hold a special event to showcase its features to our clients and partners. We encourage everyone to attend and share this announcement on your social media platforms. This is an excellent opportunity to increase our brand visibility and to engage directly with our audience. We would like to gather your feedback ___(2)___ the promotional materials that will be used during the event. Please submit your suggestions by the end of this week so that we can finalize our plans ___(3)___. Thank you for your cooperation! Looking forward to seeing you all there!",
+      "blanks": [
+        {"id": "toeic-r6-passage-02-b1-b459", "options": ["A. Before", "B. After", "C. During", "D. In the meantime"], "answer": "A"},
+        {"id": "toeic-r6-passage-02-b2-6048", "options": ["A. for", "B. on", "C. about", "D. at"], "answer": "C"},
+        {"id": "toeic-r6-passage-02-b3-acd6", "options": ["A. promptly", "B. swiftly", "C. thoroughly", "D. accordingly"], "answer": "D"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-03-d0c6",
+      "text": "To: All Employees\nFrom: Human Resources\nSubject: Mandatory Training Session\n\nThis is a reminder that there will be a mandatory training session for all employees on April 22nd at 10 AM in the main conference room. ___(1)___ attendance is crucial as we will introduce the new policies regarding workplace safety. Failure to attend may result in a ___(2)___ of guidelines that each employee must follow. We encourage you to prepare any questions you might have in advance, ___(3)___ we will allocate time for a Q&A session at the end of the presentation. Thank you for your attention to this important matter.",
+      "blanks": [
+        {"id": "toeic-r6-passage-03-b1-6135", "options": ["A. Therefore", "B. Hopefully", "C. Naturally", "D. Hence"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b2-1e86", "options": ["A. sharing", "B. clarification", "C. summary", "D. violation"], "answer": "D"},
+        {"id": "toeic-r6-passage-03-b3-452d", "options": ["A. although", "B. because", "C. unless", "D. since"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-04-eba9",
+      "text": "To: Sales Department\nFrom: Regional Director\nSubject: Sales Targets for Q2\n\nAs we welcome the second quarter of the year, it is important for us to set clear sales targets. ___(1)___ we aim to achieve an increase of 20% compared to Q1. Each team member is encouraged to contribute their ideas ___(2)___ how we can reach these goals effectively. Furthermore, regular meetings will be scheduled ____ (3) ____ monitor our progress throughout the quarter. Let's stay motivated and work together to exceed our targets!",
+      "blanks": [
+        {"id": "toeic-r6-passage-04-b1-e92b", "options": ["A. Moreover", "B. Ultimately", "C. In addition", "D. Accordingly"], "answer": "D"},
+        {"id": "toeic-r6-passage-04-b2-fc0d", "options": ["A. with", "B. on", "C. about", "D. for"], "answer": "C"},
+        {"id": "toeic-r6-passage-04-b3-f62d", "options": ["A. to", "B. at", "C. in order to", "D. for"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-05-2aa5",
+      "text": "To: Customer Service Team\nFrom: Operations Manager\nSubject: New Customer Feedback System\n\nWe are pleased to inform you that a new customer feedback system will be implemented starting next month. This system aims to improve our services based on customer input. ___(1)___ all feedback will be evaluated weekly during our team meetings. It is essential that we maintain the highest level of customer satisfaction. Please make sure to familiarize yourself with the new system and provide any concerns to your supervisor ___(2)___. We believe that ___(3)___ active participation will lead to continuous improvement in our service quality. Thank you for your commitment!",
+      "blanks": [
+        {"id": "toeic-r6-passage-05-b1-cc5f", "options": ["A. Therefore", "B. Consequently", "C. Hence", "D. Moreover"], "answer": "D"},
+        {"id": "toeic-r6-passage-05-b2-3149", "options": ["A. occasionally", "B. promptly", "C. rarely", "D. continuously"], "answer": "B"},
+        {"id": "toeic-r6-passage-05-b3-0d6d", "options": ["A. their", "B. our", "C. immediate", "D. your"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-06-bdb2",
+      "text": "To: Project Team\nFrom: Project Manager\nSubject: Timeline Adjustments\n\nAs you are aware, our project timeline has been revised due to unforeseen circumstances. ___(1)___ the deadline for the initial phase has been extended by two weeks. It is imperative that we adjust our schedules accordingly to meet the new expectations. I will be hosting a meeting on March 10th to discuss these changes in detail. Please come prepared with your current progress reports and any ___(2)___ you might have regarding the new deadlines. I appreciate your flexibility and understanding as we navigate this process ___(3)___. Together we can ensure that we deliver a successful outcome.",
+      "blanks": [
+        {"id": "toeic-r6-passage-06-b1-801f", "options": ["A. Therefore", "B. Nevertheless", "C. Whereas", "D. Additionally"], "answer": "A"},
+        {"id": "toeic-r6-passage-06-b2-2624", "options": ["A. confusion", "B. questions", "C. challenges", "D. insights"], "answer": "B"},
+        {"id": "toeic-r6-passage-06-b3-6281", "options": ["A. efficiently", "B. effectively", "C. purposefully", "D. carefully"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-02-200a",
+      "text": "To: Marketing Team\nFrom: Sales Director\nSubject: Upcoming Product Launch\n\nAs we prepare for the launch of our new product, it is important that all marketing materials are ___(1)___. Please ensure that any advertisements are ___(2)___ reviewed for accuracy. We want to create a positive impression from the outset. Additionally, we will hold a meeting on Friday at ___(3)___ to discuss the launch strategy and answer any questions. Thank you for your ___(4)___ and support during this exciting time.",
+      "blanks": [
+        {"id": "toeic-r6-passage-02-b1-dd06", "options": ["A. finalized", "B. finalize", "C. finalizing", "D. finalize"], "answer": "A"},
+        {"id": "toeic-r6-passage-02-b2-94a4", "options": ["A. frequent", "B. frequently", "C. frequency", "D. frequenting"], "answer": "B"},
+        {"id": "toeic-r6-passage-02-b3-9f91", "options": ["A. noon", "B. afternoon", "C. evening", "D. midnight"], "answer": "B"},
+        {"id": "toeic-r6-passage-02-b4-6f2d", "options": ["A. patience", "B. patient", "C. patiently", "D. patience"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-03-8fd4",
+      "text": "To: Finance Department\nFrom: Chief Financial Officer\nSubject: Budget Review\n\nIn light of recent expenditures, we need to conduct a thorough review of our budget for the next ___(1)___. All department heads are required to submit their revised forecasts by ___(2)___ end of this month. It is critical that we identify areas where we can ___(3)___ costs. The review meeting is scheduled for the first week of ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-03-b1-e375", "options": ["A. quarter", "B. quarterly", "C. quarters", "D. quartering"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b2-e182", "options": ["A. the", "B. an", "C. a", "D. to"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b3-df91", "options": ["A. cutting", "B. cut", "C. cuts", "D. cutter"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b4-fcdc", "options": ["A. March", "B. February", "C. April", "D. May"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-04-b54e",
+      "text": "To: Customer Service Representatives\nFrom: Customer Relations Manager\nSubject: Customer Feedback Initiative\n\nWe are excited to announce a new initiative aimed at improving customer satisfaction. Beginning next week, all representatives will be trained on effective ways to ___(1)___. Customer feedback is crucial for our growth, and we encourage everyone to actively seek input from clients. Please make sure to ___(2)___ the guidelines provided and incorporate them into your daily routines. We appreciate your ___(3)___ in making this initiative successful, as it will help us enhance our service. The orientation session will take ___(4)___ next Tuesday at 10 AM.",
+      "blanks": [
+        {"id": "toeic-r6-passage-04-b1-335b", "options": ["A. collect", "B. collection", "C. collected", "D. collector"], "answer": "A"},
+        {"id": "toeic-r6-passage-04-b2-6075", "options": ["A. review", "B. reviewing", "C. reviewed", "D. reviews"], "answer": "A"},
+        {"id": "toeic-r6-passage-04-b3-f51e", "options": ["A. efforts", "B. effectiveness", "C. efficient", "D. efficiently"], "answer": "A"},
+        {"id": "toeic-r6-passage-04-b4-fa6a", "options": ["A. place", "B. part", "C. action", "D. effect"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-05-f728",
+      "text": "To: IT Support Team\nFrom: Operations Manager\nSubject: System Updates\n\nThe IT department will implement critical system updates to enhance security and performance. ___(1)___, please expect downtime beginning at 10 PM on Saturday. During this time, users will not be able to access the network. We recommend that all employees ___(2)___ their work by Friday evening to prevent any loss of data. For questions or concerns, please reach out to the Help Desk. We appreciate your ___(3)___ and understanding. Updates are expected to be completed by ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-05-b1-f056", "options": ["A. Therefore", "B. Although", "C. Meanwhile", "D. Thus"], "answer": "A"},
+        {"id": "toeic-r6-passage-05-b2-8d15", "options": ["A. save", "B. saved", "C. saving", "D. saves"], "answer": "A"},
+        {"id": "toeic-r6-passage-05-b3-751a", "options": ["A. patience", "B. patient", "C. patiently", "D. patience"], "answer": "A"},
+        {"id": "toeic-r6-passage-05-b4-1a88", "options": ["A. Sunday", "B. Monday", "C. Tuesday", "D. Wednesday"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-06-ef3a",
+      "text": "To: All Employees\nFrom: Human Resources\nSubject: Year-End Performance Reviews\n\nAs the year comes to a close, we will be conducting performance reviews for all employees. To facilitate this process, please submit your self-assessment forms by ___(1)___. Each manager will then schedule one-on-one meetings to discuss your progress and set ___(2)___ for the upcoming year. This is an excellent opportunity for you to reflect on your achievements and identify areas for ___(3)___. We value your contribution and want to support your ___(4)___. Thank you for your attention to this matter.",
+      "blanks": [
+        {"id": "toeic-r6-passage-06-b1-d708", "options": ["A. the end of next week", "B. the beginning of next month", "C. the middle of next week", "D. the last day of this month"], "answer": "D"},
+        {"id": "toeic-r6-passage-06-b2-b74a", "options": ["A. goals", "B. objective", "C. objectives", "D. aim"], "answer": "A"},
+        {"id": "toeic-r6-passage-06-b3-c0b4", "options": ["A. improvement", "B. improvement", "C. improve", "D. improves"], "answer": "A"},
+        {"id": "toeic-r6-passage-06-b4-4701", "options": ["A. career", "B. careered", "C. careers", "D. careerism"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-02-9cf5",
+      "text": "To: Marketing Team\nFrom: Head of Marketing\nSubject: Upcoming Campaign Launch\n\nI am pleased to announce that our new advertising campaign will launch next month. ___(1)___ the final details are being ironed out, we would like each team member to submit their creative ideas by the end of this week. This will ensure that we have a variety of options to ___(2)___ from. The campaign aims to increase brand awareness, so it's essential that our messaging is ___(3)___. We appreciate everyone’s collaboration in making this a success. The project timeline should be finalized ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-02-b1-0d58", "options": ["A. Although", "B. Instead", "C. While", "D. Because"], "answer": "C"},
+        {"id": "toeic-r6-passage-02-b2-bc0a", "options": ["A. select", "B. choose", "C. pick", "D. gather"], "answer": "A"},
+        {"id": "toeic-r6-passage-02-b3-ca9c", "options": ["A. clear", "B. clearly", "C. clarifying", "D. clarity"], "answer": "A"},
+        {"id": "toeic-r6-passage-02-b4-3c68", "options": ["A. prior", "B. previously", "C. afterward", "D. soon"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-03-5a92",
+      "text": "To: Customer Support\nFrom: Operations Manager\nSubject: Software Update\n\nAs part of our continuous efforts to enhance user experience, a new software version will be released next Saturday. ___(1)___ the upgrade, users may experience some temporary outages. We recommend that all users ___(2)___ their work before the update begins to avoid any loss of data. The update is expected to be completed by noon, after which all systems will return to normal ___(3)___. Please direct any inquiries to the support team ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-03-b1-4599", "options": ["A. Before", "B. During", "C. Although", "D. After"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b2-9de1", "options": ["A. save", "B. saving", "C. saved", "D. saves"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b3-53fe", "options": ["A. functionality", "B. functional", "C. functioning", "D. functioned"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b4-0f97", "options": ["A. promptly", "B. directly", "C. earlier", "D. generally"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-04-2555",
+      "text": "To: All Employees\nFrom: Human Resources\nSubject: Annual Training Session\n\nThis is a reminder that the annual training session will take place on April 15th. Attendance is ___(1)___ for all employees. The training will cover important updates to company policies, compliance regulations, and health and safety procedures. Please ensure you have reviewed the materials distributed in advance, as there will be a ___(2)___ at the end of the session. We want to ensure everyone is up to date with the ___(3)___. Should you have any questions, feel free to reach out to your supervisor ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-04-b1-715e", "options": ["A. optional", "B. required", "C. encouraged", "D. beneficial"], "answer": "B"},
+        {"id": "toeic-r6-passage-04-b2-4ac8", "options": ["A. test", "B. demonstration", "C. discussion", "D. meeting"], "answer": "A"},
+        {"id": "toeic-r6-passage-04-b3-3b11", "options": ["A. materials", "B. updates", "C. details", "D. guidelines"], "answer": "D"},
+        {"id": "toeic-r6-passage-04-b4-6332", "options": ["A. any time", "B. at all times", "C. afterwards", "D. immediately"], "answer": "D"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-05-bec9",
+      "text": "To: Sales Department\nFrom: Sales Director\nSubject: Quarterly Sales Meeting\n\nI would like to invite you all to the upcoming quarterly sales meeting scheduled for next Thursday. The agenda will include a review of our quarterly performance, ___(1)___ any challenges we faced, and strategies for improvement. It is important that all team members come prepared with their ___(2)___. This meeting is an excellent opportunity for everyone to share their thoughts and ___(3)___. Please confirm your attendance by ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-05-b1-79fd", "options": ["A. discuss", "B. discussing", "C. discussed", "D. to discuss"], "answer": "B"},
+        {"id": "toeic-r6-passage-05-b2-6e69", "options": ["A. feedback", "B. action items", "C. proposals", "D. sales reports"], "answer": "D"},
+        {"id": "toeic-r6-passage-05-b3-5923", "options": ["A. concerns", "B. solutions", "C. achievements", "D. goals"], "answer": "B"},
+        {"id": "toeic-r6-passage-05-b4-c5bf", "options": ["A. this Friday", "B. next week", "C. the day before", "D. today"], "answer": "A"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-06-6488",
+      "text": "To: IT Department\nFrom: Senior Management\nSubject: Data Security Protocol\n\nIn light of recent breaches in data security, we are implementing a new protocol effective immediately. All employees are reminded that passwords should be changed ___(1)___. Failure to comply will result in restricted access to company systems. Furthermore, employees must ensure that all confidential information is stored in secured ___(2)___. Training sessions on the new protocols will begin next week, and attendance is highly ____(3)___. Please feel free to reach out with any questions or concerns ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-06-b1-5c73", "options": ["A. quarterly", "B. rarely", "C. annually", "D. seldom"], "answer": "A"},
+        {"id": "toeic-r6-passage-06-b2-f976", "options": ["A. locations", "B. devices", "C. systems", "D. files"], "answer": "A"},
+        {"id": "toeic-r6-passage-06-b3-4072", "options": ["A. recommended", "B. optional", "C. delayed", "D. discouraged"], "answer": "A"},
+        {"id": "toeic-r6-passage-06-b4-48f0", "options": ["A. later", "B. directly", "C. afterward", "D. then"], "answer": "B"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-02-28ff",
+      "text": "To: Marketing Team\nFrom: Sales Manager\nSubject: Quarterly Sales Review\n\nOur latest sales figures show a significant increase in revenue this past quarter. ___(1)___, the introduction of the new product line has contributed positively to our performance. In ___(2)___, we've noticed an uptick in customer engagement during our recent campaigns. We should focus on targeting these customers with more personalized promotions as we move forward. It’s important that we also remain aware of ___(3)___ changes in market trends to ensure our strategies continue to be effective. Therefore, I propose we schedule a meeting next week to discuss our objectives for the upcoming quarter and strategize on how to best utilize our resources for maximum ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-02-b1-75b7", "options": ["A. Therefore", "B. Consequently", "C. Additionally", "D. Conversely"], "answer": "C"},
+        {"id": "toeic-r6-passage-02-b2-30f1", "options": ["A. contrast", "B. addition", "C. comparison", "D. summary"], "answer": "B"},
+        {"id": "toeic-r6-passage-02-b3-cfc6", "options": ["A. dramatic", "B. informative", "C. gradual", "D. excessive"], "answer": "A"},
+        {"id": "toeic-r6-passage-02-b4-e339", "options": ["A. profit", "B. performance", "C. output", "D. growth"], "answer": "D"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-03-ce0c",
+      "text": "To: Product Development Team\nFrom: Chief Engineer\nSubject: New Software Release\n\nI am pleased to announce that our new software version has passed all necessary tests. ___(1)___, we will begin the rollout phase next month. Please ensure that your teams are prepared for any slight adjustments ___(2)___ may be necessary during the launch period. User feedback from the beta testers has been overwhelmingly positive, indicating that our efforts to address previous concerns have been successful. However, it’s crucial that we maintain a ___(3)___ communication channel with our clients post-launch to address any issues promptly. We will reconvene on this matter in our next weekly meeting to finalize our ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-03-b1-2a9b", "options": ["A. Therefore", "B. Similarly", "C. Conversely", "D. Hence"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b2-9e23", "options": ["A. who", "B. that", "C. what", "D. which"], "answer": "B"},
+        {"id": "toeic-r6-passage-03-b3-f7b0", "options": ["A. constant", "B. passive", "C. structured", "D. complex"], "answer": "A"},
+        {"id": "toeic-r6-passage-03-b4-fe51", "options": ["A. timeline", "B. priorities", "C. objectives", "D. problems"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-04-7a41",
+      "text": "To: Customer Service Team\nFrom: Operations Director\nSubject: Update on Service Hours\n\nAs part of our commitment to enhancing customer satisfaction, we will be adjusting our service hours. Starting next month, our new hours will be from 8 AM to 8 PM. ___(1)___, we believe this change will provide more flexibility for our clients. All staff should make a note of these new hours and ensure that they are ready to assist customers during ___(2)___. Please communicate this change clearly to all customers and make sure they understand the new schedule. We appreciate everyone’s cooperation and ___(3)___ in adapting to these changes. Your efforts are what make this company successful. A follow-up meeting will be scheduled to discuss any ___(4)___ that may arise from this transition.",
+      "blanks": [
+        {"id": "toeic-r6-passage-04-b1-e624", "options": ["A. Ultimately", "B. Ultimately", "C. Consequently", "D. Nonetheless"], "answer": "C"},
+        {"id": "toeic-r6-passage-04-b2-9750", "options": ["A. weekends", "B. evenings", "C. nights", "D. mornings"], "answer": "B"},
+        {"id": "toeic-r6-passage-04-b3-3270", "options": ["A. dedication", "B. inconvenience", "C. work", "D. assistance"], "answer": "A"},
+        {"id": "toeic-r6-passage-04-b4-20e6", "options": ["A. concerns", "B. benefits", "C. adjustments", "D. issues"], "answer": "D"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-05-cd77",
+      "text": "To: Human Resources\nFrom: Office Manager\nSubject: Employee Training\n\nIn line with our commitment to professional development, we are pleased to announce a new series of training workshops. These workshops will begin next week and cover various topics including time management and effective communication. ___(1)___, attendance is mandatory for all staff members. We believe that enhancing our skills will greatly improve both individual and team ___(2)___. Each workshop will be led by qualified trainers who will provide valuable insights and practical strategies. Please ensure that your teams are ___(3)___ and have the necessary materials ready before the first session. We appreciate your ___(4)___ in making this initiative a success.",
+      "blanks": [
+        {"id": "toeic-r6-passage-05-b1-3faa", "options": ["A. Consequently", "B. Accordingly", "C. However", "D. Additionally"], "answer": "B"},
+        {"id": "toeic-r6-passage-05-b2-a1b3", "options": ["A. performance", "B. policies", "C. objectives", "D. results"], "answer": "A"},
+        {"id": "toeic-r6-passage-05-b3-c165", "options": ["A. notified", "B. prepared", "C. registered", "D. confirmed"], "answer": "B"},
+        {"id": "toeic-r6-passage-05-b4-a86f", "options": ["A. participation", "B. acknowledgment", "C. support", "D. contribution"], "answer": "C"}
+      ]
+    },
+    {
+      "id": "toeic-r6-passage-02-c3b6",
+      "text": "To: Customer Support Team\nFrom: Product Management\nSubject: New Software Release\n\nWe are excited to announce that the latest version of our software will be released next Monday. ___(1)___, all users are encouraged to update to this new version as it includes significant enhancements and bug fixes. To ensure a smooth transition, we recommend that customers back up their data before proceeding with the update. We understand that changes can be ___(2)___, but we assure you that these improvements will greatly benefit our users. The support team will be available ___(3)___ the launch to assist with any issues that may arise during the update process. Thank you for your understanding and ___(4)___.",
+      "blanks": [
+        {"id": "toeic-r6-passage-02-b1-94b8", "options": ["A. Therefore", "B. Nevertheless", "C. Additionally", "D. Conversely"], "answer": "C"},
+        {"id": "toeic-r6-passage-02-b2-6300", "options": ["A. confusing", "B. confusion", "C. confused", "D. confuse"], "answer": "B"},
+        {"id": "toeic-r6-passage-02-b3-aceb", "options": ["A. after", "B. during", "C. before", "D. while"], "answer": "B"},
+        {"id": "toeic-r6-passage-02-b4-0a28", "options": ["A. patience", "B. supportive", "C. cooperation", "D. participation"], "answer": "A"}
+      ]
+    }
+  ]
+}

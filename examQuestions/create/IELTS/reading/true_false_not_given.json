@@ -1,0 +1,392 @@
+{
+  "exam": "IELTS",
+  "section": "Reading",
+  "part": "True / False / Not Given",
+  "instructions": "Do the following statements agree with the information given in the passage? Write TRUE if the statement agrees, FALSE if it contradicts, or NOT GIVEN if there is no information on this.",
+  "passages": [
+    {
+      "id": "ielts-r-tfng-01",
+      "title": "The History of the Printing Press",
+      "passage": "Johannes Gutenberg introduced the movable-type printing press to Europe around 1440, an innovation that dramatically reduced the cost and time required to produce books. Before this, books were copied by hand, often by monks, a process that could take months for a single volume. Gutenberg's press used individual metal letters that could be rearranged and reused, allowing for much faster production. His most famous work, the Gutenberg Bible, is considered one of the most significant books in the history of printing, though scholars disagree about exactly how many copies were originally produced, with estimates ranging from 150 to 180. The spread of printing technology across Europe over the following decades contributed significantly to increased literacy rates and the wider dissemination of ideas, playing a role in movements such as the Reformation.",
+      "statements": [
+        {"id": "ielts-r-tfng-01-s1", "statement": "Before Gutenberg, books were typically copied by hand.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-01-s2", "statement": "Gutenberg's printing press used letters made of wood.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-01-s3", "statement": "Scholars agree on the exact number of Gutenberg Bibles produced.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-01-s4", "statement": "Gutenberg traveled to Asia to study early printing methods.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-01-s5", "statement": "The spread of printing contributed to the Reformation.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-02",
+      "title": "Migratory Patterns of the Arctic Tern",
+      "passage": "The Arctic tern holds the record for the longest migration of any animal on Earth, traveling from its Arctic breeding grounds to Antarctic waters and back each year, a round trip of roughly 70,000 kilometers. This remarkable journey means the bird experiences two summers annually, maximizing its exposure to daylight more than any other creature. Researchers tracking terns with tiny geolocators discovered that the birds do not fly in a straight line but instead follow a winding route that takes advantage of prevailing wind patterns, which conserves energy over the long journey. Despite their incredible endurance, Arctic tern populations have declined in some regions in recent decades, a trend some scientists attribute to shifts in fish availability caused by changing ocean temperatures, although this connection has not been conclusively proven in all breeding colonies studied.",
+      "statements": [
+        {"id": "ielts-r-tfng-02-s1", "statement": "The Arctic tern has the longest migration of any animal.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-02-s2", "statement": "Arctic terns fly in a completely straight line during migration.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s3", "statement": "Geolocators used in the study were attached surgically.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-02-s4", "statement": "All researchers agree that changing ocean temperatures are the cause of population decline.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s5", "statement": "Arctic terns experience two summers each year.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-02-ca0b",
+      "title": "The Impact of Electric Cars",
+      "passage": "Electric cars have gained significant popularity over the last decade due to their potential to reduce greenhouse gas emissions and dependence on fossil fuels. The first modern electric vehicle was created in the 1820s, but it wasn't until the 21st century that advancements in battery technology made them more viable for everyday use. Companies like Tesla have revolutionized the market with high-performance electric models, while traditional automakers are also transitioning their fleets towards electric options. Despite the positive environmental impacts, challenges such as charging infrastructure and battery disposal still require attention as the industry evolves.",
+      "statements": [
+        {"id": "ielts-r-tfng-02-s1-3764", "statement": "Electric vehicles have been around since the 1820s.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-02-s2-2fc9", "statement": "Tesla is the only manufacturer of electric cars.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s3-efa6", "statement": "Advancements in battery technology have made electric cars more practical.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-02-s4-163a", "statement": "All environmental challenges related to electric cars have been solved.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s5-ad0b", "statement": "Electric cars produce zero emissions while driving.", "answer": "NOT GIVEN"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-03",
+      "title": "The Evolution of Cooking Techniques",
+      "passage": "Cooking techniques have evolved significantly over time, beginning with primitive methods such as roasting over an open fire. The development of pottery allowed for boiling, while the invention of the stove changed how food was prepared in homes. Modern cooking methods, including sous-vide and microwave cooking, reflect advancements in technology and an understanding of food science. Culinary experts today advocate for techniques that preserve nutrients and enhance flavors, indicating a shift towards healthier cooking practices that still cater to modern lifestyles and preferences.",
+      "statements": [
+        {"id": "ielts-r-tfng-03-s1", "statement": "Early humans primarily roasted their food over fires.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-03-s2", "statement": "The stove was invented before pottery.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s3", "statement": "Modern cooking methods focus solely on flavor enhancement.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s4", "statement": "Culinary practices are influenced by technology.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-03-s5", "statement": "Healthy cooking techniques are gaining popularity.", "answer": "NOT GIVEN"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-04",
+      "title": "The Rise of Social Media",
+      "passage": "Social media platforms have transformed the way people communicate, share information, and connect with others. Since the launch of Facebook in 2004, numerous platforms have emerged, including Twitter, Instagram, and TikTok, catering to various demographics and interests. While social media has provided opportunities for connection and expression, it has also been criticized for contributing to mental health issues and spreading misinformation. Users are increasingly aware of their digital footprints, prompting discussions about privacy and the impact of online behavior.",
+      "statements": [
+        {"id": "ielts-r-tfng-04-s1", "statement": "Facebook was launched in the early 2000s.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-04-s2", "statement": "Social media only has positive effects on society.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-04-s3", "statement": "Misinformation is a concern associated with social media.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-04-s4", "statement": "All users are highly mindful of their online presence.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-04-s5", "statement": "The emergence of social media has changed communication methods.", "answer": "NOT GIVEN"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-05",
+      "title": "The World of Artificial Intelligence",
+      "passage": "Artificial intelligence (AI) has made rapid strides in recent years, becoming integral to various sectors including healthcare, finance, and transportation. AI technologies, such as machine learning and natural language processing, enable systems to learn from data and perform tasks that once required human intelligence. However, the rise of AI has sparked debates regarding ethical considerations, job displacement, and the extent to which machines should replace human roles. As AI continues to evolve, discussions about its implications on society and the future of work are increasingly critical.",
+      "statements": [
+        {"id": "ielts-r-tfng-05-s1", "statement": "AI systems can learn from data without human intervention.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-05-s2", "statement": "The development of AI poses no ethical concerns.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s3", "statement": "Job creation is a guaranteed outcome of increased AI usage.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s4", "statement": "AI will completely replace all human jobs in the future.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-05-s5", "statement": "AI has applications in sectors like healthcare and finance.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-06",
+      "title": "The Benefits of Bilingualism",
+      "passage": "Bilingualism, the ability to use two languages fluently, has numerous cognitive and social benefits. Research indicates that bilingual individuals often display improved problem-solving skills, enhanced creativity, and better multitasking abilities compared to their monolingual peers. Furthermore, bilingualism can lead to greater cultural awareness and more job opportunities in our increasingly globalized world. However, some studies suggest that the cognitive advantages may vary depending on the age at which a person learns their second language.",
+      "statements": [
+        {"id": "ielts-r-tfng-06-s1", "statement": "Knowing two languages can improve problem-solving abilities.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-06-s2", "statement": "Bilingual individuals have fewer job opportunities.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s3", "statement": "Cultural awareness is not influenced by language knowledge.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s4", "statement": "The benefits of bilingualism are the same for everyone.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s5", "statement": "Most bilingual people learn their second language in childhood.", "answer": "NOT GIVEN"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-02-93ba",
+      "title": "The Impact of Social Media on Society",
+      "passage": "Social media has revolutionized communication in the 21st century, providing platforms for individuals to connect and share information virtually instantaneously. While social media can promote social interaction, studies have shown that excessive use may contribute to feelings of loneliness and isolation. Additionally, it plays a significant role in shaping public opinion, as information spreads rapidly online. However, not all social media impacts are negative; it has also been used to mobilize social movements and raise awareness about important issues. Experts caution that the influence of social media is complex, and its effects can vary widely among different demographics.",
+      "statements": [
+        {"id": "ielts-r-tfng-02-s1-205d", "statement": "Social media has no impact on public opinion.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s2-31aa", "statement": "Excessive use of social media can lead to feelings of loneliness.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-02-s3-2e73", "statement": "Experts agree that social media has only negative effects.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s4-efba", "statement": "Social media was invented in the 20th century.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-02-s5-9032", "statement": "Social media can help raise awareness about social issues.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-03-2570",
+      "title": "The Benefits of a Plant-Based Diet",
+      "passage": "A plant-based diet emphasizes consuming whole plant foods and minimizing animal products. Research indicates that such diets can lead to numerous health benefits, including reduced risks of heart disease, diabetes, and certain cancers. Furthermore, a plant-based diet can be environmentally sustainable, as it typically has a lower carbon footprint compared to diets high in meat and dairy. However, it is essential for those following this diet to ensure they are getting adequate nutrients, such as vitamin B12, which is primarily found in animal products. Nutritionists encourage individuals to educate themselves about proper dietary planning when transitioning to a plant-based lifestyle.",
+      "statements": [
+        {"id": "ielts-r-tfng-03-s1-1c37", "statement": "A plant-based diet can reduce the risk of certain health issues.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-03-s2-2a23", "statement": "Plant-based diets have no environmental impact.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s3-5e09", "statement": "Vitamin B12 is abundant in plant foods.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s4-44af", "statement": "Nutritionists recommend a plant-based diet for everyone.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-03-s5-78bd", "statement": "Whole plant foods are the main focus of a plant-based diet.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-04-4ce9",
+      "title": "The Evolution of Renewable Energy",
+      "passage": "Renewable energy sources have been utilized for centuries, but their significance has surged in recent decades due to climate change concerns. Solar, wind, and hydroelectric power are among the most common renewable sources that provide cleaner energy alternatives. Current advancements in technology have greatly improved the efficiency of these energy systems, making them more accessible and cost-effective. Governments worldwide are increasingly investing in renewable technologies as part of their strategies to reduce greenhouse gas emissions. Nevertheless, the transition to entirely renewable energy systems presents its own set of challenges, including infrastructure needs and economic factors.",
+      "statements": [
+        {"id": "ielts-r-tfng-04-s1-aabe", "statement": "Renewable energy sources have recently gained importance due to climate change.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-04-s2-e850", "statement": "Solar energy was not utilized until the 21st century.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-04-s3-efba", "statement": "Advancements in technology have reduced the efficiency of renewable energy systems.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-04-s4-d0c6", "statement": "All governments are currently investing in renewable technologies.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-04-s5-58d2", "statement": "Challenges remain in transitioning to renewable energy systems.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-05-8ed8",
+      "title": "The Psychology of Color in Marketing",
+      "passage": "The use of color in marketing is a strategic decision that can significantly influence consumer behavior. Research has shown that different colors evoke different feelings and perceptions; for instance, red can stimulate urgency, while blue is often associated with trust. Brands often choose their color schemes based on the emotional response they aim to elicit from consumers. However, cultural context can influence how colors are perceived, leading to varied interpretations across different regions. Marketers must consider both psychological and cultural factors when developing branding strategies to ensure maximum impact.",
+      "statements": [
+        {"id": "ielts-r-tfng-05-s1-ae22", "statement": "Different colors can evoke different emotional responses.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-05-s2-54c1", "statement": "The color red is associated with calmness.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s3-bf03", "statement": "Cultural context has no impact on color perception.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s4-4572", "statement": "All brands use the same color schemes.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-05-s5-557c", "statement": "Marketers need to understand both psychology and culture in color use.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-02-3620",
+      "title": "The Benefits of Urban Gardening",
+      "passage": "Urban gardening is becoming increasingly popular as more city dwellers seek to grow their own food in limited spaces. This practice not only provides access to fresh produce but also promotes environmental sustainability. Gardens in urban areas can help reduce carbon footprints by minimizing the need for transportation of food. Moreover, urban gardening encourages community engagement, as neighbors often collaborate on gardens, sharing tips and resources. While challenges such as soil contamination and limited sunlight exist, many urban gardeners employ innovative techniques to overcome these obstacles, making gardening accessible to all urban residents.",
+      "statements": [
+        {"id": "ielts-r-tfng-02-s1-9f2e", "statement": "Urban gardening has become less popular in recent years.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s2-e32c", "statement": "Gardening in cities can lead to a smaller carbon footprint.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-02-s3-85fa", "statement": "Neighbors in urban areas never work together on gardening projects.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s4-3275", "statement": "Urban gardeners face no challenges when growing plants.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s5-da8c", "statement": "Innovative techniques help urban gardeners deal with challenges.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-03-0f5d",
+      "title": "The Evolution of Smartphones",
+      "passage": "Smartphones have transformed the way people communicate and access information since their inception in the early 21st century. Initially, smartphones were primarily used for making calls and sending text messages, but advancements in technology have led to the incorporation of touchscreens, cameras, and internet connectivity. Today, smartphones are multifunctional devices that serve as mini-computers. The introduction of various operating systems has also played a crucial role in this evolution, with iOS and Android being the most prominent. Despite their benefits, concerns about privacy and screen addiction have emerged as significant issues over the years.",
+      "statements": [
+        {"id": "ielts-r-tfng-03-s1-29a6", "statement": "Smartphones have been around since the late 20th century.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s2-d5a3", "statement": "The first smartphones only enabled voice calls and text messages.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-03-s3-f3d1", "statement": "Android is the only operating system used in modern smartphones.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s4-842d", "statement": "Privacy concerns related to smartphones are a recent development.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s5-8d82", "statement": "Smartphones can be considered multifunctional devices today.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-04-168a",
+      "title": "The Impact of Social Media on Society",
+      "passage": "Social media platforms have significantly changed how individuals interact and share information. They have created new opportunities for communication, allowing people to connect across vast distances instantly. However, the rise of social media has also sparked debates regarding its impact on mental health, especially among younger users. Studies indicate that excessive use of social media can lead to feelings of anxiety and depression. On the other hand, these platforms can also serve as valuable tools for social change, as they allow for the rapid spread of information regarding social issues and movements.",
+      "statements": [
+        {"id": "ielts-r-tfng-04-s1-b600", "statement": "Social media only affects young people positively.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-04-s2-9f33", "statement": "Platforms like Facebook and Twitter enable instant communication.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-04-s3-d5e0", "statement": "Research shows that social media can contribute to anxiety and depression.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-04-s4-a49b", "statement": "Social media has had no impact on social movements.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-04-s5-9336", "statement": "All social media interactions are harmful to users.", "answer": "FALSE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-05-2ce4",
+      "title": "The Role of Bees in Ecosystems",
+      "passage": "Bees play a crucial role in ecosystems as pollinators for many plants, including crops that are essential for human consumption. The process of pollination is vital for the reproduction of flowering plants, which in turn supports entire food chains. However, bee populations have been declining due to factors such as pesticide use, habitat loss, and climate change. The decline in bee populations poses a significant threat to food security and biodiversity, highlighting the importance of conservation efforts geared toward protecting these essential insects.",
+      "statements": [
+        {"id": "ielts-r-tfng-05-s1-87b9", "statement": "Bees are only important for wild plants and not for crops.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s2-9cbc", "statement": "Pollination is essential for the reproduction of flowering plants.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-05-s3-a73a", "statement": "Bee populations have been stable in recent years.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s4-7ba1", "statement": "Habitat loss is one reason for the decline in bee populations.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-05-s5-1c4a", "statement": "Conservation efforts for bees are unnecessary due to their abundance.", "answer": "FALSE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-06-53ac",
+      "title": "Renewable Energy Sources",
+      "passage": "Renewable energy sources, such as solar and wind, are becoming increasingly vital as the world seeks to reduce reliance on fossil fuels. These energy sources provide cleaner alternatives that help mitigate climate change by decreasing greenhouse gas emissions. While the initial costs of setting up renewable energy systems may be high, ongoing technological advancements are making them more affordable over time. Additionally, renewable energy contributes to energy independence as countries strive to develop their own energy resources rather than depending on imported fossil fuels. Some critics argue that renewable energy can be intermittent and less reliable than traditional energy sources, but many technological advancements are addressing these issues.",
+      "statements": [
+        {"id": "ielts-r-tfng-06-s1-9e14", "statement": "Renewable energy sources help lower greenhouse gas emissions.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-06-s2-b8d0", "statement": "Setting up renewable energy systems is always inexpensive.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s3-082e", "statement": "Countries do not benefit from energy independence through renewables.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s4-4c36", "statement": "Critics believe renewable energy is always reliable and consistent.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s5-fc2c", "statement": "Technological advancements are improving the reliability of renewables.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-02-f6c5",
+      "title": "The Development of Electric Cars",
+      "passage": "The first electric cars were developed in the 1830s, but they did not gain significant popularity until the late 20th century. This resurgence was largely due to environmental concerns and advances in battery technology. Modern electric vehicles (EVs) can travel longer distances on a single charge compared to their early counterparts. Tesla, a key player in the EV market, introduced the Roadster in 2008, which proved that electric cars could be both high-performance and desirable. Today, many governments offer incentives to encourage electric vehicle adoption, aiming to reduce greenhouse gas emissions and dependency on fossil fuels.",
+      "statements": [
+        {"id": "ielts-r-tfng-02-s1-e4dd", "statement": "Electric cars were first developed in the 1830s.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-02-s2-3912", "statement": "The first electric cars gained popularity in the 19th century.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s3-d406", "statement": "Tesla's Roadster was introduced in the 1990s.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s4-1947", "statement": "Governments provide incentives for electric vehicle purchases.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-02-s5-051f", "statement": "Early electric vehicles were known for their high performance.", "answer": "NOT GIVEN"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-03-0d10",
+      "title": "The Benefits of Meditation",
+      "passage": "Meditation has been practiced for centuries, with roots in ancient spiritual traditions. Modern research has shown that regular meditation can lead to a variety of health benefits, including reduced stress and anxiety levels, improved concentration, and enhanced emotional well-being. Some studies suggest that it may even lower blood pressure and promote better sleep. While mindfulness meditation is the most prevalent type today, there are many forms of meditation, such as Transcendental Meditation and Zen meditation, each with unique techniques. Despite the challenges of measuring its benefits scientifically, many participants report significant positive changes in their lives due to their meditation practice.",
+      "statements": [
+        {"id": "ielts-r-tfng-03-s1-dc6e", "statement": "Meditation has been used for centuries in spiritual traditions.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-03-s2-7fcb", "statement": "Regular meditation has no impact on emotional well-being.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s3-7985", "statement": "Mindfulness meditation is the only form practiced today.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s4-e651", "statement": "Scientific studies have confirmed all benefits of meditation.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s5-8c66", "statement": "Participants often report positive changes from meditation.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-04-2fe7",
+      "title": "The Impact of Social Media on Communication",
+      "passage": "Social media has transformed the way people communicate and interact in the 21st century. Platforms like Facebook, Twitter, and Instagram allow users to share content instantly and connect with others across the globe. While social media can foster connections, it has also been criticized for promoting superficial interactions over meaningful relationships. Some studies indicate that excessive use of social media can lead to feelings of loneliness and isolation. Nevertheless, many individuals find community and support through online groups, highlighting the dual nature of social media as both a tool for connection and a potential source of disconnection.",
+      "statements": [
+        {"id": "ielts-r-tfng-04-s1-c582", "statement": "Social media has changed the way people communicate.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-04-s2-ae21", "statement": "Social media interactions are always meaningful and deep.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-04-s3-20fa", "statement": "Excessive social media use can lead to isolation.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-04-s4-3417", "statement": "All users of social media report feeling connected.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-04-s5-d123", "statement": "Online groups can provide a sense of community.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-05-9d85",
+      "title": "The Evolution of Telecommunication",
+      "passage": "Telecommunication has evolved dramatically since the invention of the telegraph in the early 19th century. The introduction of the telephone in 1876 revolutionized communication, allowing real-time voice transmission. Following that, advancements such as radio, television, and the internet have continuously improved the way information is shared. Mobile phones emerged in the late 20th century, making communication portable and accessible to nearly everyone. Currently, 5G technology is being rolled out, promising even faster data speeds and more reliable connections. However, as technology advances, concerns about privacy and data security continue to grow.",
+      "statements": [
+        {"id": "ielts-r-tfng-05-s1-2c3b", "statement": "The telegraph was invented in the late 19th century.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s2-7612", "statement": "The telephone allowed for real-time voice communication.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-05-s3-69ec", "statement": "5G technology offers slower speeds than previous technologies.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s4-9111", "statement": "Advancements in telecommunications have reduced concerns about privacy.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s5-e9f2", "statement": "Mobile phones became widespread in the late 20th century.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-06-8c7d",
+      "title": "The Influence of Climate Change on Wildlife",
+      "passage": "Climate change is having a profound effect on wildlife around the globe. Rising temperatures and changing precipitation patterns disrupt natural habitats and migration patterns for many species. As sea levels rise, coastal ecosystems and the organisms that inhabit them face dire threats. Migratory birds, for instance, may find their traditional routes altered, impacting breeding and feeding grounds. Additionally, some species are becoming endangered as their habitats diminish. Conservation efforts are crucial not just for the protection of individual species, but also for maintaining biodiversity and ecosystem health amidst changing climatic conditions.",
+      "statements": [
+        {"id": "ielts-r-tfng-06-s1-a984", "statement": "Climate change affects wildlife globally.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-06-s2-1a79", "statement": "Rising sea levels are beneficial for coastal ecosystems.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s3-770b", "statement": "Only a few species are impacted by climate change.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s4-212a", "statement": "Conservation efforts are unnecessary in the face of climate change.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s5-339e", "statement": "Changing climatic conditions threaten biodiversity.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-02-733d",
+      "title": "The Development of Renewable Energy",
+      "passage": "Renewable energy sources, such as solar, wind, and hydropower, have gained significant attention due to the need for sustainable alternatives to fossil fuels. Solar energy harnesses the sun's power using photovoltaic cells, while wind energy converts kinetic energy from wind into electricity via turbines. Hydropower relies on the flow of water, using dams to generate energy. As of 2021, renewables accounted for over 29% of global electricity generation, and this percentage is continually rising as technology improves and costs decrease. Governments worldwide are increasingly investing in these technologies to reduce carbon emissions and combat climate change, making it a critical component of future energy strategies.",
+      "statements": [
+        {"id": "ielts-r-tfng-02-s1-7726", "statement": "Solar energy is produced using photovoltaic cells.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-02-s2-bedb", "statement": "Wind energy involves burning fossil fuels to generate electricity.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s3-47af", "statement": "Government investments in renewable energy are decreasing.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s4-a0c4", "statement": "Hydropower relies solely on solar energy.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-02-s5-8b01", "statement": "Renewables made up more than a quarter of global electricity in 2021.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-03-6b88",
+      "title": "The Impact of Social Media on Communication",
+      "passage": "Social media platforms like Facebook, Twitter, and Instagram have transformed the way people communicate. These platforms allow users to share information, connect with friends and family, and engage in discussions on various topics. However, there are concerns that social media can contribute to isolation, as individuals may prefer online interactions over face-to-face conversations. Studies suggest that excessive use of social media may lead to decreased real-life social skills. Moreover, the rapid spread of misinformation is another significant issue associated with social networking sites, raising questions about their overall influence on society.",
+      "statements": [
+        {"id": "ielts-r-tfng-03-s1-1f1a", "statement": "Social media has changed how we communicate.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-03-s2-84b1", "statement": "Face-to-face communication is always preferred over social media.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s3-48c6", "statement": "Social media use can potentially enhance real-life social skills.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s4-f8dd", "statement": "Social media has no impact on the spread of misinformation.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-03-s5-5c0b", "statement": "Platforms like Twitter allow users to engage in discussions.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-04-c648",
+      "title": "The Advantages of Bilingualism",
+      "passage": "Bilingualism, the ability to speak and understand two languages, offers numerous cognitive and social advantages. Research indicates that bilingual individuals often have improved executive functions, such as problem-solving and multitasking skills. Additionally, being bilingual can enhance cultural awareness and empathy, allowing individuals to connect with people from diverse backgrounds. Furthermore, bilingualism is linked to delayed onset of dementia in old age. However, challenges may arise regarding language proficiency, as some bilingual people may struggle with maintaining fluency in both languages over time.",
+      "statements": [
+        {"id": "ielts-r-tfng-04-s1-9d67", "statement": "Bilingualism can improve problem-solving skills.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-04-s2-c305", "statement": "Most bilingual people maintain equal fluency in both languages throughout their lives.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-04-s3-e2a1", "statement": "Bilingualism has no effect on cultural awareness.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-04-s4-9661", "statement": "Bilingual individuals are less likely to develop empathy.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-04-s5-bcef", "statement": "Speaking two languages is associated with a delay in dementia onset.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-05-b20f",
+      "title": "The Importance of Protecting Endangered Species",
+      "passage": "The conservation of endangered species is vital for maintaining biodiversity and ecosystem balance. Extinction of a species can have cascading effects on its ecosystem, disrupting food chains and leading to the decline of other species. Efforts to protect endangered species often involve creating protected areas, enforcing anti-poaching laws, and breeding programs. Not only is biodiversity important for ecological stability, but it also has significant benefits for human health and well-being, providing resources such as medicine and clean air. Despite these efforts, many species remain at risk due to habitat loss and climate change.",
+      "statements": [
+        {"id": "ielts-r-tfng-05-s1-47f1", "statement": "Protecting endangered species helps maintain biodiversity.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-05-s2-a424", "statement": "Extinction affects only the extinct species itself.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s3-6997", "statement": "Protected areas are ineffective for conserving species.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s4-1531", "statement": "The effects of habitat loss are negligible compared to climate change.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-05-s5-27a1", "statement": "Biodiversity can contribute to human health.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-06-c08c",
+      "title": "The Evolution of Mobile Phones",
+      "passage": "The mobile phone industry has undergone rapid changes since the first devices were introduced in the 1980s. Early mobile phones were bulky and expensive, primarily used by business professionals. Over the years, advancements in technology have led to the development of smartphones, which combine communication, multimedia, and internet browsing capabilities. Currently, smartphones are widespread and affordable, enabling people of all backgrounds to access the information and services. Despite the benefits, issues such as smartphone addiction and privacy concerns have surfaced, prompting discussions about the impact of this technology on society.",
+      "statements": [
+        {"id": "ielts-r-tfng-06-s1-16b6", "statement": "Early mobile phones were primarily used by casual users.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s2-65a8", "statement": "Smartphones have less functionality compared to early mobile phones.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s3-6c2b", "statement": "Mobile phone technology has improved significantly since the 1980s.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-06-s4-a4ee", "statement": "There are no concerns associated with smartphone use.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-06-s5-5804", "statement": "Smartphones are now affordable for a wider audience.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-02-fc14",
+      "title": "The Evolution of Public Transportation",
+      "passage": "Public transportation has evolved significantly over the past century. In the early 20th century, horse-drawn carriages and tramways were common in cities. The introduction of the motorized bus in the 1920s revolutionized travel, allowing for greater flexibility and efficiency. By the 1950s, many cities began to develop subway systems, leading to reduced traffic congestion and faster commutes. Despite advancements, public transport faces ongoing challenges, including funding and maintenance. Recent trends show a growing interest in environmentally friendly options, such as electric buses and bike-sharing programs, as cities strive for sustainable solutions to meet the demands of increasing populations.",
+      "statements": [
+        {"id": "ielts-r-tfng-02-s1-64d0", "statement": "Public transport systems have remained unchanged for a century.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s2-1b4b", "statement": "Horse-drawn carriages were popular in early public transportation.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-02-s3-d104", "statement": "Subway systems were introduced before the 1950s.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s4-8f61", "statement": "Public transport funding is not a current issue.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-02-s5-4022", "statement": "Electric buses are part of modern public transportation solutions.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-03-30e0",
+      "title": "The Impact of Social Media on Society",
+      "passage": "Social media has transformed the way individuals communicate and interact. Platforms such as Facebook, Twitter, and Instagram enable users to connect with others globally, share information, and form communities. While social media can enhance relationships, it also poses risks, including cyberbullying and misinformation. Additionally, studies show that excessive use of these platforms can lead to mental health issues, such as anxiety and depression. As a result, many users are now seeking a balance between online engagement and real-world interactions, emphasizing the importance of digital well-being.",
+      "statements": [
+        {"id": "ielts-r-tfng-03-s1-c012", "statement": "Social media primarily enhances interpersonal communication.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-03-s2-a605", "statement": "Cyberbullying is a common issue associated with social media use.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-03-s3-6902", "statement": "Digital platforms are free from any mental health impacts.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-03-s4-3726", "statement": "Studies indicate that social media use has no effect on anxiety.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-03-s5-2758", "statement": "Users are encouraged to seek real-world engagement.", "answer": "TRUE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-04-0689",
+      "title": "The Significance of Renewable Energy",
+      "passage": "Renewable energy sources, such as solar, wind, and hydropower, have gained prominence as viable alternatives to fossil fuels. These sources reduce greenhouse gas emissions and reliance on depleting resources. Recent studies indicate that investing in renewable energy can stimulate economic growth by creating jobs in manufacturing and installation. However, the transition to renewable energy infrastructure is often met with challenges, including high upfront costs and technological limitations. Nonetheless, many governments are implementing policies to promote the use of renewables, highlighting their potential in combating climate change.",
+      "statements": [
+        {"id": "ielts-r-tfng-04-s1-3173", "statement": "Fossil fuels are becoming less important compared to renewables.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-04-s2-abd6", "statement": "Investing in renewable energy creates manufacturing jobs.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-04-s3-7088", "statement": "Transitioning to renewable energy is without its challenges.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-04-s4-5d80", "statement": "Renewable energy can only be harnessed through solar power.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-04-s5-e7e0", "statement": "Governments are inactive in promoting renewable energy.", "answer": "FALSE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-05-ac5f",
+      "title": "The Benefits of Healthy Eating",
+      "passage": "Healthy eating is essential for maintaining physical and mental well-being. A diet rich in fruits, vegetables, whole grains, and lean proteins provides important nutrients that support bodily functions and promote energy levels. Studies suggest that health-conscious eating habits can reduce the risk of chronic diseases, such as obesity, diabetes, and heart disease. Additionally, balanced nutrition positively influences mental health, lowering stress and improving mood. However, access to healthy food options varies based on socioeconomic status, highlighting the need for more equitable food distribution systems.",
+      "statements": [
+        {"id": "ielts-r-tfng-05-s1-1297", "statement": "Healthy eating helps prevent chronic diseases.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-05-s2-a45f", "statement": "All diets only include meat and dairy products.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s3-42da", "statement": "Balanced nutrition influences both physical and mental health.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-05-s4-16f9", "statement": "Access to healthy food is equal across all socioeconomic backgrounds.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-05-s5-3e1e", "statement": "Healthy eating has no documented benefits.", "answer": "FALSE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-06-d2b5",
+      "title": "The Role of Technology in Education",
+      "passage": "Technology has transformed the educational landscape, enhancing teaching and learning experiences. Interactive tools such as smartboards, educational apps, and online resources provide students with diverse ways to engage with content. Furthermore, technology facilitates remote learning opportunities, making education more accessible to various demographics. However, disparities still exist in technology access, particularly in underprivileged communities, exposing a digital divide. Educators are thus challenged to integrate technology effectively while ensuring all students benefit equally from these advancements.",
+      "statements": [
+        {"id": "ielts-r-tfng-06-s1-850f", "statement": "Technology has made education less engaging for students.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s2-4fc2", "statement": "Remote learning has increased accessibility in education.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-06-s3-b829", "statement": "There is a uniform access to technology among all communities.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-06-s4-9254", "statement": "Educators are tasked with integrating technology and addressing inequalities.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-06-s5-4cf5", "statement": "Smartboards are outdated tools in the educational sector.", "answer": "FALSE"}
+      ]
+    },
+    {
+      "id": "ielts-r-tfng-02-ab95",
+      "title": "The Development of Electric Vehicles",
+      "passage": "Electric vehicles (EVs) have gained popularity in recent years due to their environmental benefits and the advancement of battery technology. The first electric car was created in the 1830s, but it wasn't until the late 20th century that interest in EVs revived, driven by concerns over fossil fuel consumption and emissions. As battery technology improved, particularly with the development of lithium-ion batteries, EVs became more practical for everyday use. Governments around the world have introduced incentives to encourage the adoption of electric vehicles, helping to reduce reliance on traditional combustion engines. While EVs produce zero emissions at the point of use, the entire lifecycle emissions, including production and electricity generation, should also be considered when assessing their environmental impact.",
+      "statements": [
+        {"id": "ielts-r-tfng-02-s1-11ac", "statement": "Electric vehicles have been popular since the 1830s.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s2-35b2", "statement": "The development of lithium-ion batteries has made electric vehicles more practical.", "answer": "TRUE"},
+        {"id": "ielts-r-tfng-02-s3-a13b", "statement": "Governments have discouraged the use of electric vehicles.", "answer": "FALSE"},
+        {"id": "ielts-r-tfng-02-s4-003a", "statement": "Electric vehicles produce emissions during their entire lifecycle.", "answer": "NOT GIVEN"},
+        {"id": "ielts-r-tfng-02-s5-9870", "statement": "The first electric car was developed in the late 20th century.", "answer": "FALSE"}
+      ]
+    }
+  ]
+}
