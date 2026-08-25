@@ -268,6 +268,10 @@ class VocabReviewAnswerIn(BaseModel):
     answer: str
 
 
+class VocabReviewDueCount(BaseModel):
+    due: int
+
+
 class VocabReviewResult(BaseModel):
     correct: bool
     correct_answer: str

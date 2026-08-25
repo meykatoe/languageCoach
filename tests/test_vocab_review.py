@@ -112,3 +112,15 @@ def test_second_correct_answer_extends_interval_further_than_the_first(client, m
 def test_review_unknown_entry_returns_404(client):
     res = client.post("/api/vocab/999999/review", json={"answer": "anything"})
     assert res.status_code == 404
+
+
+def test_due_count_reflects_review_state(client, monkeypatch):
+    before = client.get("/api/vocab/review/due-count").json()["due"]
+
+    entry = _add_word(client, monkeypatch, "Verity")
+    after_add = client.get("/api/vocab/review/due-count").json()["due"]
+    assert after_add == before + 1
+
+    client.post(f"/api/vocab/{entry['id']}/review", json={"answer": "verity"})
+    after_review = client.get("/api/vocab/review/due-count").json()["due"]
+    assert after_review == before
