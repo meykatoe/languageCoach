@@ -8,6 +8,10 @@ from fastapi.templating import Jinja2Templates
 
 load_dotenv()
 
+from app.logging_config import setup_logging  # noqa: E402
+
+setup_logging()
+
 from app.database import Base, SessionLocal, engine, migrate_schema  # noqa: E402
 from app.routers import (  # noqa: E402
     exams,

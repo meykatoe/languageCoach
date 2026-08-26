@@ -1,3 +1,4 @@
+import logging
 import re
 import uuid
 
@@ -13,6 +14,7 @@ from app.services.id_dedup import collect_all_ids, dedupe_all_ids
 from app.services.openai_service import generate_from_reference
 
 router = APIRouter(prefix="/api/upload", tags=["upload"])
+logger = logging.getLogger(__name__)
 
 MAX_UPLOAD_BYTES = 10 * 1024 * 1024  # 10 MB
 MIN_COUNT = 1
@@ -67,6 +69,7 @@ async def upload_and_generate(
     except UnsupportedFileType as exc:
         raise HTTPException(status_code=400, detail=str(exc)) from exc
     except Exception as exc:
+        logger.error("Failed to extract text from upload %r: %s", file.filename, exc, exc_info=True)
         raise HTTPException(status_code=400, detail=f"檔案解析失敗: {exc}") from exc
 
     if not text:
