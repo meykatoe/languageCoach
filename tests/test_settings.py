@@ -1,5 +1,3 @@
-import os
-
 import app.routers.generate as generate_module
 import app.routers.settings as settings_module
 from app.services import openai_service
