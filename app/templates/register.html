@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>註冊 - Language Coach</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="site">
+    <a href="/">Language Coach</a>
+  </header>
+  <main>
+    <div class="card">
+      <h1>註冊帳號</h1>
+      <form id="register-form">
+        <p><input type="text" name="username" placeholder="帳號 (至少 3 個字元)" autocomplete="username" required minlength="3" /></p>
+        <p><input type="password" name="password" placeholder="密碼 (至少 8 個字元)" autocomplete="new-password" required minlength="8" /></p>
+        <p id="register-error" class="hint"></p>
+        <button type="submit">註冊</button>
+      </form>
+      <p class="hint">已經有帳號了嗎? <a href="/login">登入</a></p>
+    </div>
+  </main>
+  <script src="/static/auth.js"></script>
+</body>
+</html>

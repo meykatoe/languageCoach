@@ -10,7 +10,7 @@ def test_generate_unknown_exam_section_404(client):
 
 
 def test_generate_creates_questions(client, monkeypatch):
-    def fake_generate_questions(exam, section, part, example_item, count):
+    def fake_generate_questions(user_id, exam, section, part, example_item, count):
         assert exam == "TOEIC"
         assert section == "Reading"
         return [
@@ -58,7 +58,7 @@ def test_generate_dedupes_nested_sub_question_ids(client, monkeypatch):
     already owned that nested id.
     """
 
-    def fake_generate_questions(exam, section, part, example_item, count):
+    def fake_generate_questions(user_id, exam, section, part, example_item, count):
         return [
             {
                 "id": "toeic-r7-single-99",

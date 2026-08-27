@@ -41,8 +41,9 @@ def test_clear_api_key_falls_back_to_env(client, monkeypatch):
 def test_resolve_config_prefers_database_over_env(client, monkeypatch):
     monkeypatch.setenv("OPENAI_API_KEY", "sk-env-should-not-be-used")
     client.post("/api/settings", json={"openai_api_key": "sk-db-should-win", "openai_model": "gpt-4.1"})
+    user_id = client.get("/api/auth/me").json()["id"]
 
-    api_key, model = openai_service.resolve_config()
+    api_key, model = openai_service.resolve_config(user_id)
     assert api_key == "sk-db-should-win"
     assert model == "gpt-4.1"
 
@@ -53,7 +54,7 @@ def test_generate_uses_saved_settings_without_error(client, monkeypatch):
     # without raising the "not configured" RuntimeError.
     client.post("/api/settings", json={"openai_api_key": "sk-configured"})
 
-    def fake_generate_questions(exam, section, part, example_item, count):
+    def fake_generate_questions(user_id, exam, section, part, example_item, count):
         return [
             {"id": f"ai-settings-test-{i}", "sentence": "x", "options": ["A. a", "B. b"], "answer": "A"}
             for i in range(count)
@@ -88,7 +89,7 @@ def test_grading_openai_apierror_returns_502(client, monkeypatch):
 
 
 def test_test_connection_success(client, monkeypatch):
-    monkeypatch.setattr(settings_module, "test_connection", lambda api_key=None: "gpt-4o-mini")
+    monkeypatch.setattr(settings_module, "test_connection", lambda user_id, api_key=None: "gpt-4o-mini")
 
     res = client.post("/api/settings/test", json={"openai_api_key": "sk-whatever"})
     assert res.status_code == 200
@@ -98,7 +99,7 @@ def test_test_connection_success(client, monkeypatch):
 
 
 def test_test_connection_no_key_configured(client, monkeypatch):
-    def raise_no_key(api_key=None):
+    def raise_no_key(user_id, api_key=None):
         raise RuntimeError("尚未提供任何 API Key 可供測試。")
 
     monkeypatch.setattr(settings_module, "test_connection", raise_no_key)
@@ -114,7 +115,7 @@ def test_test_connection_invalid_key(client, monkeypatch):
     import httpx
     from openai import APIError
 
-    def raise_auth_error(api_key=None):
+    def raise_auth_error(user_id, api_key=None):
         req = httpx.Request("GET", "https://api.openai.com/v1/models")
         raise APIError("Incorrect API key provided", req, body=None)
 

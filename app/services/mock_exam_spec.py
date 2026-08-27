@@ -7,6 +7,7 @@ import random
 from dataclasses import dataclass
 
 from openai import APIError
+from sqlalchemy import or_
 from sqlalchemy.orm import Session
 
 from app.models import Question
@@ -53,9 +54,13 @@ class AssemblyError(RuntimeError):
     small, or the underlying AI generation call failed)."""
 
 
-def _bank_items(db: Session, exam: str, spec: PartSpec) -> list[dict]:
+def _visible_questions(db: Session, user_id: int):
+    return db.query(Question).filter(or_(Question.user_id.is_(None), Question.user_id == user_id))
+
+
+def _bank_items(db: Session, user_id: int, exam: str, spec: PartSpec) -> list[dict]:
     rows = (
-        db.query(Question)
+        _visible_questions(db, user_id)
         .filter(Question.exam == exam, Question.part == spec.part, Question.qtype == spec.qtype)
         .all()
     )
@@ -68,9 +73,9 @@ def _bank_items(db: Session, exam: str, spec: PartSpec) -> list[dict]:
     return [dict(row.content) for row in chosen]
 
 
-def _ai_items(db: Session, exam: str, spec: PartSpec, existing_ids: set[str]) -> list[dict]:
+def _ai_items(db: Session, user_id: int, exam: str, spec: PartSpec, existing_ids: set[str]) -> list[dict]:
     template = (
-        db.query(Question)
+        _visible_questions(db, user_id)
         .filter(Question.exam == exam, Question.part == spec.part, Question.qtype == spec.qtype)
         .first()
     )
@@ -82,7 +87,7 @@ def _ai_items(db: Session, exam: str, spec: PartSpec, existing_ids: set[str]) ->
     while remaining > 0:
         batch = min(AI_BATCH_SIZE, remaining)
         try:
-            generated = generate_questions(exam, spec.section, spec.part, template.content, batch)
+            generated = generate_questions(user_id, exam, spec.section, spec.part, template.content, batch)
         except RuntimeError as exc:
             raise AssemblyError(str(exc)) from exc
         except APIError as exc:
@@ -105,7 +110,7 @@ def _ai_items(db: Session, exam: str, spec: PartSpec, existing_ids: set[str]) ->
 
 
 def assemble_section(
-    db: Session, exam: str, section: str, mode: str, existing_ids: set[str] | None = None
+    db: Session, user_id: int, exam: str, section: str, mode: str, existing_ids: set[str] | None = None
 ) -> list[dict]:
     """Returns a flat list of {part, qtype, item} dicts for every top-level
     item (photo/question/conversation/passage/...) in this section, per
@@ -117,22 +122,22 @@ def assemble_section(
     for spec in TOEIC_SPEC[section]:
         if mode == "ai_generated":
             assert existing_ids is not None
-            items = _ai_items(db, exam, spec, existing_ids)
+            items = _ai_items(db, user_id, exam, spec, existing_ids)
         else:
-            items = _bank_items(db, exam, spec)
+            items = _bank_items(db, user_id, exam, spec)
         for item in items:
             out.append({"part": spec.part, "qtype": spec.qtype, "item": item})
     return out
 
 
-def assemble_full_exam(db: Session, exam: str, mode: str) -> dict[str, list[dict]]:
+def assemble_full_exam(db: Session, user_id: int, exam: str, mode: str) -> dict[str, list[dict]]:
     """Assembles both sections of a full mock exam up front, so the reading
     section is guaranteed ready by the time the listening section is
     submitted (no risk of AI generation failing mid-exam).
     """
     existing_ids = collect_all_ids(db) if mode == "ai_generated" else None
     return {
-        "Listening": assemble_section(db, exam, "Listening", mode, existing_ids),
-        "Reading": assemble_section(db, exam, "Reading", mode, existing_ids),
+        "Listening": assemble_section(db, user_id, exam, "Listening", mode, existing_ids),
+        "Reading": assemble_section(db, user_id, exam, "Reading", mode, existing_ids),
     }
 

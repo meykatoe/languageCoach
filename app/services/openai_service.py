@@ -46,14 +46,14 @@ SYSTEM_PROMPT_TEMPLATE = (
 )
 
 
-def resolve_config() -> tuple[str | None, str]:
-    """Resolve the OpenAI API key and model to use, preferring the value
-    saved via the frontend Settings page (stored in AppSetting) and falling
-    back to the .env-provided environment variables.
+def resolve_config(user_id: int) -> tuple[str | None, str]:
+    """Resolve the OpenAI API key and model to use for this user, preferring
+    the value saved via their Settings page (stored in AppSetting) and
+    falling back to the .env-provided environment variables.
     """
     db = SessionLocal()
     try:
-        setting = db.query(AppSetting).first()
+        setting = db.query(AppSetting).filter(AppSetting.user_id == user_id).first()
     finally:
         db.close()
 
@@ -67,8 +67,8 @@ def resolve_config() -> tuple[str | None, str]:
     return api_key, model
 
 
-def _get_client() -> tuple[OpenAI, str]:
-    api_key, model = resolve_config()
+def _get_client(user_id: int) -> tuple[OpenAI, str]:
+    api_key, model = resolve_config(user_id)
     if not api_key:
         raise RuntimeError(
             "OpenAI API Key 尚未設定。請點右上角的 ⚙️ 設定，或編輯後端 .env 檔案。"
@@ -76,14 +76,15 @@ def _get_client() -> tuple[OpenAI, str]:
     return OpenAI(api_key=api_key), model
 
 
-def test_connection(api_key: str | None = None) -> str:
+def test_connection(user_id: int, api_key: str | None = None) -> str:
     """Verify an API key works with a minimal, cheap call. If `api_key` is
     omitted, tests whichever key `resolve_config()` currently resolves to
-    (saved settings, falling back to .env). Returns the model id used for
-    the check on success; raises RuntimeError (friendly message) on failure.
+    for this user (saved settings, falling back to .env). Returns the model
+    id used for the check on success; raises RuntimeError (friendly message)
+    on failure.
     """
     if api_key is None:
-        api_key, _ = resolve_config()
+        api_key, _ = resolve_config(user_id)
     if not api_key:
         raise RuntimeError("尚未提供任何 API Key 可供測試。")
 
@@ -93,7 +94,7 @@ def test_connection(api_key: str | None = None) -> str:
     return first.id if first else "(no models returned, but the key is valid)"
 
 
-def grade_response(exam: str, task_prompt: str, user_response: str, skill: str) -> dict:
+def grade_response(user_id: int, exam: str, task_prompt: str, user_response: str, skill: str) -> dict:
     """Grade a writing or speaking response using the OpenAI API.
 
     `skill` is "writing" or "speaking", used only for the user-facing prompt.
@@ -101,7 +102,7 @@ def grade_response(exam: str, task_prompt: str, user_response: str, skill: str) 
     rubric = RUBRICS.get(exam.upper(), RUBRICS["TOEFL"])
     system_prompt = SYSTEM_PROMPT_TEMPLATE.format(rubric=rubric)
 
-    client, model = _get_client()
+    client, model = _get_client(user_id)
     completion = call_with_retry(
         client.chat.completions.create,
         model=model,
@@ -121,12 +122,12 @@ def grade_response(exam: str, task_prompt: str, user_response: str, skill: str) 
     return json.loads(raw)
 
 
-def synthesize_speech(text: str, voice: str = DEFAULT_TTS_VOICE) -> bytes:
+def synthesize_speech(user_id: int, text: str, voice: str = DEFAULT_TTS_VOICE) -> bytes:
     """Generate spoken audio (MP3 bytes) for a listening transcript via the
     OpenAI TTS API, for the "播放語音" button (replacing the browser's
     built-in speechSynthesis with a real, natural-sounding voice).
     """
-    client, _ = _get_client()
+    client, _ = _get_client(user_id)
     response = call_with_retry(
         client.audio.speech.create,
         model=DEFAULT_TTS_MODEL, voice=voice, input=text, response_format="mp3"
@@ -154,7 +155,7 @@ IMAGE_PROMPT_TEMPLATE = (
 )
 
 
-def generate_image(description: str) -> bytes:
+def generate_image(user_id: int, description: str) -> bytes:
     """Generate a photograph-style image (PNG bytes) for a TOEIC Part 1
     "photoDescription", for the listening picture questions that are meant
     to show a photo instead of describing it in text. Styled to match real
@@ -162,7 +163,7 @@ def generate_image(description: str) -> bytes:
     only the described elements visible (so distractor answer choices stay
     clearly wrong, not just unmentioned).
     """
-    client, _ = _get_client()
+    client, _ = _get_client(user_id)
     prompt = IMAGE_PROMPT_TEMPLATE.format(description=description)
     response = call_with_retry(
         client.images.generate,
@@ -180,11 +181,11 @@ TRANSLATION_SYSTEM_PROMPT = (
 )
 
 
-def translate_text(text: str) -> str:
+def translate_text(user_id: int, text: str) -> str:
     """Translate a block of English exam-question text into Traditional
     Chinese, for the per-question "translate" button on the frontend.
     """
-    client, model = _get_client()
+    client, model = _get_client(user_id)
     completion = call_with_retry(
         client.chat.completions.create,
         model=model,
@@ -211,6 +212,7 @@ REVIEW_PROGRESS_SYSTEM_PROMPT = (
 
 
 def review_progress_comment(
+    user_id: int,
     exam: str,
     question_node: dict,
     correct_answer: object,
@@ -223,7 +225,7 @@ def review_progress_comment(
     """
     system_prompt = REVIEW_PROGRESS_SYSTEM_PROMPT.format(exam=exam, previous_note=previous_note)
 
-    client, model = _get_client()
+    client, model = _get_client(user_id)
     completion = call_with_retry(
         client.chat.completions.create,
         model=model,
@@ -255,14 +257,14 @@ MISTAKE_EXPLANATION_SYSTEM_PROMPT = (
 
 
 def explain_mistake(
-    exam: str, question_node: dict, correct_answer: object, submitted_answer: object
+    user_id: int, exam: str, question_node: dict, correct_answer: object, submitted_answer: object
 ) -> str:
     """Generate a brief explanation of why a submitted answer was wrong, to
     be stored as a note in the user's error notebook (review page).
     """
     system_prompt = MISTAKE_EXPLANATION_SYSTEM_PROMPT.format(exam=exam)
 
-    client, model = _get_client()
+    client, model = _get_client(user_id)
     completion = call_with_retry(
         client.chat.completions.create,
         model=model,
@@ -295,6 +297,7 @@ MOCK_EXAM_ADVICE_SYSTEM_PROMPT = (
 
 
 def generate_mock_exam_advice(
+    user_id: int,
     exam: str,
     listening_score: dict,
     reading_score: dict,
@@ -305,7 +308,7 @@ def generate_mock_exam_advice(
     """
     system_prompt = MOCK_EXAM_ADVICE_SYSTEM_PROMPT.format(exam=exam)
 
-    client, model = _get_client()
+    client, model = _get_client(user_id)
     completion = call_with_retry(
         client.chat.completions.create,
         model=model,
@@ -342,7 +345,7 @@ GENERATION_SYSTEM_PROMPT = (
 
 
 def generate_questions(
-    exam: str, section: str, part: str, example_item: dict, count: int = 3
+    user_id: int, exam: str, section: str, part: str, example_item: dict, count: int = 3
 ) -> list[dict]:
     """Generate new practice items in the same JSON shape as `example_item`,
     using it purely as a structural few-shot template (not as content to copy).
@@ -351,7 +354,7 @@ def generate_questions(
         exam=exam, section=section, part=part or section, count=count
     )
 
-    client, model = _get_client()
+    client, model = _get_client(user_id)
     completion = call_with_retry(
         client.chat.completions.create,
         model=model,
@@ -427,12 +430,12 @@ VOCAB_ENTRY_SYSTEM_PROMPT = (
 )
 
 
-def generate_vocab_entry(word: str) -> dict:
+def generate_vocab_entry(user_id: int, word: str) -> dict:
     """Generate a full dictionary-style entry for a single English word, for
     the auto-populated vocabulary book (triggered when the user selects a
     single word via the site-wide translate-on-select feature).
     """
-    client, model = _get_client()
+    client, model = _get_client(user_id)
     completion = call_with_retry(
         client.chat.completions.create,
         model=model,
@@ -446,13 +449,13 @@ def generate_vocab_entry(word: str) -> dict:
     return json.loads(raw)
 
 
-def generate_from_reference(reference_text: str, count: int = 3) -> list[dict]:
+def generate_from_reference(user_id: int, reference_text: str, count: int = 3) -> list[dict]:
     """Generate new practice items inspired by arbitrary uploaded reference
     text (not tied to any existing question bank shape).
     """
     system_prompt = UPLOAD_GENERATION_SYSTEM_PROMPT.format(count=count)
 
-    client, model = _get_client()
+    client, model = _get_client(user_id)
     completion = call_with_retry(
         client.chat.completions.create,
         model=model,

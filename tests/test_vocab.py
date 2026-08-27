@@ -2,7 +2,7 @@ import app.routers.translate as translate_module
 import app.services.vocab as vocab_module
 
 
-def _fake_entry(word):
+def _fake_entry(user_id, word):
     return {
         "word": word,
         "phonetic": "/test/",
@@ -28,7 +28,7 @@ def _fake_entry(word):
 
 
 def test_selecting_a_single_word_adds_it_to_vocab_with_full_detail(client, monkeypatch):
-    monkeypatch.setattr(translate_module, "translate_text", lambda text: f"[譯] {text}")
+    monkeypatch.setattr(translate_module, "translate_text", lambda user_id, text: f"[譯] {text}")
     monkeypatch.setattr(vocab_module, "generate_vocab_entry", _fake_entry)
 
     res = client.post("/api/translate/text", json={"text": "Persistence"})
@@ -42,7 +42,7 @@ def test_selecting_a_single_word_adds_it_to_vocab_with_full_detail(client, monke
 
 
 def test_selecting_a_phrase_is_not_added_to_vocab(client, monkeypatch):
-    monkeypatch.setattr(translate_module, "translate_text", lambda text: f"[譯] {text}")
+    monkeypatch.setattr(translate_module, "translate_text", lambda user_id, text: f"[譯] {text}")
     monkeypatch.setattr(vocab_module, "generate_vocab_entry", _fake_entry)
 
     res = client.post("/api/translate/text", json={"text": "due tomorrow"})
@@ -54,7 +54,7 @@ def test_selecting_a_phrase_is_not_added_to_vocab(client, monkeypatch):
 
 
 def test_selecting_the_same_word_twice_does_not_duplicate(client, monkeypatch):
-    monkeypatch.setattr(translate_module, "translate_text", lambda text: f"[譯] {text}")
+    monkeypatch.setattr(translate_module, "translate_text", lambda user_id, text: f"[譯] {text}")
     monkeypatch.setattr(vocab_module, "generate_vocab_entry", _fake_entry)
 
     client.post("/api/translate/text", json={"text": "Resilience"})
@@ -65,7 +65,7 @@ def test_selecting_the_same_word_twice_does_not_duplicate(client, monkeypatch):
 
 
 def test_delete_vocab_entry(client, monkeypatch):
-    monkeypatch.setattr(translate_module, "translate_text", lambda text: f"[譯] {text}")
+    monkeypatch.setattr(translate_module, "translate_text", lambda user_id, text: f"[譯] {text}")
     monkeypatch.setattr(vocab_module, "generate_vocab_entry", _fake_entry)
     client.post("/api/translate/text", json={"text": "Ephemeral"})
     entry = next(e for e in client.get("/api/vocab").json() if e["word"] == "ephemeral")
@@ -77,10 +77,10 @@ def test_delete_vocab_entry(client, monkeypatch):
 
 def test_regenerate_vocab_entry(client, monkeypatch):
     # First generation "fails" (simulating no API key at add-time), leaving detail null.
-    def raise_runtime(word):
+    def raise_runtime(user_id, word):
         raise RuntimeError("尚未設定 API Key")
 
-    monkeypatch.setattr(translate_module, "translate_text", lambda text: f"[譯] {text}")
+    monkeypatch.setattr(translate_module, "translate_text", lambda user_id, text: f"[譯] {text}")
     monkeypatch.setattr(vocab_module, "generate_vocab_entry", raise_runtime)
     client.post("/api/translate/text", json={"text": "Diligence"})
     entry = next(e for e in client.get("/api/vocab").json() if e["word"] == "diligence")

@@ -2,7 +2,7 @@ import app.routers.translate as translate_module
 import app.services.vocab as vocab_module
 
 
-def _fake_entry_with_example(word):
+def _fake_entry_with_example(user_id, word):
     return {
         "word": word,
         "phonetic": "/test/",
@@ -27,7 +27,7 @@ def _fake_entry_with_example(word):
     }
 
 
-def _fake_entry_without_matching_example(word):
+def _fake_entry_without_matching_example(user_id, word):
     return {
         "word": word,
         "phonetic": "/test/",
@@ -53,7 +53,7 @@ def _fake_entry_without_matching_example(word):
 
 
 def _add_word(client, monkeypatch, word, entry_fn=_fake_entry_with_example):
-    monkeypatch.setattr(translate_module, "translate_text", lambda text: f"[譯] {text}")
+    monkeypatch.setattr(translate_module, "translate_text", lambda user_id, text: f"[譯] {text}")
     monkeypatch.setattr(vocab_module, "generate_vocab_entry", entry_fn)
     client.post("/api/translate/text", json={"text": word})
     return next(e for e in client.get("/api/vocab").json() if e["word"] == word.lower())

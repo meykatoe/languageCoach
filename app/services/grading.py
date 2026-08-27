@@ -29,7 +29,7 @@ def find_node_by_id(node: Any, target_id: str) -> Optional[dict]:
     return None
 
 
-def latest_objective_attempts(db: Session) -> list[Attempt]:
+def latest_objective_attempts(db: Session, user_id: int) -> list[Attempt]:
     """One row per objective source_id: its most recent attempt, newest
     overall first. This is "current state" (did the student get it right
     the last time they tried it), used by both the error-notebook review
@@ -37,7 +37,7 @@ def latest_objective_attempts(db: Session) -> list[Attempt]:
     """
     attempts = (
         db.query(Attempt)
-        .filter(Attempt.item_type == "objective")
+        .filter(Attempt.user_id == user_id, Attempt.item_type == "objective")
         .order_by(Attempt.created_at.desc())
         .all()
     )

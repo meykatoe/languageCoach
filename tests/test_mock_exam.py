@@ -78,7 +78,7 @@ def test_full_mock_exam_flow_and_scoring(client):
 def test_completed_exam_includes_ai_advice(client, monkeypatch):
     captured = {}
 
-    def fake_advice(exam, listening_score, reading_score, part_breakdown):
+    def fake_advice(user_id, exam, listening_score, reading_score, part_breakdown):
         captured["args"] = (exam, listening_score, reading_score, part_breakdown)
         return "先加強 Part 5 文法題,聽力表現不錯。"
 
@@ -163,7 +163,7 @@ def test_history_lists_sessions(client):
 def test_ai_generated_mode_uses_generate_questions(client, monkeypatch):
     calls = []
 
-    def fake_generate_questions(exam, section, part, example_item, count):
+    def fake_generate_questions(user_id, exam, section, part, example_item, count):
         calls.append((part, count))
         items = []
         for i in range(count):

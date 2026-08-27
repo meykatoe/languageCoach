@@ -1,11 +1,13 @@
 import hashlib
 from pathlib import Path
 
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import FileResponse
 from openai import APIError
 
 from app.database import DATA_DIR
+from app.dependencies import get_current_user
+from app.models import User
 from app.schemas import TtsRequest
 from app.services.openai_service import DEFAULT_TTS_MODEL, DEFAULT_TTS_VOICE, synthesize_speech
 
@@ -23,11 +25,11 @@ def _cache_path(text: str) -> Path:
 
 
 @router.post("")
-def get_speech(payload: TtsRequest):
+def get_speech(payload: TtsRequest, current_user: User = Depends(get_current_user)):
     path = _cache_path(payload.text)
     if not path.exists():
         try:
-            audio = synthesize_speech(payload.text)
+            audio = synthesize_speech(current_user.id, payload.text)
         except RuntimeError as exc:
             raise HTTPException(status_code=503, detail=str(exc)) from exc
         except APIError as exc:

@@ -63,7 +63,7 @@ def test_upload_rejects_empty_extracted_text(client):
 
 
 def test_upload_creates_questions_from_mocked_ai(client, monkeypatch):
-    def fake_generate_from_reference(reference_text, count):
+    def fake_generate_from_reference(user_id, reference_text, count):
         assert "vocabulary quiz about animals" in reference_text
         return [
             {
@@ -94,7 +94,7 @@ def test_upload_creates_questions_from_mocked_ai(client, monkeypatch):
 
 
 def test_upload_writing_prompt_shape_gets_writing_section(client, monkeypatch):
-    def fake_generate_from_reference(reference_text, count):
+    def fake_generate_from_reference(user_id, reference_text, count):
         return [{"id": "upload-essay-1", "prompt": "Discuss the topic in 250 words."}]
 
     monkeypatch.setattr(upload_module, "generate_from_reference", fake_generate_from_reference)
@@ -111,7 +111,7 @@ def test_upload_writing_prompt_shape_gets_writing_section(client, monkeypatch):
 
 
 def test_upload_dedupes_nested_sub_question_ids(client, monkeypatch):
-    def fake_generate_from_reference(reference_text, count):
+    def fake_generate_from_reference(user_id, reference_text, count):
         return [
             {
                 "id": "upload-passage-99",
@@ -159,7 +159,7 @@ def test_upload_service_unavailable_returns_503(client, monkeypatch):
 
 
 def test_upload_created_items_are_fetchable_via_questions_api(client, monkeypatch):
-    def fake_generate_from_reference(reference_text, count):
+    def fake_generate_from_reference(user_id, reference_text, count):
         return [
             {
                 "id": "upload-fetchtest-1",

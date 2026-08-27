@@ -7,7 +7,8 @@ from openai import APIError
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import Question
+from app.dependencies import get_current_user
+from app.models import Question, User
 from app.schemas import QuestionOut
 from app.services.file_extract import UnsupportedFileType, extract_text
 from app.services.id_dedup import collect_all_ids, dedupe_all_ids
@@ -54,6 +55,7 @@ async def upload_and_generate(
     count: int = Form(3),
     exam: str = Form("Custom"),
     db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
     if count < MIN_COUNT or count > MAX_COUNT:
         raise HTTPException(
@@ -79,7 +81,7 @@ async def upload_and_generate(
         )
 
     try:
-        items = generate_from_reference(text, count)
+        items = generate_from_reference(current_user.id, text, count)
     except RuntimeError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
     except APIError as exc:
@@ -102,6 +104,7 @@ async def upload_and_generate(
         source_id = item["id"]
 
         row = Question(
+            user_id=current_user.id,
             source_id=source_id,
             exam=exam.strip() or "Custom",
             section=_infer_section(item),

@@ -25,8 +25,13 @@ def normalize_word(word: str) -> str:
     return word.strip().lower()
 
 
-def word_already_saved(db, word: str) -> bool:
-    return db.query(VocabEntry).filter(VocabEntry.word == normalize_word(word)).first() is not None
+def word_already_saved(db, user_id: int, word: str) -> bool:
+    return (
+        db.query(VocabEntry)
+        .filter(VocabEntry.user_id == user_id, VocabEntry.word == normalize_word(word))
+        .first()
+        is not None
+    )
 
 
 def generate_and_store_entry(vocab_entry_id: int) -> None:
@@ -42,7 +47,7 @@ def generate_and_store_entry(vocab_entry_id: int) -> None:
         if entry is None:
             return
         try:
-            detail = generate_vocab_entry(entry.word)
+            detail = generate_vocab_entry(entry.user_id, entry.word)
         except (RuntimeError, ValueError):
             return
         entry.detail = detail
@@ -51,7 +56,7 @@ def generate_and_store_entry(vocab_entry_id: int) -> None:
         db.close()
 
 
-def save_new_word_for_background_generation(word: str) -> VocabEntry:
+def save_new_word_for_background_generation(user_id: int, word: str) -> VocabEntry:
     """Inserts a placeholder row (detail=None) for a not-yet-seen word so it
     shows up in the vocab book immediately; the caller is responsible for
     scheduling `generate_and_store_entry` to fill in the detail afterwards.
@@ -59,7 +64,7 @@ def save_new_word_for_background_generation(word: str) -> VocabEntry:
     """
     db = SessionLocal()
     try:
-        entry = VocabEntry(word=normalize_word(word), detail=None)
+        entry = VocabEntry(user_id=user_id, word=normalize_word(word), detail=None)
         db.add(entry)
         db.commit()
         db.refresh(entry)

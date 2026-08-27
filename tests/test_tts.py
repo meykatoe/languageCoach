@@ -6,7 +6,7 @@ def test_tts_returns_audio_and_caches_to_disk(client, monkeypatch, tmp_path):
 
     calls = []
 
-    def fake_synthesize_speech(text, voice="alloy"):
+    def fake_synthesize_speech(user_id, text, voice="alloy"):
         calls.append(text)
         return b"FAKE_MP3_BYTES"
 
@@ -29,7 +29,7 @@ def test_tts_returns_audio_and_caches_to_disk(client, monkeypatch, tmp_path):
 def test_tts_without_api_key_returns_503(client, monkeypatch, tmp_path):
     monkeypatch.setattr(tts_module, "CACHE_DIR", tmp_path)
 
-    def raise_runtime(text, voice="alloy"):
+    def raise_runtime(user_id, text, voice="alloy"):
         raise RuntimeError("OpenAI API Key 尚未設定。")
 
     monkeypatch.setattr(tts_module, "synthesize_speech", raise_runtime)
