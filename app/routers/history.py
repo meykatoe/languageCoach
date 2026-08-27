@@ -6,7 +6,8 @@ from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import Attempt
+from app.dependencies import get_current_user
+from app.models import Attempt, User
 from app.schemas import (
     AttemptOut,
     DailyActivity,
@@ -22,9 +23,11 @@ router = APIRouter(prefix="/api/history", tags=["history"])
 
 @router.get("", response_model=HistorySummary)
 def get_history(
-    limit: int = Query(default=30, ge=1, le=200), db: Session = Depends(get_db)
+    limit: int = Query(default=30, ge=1, le=200),
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
-    total_attempts = db.query(func.count(Attempt.id)).scalar() or 0
+    total_attempts = db.query(func.count(Attempt.id)).filter(Attempt.user_id == current_user.id).scalar() or 0
 
     rows = (
         db.query(
@@ -34,6 +37,7 @@ def get_history(
             func.count(Attempt.id),
             func.sum(func.coalesce(Attempt.is_correct, 0)),
         )
+        .filter(Attempt.user_id == current_user.id)
         .group_by(Attempt.exam, Attempt.section, Attempt.item_type)
         .order_by(Attempt.exam, Attempt.section)
         .all()
@@ -58,7 +62,7 @@ def get_history(
     # exam/section/part has the most, worst first — so the user can see at a
     # glance where to focus, and jump to /review to actually work through them.
     wrong_counts: dict[tuple[str, str, Optional[str]], int] = {}
-    for a in latest_objective_attempts(db):
+    for a in latest_objective_attempts(db, current_user.id):
         if a.is_correct is False:
             key = (a.exam, a.section, a.part)
             wrong_counts[key] = wrong_counts.get(key, 0) + 1
@@ -73,7 +77,11 @@ def get_history(
     )
 
     recent = (
-        db.query(Attempt).order_by(Attempt.created_at.desc()).limit(limit).all()
+        db.query(Attempt)
+        .filter(Attempt.user_id == current_user.id)
+        .order_by(Attempt.created_at.desc())
+        .limit(limit)
+        .all()
     )
 
     # Daily accuracy trend for objective questions only (writing/speaking use
@@ -90,7 +98,7 @@ def get_history(
             func.count(Attempt.id),
             func.sum(func.coalesce(Attempt.is_correct, 0)),
         )
-        .filter(Attempt.item_type == "objective", day >= accuracy_cutoff)
+        .filter(Attempt.user_id == current_user.id, Attempt.item_type == "objective", day >= accuracy_cutoff)
         .group_by(day)
         .order_by(day)
         .all()
@@ -111,7 +119,7 @@ def get_history(
     activity_cutoff = (today - datetime.timedelta(days=370)).isoformat()
     activity_rows = (
         db.query(day, func.count(Attempt.id))
-        .filter(day >= activity_cutoff)
+        .filter(Attempt.user_id == current_user.id, day >= activity_cutoff)
         .group_by(day)
         .order_by(day)
         .all()

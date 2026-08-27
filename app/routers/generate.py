@@ -3,10 +3,12 @@ import uuid
 
 from fastapi import APIRouter, Depends, HTTPException
 from openai import APIError
+from sqlalchemy import or_
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import Question
+from app.dependencies import get_current_user
+from app.models import Question, User
 from app.schemas import GenerateRequest, QuestionOut
 from app.services.id_dedup import collect_all_ids, dedupe_all_ids
 from app.services.openai_service import generate_questions
@@ -20,8 +22,14 @@ def _slugify(text: str) -> str:
 
 
 @router.post("", response_model=list[QuestionOut])
-def generate(payload: GenerateRequest, db: Session = Depends(get_db)):
-    q = db.query(Question).filter(Question.exam == payload.exam, Question.section == payload.section)
+def generate(
+    payload: GenerateRequest, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)
+):
+    q = db.query(Question).filter(
+        Question.exam == payload.exam,
+        Question.section == payload.section,
+        or_(Question.user_id.is_(None), Question.user_id == current_user.id),
+    )
     if payload.part:
         q = q.filter(Question.part == payload.part)
     template = q.first()
@@ -33,7 +41,12 @@ def generate(payload: GenerateRequest, db: Session = Depends(get_db)):
 
     try:
         items = generate_questions(
-            payload.exam, payload.section, payload.part or payload.section, template.content, payload.count
+            current_user.id,
+            payload.exam,
+            payload.section,
+            payload.part or payload.section,
+            template.content,
+            payload.count,
         )
     except RuntimeError as exc:
         raise HTTPException(status_code=503, detail=str(exc)) from exc
@@ -47,6 +60,8 @@ def generate(payload: GenerateRequest, db: Session = Depends(get_db)):
     # The full set of ids already used ANYWHERE in the bank, top-level and
     # nested (not just Question.source_id), so a newly generated item's sub-
     # question ids can never silently shadow an unrelated existing question.
+    # Deliberately unscoped by user -- ids aren't sensitive, and this only
+    # guards against collisions.
     existing_ids = collect_all_ids(db)
     created: list[Question] = []
 
@@ -59,6 +74,7 @@ def generate(payload: GenerateRequest, db: Session = Depends(get_db)):
         source_id = item["id"]
 
         row = Question(
+            user_id=current_user.id,
             source_id=source_id,
             exam=payload.exam,
             section=payload.section,
