@@ -90,9 +90,16 @@ async function submitObjective(container, radioIdMap) {
     const marker = container.querySelector(`[data-result-for="${r.source_id}"]`);
     if (marker) {
       if (r.correct === null) return;
-      let html = r.correct ? '✓ 正確' : `✗ 錯誤 (正確答案: ${JSON.stringify(r.correctAnswer)})`;
-      if (r.note) html += `<div class="review-note">AI 解析: ${r.note}</div>`;
-      marker.innerHTML = html;
+      marker.textContent = '';
+      // Text-only nodes: correctAnswer/note may contain arbitrary content
+      // (from AI-generated or user-uploaded question data), so they must
+      // never be interpreted as HTML.
+      marker.appendChild(document.createTextNode(
+        r.correct ? '✓ 正確' : `✗ 錯誤 (正確答案: ${JSON.stringify(r.correctAnswer)})`
+      ));
+      if (r.note) {
+        marker.appendChild(el('div', { class: 'review-note' }, `AI 解析: ${r.note}`));
+      }
       marker.className = r.correct ? 'result-correct' : 'result-wrong';
     }
   });

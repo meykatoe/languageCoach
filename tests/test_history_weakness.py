@@ -27,6 +27,24 @@ def test_weakness_appears_after_wrong_answer(client):
     assert counts == sorted(counts, reverse=True)
 
 
+def test_daily_accuracy_reflects_objective_attempts_only(client):
+    source_id = "toeic-r5-007"  # correct answer is "B" (analysis)
+    client.post(
+        "/api/practice/submit",
+        json={"answers": [{"source_id": source_id, "answer": "B"}]},
+    )
+
+    res = client.get("/api/history")
+    assert res.status_code == 200
+    daily = res.json()["daily_accuracy"]
+
+    assert daily, "expected at least one day of objective attempts"
+    today = daily[-1]
+    assert today["total"] >= 1
+    assert today["correct"] >= 1
+    assert 0.0 <= today["accuracy"] <= 1.0
+
+
 def test_weakness_entry_disappears_once_the_only_wrong_item_is_fixed(client):
     source_id = "toeic-r5-008"  # correct answer is "A" (proceeded)
     client.post(

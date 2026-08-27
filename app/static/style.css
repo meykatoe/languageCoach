@@ -367,3 +367,12 @@ th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: 
   text-align: center;
   border-top: 1px solid var(--border);
 }
+
+.chart { margin-bottom: 1rem; }
+.chart-svg { width: 100%; height: auto; display: block; }
+.chart-grid { stroke: var(--border-strong); stroke-width: 1; }
+.chart-axis-label { fill: var(--muted); font-size: 11px; }
+.chart-line { fill: none; stroke: var(--accent); stroke-width: 2; }
+.chart-dot { fill: var(--accent); }
+.chart-bar-track { fill: var(--border); }
+.chart-bar { fill: var(--correct); }

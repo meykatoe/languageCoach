@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.models import Attempt
-from app.schemas import AttemptOut, ExamStat, HistorySummary, WeaknessStat
+from app.schemas import AttemptOut, DailyStat, ExamStat, HistorySummary, WeaknessStat
 from app.services.grading import latest_objective_attempts
 
 router = APIRouter(prefix="/api/history", tags=["history"])
@@ -68,9 +68,36 @@ def get_history(
         db.query(Attempt).order_by(Attempt.created_at.desc()).limit(limit).all()
     )
 
+    # Daily accuracy trend for objective questions only (writing/speaking use
+    # a text score/band, not right-or-wrong), last 30 calendar days by date
+    # of the attempt so the chart shows recent progress over time.
+    day = func.date(Attempt.created_at)
+    daily_rows = (
+        db.query(
+            day,
+            func.count(Attempt.id),
+            func.sum(func.coalesce(Attempt.is_correct, 0)),
+        )
+        .filter(Attempt.item_type == "objective")
+        .group_by(day)
+        .order_by(day)
+        .limit(30)
+        .all()
+    )
+    daily_accuracy = [
+        DailyStat(
+            date=date_str,
+            total=total,
+            correct=correct or 0,
+            accuracy=round((correct or 0) / total, 3) if total else 0.0,
+        )
+        for date_str, total, correct in daily_rows
+    ]
+
     return HistorySummary(
         total_attempts=total_attempts,
         stats=stats,
         weaknesses=weaknesses,
+        daily_accuracy=daily_accuracy,
         recent=[AttemptOut.model_validate(r) for r in recent],
     )

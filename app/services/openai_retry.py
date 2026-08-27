@@ -12,6 +12,7 @@ Non-transient failures (bad API key, malformed request, ...) are translated
 immediately without retrying, since retrying won't change the outcome.
 """
 
+import logging
 import random
 import time
 
@@ -25,6 +26,8 @@ from openai import (
     PermissionDeniedError,
     RateLimitError,
 )
+
+logger = logging.getLogger(__name__)
 
 MAX_ATTEMPTS = 3
 BASE_DELAY_SECONDS = 1.0
@@ -64,8 +67,16 @@ def call_with_retry(fn, *args, **kwargs):
             if attempt == MAX_ATTEMPTS:
                 break
             delay = BASE_DELAY_SECONDS * (2 ** (attempt - 1)) + random.uniform(0, 0.5)
+            logger.warning(
+                "OpenAI call %s failed on attempt %d/%d (%s), retrying in %.1fs",
+                fn.__qualname__, attempt, MAX_ATTEMPTS, exc.__class__.__name__, delay,
+            )
             time.sleep(delay)
         except APIError as exc:
+            logger.error("OpenAI call %s failed: %s", fn.__qualname__, exc, exc_info=True)
             raise RuntimeError(_friendly_message(exc)) from exc
 
+    logger.error(
+        "OpenAI call %s failed after %d attempts: %s", fn.__qualname__, MAX_ATTEMPTS, last_exc, exc_info=last_exc,
+    )
     raise RuntimeError(_friendly_message(last_exc)) from last_exc

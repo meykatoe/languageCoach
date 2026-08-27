@@ -10,3 +10,4 @@ httpx
 pytest
 pypdf
 python-docx
+ruff
