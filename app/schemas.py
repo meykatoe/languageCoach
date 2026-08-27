@@ -114,11 +114,17 @@ class DailyStat(BaseModel):
     accuracy: float
 
 
+class DailyActivity(BaseModel):
+    date: str
+    count: int
+
+
 class HistorySummary(BaseModel):
     total_attempts: int
     stats: list[ExamStat]
     weaknesses: list[WeaknessStat]
     daily_accuracy: list[DailyStat]
+    daily_activity: list[DailyActivity]
     recent: list[AttemptOut]
 
 

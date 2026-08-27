@@ -376,3 +376,12 @@ th { color: var(--muted); font-weight: 600; font-size: 0.78rem; text-transform: 
 .chart-dot { fill: var(--accent); }
 .chart-bar-track { fill: var(--border); }
 .chart-bar { fill: var(--correct); }
+
+.heatmap-scroll { overflow-x: auto; }
+.heatmap-svg { width: auto; min-width: 100%; }
+.chart-heat { stroke: var(--border); stroke-width: 1; }
+.chart-heat-lv0 { fill: var(--border); }
+.chart-heat-lv1 { fill: color-mix(in srgb, var(--correct) 30%, var(--surface-solid)); }
+.chart-heat-lv2 { fill: color-mix(in srgb, var(--correct) 55%, var(--surface-solid)); }
+.chart-heat-lv3 { fill: color-mix(in srgb, var(--correct) 78%, var(--surface-solid)); }
+.chart-heat-lv4 { fill: var(--correct); }
