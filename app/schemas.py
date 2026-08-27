@@ -107,10 +107,18 @@ class WeaknessStat(BaseModel):
     wrong_count: int
 
 
+class DailyStat(BaseModel):
+    date: str
+    total: int
+    correct: int
+    accuracy: float
+
+
 class HistorySummary(BaseModel):
     total_attempts: int
     stats: list[ExamStat]
     weaknesses: list[WeaknessStat]
+    daily_accuracy: list[DailyStat]
     recent: list[AttemptOut]
 
 
