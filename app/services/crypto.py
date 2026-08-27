@@ -50,15 +50,17 @@ def decrypt(value: str) -> str | None:
 
 
 def migrate_legacy_plaintext_key(db) -> None:
-    """One-time upgrade for rows written before encryption was added: if the
+    """One-time upgrade for rows written before encryption was added: if a
     stored `openai_api_key` isn't a valid Fernet token, it's a legacy
-    plaintext key, so encrypt it in place.
+    plaintext key, so encrypt it in place. Checks every AppSetting row
+    (one per user since multi-user support was added).
     """
     from app.models import AppSetting
 
-    setting = db.query(AppSetting).first()
-    if not setting or not setting.openai_api_key:
-        return
-    if decrypt(setting.openai_api_key) is None:
-        setting.openai_api_key = encrypt(setting.openai_api_key)
+    changed = False
+    for setting in db.query(AppSetting).all():
+        if setting.openai_api_key and decrypt(setting.openai_api_key) is None:
+            setting.openai_api_key = encrypt(setting.openai_api_key)
+            changed = True
+    if changed:
         db.commit()

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>登入 - Language Coach</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <header class="site">
+    <a href="/">Language Coach</a>
+  </header>
+  <main>
+    <div class="card">
+      <h1>登入</h1>
+      <form id="login-form">
+        <p><input type="text" name="username" placeholder="帳號" autocomplete="username" required /></p>
+        <p><input type="password" name="password" placeholder="密碼" autocomplete="current-password" required /></p>
+        <p id="login-error" class="hint"></p>
+        <button type="submit">登入</button>
+      </form>
+      <p class="hint">還沒有帳號嗎? <a href="/register">註冊</a></p>
+    </div>
+  </main>
+  <script src="/static/auth.js"></script>
+</body>
+</html>

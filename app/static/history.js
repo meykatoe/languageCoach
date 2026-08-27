@@ -40,6 +40,102 @@ function emptyChart(container, message) {
   container.appendChild(p);
 }
 
+// GitHub-style contribution heatmap: one cell per day over the last ~53
+// weeks, columns = weeks (Sunday-start), rows = weekday. Level buckets are
+// fixed thresholds (not scaled to the data's max) so a single busy day
+// doesn't wash out the color scale for everything else.
+function heatLevel(count) {
+  if (count <= 0) return 0;
+  if (count <= 2) return 1;
+  if (count <= 5) return 2;
+  if (count <= 9) return 3;
+  return 4;
+}
+
+function renderActivityHeatmap(container, activity) {
+  container.replaceChildren();
+
+  const countByDate = new Map(activity.map(a => [a.date, a.count]));
+
+  const toDateStr = d => d.toISOString().slice(0, 10);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const rangeStart = new Date(today);
+  rangeStart.setDate(rangeStart.getDate() - 364);
+  const gridStart = new Date(rangeStart);
+  gridStart.setDate(gridStart.getDate() - gridStart.getDay()); // back up to Sunday
+
+  const totalDays = Math.round((today - gridStart) / 86400000) + 1;
+  const weekCount = Math.ceil(totalDays / 7);
+
+  const cell = 11;
+  const gap = 3;
+  const step = cell + gap;
+  const padL = 24;
+  const padT = 16;
+  const width = padL + weekCount * step;
+  const height = padT + 7 * step;
+
+  const svg = svgEl('svg', {
+    viewBox: `0 0 ${width} ${height}`,
+    preserveAspectRatio: 'xMinYMin meet',
+    class: 'chart-svg heatmap-svg',
+    role: 'img',
+    'aria-label': '每日作答活躍度熱力圖',
+  });
+
+  const weekdayLabels = { 1: '一', 3: '三', 5: '五' };
+  Object.entries(weekdayLabels).forEach(([row, text]) => {
+    const label = svgEl('text', {
+      x: padL - 6,
+      y: padT + Number(row) * step + cell - 1,
+      class: 'chart-axis-label',
+      'text-anchor': 'end',
+    });
+    label.textContent = text;
+    svg.appendChild(label);
+  });
+
+  let lastMonth = null;
+  for (let w = 0; w < weekCount; w++) {
+    for (let d = 0; d < 7; d++) {
+      const date = new Date(gridStart);
+      date.setDate(date.getDate() + w * 7 + d);
+      if (date < rangeStart || date > today) continue;
+
+      const dateStr = toDateStr(date);
+      const count = countByDate.get(dateStr) || 0;
+      const level = heatLevel(count);
+
+      if (d === 0 && date.getMonth() !== lastMonth) {
+        lastMonth = date.getMonth();
+        const label = svgEl('text', {
+          x: padL + w * step,
+          y: padT - 5,
+          class: 'chart-axis-label',
+        });
+        label.textContent = `${lastMonth + 1}月`;
+        svg.appendChild(label);
+      }
+
+      const rect = svgEl('rect', {
+        x: padL + w * step,
+        y: padT + d * step,
+        width: cell,
+        height: cell,
+        rx: 2,
+        class: `chart-heat chart-heat-lv${level}`,
+      });
+      const title = svgEl('title', {});
+      title.textContent = `${dateStr}: ${count} 次作答`;
+      rect.appendChild(title);
+      svg.appendChild(rect);
+    }
+  }
+
+  container.appendChild(svg);
+}
+
 // Line chart of daily accuracy (0-1) over time. Pure SVG, no chart library,
 // so it inherits the page's CSS variables (incl. dark mode) via currentColor.
 function renderTrendChart(container, points) {
@@ -157,6 +253,7 @@ function renderStatsChart(container, stats) {
 }
 
 fetch('/api/history?limit=50').then(r => r.json()).then(data => {
+  renderActivityHeatmap(document.getElementById('activity-heatmap'), data.daily_activity);
   renderTrendChart(document.getElementById('trend-chart'), data.daily_accuracy);
   renderStatsChart(document.getElementById('stats-chart'), data.stats);
 

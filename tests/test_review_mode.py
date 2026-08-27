@@ -16,7 +16,7 @@ def test_review_mode_toggle_persists(client):
 
 def test_review_mode_hides_previous_notes(client, monkeypatch):
     monkeypatch.setattr(
-        practice_module, "explain_mistake", lambda exam, node, expected, submitted: "第一次的錯誤說明。"
+        practice_module, "explain_mistake", lambda user_id, exam, node, expected, submitted: "第一次的錯誤說明。"
     )
     source_id = "toeic-r5-009"  # correct answer is "B" (honest)
     _set_review_mode(client, False)
@@ -38,7 +38,7 @@ def test_review_mode_hides_previous_notes(client, monkeypatch):
 
 def test_review_mode_regenerates_comment_using_previous_note(client, monkeypatch):
     monkeypatch.setattr(
-        practice_module, "explain_mistake", lambda exam, node, expected, submitted: "第一次錯誤: 誤用副詞。"
+        practice_module, "explain_mistake", lambda user_id, exam, node, expected, submitted: "第一次錯誤: 誤用副詞。"
     )
     source_id = "toeic-r5-010"  # correct answer is "B" (was expected)
     _set_review_mode(client, False)
@@ -46,7 +46,7 @@ def test_review_mode_regenerates_comment_using_previous_note(client, monkeypatch
 
     seen_previous_notes = []
 
-    def fake_review_progress_comment(exam, node, expected, submitted, is_correct, previous_note):
+    def fake_review_progress_comment(user_id, exam, node, expected, submitted, is_correct, previous_note):
         seen_previous_notes.append(previous_note)
         return "太棒了,這次你答對了,已經修正先前的誤解。" if is_correct else "你又犯了類似的錯誤,再注意一下。"
 
@@ -63,12 +63,12 @@ def test_review_mode_regenerates_comment_using_previous_note(client, monkeypatch
 
 def test_review_mode_correct_reattempt_removed_from_notebook(client, monkeypatch):
     monkeypatch.setattr(
-        practice_module, "explain_mistake", lambda exam, node, expected, submitted: "第一次的錯誤說明。"
+        practice_module, "explain_mistake", lambda user_id, exam, node, expected, submitted: "第一次的錯誤說明。"
     )
     monkeypatch.setattr(
         practice_module,
         "review_progress_comment",
-        lambda exam, node, expected, submitted, is_correct, previous_note: "答對了,恭喜修正先前的錯誤。",
+        lambda user_id, exam, node, expected, submitted, is_correct, previous_note: "答對了,恭喜修正先前的錯誤。",
     )
     source_id = "toeic-r5-014"  # correct answer is "B" (dissatisfied)
     _set_review_mode(client, False)

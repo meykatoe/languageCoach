@@ -1,17 +1,21 @@
 from fastapi import APIRouter, Depends, Query
+from sqlalchemy import or_
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import AppSetting, Question
-from app.services.grading import find_node_by_id, latest_objective_attempts
+from app.dependencies import get_current_user
+from app.models import AppSetting, Question, User
 from app.schemas import QuestionOut
+from app.services.grading import find_node_by_id, latest_objective_attempts
 
 router = APIRouter(prefix="/api/review", tags=["review"])
 
 
 @router.get("", response_model=list[QuestionOut])
 def get_review_questions(
-    limit: int = Query(default=20, ge=1, le=100), db: Session = Depends(get_db)
+    limit: int = Query(default=20, ge=1, le=100),
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
     """Return the parent question items for objective sub-questions whose
     most recent attempt was incorrect, most recently missed first.
@@ -19,12 +23,12 @@ def get_review_questions(
     In review mode, previously recorded AI notes are withheld so the user
     can attempt the question again without seeing the earlier hint spoiled.
     """
-    setting = db.query(AppSetting).first()
+    setting = db.query(AppSetting).filter(AppSetting.user_id == current_user.id).first()
     review_mode = bool(setting and setting.review_mode)
 
     wrong_source_ids: list[str] = []
     wrong_notes: dict[str, str] = {}
-    for a in latest_objective_attempts(db):
+    for a in latest_objective_attempts(db, current_user.id):
         if a.is_correct is False:
             wrong_source_ids.append(a.source_id)
             note = (a.detail or {}).get("note") if a.detail else None
@@ -34,7 +38,11 @@ def get_review_questions(
     if not wrong_source_ids:
         return []
 
-    all_questions = db.query(Question).all()
+    all_questions = (
+        db.query(Question)
+        .filter(or_(Question.user_id.is_(None), Question.user_id == current_user.id))
+        .all()
+    )
     result: list[QuestionOut] = []
     included_parent_ids: set[int] = set()
 

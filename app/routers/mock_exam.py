@@ -6,7 +6,8 @@ from openai import APIError
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import ExamSession
+from app.dependencies import get_current_user
+from app.models import ExamSession, User
 from app.schemas import (
     GradedAnswer,
     MockExamFinalResult,
@@ -120,7 +121,7 @@ def _part_breakdown(session: ExamSession) -> list[dict]:
     ]
 
 
-def _generate_advice(session: ExamSession) -> Optional[str]:
+def _generate_advice(user_id: int, session: ExamSession) -> Optional[str]:
     """Best-effort AI study advice for a completed sitting. Never raises: if
     the AI call fails (no API key, network error, ...), the submission
     should still succeed without advice.
@@ -137,31 +138,34 @@ def _generate_advice(session: ExamSession) -> Optional[str]:
     }
     try:
         return generate_mock_exam_advice(
-            session.exam, listening_score, reading_score, _part_breakdown(session)
+            user_id, session.exam, listening_score, reading_score, _part_breakdown(session)
         )
     except (RuntimeError, APIError, ValueError):
         return None
 
 
-def _get_session(db: Session, session_id: int) -> ExamSession:
+def _get_session(db: Session, user: User, session_id: int) -> ExamSession:
     session = db.get(ExamSession, session_id)
-    if session is None:
+    if session is None or session.user_id != user.id:
         raise HTTPException(status_code=404, detail="找不到這場模考。")
     return session
 
 
 @router.post("/start", response_model=MockExamStartResponse)
-def start_mock_exam(payload: MockExamStartRequest, db: Session = Depends(get_db)):
+def start_mock_exam(
+    payload: MockExamStartRequest, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)
+):
     if payload.exam != "TOEIC":
         raise HTTPException(status_code=400, detail="目前僅支援 TOEIC 正式模考模式。")
 
     try:
-        content = assemble_full_exam(db, payload.exam, payload.mode)
+        content = assemble_full_exam(db, current_user.id, payload.exam, payload.mode)
     except AssemblyError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
     now = _now()
     session = ExamSession(
+        user_id=current_user.id,
         exam=payload.exam,
         mode=payload.mode,
         status="listening",
@@ -183,14 +187,26 @@ def start_mock_exam(payload: MockExamStartRequest, db: Session = Depends(get_db)
 
 
 @router.get("/history", response_model=list[MockExamHistoryItem])
-def mock_exam_history(limit: int = Query(default=20, ge=1, le=100), db: Session = Depends(get_db)):
-    rows = db.query(ExamSession).order_by(ExamSession.created_at.desc()).limit(limit).all()
+def mock_exam_history(
+    limit: int = Query(default=20, ge=1, le=100),
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    rows = (
+        db.query(ExamSession)
+        .filter(ExamSession.user_id == current_user.id)
+        .order_by(ExamSession.created_at.desc())
+        .limit(limit)
+        .all()
+    )
     return rows
 
 
 @router.get("/{session_id}", response_model=MockExamStateResponse)
-def get_mock_exam(session_id: int, db: Session = Depends(get_db)):
-    session = _get_session(db, session_id)
+def get_mock_exam(
+    session_id: int, db: Session = Depends(get_db), current_user: User = Depends(get_current_user)
+):
+    session = _get_session(db, current_user, session_id)
 
     result = None
     if session.status == "completed":
@@ -228,8 +244,13 @@ def get_mock_exam(session_id: int, db: Session = Depends(get_db)):
 
 
 @router.post("/{session_id}/submit-listening", response_model=MockExamListeningSubmitResponse)
-def submit_listening(session_id: int, payload: MockExamSectionSubmitRequest, db: Session = Depends(get_db)):
-    session = _get_session(db, session_id)
+def submit_listening(
+    session_id: int,
+    payload: MockExamSectionSubmitRequest,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    session = _get_session(db, current_user, session_id)
     if session.status != "listening":
         raise HTTPException(status_code=409, detail="這場模考的聽力測驗已經送出過了。")
 
@@ -253,8 +274,13 @@ def submit_listening(session_id: int, payload: MockExamSectionSubmitRequest, db:
 
 
 @router.post("/{session_id}/submit-reading", response_model=MockExamFinalResult)
-def submit_reading(session_id: int, payload: MockExamSectionSubmitRequest, db: Session = Depends(get_db)):
-    session = _get_session(db, session_id)
+def submit_reading(
+    session_id: int,
+    payload: MockExamSectionSubmitRequest,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    session = _get_session(db, current_user, session_id)
     if session.status != "reading":
         raise HTTPException(status_code=409, detail="這場模考的閱讀測驗尚未開始，或已經送出過了。")
 
@@ -267,7 +293,7 @@ def submit_reading(session_id: int, payload: MockExamSectionSubmitRequest, db: S
     session.scaled_total = session.scaled_listening + session.scaled_reading
     session.status = "completed"
     session.submitted_at = _now()
-    session.advice = _generate_advice(session)
+    session.advice = _generate_advice(current_user.id, session)
     db.commit()
     db.refresh(session)
 

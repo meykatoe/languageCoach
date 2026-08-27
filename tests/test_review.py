@@ -25,7 +25,7 @@ def test_review_note_generated_and_attached(client, monkeypatch):
     monkeypatch.setattr(
         practice_module,
         "explain_mistake",
-        lambda exam, node, expected, submitted: "你選錯了,因為主詞是複數,動詞要用原形。",
+        lambda user_id, exam, node, expected, submitted: "你選錯了,因為主詞是複數,動詞要用原形。",
     )
 
     source_id = "toeic-r5-006"  # correct answer is "A" (before)

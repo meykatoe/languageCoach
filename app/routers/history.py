@@ -1,3 +1,4 @@
+import datetime
 from typing import Optional
 
 from fastapi import APIRouter, Depends, Query
@@ -5,8 +6,16 @@ from sqlalchemy import func
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import Attempt
-from app.schemas import AttemptOut, DailyStat, ExamStat, HistorySummary, WeaknessStat
+from app.dependencies import get_current_user
+from app.models import Attempt, User
+from app.schemas import (
+    AttemptOut,
+    DailyActivity,
+    DailyStat,
+    ExamStat,
+    HistorySummary,
+    WeaknessStat,
+)
 from app.services.grading import latest_objective_attempts
 
 router = APIRouter(prefix="/api/history", tags=["history"])
@@ -14,9 +23,11 @@ router = APIRouter(prefix="/api/history", tags=["history"])
 
 @router.get("", response_model=HistorySummary)
 def get_history(
-    limit: int = Query(default=30, ge=1, le=200), db: Session = Depends(get_db)
+    limit: int = Query(default=30, ge=1, le=200),
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
-    total_attempts = db.query(func.count(Attempt.id)).scalar() or 0
+    total_attempts = db.query(func.count(Attempt.id)).filter(Attempt.user_id == current_user.id).scalar() or 0
 
     rows = (
         db.query(
@@ -26,6 +37,7 @@ def get_history(
             func.count(Attempt.id),
             func.sum(func.coalesce(Attempt.is_correct, 0)),
         )
+        .filter(Attempt.user_id == current_user.id)
         .group_by(Attempt.exam, Attempt.section, Attempt.item_type)
         .order_by(Attempt.exam, Attempt.section)
         .all()
@@ -50,7 +62,7 @@ def get_history(
     # exam/section/part has the most, worst first — so the user can see at a
     # glance where to focus, and jump to /review to actually work through them.
     wrong_counts: dict[tuple[str, str, Optional[str]], int] = {}
-    for a in latest_objective_attempts(db):
+    for a in latest_objective_attempts(db, current_user.id):
         if a.is_correct is False:
             key = (a.exam, a.section, a.part)
             wrong_counts[key] = wrong_counts.get(key, 0) + 1
@@ -65,23 +77,30 @@ def get_history(
     )
 
     recent = (
-        db.query(Attempt).order_by(Attempt.created_at.desc()).limit(limit).all()
+        db.query(Attempt)
+        .filter(Attempt.user_id == current_user.id)
+        .order_by(Attempt.created_at.desc())
+        .limit(limit)
+        .all()
     )
 
     # Daily accuracy trend for objective questions only (writing/speaking use
     # a text score/band, not right-or-wrong), last 30 calendar days by date
-    # of the attempt so the chart shows recent progress over time.
+    # of the attempt so the chart shows recent progress over time. Filtered
+    # by a date cutoff (not just ordered + limited) so once history exceeds
+    # the window this returns the most RECENT days, not the oldest.
+    today = datetime.date.today()
     day = func.date(Attempt.created_at)
+    accuracy_cutoff = (today - datetime.timedelta(days=29)).isoformat()
     daily_rows = (
         db.query(
             day,
             func.count(Attempt.id),
             func.sum(func.coalesce(Attempt.is_correct, 0)),
         )
-        .filter(Attempt.item_type == "objective")
+        .filter(Attempt.user_id == current_user.id, Attempt.item_type == "objective", day >= accuracy_cutoff)
         .group_by(day)
         .order_by(day)
-        .limit(30)
         .all()
     )
     daily_accuracy = [
@@ -94,10 +113,26 @@ def get_history(
         for date_str, total, correct in daily_rows
     ]
 
+    # Activity heatmap data: attempt count per day across all item types
+    # (objective/writing/speaking), last 371 days (53 weeks) so the frontend
+    # can lay out a GitHub-style year grid.
+    activity_cutoff = (today - datetime.timedelta(days=370)).isoformat()
+    activity_rows = (
+        db.query(day, func.count(Attempt.id))
+        .filter(Attempt.user_id == current_user.id, day >= activity_cutoff)
+        .group_by(day)
+        .order_by(day)
+        .all()
+    )
+    daily_activity = [
+        DailyActivity(date=date_str, count=count) for date_str, count in activity_rows
+    ]
+
     return HistorySummary(
         total_attempts=total_attempts,
         stats=stats,
         weaknesses=weaknesses,
         daily_accuracy=daily_accuracy,
+        daily_activity=daily_activity,
         recent=[AttemptOut.model_validate(r) for r in recent],
     )

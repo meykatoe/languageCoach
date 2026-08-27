@@ -6,7 +6,7 @@ def test_image_returns_png_and_caches_to_disk(client, monkeypatch, tmp_path):
 
     calls = []
 
-    def fake_generate_image(description):
+    def fake_generate_image(user_id, description):
         calls.append(description)
         return b"FAKE_PNG_BYTES"
 
@@ -29,7 +29,7 @@ def test_image_returns_png_and_caches_to_disk(client, monkeypatch, tmp_path):
 def test_image_without_api_key_returns_503(client, monkeypatch, tmp_path):
     monkeypatch.setattr(image_module, "CACHE_DIR", tmp_path)
 
-    def raise_runtime(description):
+    def raise_runtime(user_id, description):
         raise RuntimeError("OpenAI API Key 尚未設定。")
 
     monkeypatch.setattr(image_module, "generate_image", raise_runtime)

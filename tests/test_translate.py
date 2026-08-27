@@ -2,7 +2,7 @@ import app.routers.translate as translate_module
 
 
 def test_translate_text_returns_translation(client, monkeypatch):
-    monkeypatch.setattr(translate_module, "translate_text", lambda text: f"[譯] {text}")
+    monkeypatch.setattr(translate_module, "translate_text", lambda user_id, text: f"[譯] {text}")
 
     res = client.post("/api/translate/text", json={"text": "The report is due tomorrow."})
     assert res.status_code == 200
@@ -36,7 +36,7 @@ def test_translate_without_api_key_returns_503(client, monkeypatch):
 
 
 def test_translate_returns_translation(client, monkeypatch):
-    def fake_translate_text(text):
+    def fake_translate_text(user_id, text):
         assert "handbook" in text
         assert "\nB\n" not in text  # the top-level "answer" key should be excluded from the source text
         return "新進員工手冊概述了所有公司政策..."

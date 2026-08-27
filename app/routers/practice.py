@@ -2,10 +2,12 @@ from typing import Any, Optional
 
 from fastapi import APIRouter, Depends
 from openai import APIError
+from sqlalchemy import or_
 from sqlalchemy.orm import Session
 
 from app.database import get_db
-from app.models import AppSetting, Attempt, Question
+from app.dependencies import get_current_user
+from app.models import AppSetting, Attempt, Question, User
 from app.schemas import GradedAnswer, PracticeSubmitRequest, PracticeSubmitResponse
 from app.services.grading import answers_match, find_node_by_id
 from app.services.openai_service import explain_mistake, review_progress_comment
@@ -13,55 +15,63 @@ from app.services.openai_service import explain_mistake, review_progress_comment
 router = APIRouter(prefix="/api/practice", tags=["practice"])
 
 
-def _is_review_mode(db: Session) -> bool:
-    setting = db.query(AppSetting).first()
+def _is_review_mode(db: Session, user_id: int) -> bool:
+    setting = db.query(AppSetting).filter(AppSetting.user_id == user_id).first()
     return bool(setting and setting.review_mode)
 
 
-def _latest_note(db: Session, source_id: str) -> Optional[str]:
+def _latest_note(db: Session, user_id: int, source_id: str) -> Optional[str]:
     """The note attached to this source_id's most recent objective attempt,
     if any, used as the "previous record" in review mode.
     """
     prev = (
         db.query(Attempt)
-        .filter(Attempt.source_id == source_id, Attempt.item_type == "objective")
+        .filter(Attempt.user_id == user_id, Attempt.source_id == source_id, Attempt.item_type == "objective")
         .order_by(Attempt.created_at.desc())
         .first()
     )
     return (prev.detail or {}).get("note") if prev and prev.detail else None
 
 
-def _generate_mistake_note(exam: str, node: dict, expected: Any, submitted: Any) -> Optional[str]:
+def _generate_mistake_note(user_id: int, exam: str, node: dict, expected: Any, submitted: Any) -> Optional[str]:
     """Best-effort AI explanation of a wrong answer, for the error notebook.
     Never raises: if the AI call fails (no API key, network error, ...), the
     submission should still succeed without a note.
     """
     try:
-        return explain_mistake(exam, node, expected, submitted)
+        return explain_mistake(user_id, exam, node, expected, submitted)
     except (RuntimeError, APIError, ValueError):
         return None
 
 
 def _generate_review_comment(
-    exam: str, node: dict, expected: Any, submitted: Any, is_correct: bool, previous_note: str
+    user_id: int, exam: str, node: dict, expected: Any, submitted: Any, is_correct: bool, previous_note: str
 ) -> Optional[str]:
     """Best-effort AI comment for a review-mode repeat attempt, taking the
     previous record into account. Never raises, same reasoning as above.
     """
     try:
-        return review_progress_comment(exam, node, expected, submitted, is_correct, previous_note)
+        return review_progress_comment(user_id, exam, node, expected, submitted, is_correct, previous_note)
     except (RuntimeError, APIError, ValueError):
         return None
 
 
 @router.post("/submit", response_model=PracticeSubmitResponse)
-def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db)):
+def submit_practice(
+    payload: PracticeSubmitRequest,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
     results: list[GradedAnswer] = []
     correct_count = 0
     graded_count = 0
-    review_mode = _is_review_mode(db)
+    review_mode = _is_review_mode(db, current_user.id)
 
-    all_questions = db.query(Question).all()
+    all_questions = (
+        db.query(Question)
+        .filter(or_(Question.user_id.is_(None), Question.user_id == current_user.id))
+        .all()
+    )
 
     for ans in payload.answers:
         node = None
@@ -82,17 +92,18 @@ def submit_practice(payload: PracticeSubmitRequest, db: Session = Depends(get_db
                 correct_count += 1
 
             if parent is not None:
-                previous_note = _latest_note(db, ans.source_id) if review_mode else None
+                previous_note = _latest_note(db, current_user.id, ans.source_id) if review_mode else None
                 if review_mode and previous_note:
                     note = _generate_review_comment(
-                        parent.exam, node, expected, ans.answer, is_correct, previous_note
+                        current_user.id, parent.exam, node, expected, ans.answer, is_correct, previous_note
                     )
                 elif not is_correct:
-                    note = _generate_mistake_note(parent.exam, node, expected, ans.answer)
+                    note = _generate_mistake_note(current_user.id, parent.exam, node, expected, ans.answer)
 
             if parent is not None:
                 db.add(
                     Attempt(
+                        user_id=current_user.id,
                         exam=parent.exam,
                         section=parent.section,
                         part=parent.part,
