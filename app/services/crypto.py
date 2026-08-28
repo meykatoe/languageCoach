@@ -34,6 +34,16 @@ def _load_key() -> bytes:
 _fernet = Fernet(_load_key())
 
 
+def get_session_secret() -> str:
+    """Signing secret for the OAuth login flow's transient server-side
+    session (holds the CSRF `state`/`nonce` between the Google redirect and
+    callback). Reuses the same key material as the API-key encryption above
+    -- both already fall back to an auto-generated, persisted secret, and
+    keeping a second secret in sync isn't worth it for this app's scale.
+    """
+    return _load_key().decode()
+
+
 def encrypt(value: str) -> str:
     return _fernet.encrypt(value.encode()).decode()
 

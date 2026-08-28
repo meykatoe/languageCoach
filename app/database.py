@@ -82,3 +82,15 @@ def migrate_schema() -> None:
             with engine.begin() as conn:
                 conn.execute(text(f"ALTER TABLE {table} ADD COLUMN user_id INTEGER"))
                 conn.execute(text(index_sql))
+
+    # Google login: users may not have an email/google_sub if they registered
+    # with a username/password before this was added.
+    if "users" in inspector.get_table_names():
+        columns = {col["name"] for col in inspector.get_columns("users")}
+        with engine.begin() as conn:
+            if "email" not in columns:
+                conn.execute(text("ALTER TABLE users ADD COLUMN email VARCHAR"))
+                conn.execute(text("CREATE UNIQUE INDEX ix_users_email ON users (email)"))
+            if "google_sub" not in columns:
+                conn.execute(text("ALTER TABLE users ADD COLUMN google_sub VARCHAR"))
+                conn.execute(text("CREATE UNIQUE INDEX ix_users_google_sub ON users (google_sub)"))

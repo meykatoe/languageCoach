@@ -1,12 +1,21 @@
 from fastapi import APIRouter, Depends, HTTPException, Request, Response
+from fastapi.responses import RedirectResponse
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from app.database import get_db
 from app.dependencies import SESSION_COOKIE_NAME, get_current_user
-from app.models import AppSetting, Attempt, ExamSession, Question, User, VocabEntry
+from app.models import User
 from app.schemas import LoginRequest, RegisterRequest, UserOut
-from app.services.auth import create_session, delete_session, hash_password, verify_password
+from app.services.auth import (
+    claim_orphaned_data,
+    create_session,
+    delete_session,
+    get_or_create_google_user,
+    hash_password,
+    verify_password,
+)
+from app.services.oauth import google_login_enabled, oauth
 
 router = APIRouter(prefix="/api/auth", tags=["auth"])
 
@@ -24,21 +33,6 @@ def _set_session_cookie(response: Response, token: str, request: Request) -> Non
     )
 
 
-def _claim_orphaned_data(db: Session, user: User) -> None:
-    """One-time bootstrap: the very first account ever registered inherits
-    all pre-existing data that predates multi-user support (user_id IS
-    NULL), except the shared seed question bank, which stays shared.
-    """
-    db.query(Attempt).filter(Attempt.user_id.is_(None)).update({"user_id": user.id})
-    db.query(ExamSession).filter(ExamSession.user_id.is_(None)).update({"user_id": user.id})
-    db.query(VocabEntry).filter(VocabEntry.user_id.is_(None)).update({"user_id": user.id})
-    db.query(AppSetting).filter(AppSetting.user_id.is_(None)).update({"user_id": user.id})
-    db.query(Question).filter(
-        Question.user_id.is_(None), Question.source_file.in_(["ai-generated", "user-upload"])
-    ).update({"user_id": user.id}, synchronize_session=False)
-    db.commit()
-
-
 @router.post("/register", response_model=UserOut)
 def register(payload: RegisterRequest, request: Request, response: Response, db: Session = Depends(get_db)):
     username = payload.username.strip()
@@ -54,7 +48,7 @@ def register(payload: RegisterRequest, request: Request, response: Response, db:
     db.refresh(user)
 
     if is_first_user:
-        _claim_orphaned_data(db, user)
+        claim_orphaned_data(db, user)
 
     token = create_session(db, user)
     _set_session_cookie(response, token, request)
@@ -83,3 +77,28 @@ def logout(request: Request, response: Response, db: Session = Depends(get_db)):
 @router.get("/me", response_model=UserOut)
 def me(current_user: User = Depends(get_current_user)):
     return UserOut(id=current_user.id, username=current_user.username)
+
+
+@router.get("/google/login")
+async def google_login(request: Request):
+    if not google_login_enabled():
+        raise HTTPException(status_code=503, detail="尚未設定 Google 登入。")
+    redirect_uri = request.url_for("google_callback")
+    return await oauth.google.authorize_redirect(request, redirect_uri)
+
+
+@router.get("/google/callback", name="google_callback")
+async def google_callback(request: Request, db: Session = Depends(get_db)):
+    if not google_login_enabled():
+        raise HTTPException(status_code=503, detail="尚未設定 Google 登入。")
+    token = await oauth.google.authorize_access_token(request)
+    userinfo = token.get("userinfo") or await oauth.google.userinfo(token=token)
+    email = userinfo.get("email")
+    if not email:
+        raise HTTPException(status_code=400, detail="Google 帳號未提供 email。")
+
+    user = get_or_create_google_user(db, email=email, google_sub=userinfo["sub"])
+    session_token = create_session(db, user)
+    response = RedirectResponse(url="/")
+    _set_session_cookie(response, session_token, request)
+    return response
