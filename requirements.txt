@@ -4,6 +4,8 @@ sqlalchemy
 openai
 cryptography
 python-dotenv
+authlib
+itsdangerous
 jinja2
 python-multipart
 httpx

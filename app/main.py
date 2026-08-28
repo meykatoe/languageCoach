@@ -5,6 +5,7 @@ from fastapi import Depends, FastAPI, Request
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from starlette.middleware.sessions import SessionMiddleware
 
 load_dotenv()
 
@@ -32,11 +33,15 @@ from app.routers import (  # noqa: E402
     vocab,
 )
 from app.seed import seed  # noqa: E402
-from app.services.crypto import migrate_legacy_plaintext_key  # noqa: E402
+from app.services.crypto import get_session_secret, migrate_legacy_plaintext_key  # noqa: E402
 
 BASE_DIR = Path(__file__).resolve().parent
 
 app = FastAPI(title="Language Coach")
+
+# Holds the Google OAuth login flow's transient state/nonce between the
+# redirect and callback; unrelated to the app's own session_token cookie.
+app.add_middleware(SessionMiddleware, secret_key=get_session_secret())
 
 Base.metadata.create_all(bind=engine)
 migrate_schema()

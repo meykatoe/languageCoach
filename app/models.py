@@ -26,6 +26,8 @@ class User(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     username = Column(String, nullable=False, unique=True, index=True)
     password_hash = Column(String, nullable=False)
+    email = Column(String, nullable=True, unique=True, index=True)
+    google_sub = Column(String, nullable=True, unique=True, index=True)
     created_at = Column(
         DateTime,
         default=lambda: datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None),

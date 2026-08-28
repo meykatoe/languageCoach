@@ -6,7 +6,7 @@ import app.routers.translate as translate_module
 from app.database import SessionLocal
 from app.main import app
 from app.models import Attempt, User
-from app.routers.auth import _claim_orphaned_data
+from app.services.auth import claim_orphaned_data
 
 
 def _fresh_client() -> TestClient:
@@ -130,7 +130,7 @@ def test_bootstrap_claim_assigns_orphaned_rows_to_the_claiming_user():
         db.commit()
         db.refresh(claimant)
 
-        _claim_orphaned_data(db, claimant)
+        claim_orphaned_data(db, claimant)
 
         db.refresh(orphan)
         assert orphan.user_id == claimant.id
